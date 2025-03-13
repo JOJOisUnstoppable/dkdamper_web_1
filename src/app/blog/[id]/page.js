@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import ShareButtons from '@/components/blog/ShareButtons'
 
 export default function BlogDetail({ params }) {
   return (
@@ -75,14 +76,10 @@ export default function BlogDetail({ params }) {
               <span className="px-3 py-1 bg-gray-100 rounded-full text-sm">解决方案</span>
               <span className="px-3 py-1 bg-gray-100 rounded-full text-sm">数字化转型</span>
             </div>
-            <div className="flex gap-4">
-              <button className="text-gray-600 hover:text-primary">
-                分享
-              </button>
-              <button className="text-gray-600 hover:text-primary">
-                收藏
-              </button>
-            </div>
+            <ShareButtons 
+              title="如何选择适合企业的B2B解决方案" 
+              url={typeof window !== 'undefined' ? window.location.href : ''}
+            />
           </div>
         </div>
 
