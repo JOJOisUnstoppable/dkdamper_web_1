@@ -13,9 +13,9 @@ export default function Home() {
           <p className="text-xl mb-8">
             为您的企业提供全方位的解决方案
           </p>
-          <button className="bg-white text-primary px-6 py-2 rounded-lg hover:bg-gray-100 transition-colors">
+          <Link href="/404" className="bg-white text-primary px-6 py-2 rounded-lg hover:bg-gray-100 transition-colors">
             了解更多
-          </button>
+          </Link>
         </div>
       </section>
 
@@ -84,9 +84,9 @@ export default function Home() {
               <p className="text-gray-600 mb-6">
                 我们是行业领先的B2B解决方案提供商，致力于为企业提供创新、高效的解决方案。
               </p>
-              <button className="text-primary hover:text-secondary">
+              <Link href="/404" className="text-primary hover:text-secondary">
                 了解更多 →
-              </button>
+              </Link>
             </div>
             <div className="w-full md:w-1/2 h-64 bg-gray-200 rounded-lg"></div>
           </div>
@@ -104,9 +104,9 @@ export default function Home() {
                 <p className="text-gray-600 mb-4">文章摘要内容...</p>
                 <div className="flex justify-between items-center">
                   <span className="text-sm text-gray-500">2024-01-01</span>
-                  <button className="text-primary hover:text-secondary">
+                  <Link href="/404" className="text-primary hover:text-secondary">
                     阅读更多 →
-                  </button>
+                  </Link>
                 </div>
               </div>
             ))}

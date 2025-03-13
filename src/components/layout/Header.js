@@ -15,10 +15,10 @@ export default function Header() {
           
           <div className="hidden md:flex space-x-6">
             <Link href="/products" className="hover:text-secondary transition-colors">产品</Link>
-            <Link href="/industry" className="hover:text-secondary transition-colors">行业解决方案</Link>
-            <Link href="/blog" className="hover:text-secondary transition-colors">博客</Link>
-            <Link href="/about" className="hover:text-secondary transition-colors">关于我们</Link>
-            <Link href="/contact" className="hover:text-secondary transition-colors">联系我们</Link>
+            <Link href="/404" className="hover:text-secondary transition-colors">行业解决方案</Link>
+            <Link href="/404" className="hover:text-secondary transition-colors">博客</Link>
+            <Link href="/404" className="hover:text-secondary transition-colors">关于我们</Link>
+            <Link href="/404" className="hover:text-secondary transition-colors">联系我们</Link>
           </div>
 
           <button 
