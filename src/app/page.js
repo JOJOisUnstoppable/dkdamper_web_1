@@ -84,7 +84,7 @@ export default function Home() {
               <p className="text-gray-600 mb-6">
                 我们是行业领先的B2B解决方案提供商，致力于为企业提供创新、高效的解决方案。
               </p>
-              <Link href="/404" className="text-primary hover:text-secondary">
+              <Link href="/about" className="text-primary hover:text-secondary">
                 了解更多 →
               </Link>
             </div>
