@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -24,15 +25,32 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-8 text-center">精选产品</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[1, 2, 3].map((item) => (
-              <div key={item} className="bg-white p-6 rounded-lg shadow-md">
+              <div key={item} className="bg-white p-6 rounded-lg shadow-md group hover:shadow-lg transition-shadow">
                 <div className="w-full h-48 bg-gray-200 rounded-lg mb-4"></div>
                 <h3 className="text-xl font-semibold mb-2">产品名称</h3>
                 <p className="text-gray-600 mb-4">产品简短描述</p>
-                <button className="text-primary hover:text-secondary">
-                  查看详情 →
-                </button>
+                <Link 
+                  href={`/products/${item}`} 
+                  className="text-primary group-hover:text-secondary transition-colors inline-flex items-center"
+                >
+                  查看详情 
+                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
               </div>
             ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link 
+              href="/products" 
+              className="inline-flex items-center text-primary hover:text-secondary transition-colors"
+            >
+              查看更多产品
+              <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>
