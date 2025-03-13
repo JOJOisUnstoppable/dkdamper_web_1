@@ -1,7 +1,19 @@
+'use client'
+import SearchBar from '@/components/products/SearchBar'
+
 export default function ProductsPage() {
+  const handleSearch = (term) => {
+    console.log('搜索:', term)
+  }
+
   return (
     <div className="min-h-screen py-20">
-      {/* 产品分类筛选 */}
+      {/* 搜索栏 */}
+      <section className="container mx-auto px-4 mb-8">
+        <SearchBar onSearch={handleSearch} />
+      </section>
+
+      {/* 分类筛选 */}
       <section className="bg-gray-50 py-8">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap gap-4">
