@@ -4,10 +4,20 @@ import Link from 'next/link'
 
 export default function BlogPage() {
   const [activeCategory, setActiveCategory] = useState('all')
+  const [searchTerm, setSearchTerm] = useState('')
 
-  const filteredPosts = posts.filter(post => 
-    activeCategory === 'all' ? true : post.category === activeCategory
-  )
+  const handleSearch = (e) => {
+    e.preventDefault()
+    // 搜索逻辑已经通过 filteredPosts 实现
+  }
+
+  const filteredPosts = posts.filter(post => {
+    const matchCategory = activeCategory === 'all' ? true : post.category === activeCategory
+    const matchSearch = searchTerm === '' ? true : 
+      post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      post.excerpt.toLowerCase().includes(searchTerm.toLowerCase())
+    return matchCategory && matchSearch
+  })
 
   return (
     <div className="min-h-screen py-20">
@@ -15,7 +25,37 @@ export default function BlogPage() {
       <section className="bg-primary text-white py-16">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold mb-4">博客文章</h1>
-          <p className="text-xl">分享行业见解和技术动态</p>
+          <p className="text-xl mb-8">分享行业见解和技术动态</p>
+          {/* Search Bar */}
+          <div className="max-w-2xl mx-auto">
+            <form onSubmit={handleSearch} className="relative">
+              <input
+                type="text"
+                placeholder="搜索文章..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="w-full px-4 py-3 pr-12 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none"
+              />
+              <button 
+                type="submit"
+                className="absolute right-0 top-0 h-full px-4 text-gray-400 hover:text-gray-600"
+              >
+                <svg 
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path 
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </section>
 
@@ -43,35 +83,50 @@ export default function BlogPage() {
       {/* Blog List */}
       <section className="py-12">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {filteredPosts.map((post) => (
-              <div key={post.id} className="bg-white rounded-lg shadow-md overflow-hidden">
-                <div className="h-48 bg-gray-200"></div>
-                <div className="p-6">
-                  <div className="flex items-center gap-4 mb-4">
-                    <span className="text-sm text-primary px-3 py-1 bg-primary/10 rounded-full">
-                      {categories.find(c => c.id === post.category)?.name}
-                    </span>
-                    <span className="text-sm text-gray-500">{post.date}</span>
-                  </div>
-                  <h2 className="text-xl font-bold mb-2">{post.title}</h2>
-                  <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <div className="w-8 h-8 bg-gray-200 rounded-full"></div>
-                      <span className="text-sm text-gray-600">{post.author}</span>
+          {filteredPosts.length === 0 ? (
+            <div className="text-center py-12">
+              <h3 className="text-xl text-gray-600">没有找到相关文章</h3>
+              <button 
+                onClick={() => {
+                  setSearchTerm('')
+                  setActiveCategory('all')
+                }}
+                className="mt-4 text-primary hover:text-secondary"
+              >
+                清除筛选
+              </button>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {filteredPosts.map((post) => (
+                <div key={post.id} className="bg-white rounded-lg shadow-md overflow-hidden">
+                  <div className="h-48 bg-gray-200"></div>
+                  <div className="p-6">
+                    <div className="flex items-center gap-4 mb-4">
+                      <span className="text-sm text-primary px-3 py-1 bg-primary/10 rounded-full">
+                        {categories.find(c => c.id === post.category)?.name}
+                      </span>
+                      <span className="text-sm text-gray-500">{post.date}</span>
                     </div>
-                    <Link 
-                      href={`/blog/${post.id}`}
-                      className="text-primary hover:text-secondary transition-colors"
-                    >
-                      阅读更多 →
-                    </Link>
+                    <h2 className="text-xl font-bold mb-2">{post.title}</h2>
+                    <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <div className="w-8 h-8 bg-gray-200 rounded-full"></div>
+                        <span className="text-sm text-gray-600">{post.author}</span>
+                      </div>
+                      <Link 
+                        href={`/blog/${post.id}`}
+                        className="text-primary hover:text-secondary transition-colors"
+                      >
+                        阅读更多 →
+                      </Link>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          )}
         </div>
       </section>
     </div>
