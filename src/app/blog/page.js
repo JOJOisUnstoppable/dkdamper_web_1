@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
+import { trackUserBehavior } from '@/utils/analytics'
 
 export default function BlogPage() {
   const [activeCategory, setActiveCategory] = useState('all')
@@ -27,11 +28,28 @@ export default function BlogPage() {
   const handlePageChange = (page) => {
     setCurrentPage(page)
     window.scrollTo({ top: 0, behavior: 'smooth' })
+    // 记录翻页行为
+    trackUserBehavior('page_change', { page })
+  }
+
+  const handleCategoryChange = (category) => {
+    setActiveCategory(category)
+    setCurrentPage(1)
+    // 记录分类切换行为
+    trackUserBehavior('category_filter', { category })
+  }
+
+  const handleTagChange = (tag) => {
+    setActiveTag(tag)
+    setCurrentPage(1)
+    // 记录标签筛选行为
+    trackUserBehavior('tag_filter', { tag })
   }
 
   const handleSearch = (e) => {
     e.preventDefault()
-    // 搜索逻辑已经通过 filteredPosts 实现
+    // 记录搜索行为
+    trackUserBehavior('search', { keyword: searchTerm })
   }
 
   return (

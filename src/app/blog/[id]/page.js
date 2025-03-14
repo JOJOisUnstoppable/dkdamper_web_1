@@ -2,8 +2,19 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import ShareButtons from '@/components/blog/ShareButtons'
+import { trackUserBehavior } from '@/utils/analytics'
 
 export default function BlogDetail({ params }) {
+  useEffect(() => {
+    // 记录文章访问
+    trackUserBehavior('article_view', { articleId: params.id })
+  }, [params.id])
+
+  const handleShare = (platform) => {
+    // 记录分享行为
+    trackUserBehavior('article_share', { articleId: params.id, platform })
+  }
+
   const [views, setViews] = useState(0)
 
   useEffect(() => {
