@@ -1,10 +1,20 @@
+'use client'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import ShareButtons from '@/components/blog/ShareButtons'
 
 export default function BlogDetail({ params }) {
+  const [views, setViews] = useState(0)
+
+  useEffect(() => {
+    // 模拟从后端获取和更新阅读量
+    const currentViews = parseInt(localStorage.getItem(`article_${params.id}_views`) || '0')
+    setViews(currentViews + 1)
+    localStorage.setItem(`article_${params.id}_views`, String(currentViews + 1))
+  }, [params.id])
+
   return (
     <div className="min-h-screen py-20">
-      {/* Article Header */}
       <article className="container mx-auto px-4 max-w-4xl">
         <div className="mb-8">
           <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
@@ -13,6 +23,14 @@ export default function BlogDetail({ params }) {
             <Link href="/blog?category=tech" className="text-primary hover:text-secondary">
               技术动态
             </Link>
+            <span>•</span>
+            <span className="flex items-center gap-1">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+              </svg>
+              {views} 次阅读
+            </span>
           </div>
           <h1 className="text-4xl font-bold mb-4">
             如何选择适合企业的B2B解决方案
