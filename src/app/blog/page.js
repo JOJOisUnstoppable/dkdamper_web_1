@@ -5,11 +5,8 @@ import Link from 'next/link'
 export default function BlogPage() {
   const [activeCategory, setActiveCategory] = useState('all')
   const [searchTerm, setSearchTerm] = useState('')
-
-  const handleSearch = (e) => {
-    e.preventDefault()
-    // 搜索逻辑已经通过 filteredPosts 实现
-  }
+  const [currentPage, setCurrentPage] = useState(1)
+  const postsPerPage = 6
 
   const filteredPosts = posts.filter(post => {
     const matchCategory = activeCategory === 'all' ? true : post.category === activeCategory
@@ -18,6 +15,22 @@ export default function BlogPage() {
       post.excerpt.toLowerCase().includes(searchTerm.toLowerCase())
     return matchCategory && matchSearch
   })
+
+  const totalPages = Math.ceil(filteredPosts.length / postsPerPage)
+  const currentPosts = filteredPosts.slice(
+    (currentPage - 1) * postsPerPage,
+    currentPage * postsPerPage
+  )
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  const handleSearch = (e) => {
+    e.preventDefault()
+    // 搜索逻辑已经通过 filteredPosts 实现
+  }
 
   return (
     <div className="min-h-screen py-20">
@@ -90,6 +103,7 @@ export default function BlogPage() {
                 onClick={() => {
                   setSearchTerm('')
                   setActiveCategory('all')
+                  setCurrentPage(1)
                 }}
                 className="mt-4 text-primary hover:text-secondary"
               >
@@ -97,35 +111,80 @@ export default function BlogPage() {
               </button>
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {filteredPosts.map((post) => (
-                <div key={post.id} className="bg-white rounded-lg shadow-md overflow-hidden">
-                  <div className="h-48 bg-gray-200"></div>
-                  <div className="p-6">
-                    <div className="flex items-center gap-4 mb-4">
-                      <span className="text-sm text-primary px-3 py-1 bg-primary/10 rounded-full">
-                        {categories.find(c => c.id === post.category)?.name}
-                      </span>
-                      <span className="text-sm text-gray-500">{post.date}</span>
-                    </div>
-                    <h2 className="text-xl font-bold mb-2">{post.title}</h2>
-                    <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2">
-                        <div className="w-8 h-8 bg-gray-200 rounded-full"></div>
-                        <span className="text-sm text-gray-600">{post.author}</span>
+            <>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {currentPosts.map((post) => (
+                  <div key={post.id} className="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div className="h-48 bg-gray-200"></div>
+                    <div className="p-6">
+                      <div className="flex items-center gap-4 mb-4">
+                        <span className="text-sm text-primary px-3 py-1 bg-primary/10 rounded-full">
+                          {categories.find(c => c.id === post.category)?.name}
+                        </span>
+                        <span className="text-sm text-gray-500">{post.date}</span>
                       </div>
-                      <Link 
-                        href={`/blog/${post.id}`}
-                        className="text-primary hover:text-secondary transition-colors"
-                      >
-                        阅读更多 →
-                      </Link>
+                      <h2 className="text-xl font-bold mb-2">{post.title}</h2>
+                      <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-2">
+                          <div className="w-8 h-8 bg-gray-200 rounded-full"></div>
+                          <span className="text-sm text-gray-600">{post.author}</span>
+                        </div>
+                        <Link 
+                          href={`/blog/${post.id}`}
+                          className="text-primary hover:text-secondary transition-colors"
+                        >
+                          阅读更多 →
+                        </Link>
+                      </div>
                     </div>
                   </div>
+                ))}
+              </div>
+
+              {/* Pagination */}
+              {totalPages > 1 && (
+                <div className="mt-12 flex justify-center items-center gap-2">
+                  <button
+                    onClick={() => handlePageChange(currentPage - 1)}
+                    disabled={currentPage === 1}
+                    className={`px-4 py-2 rounded-lg ${
+                      currentPage === 1
+                        ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
+                        : 'bg-white hover:bg-gray-100'
+                    }`}
+                  >
+                    上一页
+                  </button>
+                  
+                  {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                    <button
+                      key={page}
+                      onClick={() => handlePageChange(page)}
+                      className={`px-4 py-2 rounded-lg ${
+                        currentPage === page
+                          ? 'bg-primary text-white'
+                          : 'bg-white hover:bg-gray-100'
+                      }`}
+                    >
+                      {page}
+                    </button>
+                  ))}
+
+                  <button
+                    onClick={() => handlePageChange(currentPage + 1)}
+                    disabled={currentPage === totalPages}
+                    className={`px-4 py-2 rounded-lg ${
+                      currentPage === totalPages
+                        ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
+                        : 'bg-white hover:bg-gray-100'
+                    }`}
+                  >
+                    下一页
+                  </button>
                 </div>
-              ))}
-            </div>
+              )}
+            </>
           )}
         </div>
       </section>
