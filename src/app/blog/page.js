@@ -4,16 +4,18 @@ import Link from 'next/link'
 
 export default function BlogPage() {
   const [activeCategory, setActiveCategory] = useState('all')
+  const [activeTag, setActiveTag] = useState('all')
   const [searchTerm, setSearchTerm] = useState('')
   const [currentPage, setCurrentPage] = useState(1)
   const postsPerPage = 6
 
   const filteredPosts = posts.filter(post => {
     const matchCategory = activeCategory === 'all' ? true : post.category === activeCategory
+    const matchTag = activeTag === 'all' ? true : post.tags.includes(activeTag)
     const matchSearch = searchTerm === '' ? true : 
       post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       post.excerpt.toLowerCase().includes(searchTerm.toLowerCase())
-    return matchCategory && matchSearch
+    return matchCategory && matchTag && matchSearch
   })
 
   const totalPages = Math.ceil(filteredPosts.length / postsPerPage)
@@ -87,6 +89,37 @@ export default function BlogPage() {
                 }`}
               >
                 {category.name}
+              </button>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Tags Section */}
+      <section className="py-4 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap gap-2">
+            <button
+              onClick={() => setActiveTag('all')}
+              className={`px-3 py-1 rounded-full text-sm ${
+                activeTag === 'all'
+                  ? 'bg-primary text-white'
+                  : 'bg-white hover:bg-gray-100'
+              }`}
+            >
+              全部标签
+            </button>
+            {tags.map(tag => (
+              <button
+                key={tag}
+                onClick={() => setActiveTag(tag)}
+                className={`px-3 py-1 rounded-full text-sm ${
+                  activeTag === tag
+                    ? 'bg-primary text-white'
+                    : 'bg-white hover:bg-gray-100'
+                }`}
+              >
+                {tag}
               </button>
             ))}
           </div>
@@ -200,12 +233,18 @@ const categories = [
   { id: 'case', name: '客户案例' }
 ]
 
+const tags = [
+  'B2B', '数字化转型', '解决方案', '技术创新', 
+  '企业管理', '行业趋势', '最佳实践', '案例分析'
+]
+
 const posts = [
   {
     id: 1,
     title: '企业数字化转型的关键步骤',
     excerpt: '数字化转型是企业发展的必经之路，本文将详细介绍企业数字化转型的关键步骤和注意事项...',
     category: 'tech',
+    tags: ['数字化转型', '技术创新', '最佳实践'],
     date: '2024-01-01',
     author: '张三'
   },

@@ -71,10 +71,16 @@ export default function BlogDetail({ params }) {
         {/* Share & Tags */}
         <div className="border-t border-gray-200 mt-12 pt-8">
           <div className="flex flex-wrap items-center justify-between">
-            <div className="flex gap-2">
-              <span className="px-3 py-1 bg-gray-100 rounded-full text-sm">B2B</span>
-              <span className="px-3 py-1 bg-gray-100 rounded-full text-sm">解决方案</span>
-              <span className="px-3 py-1 bg-gray-100 rounded-full text-sm">数字化转型</span>
+            <div className="flex flex-wrap gap-2">
+              {['B2B', '解决方案', '数字化转型'].map((tag, index) => (
+                <Link 
+                  key={index}
+                  href={`/blog?tag=${tag}`}
+                  className="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full text-sm transition-colors"
+                >
+                  {tag}
+                </Link>
+              ))}
             </div>
             <ShareButtons 
               title="如何选择适合企业的B2B解决方案" 
