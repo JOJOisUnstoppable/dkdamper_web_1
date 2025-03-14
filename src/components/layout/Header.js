@@ -21,6 +21,17 @@ export default function Header() {
             <Link href="/contact" className="hover:text-secondary transition-colors">联系我们</Link>
           </div>
 
+          {isMenuOpen && (
+            <div className="md:hidden py-4">
+              <div className="flex flex-col space-y-4">
+                <Link href="/products" className="hover:text-secondary transition-colors">产品</Link>
+                <Link href="/industry" className="hover:text-secondary transition-colors">行业解决方案</Link>
+                <Link href="/blog" className="hover:text-secondary transition-colors">博客</Link>
+                <Link href="/about" className="hover:text-secondary transition-colors">关于我们</Link>
+                <Link href="/contact" className="hover:text-secondary transition-colors">联系我们</Link>
+              </div>
+            </div>
+          )}
           <button 
             className="md:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
