@@ -5,7 +5,50 @@ import Link from 'next/link'
 export default function ProductDetail({ params }) {
   const [selectedImage, setSelectedImage] = useState(0)
   const [showInquiryModal, setShowInquiryModal] = useState(false)
-  
+  // 添加表单状态
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    email: '',
+    content: ''
+  })
+  const [submitting, setSubmitting] = useState(false)
+  const [submitSuccess, setSubmitSuccess] = useState(false)
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }))
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setSubmitting(true)
+
+    try {
+      // 模拟提交
+      await new Promise(resolve => setTimeout(resolve, 1000))
+      setSubmitSuccess(true)
+      setFormData({
+        name: '',
+        phone: '',
+        email: '',
+        content: ''
+      })
+      
+      setTimeout(() => {
+        setShowInquiryModal(false)
+        setSubmitSuccess(false)
+      }, 3000)
+    } catch (error) {
+      alert('提交失败，请稍后重试')
+    } finally {
+      setSubmitting(false)
+    }
+  }
+
   // 模拟获取产品数据
   const product = products.find(p => p.id === parseInt(params.id)) || products[0]
 
@@ -146,55 +189,89 @@ export default function ProductDetail({ params }) {
         {showInquiryModal && (
           <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
             <div className="bg-white rounded-lg p-6 max-w-lg w-full mx-4">
-              <h3 className="text-xl font-bold mb-4">产品询价</h3>
-              <form className="space-y-4">
-                <div>
-                  <label className="block text-gray-700 mb-2">联系人</label>
-                  <input 
-                    type="text"
-                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                    required
-                  />
+              <div className="flex justify-between items-center mb-4">
+                <h3 className="text-xl font-bold">产品询价</h3>
+                <button 
+                  onClick={() => setShowInquiryModal(false)}
+                  className="text-gray-500 hover:text-gray-700"
+                >
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+
+              {submitSuccess ? (
+                <div className="text-center py-8">
+                  <svg className="w-16 h-16 text-green-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <p className="text-xl font-semibold text-gray-900">提交成功</p>
+                  <p className="text-gray-500 mt-2">我们会尽快与您联系</p>
                 </div>
-                <div>
-                  <label className="block text-gray-700 mb-2">联系电话</label>
-                  <input 
-                    type="tel"
-                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                    required
-                  />
-                </div>
-                <div>
-                  <label className="block text-gray-700 mb-2">邮箱</label>
-                  <input 
-                    type="email"
-                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                    required
-                  />
-                </div>
-                <div>
-                  <label className="block text-gray-700 mb-2">询价内容</label>
-                  <textarea 
-                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary h-32"
-                    required
-                  ></textarea>
-                </div>
-                <div className="flex gap-4">
-                  <button 
-                    type="submit"
-                    className="flex-1 bg-primary text-white py-2 rounded-lg hover:bg-primary/90"
-                  >
-                    提交
-                  </button>
-                  <button 
-                    type="button"
-                    onClick={() => setShowInquiryModal(false)}
-                    className="flex-1 bg-gray-200 text-gray-700 py-2 rounded-lg hover:bg-gray-300"
-                  >
-                    取消
-                  </button>
-                </div>
-              </form>
+              ) : (
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <div>
+                    <label className="block text-gray-700 mb-2">联系人</label>
+                    <input 
+                      type="text"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-gray-700 mb-2">联系电话</label>
+                    <input 
+                      type="tel"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-gray-700 mb-2">邮箱</label>
+                    <input 
+                      type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-gray-700 mb-2">询价内容</label>
+                    <textarea 
+                      name="content"
+                      value={formData.content}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary h-32"
+                      required
+                    ></textarea>
+                  </div>
+                  <div className="flex gap-4">
+                    <button 
+                      type="submit"
+                      disabled={submitting}
+                      className="flex-1 bg-primary text-white py-2 rounded-lg hover:bg-primary/90 disabled:bg-gray-300 disabled:cursor-not-allowed"
+                    >
+                      {submitting ? '提交中...' : '提交'}
+                    </button>
+                    <button 
+                      type="button"
+                      onClick={() => setShowInquiryModal(false)}
+                      className="flex-1 bg-gray-200 text-gray-700 py-2 rounded-lg hover:bg-gray-300"
+                    >
+                      取消
+                    </button>
+                  </div>
+                </form>
+              )}
             </div>
           </div>
         )}

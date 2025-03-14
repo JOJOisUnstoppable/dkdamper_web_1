@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <main>
       {/* Hero Section */}
       <section className="py-20 bg-primary text-white">
         <div className="container mx-auto px-4">
@@ -113,6 +113,41 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </div>
+
+      {/* Quick Inquiry Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-4">快速询价</h2>
+            <p className="text-gray-600 mb-8">填写以下信息，我们会尽快与您联系</p>
+            <form className="space-y-4">
+              <input
+                type="text"
+                placeholder="您的称呼"
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                required
+              />
+              <input
+                type="tel"
+                placeholder="联系电话"
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                required
+              />
+              <textarea
+                placeholder="请简要描述您的需求..."
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary h-32"
+                required
+              ></textarea>
+              <button
+                type="submit"
+                className="w-full bg-primary text-white py-3 rounded-lg hover:bg-primary/90"
+              >
+                提交询价
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
   )
 }
