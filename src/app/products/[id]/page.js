@@ -6,7 +6,7 @@ import Image from 'next/image'
 export default function ProductDetail({ params }) {
   const [selectedImage, setSelectedImage] = useState(0)
   const [showInquiryModal, setShowInquiryModal] = useState(false)
-  // 添加表单状态
+  // Add form state
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -29,7 +29,7 @@ export default function ProductDetail({ params }) {
     setSubmitting(true)
 
     try {
-      // 模拟提交
+      // Simulate submission
       await new Promise(resolve => setTimeout(resolve, 1000))
       setSubmitSuccess(true)
       setFormData({
@@ -44,13 +44,13 @@ export default function ProductDetail({ params }) {
         setSubmitSuccess(false)
       }, 3000)
     } catch (error) {
-      alert('提交失败，请稍后重试')
+      alert('Submission failed, please try again later')
     } finally {
       setSubmitting(false)
     }
   }
 
-  // 模拟获取产品数据
+  // Mock product data
   const product = products.find(p => p.id === parseInt(params.id)) || products[0]
 
   return (
@@ -119,7 +119,7 @@ export default function ProductDetail({ params }) {
 
         {/* Product Details */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold mb-6">产品详情</h2>
+          <h2 className="text-2xl font-bold mb-6">Product Details</h2>
           <div className="prose max-w-none">
             {product.details.map((detail, index) => (
               <div key={index} className="mb-6">
@@ -132,7 +132,7 @@ export default function ProductDetail({ params }) {
 
         {/* Related Products */}
         <div>
-          <h2 className="text-2xl font-bold mb-6">相关产品</h2>
+          <h2 className="text-2xl font-bold mb-6">Related Products</h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {products
               .filter(p => p.category === product.category && p.id !== product.id)
@@ -170,7 +170,7 @@ export default function ProductDetail({ params }) {
           <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
             <div className="bg-white rounded-lg p-6 max-w-lg w-full mx-4">
               <div className="flex justify-between items-center mb-4">
-                <h3 className="text-xl font-bold">产品询价</h3>
+                <h3 className="text-xl font-bold">Product Inquiry</h3>
                 <button 
                   onClick={() => setShowInquiryModal(false)}
                   className="text-gray-500 hover:text-gray-700"
@@ -186,13 +186,13 @@ export default function ProductDetail({ params }) {
                   <svg className="w-16 h-16 text-green-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <p className="text-xl font-semibold text-gray-900">提交成功</p>
-                  <p className="text-gray-500 mt-2">我们会尽快与您联系</p>
+                  <p className="text-xl font-semibold text-gray-900">Submitted Successfully</p>
+                  <p className="text-gray-500 mt-2">We will contact you soon</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
-                    <label className="block text-gray-700 mb-2">联系人</label>
+                    <label className="block text-gray-700 mb-2">Contact Name</label>
                     <input 
                       type="text"
                       name="name"
@@ -203,7 +203,7 @@ export default function ProductDetail({ params }) {
                     />
                   </div>
                   <div>
-                    <label className="block text-gray-700 mb-2">联系电话</label>
+                    <label className="block text-gray-700 mb-2">Phone Number</label>
                     <input 
                       type="tel"
                       name="phone"
@@ -214,7 +214,7 @@ export default function ProductDetail({ params }) {
                     />
                   </div>
                   <div>
-                    <label className="block text-gray-700 mb-2">邮箱</label>
+                    <label className="block text-gray-700 mb-2">Email</label>
                     <input 
                       type="email"
                       name="email"
@@ -225,7 +225,7 @@ export default function ProductDetail({ params }) {
                     />
                   </div>
                   <div>
-                    <label className="block text-gray-700 mb-2">询价内容</label>
+                    <label className="block text-gray-700 mb-2">Message</label>
                     <textarea 
                       name="content"
                       value={formData.content}
@@ -240,14 +240,14 @@ export default function ProductDetail({ params }) {
                       disabled={submitting}
                       className="flex-1 bg-primary text-white py-2 rounded-lg hover:bg-primary/90 disabled:bg-gray-300 disabled:cursor-not-allowed"
                     >
-                      {submitting ? '提交中...' : '提交'}
+                      {submitting ? 'Submitting...' : 'Submit'}
                     </button>
                     <button 
                       type="button"
                       onClick={() => setShowInquiryModal(false)}
                       className="flex-1 bg-gray-200 text-gray-700 py-2 rounded-lg hover:bg-gray-300"
                     >
-                      取消
+                      Cancel
                     </button>
                   </div>
                 </form>
@@ -261,18 +261,18 @@ export default function ProductDetail({ params }) {
 }
 
 const categories = [
-  { id: 'all', name: '全部产品' },
-  { id: 'erp', name: 'ERP系统' },
-  { id: 'crm', name: 'CRM系统' },
-  { id: 'scm', name: '供应链管理' },
-  { id: 'bi', name: '商业智能' }
+  { id: 'all', name: 'All Products' },
+  { id: 'erp', name: 'ERP Systems' },
+  { id: 'crm', name: 'CRM Systems' },
+  { id: 'scm', name: 'Supply Chain Management' },
+  { id: 'bi', name: 'Business Intelligence' }
 ]
 
 const products = [
   {
     id: 1,
-    name: '企业ERP管理系统',
-    description: '全面的企业资源规划解决方案，帮助企业实现数字化转型，提升运营效率。',
+    name: 'Enterprise ERP System',
+    description: 'Comprehensive enterprise resource planning solution to help businesses achieve digital transformation and improve operational efficiency.',
     category: 'erp',
     images: [
       'https://picsum.photos/800/600?random=1',
@@ -281,27 +281,27 @@ const products = [
       'https://picsum.photos/800/600?random=4'
     ],
     specs: {
-      '适用规模': '中大型企业',
-      '部署方式': '私有云/公有云',
-      '授权方式': '永久授权',
-      '技术架构': '微服务架构'
+      'Scale': 'Medium to Large Enterprise',
+      'Deployment': 'Private/Public Cloud',
+      'License': 'Perpetual',
+      'Architecture': 'Microservices'
     },
     features: [
-      '多模块集成',
-      '实时数据分析',
-      '智能决策支持',
-      '高度可定制'
+      'Multi-module Integration',
+      'Real-time Data Analysis',
+      'Intelligent Decision Support',
+      'Highly Customizable'
     ],
     details: [
       {
-        title: '系统架构',
-        content: '采用先进的微服务架构，确保系统的高可用性和可扩展性...'
+        title: 'System Architecture',
+        content: 'Adopts advanced microservice architecture to ensure high availability and scalability...'
       },
       {
-        title: '功能模块',
-        content: '包含财务管理、人力资源、供应链、生产管理等多个模块...'
+        title: 'Function Modules',
+        content: 'Includes financial management, HR, supply chain, production management and more...'
       }
     ]
   },
-  // ... 其他产品数据
+  // ... other product data
 ]
