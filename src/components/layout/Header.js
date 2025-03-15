@@ -14,21 +14,21 @@ export default function Header() {
           </Link>
           
           <div className="hidden md:flex space-x-6">
-            <Link href="/products" className="hover:text-secondary transition-colors">产品</Link>
-            <Link href="/industry" className="hover:text-secondary transition-colors">行业解决方案</Link>
-            <Link href="/blog" className="hover:text-secondary transition-colors">博客</Link>
-            <Link href="/about" className="hover:text-secondary transition-colors">关于我们</Link>
-            <Link href="/contact" className="hover:text-secondary transition-colors">联系我们</Link>
+            <Link href="/products" className="hover:text-secondary transition-colors">Products</Link>
+            <Link href="/industry" className="hover:text-secondary transition-colors">Industry Solutions</Link>
+            <Link href="/blog" className="hover:text-secondary transition-colors">Blog</Link>
+            <Link href="/about" className="hover:text-secondary transition-colors">About Us</Link>
+            <Link href="/contact" className="hover:text-secondary transition-colors">Contact</Link>
           </div>
 
           {isMenuOpen && (
             <div className="md:hidden py-4">
               <div className="flex flex-col space-y-4">
-                <Link href="/products" className="hover:text-secondary transition-colors">产品</Link>
-                <Link href="/industry" className="hover:text-secondary transition-colors">行业解决方案</Link>
-                <Link href="/blog" className="hover:text-secondary transition-colors">博客</Link>
-                <Link href="/about" className="hover:text-secondary transition-colors">关于我们</Link>
-                <Link href="/contact" className="hover:text-secondary transition-colors">联系我们</Link>
+                <Link href="/products" className="hover:text-secondary transition-colors">Products</Link>
+                <Link href="/industry" className="hover:text-secondary transition-colors">Industry Solutions</Link>
+                <Link href="/blog" className="hover:text-secondary transition-colors">Blog</Link>
+                <Link href="/about" className="hover:text-secondary transition-colors">About Us</Link>
+                <Link href="/contact" className="hover:text-secondary transition-colors">Contact</Link>
               </div>
             </div>
           )}
@@ -45,11 +45,11 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden py-4">
             <div className="flex flex-col space-y-4">
-              <Link href="/products" className="hover:text-secondary transition-colors">产品</Link>
-              <Link href="/industry" className="hover:text-secondary transition-colors">行业解决方案</Link>
-              <Link href="/blog" className="hover:text-secondary transition-colors">博客</Link>
-              <Link href="/about" className="hover:text-secondary transition-colors">关于我们</Link>
-              <Link href="/contact" className="hover:text-secondary transition-colors">联系我们</Link>
+                <Link href="/products" className="hover:text-secondary transition-colors">Products</Link>
+                <Link href="/industry" className="hover:text-secondary transition-colors">Industry Solutions</Link>
+                <Link href="/blog" className="hover:text-secondary transition-colors">Blog</Link>
+                <Link href="/about" className="hover:text-secondary transition-colors">About Us</Link>
+                <Link href="/contact" className="hover:text-secondary transition-colors">Contact</Link>
             </div>
           </div>
         )}

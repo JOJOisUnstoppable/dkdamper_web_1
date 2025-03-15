@@ -1,26 +1,25 @@
-import './globals.css'
 import { Inter } from 'next/font/google'
+import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
-import FloatingInquiry from '@/components/common/FloatingInquiry'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'B2B Solutions',
-  description: '专业的B2B解决方案提供商',
+  title: 'Enterprise Solutions - Professional B2B Services',
+  description: 'Leading provider of enterprise B2B solutions and digital transformation services.',
+  keywords: 'B2B Solutions, Enterprise Services, Digital Transformation, Business Solutions',
 }
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="zh">
-      <body className={inter.className}>
+    <html lang="en">
+      <body className="flex flex-col min-h-screen">
         <Header />
-        <main>
+        <main className="flex-grow pt-20">
           {children}
         </main>
         <Footer />
-        <FloatingInquiry />
       </body>
     </html>
   )

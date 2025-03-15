@@ -57,14 +57,14 @@ export default function BlogPage() {
       {/* Hero Section */}
       <section className="bg-primary text-white py-16">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-4">博客文章</h1>
-          <p className="text-xl mb-8">分享行业见解和技术动态</p>
+          <h1 className="text-4xl font-bold mb-4">Blog Articles</h1>
+          <p className="text-xl mb-8">Sharing Industry Insights and Technical Updates</p>
           {/* Search Bar */}
           <div className="max-w-2xl mx-auto">
             <form onSubmit={handleSearch} className="relative">
               <input
                 type="text"
-                placeholder="搜索文章..."
+                placeholder="Search articles..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="w-full px-4 py-3 pr-12 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none"
@@ -125,7 +125,7 @@ export default function BlogPage() {
                   : 'bg-white hover:bg-gray-100'
               }`}
             >
-              全部标签
+              All Tags
             </button>
             {tags.map(tag => (
               <button
@@ -149,7 +149,7 @@ export default function BlogPage() {
         <div className="container mx-auto px-4">
           {filteredPosts.length === 0 ? (
             <div className="text-center py-12">
-              <h3 className="text-xl text-gray-600">没有找到相关文章</h3>
+              <h3 className="text-xl text-gray-600">No articles found</h3>
               <button 
                 onClick={() => {
                   setSearchTerm('')
@@ -158,7 +158,7 @@ export default function BlogPage() {
                 }}
                 className="mt-4 text-primary hover:text-secondary"
               >
-                清除筛选
+                Clear Filters
               </button>
             </div>
           ) : (
@@ -185,7 +185,7 @@ export default function BlogPage() {
                           href={`/blog/${post.id}`}
                           className="text-primary hover:text-secondary transition-colors"
                         >
-                          阅读更多 →
+                          Read More →
                         </Link>
                       </div>
                     </div>
@@ -205,7 +205,7 @@ export default function BlogPage() {
                         : 'bg-white hover:bg-gray-100'
                     }`}
                   >
-                    上一页
+                    Previous
                   </button>
                   
                   {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
@@ -231,7 +231,7 @@ export default function BlogPage() {
                         : 'bg-white hover:bg-gray-100'
                     }`}
                   >
-                    下一页
+                    Next
                   </button>
                 </div>
               )}
@@ -244,50 +244,50 @@ export default function BlogPage() {
 }
 
 const categories = [
-  { id: 'all', name: '全部' },
-  { id: 'tech', name: '技术动态' },
-  { id: 'industry', name: '行业资讯' },
-  { id: 'solution', name: '解决方案' },
-  { id: 'case', name: '客户案例' }
+  { id: 'all', name: 'All' },
+  { id: 'tech', name: 'Technology Updates' },
+  { id: 'industry', name: 'Industry News' },
+  { id: 'solution', name: 'Solutions' },
+  { id: 'case', name: 'Case Studies' }
 ]
 
 const tags = [
-  'B2B', '数字化转型', '解决方案', '技术创新', 
-  '企业管理', '行业趋势', '最佳实践', '案例分析'
+  'B2B', 'Digital Transformation', 'Solutions', 'Tech Innovation', 
+  'Enterprise Management', 'Industry Trends', 'Best Practices', 'Case Analysis'
 ]
 
 const posts = [
   {
     id: 1,
-    title: '企业数字化转型的关键步骤',
-    excerpt: '数字化转型是企业发展的必经之路，本文将详细介绍企业数字化转型的关键步骤和注意事项...',
+    title: 'Key Steps for Enterprise Digital Transformation',
+    excerpt: 'Digital transformation is essential for enterprise development. This article will detail the key steps and considerations...',
     category: 'tech',
-    tags: ['数字化转型', '技术创新', '最佳实践'],
+    tags: ['Digital Transformation', 'Tech Innovation', 'Best Practices'],
     date: '2024-01-01',
-    author: '张三'
+    author: 'John Doe'
   },
   {
     id: 2,
-    title: '2024年B2B行业发展趋势',
-    excerpt: '随着技术的不断发展，B2B行业正在经历深刻的变革。本文将分析2024年B2B行业的主要发展趋势...',
+    title: 'B2B Development Trends in 2024',
+    excerpt: 'With continuous technological advancement, the B2B industry is undergoing profound changes. This article analyzes the main trends...',
     category: 'industry',
     date: '2024-01-02',
-    author: '李四'
+    author: 'Jane Smith'
   },
   {
     id: 3,
-    title: '如何选择合适的企业解决方案',
-    excerpt: '面对市场上众多的企业解决方案，如何选择最适合自己企业的方案？本文将为您提供专业的建议...',
+    title: 'How to select suitable enterprise solutions',
+    excerpt: 'Face the numerous enterprise solutions, how to select the most suitable enterprise solutions? This article provides professional suggestions...',
     category: 'solution',
     date: '2024-01-03',
-    author: '王五'
+    author: 'Jane Smith'
   },
   {
     id: 4,
-    title: '某制造企业数字化转型案例分析',
-    excerpt: '通过具体案例分析，深入了解制造企业是如何通过数字化转型提升生产效率的...',
+    title: 'Case Analysis of Manufacture Enterprise Digital Transformation',
+    excerpt: 'Through specific case analysis, understanding the manufacture enterprise is how through digital transformation enhances production efficiency...',
     category: 'case',
     date: '2024-01-04',
-    author: '赵六'
+    author: 'Jane Smith'
   }
 ]
