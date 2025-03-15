@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function ProductDetail({ params }) {
   const [selectedImage, setSelectedImage] = useState(0)
@@ -74,9 +75,11 @@ export default function ProductDetail({ params }) {
           {/* Product Images */}
           <div className="w-full md:w-1/2">
             <div className="bg-gray-200 w-full h-96 rounded-lg mb-4">
-              <img 
+              <Image 
                 src={product.images[selectedImage]} 
                 alt={product.name}
+                width={800}
+                height={600}
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
@@ -89,9 +92,11 @@ export default function ProductDetail({ params }) {
                   }`}
                   onClick={() => setSelectedImage(index)}
                 >
-                  <img 
+                  <Image 
                     src={image} 
                     alt={`${product.name}-${index}`}
+                    width={200}
+                    height={150}
                     className="w-full h-full object-cover rounded-lg"
                   />
                 </div>

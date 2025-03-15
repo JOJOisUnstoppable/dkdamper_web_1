@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next-sitemap",
     "start": "next start",
+    "postbuild": "next-sitemap",
     "lint": "next lint"
   },
   "dependencies": {
@@ -22,7 +23,6 @@
     "github-slugger": "^2.0.0",
     "next": "13.5.4",
     "next-contentlayer": "^0.3.4",
-    "next-sitemap": "^4.2.2",
     "postcss": "8.4.31",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -37,6 +37,7 @@
   },
   "devDependencies": {
     "encoding": "^0.1.13",
+    "next-sitemap": "^4.2.3",
     "sharp": "^0.32.6"
   }
 }
