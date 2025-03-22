@@ -10,8 +10,8 @@ export default function IndustryPage() {
       {/* Hero Section */}
       <section className="bg-primary text-white py-16">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-4">行业解决方案</h1>
-          <p className="text-xl">为不同行业提供专业的解决方案</p>
+          <h1 className="text-4xl font-bold mb-4">Industry Solutions</h1>
+          <p className="text-xl">Professional Solutions for Different Industries</p>
         </div>
       </section>
 
@@ -72,7 +72,7 @@ export default function IndustryPage() {
                     href={`/contact?solution=${solution.title}`}
                     className="inline-block px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
                   >
-                    了解更多
+                    Learn More
                   </Link>
                 </div>
               ))}
@@ -83,7 +83,7 @@ export default function IndustryPage() {
       {/* Success Cases */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">成功案例</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Success Cases</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {cases.map((case_, index) => (
               <div
@@ -100,7 +100,7 @@ export default function IndustryPage() {
                       href={`/case-study/${case_.id}`}
                       className="text-primary hover:text-secondary"
                     >
-                      查看详情 →
+                      View Details →
                     </Link>
                   </div>
                 </div>
@@ -113,13 +113,13 @@ export default function IndustryPage() {
       {/* CTA Section */}
       <section className="bg-gray-50 py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">需要定制解决方案？</h2>
-          <p className="text-gray-600 mb-8">我们的专家团队随时为您提供专业建议</p>
+          <h2 className="text-3xl font-bold mb-4">Need Custom Solutions?</h2>
+          <p className="text-gray-600 mb-8">Our expert team is ready to provide professional advice</p>
           <Link
             href="/contact"
             className="inline-block bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors"
           >
-            联系我们
+            Contact Us
           </Link>
         </div>
       </section>
@@ -127,90 +127,91 @@ export default function IndustryPage() {
   )
 }
 
+// Update industries data
 const industries = [
   {
     id: 'manufacturing',
-    name: '制造业',
+    name: 'Manufacturing',
     icon: '🏭',
     solutions: [
       {
-        title: '智能制造解决方案',
-        description: '通过数字化转型提升生产效率',
+        title: 'Smart Manufacturing Solutions',
+        description: 'Enhance production efficiency through digital transformation',
         icon: '⚙️',
         features: [
-          '生产线自动化',
-          '实时监控系统',
-          '质量管理',
-          '预测性维护'
+          'Production Line Automation',
+          'Real-time Monitoring System',
+          'Quality Management',
+          'Predictive Maintenance'
         ]
       },
       {
-        title: '供应链优化',
-        description: '优化供应链管理，提升运营效率',
+        title: 'Supply Chain Optimization',
+        description: 'Optimize supply chain management for operational efficiency',
         icon: '🔄',
         features: [
-          '库存管理',
-          '供应商协同',
-          '物流追踪',
-          '成本控制'
+          'Inventory Management',
+          'Supplier Collaboration',
+          'Logistics Tracking',
+          'Cost Control'
         ]
       }
     ]
   },
   {
     id: 'logistics',
-    name: '物流运输',
+    name: 'Logistics',
     icon: '🚛',
     solutions: [
       {
-        title: '智能物流系统',
-        description: '提供端到端的物流解决方案',
+        title: 'Smart Logistics System',
+        description: 'End-to-end logistics solutions',
         icon: '📦',
         features: [
-          '路线优化',
-          '车队管理',
-          '仓储管理',
-          '配送追踪'
+          'Route Optimization',
+          'Fleet Management',
+          'Warehouse Management',
+          'Delivery Tracking'
         ]
       },
       {
-        title: '仓储自动化',
-        description: '提升仓储效率和准确性',
+        title: 'Warehouse Automation',
+        description: 'Improve warehouse efficiency and accuracy',
         icon: '🏭',
         features: [
-          '自动分拣',
-          '库存管理',
-          '订单处理',
-          '实时监控'
+          'Automatic Sorting',
+          'Inventory Management',
+          'Order Processing',
+          'Real-time Monitoring'
         ]
       }
     ]
   },
   {
     id: 'retail',
-    name: '零售行业',
+    name: 'Retail',
     icon: '🏪',
     solutions: [
       {
-        title: '全渠道零售',
-        description: '整合线上线下销售渠道',
+        title: 'Omni-channel Retail',
+        description: 'Integrate online and offline sales channels',
         icon: '🛍️',
         features: [
-          '会员管理',
-          '库存同步',
-          '订单管理',
-          '数据分析'
+          'Membership Management',
+          'Inventory Synchronization',
+          'Order Management',
+          'Data Analytics'
         ]
       },
       {
-        title: '智能营销',
-        description: '精准营销解决方案',
+        title: 'Smart Marketing',
+        description: 'Precision marketing solutions',
         icon: '📱',
         features: [
-          '客户画像',
-          '个性化推荐',
-          '营销自动化',
-          '效果分析'
+          'Customer Profiling',
+          'Personalized Recommendations',
+          'Marketing Automation',
+          'Performance Analytics'
         ]
       }
     ]
@@ -220,20 +221,20 @@ const industries = [
 const cases = [
   {
     id: 1,
-    title: '某大型制造企业数字化转型',
-    description: '通过实施智能制造解决方案，帮助客户提升生产效率30%',
-    industry: '制造业'
+    title: 'Large Manufacturing Enterprise Digital Transformation',
+    description: 'Helped client improve production efficiency by 30% through smart manufacturing solutions',
+    industry: 'Manufacturing'
   },
   {
     id: 2,
-    title: '全国连锁零售企业系统升级',
-    description: '助力客户实现全渠道销售，销售额提升50%',
-    industry: '零售业'
+    title: 'National Retail Chain System Upgrade',
+    description: 'Achieved 50% sales increase through omni-channel implementation',
+    industry: 'Retail'
   },
   {
     id: 3,
-    title: '物流公司配送效率优化',
-    description: '通过智能调度系统，配送效率提升40%',
-    industry: '物流业'
+    title: 'Logistics Company Delivery Optimization',
+    description: 'Improved delivery efficiency by 40% with smart dispatching system',
+    industry: 'Logistics'
   }
 ]

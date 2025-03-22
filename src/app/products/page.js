@@ -23,8 +23,8 @@ export default function ProductsPage() {
       {/* Hero Section */}
       <section className="bg-primary text-white py-16">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-4">产品中心</h1>
-          <p className="text-xl">为您提供专业的B2B解决方案</p>
+          <h1 className="text-4xl font-bold mb-4">Products</h1>
+          <p className="text-xl">Professional B2B Solutions Provider</p>
         </div>
       </section>
 
@@ -73,7 +73,7 @@ export default function ProductsPage() {
                     </h3>
                     <p className="text-gray-600 line-clamp-2">{product.description}</p>
                     <div className="mt-4 flex justify-between items-center">
-                      <span className="text-primary font-semibold">详细信息</span>
+                      <span className="text-primary font-semibold">Learn More</span>
                       <svg className="w-5 h-5 text-primary transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
@@ -96,8 +96,9 @@ export default function ProductsPage() {
                     : 'bg-white hover:bg-gray-100'
                 }`}
               >
-                上一页
+                Previous
               </button>
+              
               {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
                 <button
                   key={page}
@@ -111,6 +112,7 @@ export default function ProductsPage() {
                   {page}
                 </button>
               ))}
+              
               <button
                 onClick={() => setCurrentPage(p => p + 1)}
                 disabled={currentPage === totalPages}
@@ -120,7 +122,7 @@ export default function ProductsPage() {
                     : 'bg-white hover:bg-gray-100'
                 }`}
               >
-                下一页
+                Next
               </button>
             </div>
           )}
@@ -131,31 +133,31 @@ export default function ProductsPage() {
 }
 
 const categories = [
-  { id: 'all', name: '全部产品' },
-  { id: 'erp', name: 'ERP系统' },
-  { id: 'crm', name: 'CRM系统' },
-  { id: 'scm', name: '供应链管理' },
-  { id: 'bi', name: '商业智能' }
+  { id: 'all', name: 'All Products' },
+  { id: 'erp', name: 'ERP Systems' },
+  { id: 'crm', name: 'CRM Systems' },
+  { id: 'scm', name: 'Supply Chain Management' },
+  { id: 'bi', name: 'Business Intelligence' }
 ]
 
 const products = [
   {
     id: 1,
-    name: '企业ERP管理系统',
-    description: '全面的企业资源规划解决方案，帮助企业实现数字化转型...',
+    name: 'Enterprise ERP System',
+    description: 'Comprehensive enterprise resource planning solution for digital transformation...',
     category: 'erp'
   },
   {
     id: 2,
-    name: '智能CRM系统',
-    description: '基于AI的客户关系管理系统，提升客户服务质量...',
+    name: 'Smart CRM System',
+    description: 'AI-based customer relationship management system to enhance service quality...',
     category: 'crm'
   },
   {
     id: 3,
-    name: '供应链优化平台',
-    description: '智能供应链管理系统，实现采购、库存、物流全程可视化...',
+    name: 'Supply Chain Optimization Platform',
+    description: 'Intelligent supply chain management system for end-to-end visibility...',
     category: 'scm'
-  },
+  }
   // ... 更多产品数据
 ]
