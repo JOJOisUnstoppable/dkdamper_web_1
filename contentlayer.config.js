@@ -1,32 +1,43 @@
 import { defineDocumentType, makeSource } from 'contentlayer/source-files'
-import readingTime from 'reading-time'
 
-export const Post = defineDocumentType(() => ({
-  name: 'Post',
-  filePathPattern: `posts/**/*.mdx`,
-  contentType: 'mdx',
+export const Product = defineDocumentType(() => ({
+  name: 'Product',
+  filePathPattern: 'products/*.md',
   fields: {
-    title: { type: 'string', required: true },
-    date: { type: 'date', required: true },
-    description: { type: 'string', required: true },
+    id: { type: 'number', required: true },
+    name: { type: 'string', required: true },
     category: { type: 'string', required: true },
-    tags: { type: 'list', of: { type: 'string' }, required: true },
-    author: { type: 'string', required: true },
-    image: { type: 'string', required: false }
-  },
-  computedFields: {
-    slug: {
-      type: 'string',
-      resolve: (doc) => doc._raw.flattenedPath,
+    description: { type: 'string', required: true },
+    image: { type: 'string', required: false },
+    specs: { type: 'json', required: true },
+    features: { type: 'list', of: { type: 'string' }, required: true },
+    origin: { type: 'string', required: false },
+    advantages: { 
+      type: 'list', 
+      of: { type: 'json' }, 
+      required: false 
     },
-    readingTime: {
-      type: 'number',
-      resolve: (doc) => readingTime(doc.body.raw).minutes,
+    cases: { 
+      type: 'list', 
+      of: { type: 'json' }, 
+      required: false 
     },
-  },
+    specs_detail: { type: 'json', required: false },
+    // 添加新字段
+    integrations: {
+      type: 'list',
+      of: { type: 'json' },
+      required: false
+    },
+    modules: {
+      type: 'list',
+      of: { type: 'json' },
+      required: false
+    }
+  }
 }))
 
 export default makeSource({
-  contentDirPath: 'posts',
-  documentTypes: [Post],
+  contentDirPath: 'content',
+  documentTypes: [Product]
 })

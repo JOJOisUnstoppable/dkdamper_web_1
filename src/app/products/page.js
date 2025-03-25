@@ -1,8 +1,12 @@
 'use client'
-import { useState } from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
+import { allProducts } from 'contentlayer/generated'
+import { categories } from '@/data/categories'
 
 export default function ProductsPage() {
+  // 替换 products 数据源
+  const products = allProducts
   const [activeCategory, setActiveCategory] = useState('all')
   const [currentPage, setCurrentPage] = useState(1)
   const productsPerPage = 9
@@ -131,33 +135,3 @@ export default function ProductsPage() {
     </div>
   )
 }
-
-const categories = [
-  { id: 'all', name: 'All Products' },
-  { id: 'erp', name: 'ERP Systems' },
-  { id: 'crm', name: 'CRM Systems' },
-  { id: 'scm', name: 'Supply Chain Management' },
-  { id: 'bi', name: 'Business Intelligence' }
-]
-
-const products = [
-  {
-    id: 1,
-    name: 'Enterprise ERP System',
-    description: 'Comprehensive enterprise resource planning solution for digital transformation...',
-    category: 'erp'
-  },
-  {
-    id: 2,
-    name: 'Smart CRM System',
-    description: 'AI-based customer relationship management system to enhance service quality...',
-    category: 'crm'
-  },
-  {
-    id: 3,
-    name: 'Supply Chain Optimization Platform',
-    description: 'Intelligent supply chain management system for end-to-end visibility...',
-    category: 'scm'
-  }
-  // ... 更多产品数据
-]
