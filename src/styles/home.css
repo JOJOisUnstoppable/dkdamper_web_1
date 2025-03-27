@@ -1,0 +1,31 @@
+/* 全屏section样式 */
+.section-screen {
+  min-height: 100vh;
+  scroll-snap-align: start;
+}
+
+/* 渐变背景效果 */
+.gradient-overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+}
+
+/* 文字动画效果 */
+.text-animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+/* 图片悬停效果 */
+.image-hover {
+  transition: transform 0.3s ease;
+}
+.image-hover:hover {
+  transform: scale(1.05);
+}
+
+/* 自定义滚动条 */
+.custom-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}

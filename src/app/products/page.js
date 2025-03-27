@@ -1,135 +1,81 @@
-'use client'
-import React, { useState } from 'react'
-import Link from 'next/link'
-import { allProducts } from 'contentlayer/generated'
-import { categories } from '@/data/categories'
+import Image from 'next/image'
 
-export default function ProductsPage() {
-  // 替换 products 数据源
-  const products = allProducts
-  const [activeCategory, setActiveCategory] = useState('all')
-  const [currentPage, setCurrentPage] = useState(1)
-  const productsPerPage = 9
-
-  const filteredProducts = products.filter(product => 
-    activeCategory === 'all' ? true : product.category === activeCategory
-  )
-
-  const currentProducts = filteredProducts.slice(
-    (currentPage - 1) * productsPerPage,
-    currentPage * productsPerPage
-  )
-
-  const totalPages = Math.ceil(filteredProducts.length / productsPerPage)
-
+export default function Products() {
   return (
-    <div className="min-h-screen py-20">
-      {/* Hero Section */}
-      <section className="bg-primary text-white py-16">
+    <div className="min-h-screen">
+      {/* Products Hero Section */}
+      <section className="relative py-36 bg-gray-50"> {/* 将 py-24 改为 py-36 增加上下内边距 */}
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-4">Products</h1>
-          <p className="text-xl">Professional B2B Solutions Provider</p>
+          <h1 className="text-5xl font-bold text-center mb-8">Our Products</h1>
+          <p className="text-xl text-gray-600 text-center max-w-3xl mx-auto mb-16">
+            Explore our comprehensive range of gas springs and dampers, engineered for precision and reliability across various industries.
+          </p>
         </div>
       </section>
 
-      {/* Categories */}
-      <section className="py-8 bg-gray-50">
+      {/* Product Categories */}
+      <section className="py-24">
         <div className="container mx-auto px-4">
-          <div className="flex flex-wrap gap-4">
-            {categories.map(category => (
-              <button
-                key={category.id}
-                onClick={() => {
-                  setActiveCategory(category.id)
-                  setCurrentPage(1)
-                }}
-                className={`px-4 py-2 rounded-lg transition-colors ${
-                  activeCategory === category.id
-                    ? 'bg-primary text-white'
-                    : 'bg-white hover:bg-gray-100'
-                }`}
-              >
-                {category.name}
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Products Grid */}
-      <section className="py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {currentProducts.map((product) => (
-              <Link 
-                key={product.id}
-                href={`/products/${product.id}`}
-                className="group"
-              >
-                <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                  <div className="h-64 bg-gray-200 group-hover:opacity-90 transition-opacity"></div>
-                  <div className="p-6">
-                    <span className="text-sm text-primary bg-primary/10 px-3 py-1 rounded-full">
-                      {categories.find(c => c.id === product.category)?.name}
-                    </span>
-                    <h3 className="text-xl font-bold mt-4 mb-2 group-hover:text-primary transition-colors">
-                      {product.name}
-                    </h3>
-                    <p className="text-gray-600 line-clamp-2">{product.description}</p>
-                    <div className="mt-4 flex justify-between items-center">
-                      <span className="text-primary font-semibold">Learn More</span>
-                      <svg className="w-5 h-5 text-primary transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
-                    </div>
-                  </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            {[
+              {
+                model: "JP-CA1210",
+                subtitle: "Medical Equipment Gas Spring",
+                description: "High-performance gas spring specifically designed for medical equipment applications. Features precise force control and smooth operation.",
+                image: "/images/products/JP-CA1210.jpg"
+              },
+              {
+                model: "PR-L202",
+                subtitle: "Industrial Linear Damper",
+                description: "Precision-engineered linear damper for industrial applications, offering superior damping performance and durability.",
+                image: "/images/products/PR-L202.jpg"
+              },
+              {
+                model: "PR-L208",
+                subtitle: "Heavy-Duty Gas Spring",
+                description: "Robust gas spring designed for commercial vehicles and heavy machinery, providing reliable support and motion control.",
+                image: "/images/products/PR-L208.jpg"
+              },
+              {
+                model: "PR-L223",
+                subtitle: "Multi-Purpose Damper",
+                description: "Versatile damper solution suitable for various applications, combining adjustable damping with compact design.",
+                image: "/images/products/PR-L223.jpg"
+              }
+            ].map((product, index) => (
+              <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div className="aspect-[4/3] relative">
+                  <Image
+                    src={product.image}
+                    alt={product.model}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-              </Link>
+                <div className="p-6">
+                  <h2 className="text-2xl font-bold mb-2">{product.model}</h2>
+                  <h3 className="text-lg text-gray-600 mb-4">{product.subtitle}</h3>
+                  <p className="text-gray-600 mb-6">{product.description}</p>
+                  <button className="w-full bg-primary text-white py-3 rounded-lg hover:bg-primary/90 transition-colors">
+                    Request Quote
+                  </button>
+                </div>
+              </div>
             ))}
           </div>
+        </div>
+      </section>
 
-          {/* Pagination */}
-          {totalPages > 1 && (
-            <div className="mt-12 flex justify-center gap-2">
-              <button
-                onClick={() => setCurrentPage(p => p - 1)}
-                disabled={currentPage === 1}
-                className={`px-4 py-2 rounded-lg ${
-                  currentPage === 1
-                    ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
-                    : 'bg-white hover:bg-gray-100'
-                }`}
-              >
-                Previous
-              </button>
-              
-              {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-                <button
-                  key={page}
-                  onClick={() => setCurrentPage(page)}
-                  className={`px-4 py-2 rounded-lg ${
-                    currentPage === page
-                      ? 'bg-primary text-white'
-                      : 'bg-white hover:bg-gray-100'
-                  }`}
-                >
-                  {page}
-                </button>
-              ))}
-              
-              <button
-                onClick={() => setCurrentPage(p => p + 1)}
-                disabled={currentPage === totalPages}
-                className={`px-4 py-2 rounded-lg ${
-                  currentPage === totalPages
-                    ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
-                    : 'bg-white hover:bg-gray-100'
-                }`}
-              >
-                Next
-              </button>
-            </div>
-          )}
+      {/* Custom Solutions Section */}
+      <section className="py-24 bg-gray-50">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-6">Need Custom Solutions?</h2>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+            Our engineering team can develop customized gas springs and dampers to meet your specific requirements.
+          </p>
+          <button className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors">
+            Contact Our Engineers
+          </button>
         </div>
       </section>
     </div>

@@ -2,9 +2,10 @@ const { withContentlayer } = require('next-contentlayer')
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true
-  // 移除 experimental.appDir，因为 App Router 现在已经是默认功能
+  images: {
+    domains: ['localhost'],
+    // 如果需要的话，可以添加其他配置
+  },
 }
 
 module.exports = withContentlayer(nextConfig)
