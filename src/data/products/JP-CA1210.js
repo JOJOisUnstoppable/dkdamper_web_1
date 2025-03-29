@@ -130,11 +130,13 @@ export const cases = [
 
 // 产品背景
 export const background = {
-  development: `The JP-CA1210 medical damper is the result of our years of research and development in the medical equipment field. From its initial design, the product was oriented towards the special needs of medical equipment, with specific optimizations in material selection, precision control, and reliability.`,
+  development: `The JP-CA1210 medical damper emerged from extensive research into precision motion control requirements in medical imaging equipment, where positioning accuracy of ±0.1mm is crucial. Our development focused on three key challenges: achieving medical-grade material compatibility with 316L stainless steel, maintaining precise damping force control within 5-20N range, and ensuring long-term reliability over 1 million cycles under strict medical environment conditions.`,
   
-  achievement: `Through multiple rounds of testing and improvements, we successfully developed this damper product that meets both the high precision requirements of medical equipment and provides outstanding stability and reliability. Its core technology is protected by multiple patents, and product performance has reached international leading levels.`,
+  achievement: `Our breakthrough came with the development of a proprietary damping medium and precision valve system that achieves consistent force control across the full 10-50mm stroke range. The integration of stepless adjustment technology allows fine-tuning of damping characteristics to match specific application requirements. The product's IP54 protection grade and antibacterial surface treatment ensure reliable operation in various medical environments, while maintaining operational noise below 45dB - a critical requirement for sensitive medical settings.`,
   
-  status: `Currently, JP-CA1210 has been widely used in medical equipment across multiple countries globally and has received high recognition from customers. We continue to optimize product performance to adapt to the ongoing development of medical technology.`
+  status: `The JP-CA1210 has established itself as a benchmark in medical equipment motion control, evidenced by its ISO 13485 and CE Medical certifications. Its implementation in high-precision applications, from CT scanners requiring ±0.1mm positioning accuracy to surgical robots demanding precise force control between 5-20N, demonstrates its versatility and reliability. The product's success in maintaining consistent performance across its operating temperature range of 0-50°C has led to its adoption by leading medical equipment manufacturers globally.`,
+
+  marketInsight: `The medical equipment industry's growing demand for precision motion control, particularly in advanced imaging and robotic surgery systems, has validated our focus on high-precision damping solutions. The JP-CA1210's combination of medical-grade materials, precise control capabilities, and proven reliability through over 1 million test cycles positions it uniquely in the market. Our continuous development program focuses on expanding the customization options beyond the current 10-50mm stroke range while maintaining the core performance characteristics that have made the product successful.`
 }
 
 // 导出完整产品数据
