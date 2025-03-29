@@ -13,10 +13,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" className="overflow-x-hidden"> {/* 添加 overflow-x-hidden 防止水平滚动 */}
+      <body className="overflow-x-hidden"> {/* 同样添加 overflow-x-hidden */}
         <Header />
-        <main className="-mt-16">
+        <main>
           {children}
         </main>
         <Footer />

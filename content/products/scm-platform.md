@@ -14,7 +14,7 @@ specs:
   Integration: "REST API/SDK"
   Scalability: "Auto-scaling"
 features:
-  - "Real-time Tracking: IoT-based logistics tracking system with 99.9% accuracy"
+  - "Real-time Tracking: IoT-based logistics trackiProductng system with 99.9% accuracy"
   - "Smart Forecasting: AI demand prediction reducing inventory costs by 25%"
   - "Blockchain Tracing: End-to-end trusted tracking with immutable records"
   - "Intelligent Routing: Multi-scenario optimization reducing delivery time by 30%"

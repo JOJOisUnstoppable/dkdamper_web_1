@@ -1,12 +1,12 @@
 'use client'
-import Link from 'next/link'
 import { useState } from 'react'
+import Link from 'next/link'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="fixed w-full bg-white shadow-md z-50">
+    <header className="fixed w-full bg-white shadow-md z-50 top-0 left-0"> {/* 添加 top-0 left-0 确保完全贴合顶部 */}
       <nav className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link href="/" className="text-2xl font-bold text-primary">

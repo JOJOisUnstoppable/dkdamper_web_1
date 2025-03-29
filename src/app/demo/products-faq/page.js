@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 
-export default function Products() {
+export default function ProductsFAQDemo() {
   const [expandedFAQ, setExpandedFAQ] = useState(null)
 
   const featuredProducts = [
@@ -75,18 +75,6 @@ export default function Products() {
     {
       question: "What types of Linear Dampers are available?",
       answer: "Based on orifice design, they can be categorized into single-orifice type (providing constant damping force) and multi-orifice type (providing variable damping force). Based on force output direction, they can be push-in type, pull-out type, or two-way dampers."
-    },
-    {
-      question: "What materials are commonly used in linear dampers?",
-      answer: "Linear dampers typically use high-quality materials for durability and reliability: POM (Polyoxymethylene) for head and shell components, SUS304/SUS201 stainless steel for piston rods, and silicone oil as the hydraulic medium. Some models also feature aluminum alloy or stainless iron construction for specific applications."
-    },
-    {
-      question: "What is the typical service life of a linear damper?",
-      answer: "The service life varies by model. Most industrial linear dampers are rated for 50,000 to 100,000 life cycles. Premium models like PR-L202 and PR-L208 offer 100,000 cycles, while standard models typically provide 50,000 cycles. Some models, such as the JP-CA series, are designed for up to 15 years of service life under normal operating conditions."
-    },
-    {
-      question: "What should I consider when selecting a linear damper?",
-      answer: "Key factors to consider include: operating temperature range (typically 20°C to 60°C, with some models handling up to 120°C), stroke length (ranging from 10mm to 100mm depending on model), force requirements (from 7N up to 1200N), installation space (diameter ranging from Φ7.2mm to Φ12mm), and environmental conditions that may affect the damper's performance and durability."
     }
   ]
 
