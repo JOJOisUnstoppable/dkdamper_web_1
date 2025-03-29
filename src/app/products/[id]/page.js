@@ -2,16 +2,18 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { allProducts } from 'contentlayer/generated'
+import { getProductById } from '@/data/products/index'
 
 export default function ProductDetail({ params }) {
   const [showInquiryModal, setShowInquiryModal] = useState(false)
   const [activeTab, setActiveTab] = useState('overview')
   
-  const product = allProducts.find(p => p.id === Number(params.id))
+  console.log('Product ID:', params.id)
+  const product = getProductById(params.id)
+  console.log('Found product:', product)
   
   if (!product) {
-    return <div>Product not found</div>
+    return <div>Product not found (ID: {params.id})</div>
   }
 
   return (
@@ -20,9 +22,9 @@ export default function ProductDetail({ params }) {
       <div className="bg-white border-b">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center gap-2 text-sm text-gray-500">
-            <Link href="/products" className="hover:text-primary">Products</Link>
+            <Link href="/products/categories" className="hover:text-primary">Products</Link>
             <span>/</span>
-            <Link href={`/products?category=${product.category}`} className="hover:text-primary">
+            <Link href={`/products/categories/${product.categoryId}`} className="hover:text-primary">
               {product.category}
             </Link>
             <span>/</span>
@@ -48,11 +50,18 @@ export default function ProductDetail({ params }) {
               <div>
                 <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
                 <p className="text-gray-600 mb-6">{product.description}</p>
+                // 在产品概览部分
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   {Object.entries(product.specs).map(([key, value]) => (
                     <div key={key} className="bg-gray-50 p-4 rounded-lg">
                       <div className="text-sm text-gray-500">{key}</div>
-                      <div className="font-medium">{value}</div>
+                      <div className="font-medium">
+                        {/* 处理对象类型的值 */}
+                        {typeof value === 'object' ? value.value : value}
+                        {typeof value === 'object' && value.isCustomizable && 
+                          <span className="ml-2 text-sm text-primary">(可定制)</span>
+                        }
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -113,13 +122,13 @@ export default function ProductDetail({ params }) {
               {activeTab === 'features' && (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   {product.features.map((feature, index) => (
-                    <div key={index} className="flex gap-4">
+                    <div key={feature.id} className="flex gap-4">
                       <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
                         {/* Icon placeholder */}
                       </div>
                       <div>
-                        <h3 className="font-bold mb-2">Feature {index + 1}</h3>
-                        <p className="text-gray-600">{feature}</p>
+                        <h3 className="font-bold mb-2">{feature.id}</h3>
+                        <p className="text-gray-600">{feature.content}</p>
                       </div>
                     </div>
                   ))}
@@ -140,8 +149,15 @@ export default function ProductDetail({ params }) {
                       {Object.entries(product.specs).map(([key, value]) => (
                         <tr key={key}>
                           <td className="px-6 py-4 text-sm text-gray-900">{key}</td>
-                          <td className="px-6 py-4 text-sm text-gray-600">{value}</td>
-                          <td className="px-6 py-4 text-sm text-gray-500">-</td>
+                          <td className="px-6 py-4 text-sm text-gray-600">
+                            {typeof value === 'object' ? value.value : value}
+                            {typeof value === 'object' && value.isCustomizable && 
+                              <span className="ml-2 text-sm text-primary">(可定制)</span>
+                            }
+                          </td>
+                          <td className="px-6 py-4 text-sm text-gray-500">
+                            {typeof value === 'object' && value.notes ? value.notes : '-'}
+                          </td>
                         </tr>
                       ))}
                     </tbody>
