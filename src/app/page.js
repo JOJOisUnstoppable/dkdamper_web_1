@@ -137,28 +137,28 @@ export default function Home() {
           <div className="space-y-32">
             {[
               {
-                step: 1,
+                step: "Step 1",
                 title: "Requirement Confirmation",
                 description: "We start by understanding your specific needs",
                 image: "/images/process-1.jpg",
                 isReverse: false
               },
               {
-                step: 2,
+                step: "Step 2",
                 title: "Design",
                 description: "Our engineering team drafts a design that aligns with your requirements",
                 image: "/images/process-2.jpg",
                 isReverse: true
               },
               {
-                step: 3,
+                step: "Step 3",
                 title: "Prototyping",
                 description: "We create a prototype for approval",
                 image: "/images/process-3.jpg",
                 isReverse: false
               },
               {
-                step: 4,
+                step: "Step 4",
                 title: "Mass Production",
                 description: "Once approved, we move to full-scale production",
                 image: "/images/process-4.jpg",
