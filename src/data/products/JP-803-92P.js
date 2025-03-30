@@ -1,4 +1,4 @@
-// 基础信息
+// Basic Information
 export const basicInfo = {
   id: 'JP-803-92P',
   name: 'JP-803-92P',
@@ -9,7 +9,7 @@ export const basicInfo = {
   image: '/images/products/JP-803-92P.jpg'
 }
 
-// 技术规格
+// Technical Specifications
 export const specifications = {
   model: 'JP-803-92P (Φ9.6mm)',
   stroke: '100mm',
@@ -20,59 +20,72 @@ export const specifications = {
   lifeCycles: '50,000'
 }
 
-// 产品特性
+// Product Features
 export const features = [
   {
     id: 'material',
-    content: '采用不锈钢外壳和 POM 活塞杆的高品质结构'
+    content: 'High-quality construction with stainless iron shell and POM piston rod'
   },
   {
     id: 'performance',
-    content: '100mm 超长行程设计，满足更大范围的运动控制需求'
+    content: '100mm extended stroke design for broader range of motion control'
   },
   {
     id: 'durability',
-    content: '50,000 次的使用寿命保证'
+    content: 'Guaranteed service life of 50,000 cycles'
   },
   {
     id: 'temperature',
-    content: '适应 20℃-60℃ 的工作温度范围'
+    content: 'Operating temperature range of 20℃-60℃'
   }
 ]
 
-// 产品优势
+// Product Advantages
 export const advantages = [
   {
     id: 'longStroke',
-    title: '超长行程',
-    description: '100mm 的行程长度满足大行程应用需求，提供更大的运动控制范围。'
+    title: 'Extended Stroke',
+    description: '100mm stroke length meets long-range application requirements, providing greater motion control range.'
   },
   {
     id: 'stability',
-    title: '稳定性能',
-    description: '不锈钢外壳和 POM 活塞杆的组合确保长期稳定的阻尼效果。'
+    title: 'Stable Performance',
+    description: 'Combination of stainless iron shell and POM piston rod ensures long-term stable damping effect.'
   }
 ]
 
-// 应用领域
+// Applications
 export const applications = [
   {
     id: 'heavyMachinery',
-    title: '重型机械',
-    description: '适用于需要较大行程控制的重型机械设备。'
+    title: 'Heavy Machinery',
+    description: 'Suitable for heavy machinery equipment requiring extended stroke control.'
   },
   {
     id: 'industrialAutomation',
-    title: '工业自动化',
-    description: '为大型自动化设备提供精确的运动控制解决方案。'
+    title: 'Industrial Automation',
+    description: 'Provides precise motion control solutions for large-scale automation equipment.'
   }
 ]
 
-// 导出完整产品数据
+// Product Background
+export const background = {
+  development: `The development of JP-803-92P was driven by the demand for long-stroke dampers in industrial automation. The development process focused on achieving a 100mm extended stroke design within a compact Φ9.6mm diameter while maintaining stable damping performance.`,
+  
+  achievement: `Through innovative structural design and precision manufacturing processes, JP-803-92P successfully combines extended stroke with stable performance. The integration of stainless iron shell and POM piston rod ensures smooth operation throughout the entire stroke range.`,
+  
+  status: `Currently, JP-803-92P has become the preferred solution for long-stroke industrial applications, particularly in automation equipment requiring extended motion control. Its reliable performance and consistent quality have gained widespread market recognition.`,
+
+  marketInsight: `As industrial automation equipment trends toward larger scales, the market demand for long-stroke dampers continues to grow. JP-803-92P maintains a significant market position with its 100mm extended stroke advantage and stable performance characteristics. We continue to optimize product performance to meet evolving market demands.`
+}
+
+// Export Product Data
 export const productData = {
   ...basicInfo,
   specs: specifications,
   features: features,
   advantages: advantages,
-  applications: applications
+  applications: applications,
+  background: background,
+  origin: background.development
 }

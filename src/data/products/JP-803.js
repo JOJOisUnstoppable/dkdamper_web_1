@@ -1,15 +1,15 @@
-// 基础信息
+// Basic Information
 export const basicInfo = {
   id: 'JP-803',
   name: 'JP-803 Series',
   category: 'Industrial Series',
   categoryId: 'industrial',
-  shortDescription: 'Industrial Linear Damper Series',
-  description: 'JP-803 series offers a comprehensive range of industrial linear dampers with various stroke lengths from 53mm to 100mm. These dampers feature robust stainless iron construction and POM piston rods, providing reliable damping solutions for diverse industrial applications.',
+  shortDescription: 'CE-Certified Industrial Linear Damper Series',
+  description: 'The JP-803 series offers a comprehensive range of CE-certified industrial linear dampers, specifically engineered for European manufacturing standards. With stroke lengths from 53mm to 100mm, these precision dampers feature high-quality stainless iron construction and POM piston rods, delivering reliable damping solutions for diverse European industrial applications.',
   image: '/images/products/JP-803.jpg'
 }
 
-// 技术规格
+// Technical Specifications
 export const specifications = {
   diameter: 'Φ9mm - Φ9.6mm',
   strokeRange: '53mm - 100mm',
@@ -18,59 +18,60 @@ export const specifications = {
     shellMaterial: 'Stainless iron',
     pistonRod: 'POM',
     oil: 'Silicone Oil',
-    lifeCycles: '50,000'
+    lifeCycles: '50,000',
+    certification: 'CE Certified'
   }
 }
 
-// 产品特性
+// Product Features
 export const features = [
   {
     id: 'versatility',
-    content: '多种规格可选，满足不同行程需求（53mm-100mm）'
+    content: 'Multiple stroke options (53mm-100mm) meeting diverse European industrial requirements'
   },
   {
     id: 'material',
-    content: '采用不锈钢外壳和 POM 活塞杆的高品质结构'
+    content: 'EU-standard stainless iron shell and POM piston rod construction'
   },
   {
     id: 'durability',
-    content: '50,000 次的使用寿命保证'
+    content: 'EN ISO certified 50,000 cycles service life guarantee'
   },
   {
     id: 'temperature',
-    content: '适应 20℃-60℃ 的工作温度范围'
+    content: 'European climate-adapted operating temperature range of 20℃-60℃'
   }
 ]
 
-// 产品优势
+// Product Advantages
 export const advantages = [
   {
     id: 'options',
-    title: '规格齐全',
-    description: '提供多种型号选择，适应不同的行程需求和应用场景。'
+    title: 'Comprehensive Range',
+    description: 'Multiple models available to meet various European industrial requirements and applications.'
   },
   {
     id: 'quality',
-    title: '品质可靠',
-    description: '采用优质材料和精密制造工艺，确保产品的稳定性和耐用性。'
+    title: 'European Standard Compliance',
+    description: 'CE-certified construction and materials ensuring reliable performance in EU industrial environments.'
   }
 ]
 
-// 应用领域
+// Applications
 export const applications = [
   {
     id: 'industrial',
-    title: '工业设备',
-    description: '适用于各类工业机械和设备的运动控制。'
+    title: 'European Industrial Equipment',
+    description: 'Optimized for various European industrial machinery and equipment applications.'
   },
   {
     id: 'automation',
-    title: '自动化系统',
-    description: '为自动化生产线和设备提供可靠的运动阻尼解决方案。'
+    title: 'EU Manufacturing Systems',
+    description: 'Provides reliable motion control solutions for European automation and manufacturing systems.'
   }
 ]
 
-// 系列产品
+// Series Products
 export const seriesProducts = [
   'JP-803-140P',
   'JP-803-92P',
@@ -78,12 +79,25 @@ export const seriesProducts = [
   'JP-803-92A'
 ]
 
-// 导出完整产品数据
+// Product Background
+export const background = {
+  development: `The JP-803 series was developed specifically to meet European industrial standards for motion control applications. The development process focused on creating a versatile range of CE-certified dampers with varying stroke lengths, while maintaining consistent quality and performance across all models.`,
+  
+  achievement: `Through extensive collaboration with European industrial partners and rigorous certification processes, the JP-803 series has achieved full CE compliance and successfully integrated precision engineering with reliable performance. Each model in the series meets or exceeds relevant EU safety and quality standards.`,
+  
+  status: `Currently, the JP-803 series serves as a preferred solution across various European industrial applications, with its different models meeting specific needs in the EU market. The series' CE-certified performance and reliability have established it as a trusted choice in European manufacturing.`,
+
+  marketInsight: `As European industry continues to advance towards more sophisticated automation and manufacturing processes, the demand for certified, reliable motion control solutions grows steadily. The JP-803 series' combination of different stroke lengths, consistent quality, and EU compliance positions it ideally to meet evolving European market requirements.`
+}
+
+// Export Product Data
 export const productData = {
   ...basicInfo,
   specs: specifications,
   features: features,
   advantages: advantages,
   applications: applications,
-  seriesProducts: seriesProducts
+  seriesProducts: seriesProducts,
+  background: background,
+  origin: background.development
 }

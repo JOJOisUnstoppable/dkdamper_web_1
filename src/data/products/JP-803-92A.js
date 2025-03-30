@@ -1,15 +1,15 @@
-// 基础信息
+// Basic Information
 export const basicInfo = {
   id: 'JP-803-92A',
   name: 'JP-803-92A',
   category: 'Industrial Series',
   categoryId: 'industrial',
   shortDescription: 'Industrial Linear Damper (Φ9.5mm)',
-  description: 'JP-803-92A is a high-performance industrial linear damper with an 83.5mm stroke length, designed for applications requiring extended stroke range. Features durable stainless iron construction and POM piston rod.',
+  description: 'JP-803-92A is a CE-certified industrial linear damper with an 83.5mm stroke length, engineered to meet European industrial standards. This precision-engineered damper features stainless iron construction and POM piston rod, delivering reliable performance for European manufacturing applications.',
   image: '/images/products/JP-803-92A.jpg'
 }
 
-// 技术规格
+// Technical Specifications
 export const specifications = {
   model: 'JP-803-92A (Φ9.5mm)',
   stroke: '83.5mm',
@@ -17,62 +17,76 @@ export const specifications = {
   shellMaterial: 'Stainless iron',
   pistonRod: 'POM',
   oil: 'Silicone Oil',
-  lifeCycles: '50,000'
+  lifeCycles: '50,000',
+  compliance: 'CE Certified'
 }
 
-// 产品特性
+// Product Features
 export const features = [
   {
     id: 'material',
-    content: '采用不锈钢外壳和 POM 活塞杆的高品质结构'
+    content: 'EU-standard stainless iron shell and POM piston rod construction'
   },
   {
     id: 'performance',
-    content: '83.5mm 长行程设计，满足较大范围的运动控制需求'
+    content: 'Precision-engineered 83.5mm stroke for extended motion control'
   },
   {
     id: 'durability',
-    content: '50,000 次的使用寿命保证'
+    content: 'EN ISO certified 50,000 cycles service life guarantee'
   },
   {
     id: 'temperature',
-    content: '适应 20℃-60℃ 的工作温度范围'
+    content: 'European climate-adapted operating temperature range of 20℃-60℃'
   }
 ]
 
-// 产品优势
+// Product Advantages
 export const advantages = [
   {
     id: 'extendedStroke',
-    title: '长行程设计',
-    description: '83.5mm 的行程长度满足大范围运动控制需求，提供出色的缓冲效果。'
+    title: 'Extended Range Control',
+    description: '83.5mm stroke length provides comprehensive motion control for European industrial applications.'
   },
   {
     id: 'reliability',
-    title: '可靠耐用',
-    description: '不锈钢外壳和 POM 活塞杆的组合确保产品在工业环境中的长期可靠性。'
+    title: 'European Standard Compliance',
+    description: 'CE-certified construction ensures reliable performance in EU industrial environments.'
   }
 ]
 
-// 应用领域
+// Applications
 export const applications = [
   {
     id: 'industrialEquipment',
-    title: '工业设备',
-    description: '适用于需要较长行程控制的工业设备和机械。'
+    title: 'European Industrial Equipment',
+    description: 'Optimized for European industrial machinery requiring extended stroke control.'
   },
   {
     id: 'automationSystems',
-    title: '自动化系统',
-    description: '为自动化系统提供精确的长行程运动控制解决方案。'
+    title: 'EU Manufacturing Systems',
+    description: 'Provides precise long-stroke motion control for European automation systems.'
   }
 ]
 
-// 导出完整产品数据
+// Product Background
+export const background = {
+  development: `JP-803-92A was developed specifically for the European market's demand for extended-stroke damping solutions. The development process followed strict EU industrial standards, focusing on achieving optimal performance with an 83.5mm stroke length while maintaining CE compliance.`,
+  
+  achievement: `Through extensive collaboration with European industrial partners, JP-803-92A has achieved full CE certification and successfully integrated extended stroke capabilities with precision control. The product meets all relevant European safety and quality standards while delivering exceptional damping characteristics.`,
+  
+  status: `Currently, JP-803-92A serves as a preferred solution in various European industrial applications, particularly in manufacturing systems requiring longer stroke control. Its CE-certified performance and reliability have established it as a trusted choice in the European market.`,
+
+  marketInsight: `As European manufacturing continues to advance towards more sophisticated automation systems, the demand for precise, long-stroke motion control components grows steadily. JP-803-92A's combination of extended stroke length and certified reliability positions it ideally to meet European industrial requirements.`
+}
+
+// Export Product Data
 export const productData = {
   ...basicInfo,
   specs: specifications,
   features: features,
   advantages: advantages,
-  applications: applications
+  applications: applications,
+  background: background,
+  origin: background.development
 }
