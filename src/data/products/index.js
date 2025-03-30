@@ -1,7 +1,9 @@
 import { productData as JP_CA1210 } from './JP-CA1210'
+import { productData as PR_L202 } from './PR-L202'
 
 const productsData = {
-  'JP-CA1210': JP_CA1210
+  'JP-CA1210': JP_CA1210,
+  'PR-L202': PR_L202
 }
 
 export const getProductById = (id) => {
