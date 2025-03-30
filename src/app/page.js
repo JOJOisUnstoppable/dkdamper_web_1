@@ -62,23 +62,65 @@ export default function Home() {
               }
             ].map((product, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                <div className="aspect-[4/3] relative">
-                  <Image
-                    src={product.image}
-                    alt={product.model}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold mb-2">{product.model}</h3>
-                  <p className="text-gray-600">{product.description}</p>
-                  <button className="mt-4 px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors">
-                    Learn More
-                  </button>
-                </div>
+                <Link href={`/products/${product.model}`}>
+                  <div className="aspect-[4/3] relative">
+                    <Image
+                      src={product.image}
+                      alt={product.model}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-2xl font-bold mb-2">{product.model}</h3>
+                    <p className="text-gray-600">{product.description}</p>
+                    <span className="mt-4 px-6 py-2 inline-block bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors">
+                      Learn More
+                    </span>
+                  </div>
+                </Link>
               </div>
             ))}
+          </div>
+          {/* 添加产品系列链接 */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mt-16">
+            <Link href="/products/categories?category=medical" className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-bold mb-2">Medical Series</h3>
+              <p className="text-gray-600 mb-4">Precision dampers for medical equipment and healthcare applications</p>
+              <span className="text-primary">12+ Models →</span>
+            </Link>
+            <Link href="/products/categories?category=industrial" className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-bold mb-2">Industrial Series</h3>
+              <p className="text-gray-600 mb-4">Heavy-duty dampers for industrial machinery and equipment</p>
+              <span className="text-primary">20+ Models →</span>
+            </Link>
+            <Link href="/products/categories?category=automotive" className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-bold mb-2">Automotive Series</h3>
+              <p className="text-gray-600 mb-4">Specialized dampers for automotive and transportation</p>
+              <span className="text-primary">15+ Models →</span>
+            </Link>
+          </div>
+
+          <div className="text-center mt-12">
+            <Link 
+              href="/products/categories" 
+              className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
+            >
+              View All Products
+              <svg 
+                className="w-5 h-5" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  strokeWidth={2} 
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>

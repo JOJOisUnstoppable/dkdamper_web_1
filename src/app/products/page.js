@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'  // 添加这行导入声明
 
 export default function Products() {
   const [expandedFAQ, setExpandedFAQ] = useState(null)
@@ -115,44 +116,46 @@ export default function Products() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredProducts.map((product, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden group">
-                <div className="aspect-[4/3] relative overflow-hidden">
-                  <Image
-                    src={product.image}
-                    alt={product.model}
-                    fill
-                    className="object-cover transition-transform group-hover:scale-105"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold mb-2">{product.model}</h3>
-                  <h4 className="text-primary mb-3">{product.subtitle}</h4>
-                  <p className="text-gray-600 mb-4">{product.description}</p>
-                  
-                  <div className="mb-4">
-                    <h5 className="font-semibold mb-2">Technical Specifications:</h5>
-                    <ul className="space-y-1">
-                      {product.specs.map((spec, i) => (
-                        <li key={i} className="text-sm text-gray-600">{spec}</li>
-                      ))}
-                    </ul>
+                <Link href={`/products/${product.model}`}>
+                  <div className="aspect-[4/3] relative overflow-hidden">
+                    <Image
+                      src={product.image}
+                      alt={product.model}
+                      fill
+                      className="object-cover transition-transform group-hover:scale-105"
+                    />
                   </div>
+                  <div className="p-6">
+                    <h3 className="text-2xl font-bold mb-2">{product.model}</h3>
+                    <h4 className="text-primary mb-3">{product.subtitle}</h4>
+                    <p className="text-gray-600 mb-4">{product.description}</p>
+                    
+                    <div className="mb-4">
+                      <h5 className="font-semibold mb-2">Technical Specifications:</h5>
+                      <ul className="space-y-1">
+                        {product.specs.map((spec, i) => (
+                          <li key={i} className="text-sm text-gray-600">{spec}</li>
+                        ))}
+                      </ul>
+                    </div>
 
-                  <div className="mb-6">
-                    <h5 className="font-semibold mb-2">Key Features:</h5>
-                    <ul className="space-y-2">
-                      {product.features.map((feature, i) => (
-                        <li key={i} className="flex items-center text-gray-600">
-                          <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
+                    <div className="mb-6">
+                      <h5 className="font-semibold mb-2">Key Features:</h5>
+                      <ul className="space-y-2">
+                        {product.features.map((feature, i) => (
+                          <li key={i} className="flex items-center text-gray-600">
+                            <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
+                            {feature}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    <span className="text-primary font-medium hover:underline">
+                      View Details →
+                    </span>
                   </div>
-
-                  <button className="text-primary font-medium hover:underline">
-                    View Details →
-                  </button>
-                </div>
+                </Link>
               </div>
             ))}
           </div>
@@ -166,42 +169,44 @@ export default function Products() {
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
             Discover our complete collection of linear dampers, including specialized solutions for various industries and applications.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-12">
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-bold mb-2">Medical Series</h3>
-              <p className="text-gray-600 mb-4">Precision dampers for medical equipment and healthcare applications</p>
-              <span className="text-primary">12+ Models →</span>
-            </div>
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-bold mb-2">Industrial Series</h3>
-              <p className="text-gray-600 mb-4">Heavy-duty dampers for industrial machinery and equipment</p>
-              <span className="text-primary">20+ Models →</span>
-            </div>
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-bold mb-2">Automotive Series</h3>
-              <p className="text-gray-600 mb-4">Specialized dampers for automotive and transportation</p>
-              <span className="text-primary">15+ Models →</span>
-            </div>
-          </div>
-          <a 
-            href="/products/all" 
-            className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
-          >
-            View All Products
-            <svg 
-              className="w-5 h-5" 
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24"
-            >
-              <path 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
-                strokeWidth={2} 
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
-            </svg>
-          </a>
+          {/* 替换重复的链接标签 */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-12">
+                      <Link href="/products/categories?category=medical" className="p-6 bg-white rounded-lg shadow-md">
+                        <h3 className="text-xl font-bold mb-2">Medical Series</h3>
+                        <p className="text-gray-600 mb-4">Precision dampers for medical equipment and healthcare applications</p>
+                        <span className="text-primary">12+ Models →</span>
+                      </Link>
+                      <Link href="/products/categories?category=industrial" className="p-6 bg-white rounded-lg shadow-md">
+                        <h3 className="text-xl font-bold mb-2">Industrial Series</h3>
+                        <p className="text-gray-600 mb-4">Heavy-duty dampers for industrial machinery and equipment</p>
+                        <span className="text-primary">20+ Models →</span>
+                      </Link>
+                      <Link href="/products/categories?category=automotive" className="p-6 bg-white rounded-lg shadow-md">
+                        <h3 className="text-xl font-bold mb-2">Automotive Series</h3>
+                        <p className="text-gray-600 mb-4">Specialized dampers for automotive and transportation</p>
+                        <span className="text-primary">15+ Models →</span>
+                      </Link>
+                    </div>
+                    {/* View More Products Section 的结尾部分 */}
+                          <Link 
+                            href="/products/categories" 
+                            className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
+                          >
+                            View All Products
+                            <svg 
+                              className="w-5 h-5" 
+                              fill="none" 
+                              stroke="currentColor" 
+                              viewBox="0 0 24 24"
+                            >
+                              <path 
+                                strokeLinecap="round" 
+                                strokeLinejoin="round" 
+                                strokeWidth={2} 
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"
+                              />
+                            </svg>
+                          </Link>
         </div>
       </section>
 
@@ -258,9 +263,12 @@ export default function Products() {
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
             Our engineering team can help you select the right damper for your application and provide customized solutions.
           </p>
-          <button className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors">
+          <Link 
+            href="/contact" 
+            className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors"
+          >
             Contact Our Engineers
-          </button>
+          </Link>
         </div>
       </section>
     </div>
