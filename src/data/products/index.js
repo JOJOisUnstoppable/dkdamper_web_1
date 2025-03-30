@@ -20,6 +20,11 @@ import { productData as JP_802_49P } from './JP-802-49P'
 import { productData as JP_802_49A } from './JP-802-49A'
 import { productData as JP_802_88 } from './JP-802-88'
 import { productData as JP_802_115 } from './JP-802-115'
+// 添加 JP-803 系列的导入
+import { productData as JP_803_140P } from './JP-803-140P'
+import { productData as JP_803_92P } from './JP-803-92P'
+import { productData as JP_803_117P } from './JP-803-117P'
+import { productData as JP_803_92A } from './JP-803-92A'
 
 const productsData = {
   'JP-CA1210': JP_CA1210,
@@ -43,7 +48,12 @@ const productsData = {
   'JP-802-49P': JP_802_49P,
   'JP-802-49A': JP_802_49A,
   'JP-802-88': JP_802_88,
-  'JP-802-115': JP_802_115
+  'JP-802-115': JP_802_115,
+  // 添加 JP-803 系列的产品数据
+  'JP-803-140P': JP_803_140P,
+  'JP-803-92P': JP_803_92P,
+  'JP-803-117P': JP_803_117P,
+  'JP-803-92A': JP_803_92A
 }
 
 export const getProductById = (id) => {
