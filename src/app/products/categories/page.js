@@ -32,6 +32,9 @@ export default function ProductCategories() {
     currentPage * productsPerPage
   )
 
+  // 添加布局状态
+  const [viewMode, setViewMode] = useState('grid') // 'grid' 或 'list'
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section with Categories */}
@@ -63,18 +66,18 @@ export default function ProductCategories() {
                   activeCategory === cat.id
                     ? 'bg-primary text-white'
                     : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-                }`}
-              >
-                {cat.name}
-              </button>
-            ))}
-          </div>
+                  }`}
+                >
+                  {cat.name}
+                </button>
+              ))}
+            </div>
         </div>
       </div>
 
-      {/* Products Grid */}
+      {/* Products Section */}
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="space-y-6">
           {currentProducts.map((productId) => {
             const product = getProductById(productId)
             if (!product) return null
@@ -83,10 +86,9 @@ export default function ProductCategories() {
               <Link
                 key={productId}
                 href={`/products/${productId}`}
-                className="bg-white rounded-lg shadow-lg overflow-hidden group"
+                className="bg-white rounded-lg shadow-lg overflow-hidden group flex"
               >
-                {/* 调整图片容器高度比例 */}
-                <div className="aspect-[16/9] relative overflow-hidden">
+                <div className="w-1/3 relative h-[300px]">
                   <Image
                     src={product.image}
                     alt={product.name}
@@ -94,8 +96,7 @@ export default function ProductCategories() {
                     className="object-cover transition-transform group-hover:scale-105"
                   />
                 </div>
-                <div className="p-6">
-                  {/* 调整标题和描述文字大小 */}
+                <div className="w-2/3 p-6">
                   <h3 className="text-2xl font-bold mb-3 group-hover:text-primary">
                     {product.name}
                   </h3>
