@@ -1,261 +1,524 @@
-'use client'
-import { useState } from 'react'
 import Image from 'next/image'
-import Link from 'next/link'  // 添加这行导入声明
 
 export default function Products() {
-  const [expandedFAQ, setExpandedFAQ] = useState(null)
-
-  const featuredProducts = [
-    {
-      model: "JP-CA1210",
-      subtitle: "Medical Equipment Damper",
-      description: "High-precision damper specifically designed for medical equipment applications.",
-      specs: [
-        "Diameter: Φ12mm",
-        "Stroke Length: 10mm",
-        "Temperature Range: 40°C - 80°C",
-        "Life Cycles: 50,000"
-      ],
-      features: [
-        "Premium SUS304 Piston Rod",
-        "Max Speed: 0.5m/sec",
-        "15 Years Service Life"
-      ],
-      image: "/images/products/JP-CA1210.jpg"
-    },
-    {
-      model: "PR-L202",
-      subtitle: "High Temperature Linear Damper",
-      description: "Professional damper designed for high-temperature industrial environments.",
-      specs: [
-        "Diameter: Φ10mm",
-        "Force Range: 120N-410N",
-        "Temperature: 20°C - 120°C",
-        "Life Cycles: 100,000"
-      ],
-      features: [
-        "SUS304 Shell Material",
-        "Stroke: 14-17mm",
-        "Silicone Oil Filled"
-      ],
-      image: "/images/products/PR-L202.jpg"
-    },
-    {
-      model: "PR-L208",
-      subtitle: "Heavy-duty Linear Damper",
-      description: "Robust damper with high force capacity for industrial applications.",
-      specs: [
-        "Diameter: Φ10mm",
-        "Force Range: 7N-870N",
-        "Temperature: 20°C - 60°C",
-        "Life Cycles: 100,000"
-      ],
-      features: [
-        "Stainless Steel Construction",
-        "Test Speed: 13mm/s",
-        "Stroke Length: 14mm"
-      ],
-      image: "/images/products/PR-L208.jpg"
-    }
-  ]
-
-  const faqs = [
-    {
-      question: "What is a Linear Damper?",
-      answer: "A linear damper is a device that creates damping effects through the compression of hydraulic oil and flow through orifices. It is commonly used for buffering and decelerating various movements, converting kinetic energy into thermal energy for smooth motion control."
-    },
-    {
-      question: "How does a Linear Damper work?",
-      answer: "When an object impacts the piston rod, the force is transferred to the piston, which compresses the hydraulic oil. The oil flows through specially designed orifices, creating resistance that achieves deceleration and buffering effects. The damping effect varies depending on hydraulic pressure, orifice design, oil viscosity, and impact speed."
-    },
-    {
-      question: "What are the main components of a Linear Damper?",
-      answer: "The main components include: piston and piston rod (transferring external force to hydraulic oil), hydraulic oil (medium for creating resistance), and orifices (controlling oil flow rate and determining damping effect)."
-    },
-    {
-      question: "What types of Linear Dampers are available?",
-      answer: "Based on orifice design, they can be categorized into single-orifice type (providing constant damping force) and multi-orifice type (providing variable damping force). Based on force output direction, they can be push-in type, pull-out type, or two-way dampers."
-    },
-    {
-      question: "What materials are commonly used in linear dampers?",
-      answer: "Linear dampers typically use high-quality materials for durability and reliability: POM (Polyoxymethylene) for head and shell components, SUS304/SUS201 stainless steel for piston rods, and silicone oil as the hydraulic medium. Some models also feature aluminum alloy or stainless iron construction for specific applications."
-    },
-    {
-      question: "What is the typical service life of a linear damper?",
-      answer: "The service life varies by model. Most industrial linear dampers are rated for 50,000 to 100,000 life cycles. Premium models like PR-L202 and PR-L208 offer 100,000 cycles, while standard models typically provide 50,000 cycles. Some models, such as the JP-CA series, are designed for up to 15 years of service life under normal operating conditions."
-    },
-    {
-      question: "What should I consider when selecting a linear damper?",
-      answer: "Key factors to consider include: operating temperature range (typically 20°C to 60°C, with some models handling up to 120°C), stroke length (ranging from 10mm to 100mm depending on model), force requirements (from 7N up to 1200N), installation space (diameter ranging from Φ7.2mm to Φ12mm), and environmental conditions that may affect the damper's performance and durability."
-    }
-  ]
-
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative h-[60vh] flex items-center bg-gray-900">
-        <Image
-          src="/images/hero-bg.jpg"
-          alt="Linear Dampers"
-          fill
-          className="object-cover opacity-40"
-        />
-        <div className="container mx-auto px-4 relative z-10">
-          <h1 className="text-6xl font-bold text-white mb-6">Linear Dampers</h1>
-          <p className="text-xl text-white/80 max-w-2xl">
-            Professional manufacturer of linear dampers with over 20 years of experience. Our products are widely used in medical equipment, automotive, industrial and other fields.
-          </p>
+    <div className="bg-white">
+      {/* Part 1: Hero Section */}
+      <section className="relative py-32 bg-white">
+        {/* 添加渐变遮罩 */}
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-indigo-500/10" />
+        <div className="max-w-[1200px] mx-auto px-4 relative">  {/* 添加 relative 确保内容在遮罩上层 */}
+          <div className="ml-20">
+            <h1 className="text-7xl font-bold mb-6">Linear Damper</h1>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mb-8" />
+          </div>
         </div>
       </section>
 
-      {/* Featured Products */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16">Featured Products</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredProducts.map((product, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden group">
-                <Link href={`/products/${product.model}`}>
-                  <div className="aspect-[4/3] relative overflow-hidden">
-                    <Image
-                      src={product.image}
-                      alt={product.model}
-                      fill
-                      className="object-cover transition-transform group-hover:scale-105"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-2xl font-bold mb-2">{product.model}</h3>
-                    <h4 className="text-primary mb-3">{product.subtitle}</h4>
-                    <p className="text-gray-600 mb-4">{product.description}</p>
-                    
-                    <div className="mb-4">
-                      <h5 className="font-semibold mb-2">Technical Specifications:</h5>
-                      <ul className="space-y-1">
-                        {product.specs.map((spec, i) => (
-                          <li key={i} className="text-sm text-gray-600">{spec}</li>
-                        ))}
-                      </ul>
-                    </div>
+      {/* Part 2: What is and How it Works */}
+      <section className="py-20 bg-white">
+        <div className="max-w-[1200px] mx-auto px-4">
+          <div className="max-w-[1200px] mx-auto space-y-16">
+            <div>
+              <h2 className="text-3xl font-bold text-center mb-6">What is a Linear Damper</h2>
+              <div className="text-left">
+                <p className="text-xl text-gray-600">
+                  Linear dampers are essential components used to control motion by providing resistance 
+                  through the compression of hydraulic oil and the flow through orifices. They are widely 
+                  applied in various industries for buffering and decelerating movements, ensuring smooth 
+                  and controlled operations.
+                </p>
+                <p className="text-xl text-gray-600 mt-4">
+                Linear dampers, in simple terms, are a type of device used to control the speed of moving objects, 
+                allowing them to decelerate gradually and avoid sudden stops or impacts. You can see their applications
+                in many places, such as cabinet doors that close slowly and gently, and car trunks that don't slam shut; 
+                these likely use linear dampers.
+                </p>
+                <p className="text-xl text-gray-600 mt-4">
+                  Understanding the mechanics and types of linear dampers can help you choose the right 
+                  one for your needs. Let's explore how they function and the different categories available.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                    <div className="mb-6">
-                      <h5 className="font-semibold mb-2">Key Features:</h5>
-                      <ul className="space-y-2">
-                        {product.features.map((feature, i) => (
-                          <li key={i} className="flex items-center text-gray-600">
-                            <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                            {feature}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <span className="text-primary font-medium hover:underline">
-                      View Details →
-                    </span>
+      {/* Part 3: Product Cards */}
+      <section className="py-20 bg-white">
+        <div className="max-w-[1200px] mx-auto px-4">
+          <div className="grid grid-cols-3 gap-8">
+            {[
+              {
+                // 医疗系列
+                id: 'JP-CA1210',
+                image: "/images/products/JP-CA1210.jpg",
+                name: "Medical Equipment Damper JP-CA1210",
+                description: "High-precision damper specifically designed for medical equipment applications, featuring smooth operation and precise control.",
+                specs: {
+                  "Force Range": "100-500N",
+                  "Stroke Length": "50-200mm",
+                  "Temperature": "-10°C to 60°C",
+                  "Material": "Medical-grade stainless steel"
+                }
+              },
+              {
+                // 工业系列 JP-801
+                id: 'JP-801-108P',
+                image: "/images/products/JP-801-108P.jpg",
+                name: "Industrial Damper JP-801-108P",
+                description: "Heavy-duty industrial damper for large machinery and equipment, providing reliable motion control.",
+                specs: {
+                  "Force Range": "500-2000N",
+                  "Stroke Length": "100-500mm",
+                  "Temperature": "-20°C to 80°C",
+                  "Material": "Industrial-grade steel"
+                }
+              },
+              {
+                // 工业系列 JP-802
+                id: 'JP-802-82P',
+                image: "/images/products/JP-802-82P.jpg",
+                name: "Precision Damper JP-802-82P",
+                description: "Medium-duty damper with precise control for manufacturing equipment.",
+                specs: {
+                  "Force Range": "300-1500N",
+                  "Stroke Length": "80-300mm",
+                  "Temperature": "-20°C to 70°C",
+                  "Material": "Carbon steel"
+                }
+              },
+              {
+                // 工业系列 JP-803
+                id: 'JP-803-140P',
+                image: "/images/products/JP-803-140P.jpg",
+                name: "Heavy Industrial Damper JP-803-140P",
+                description: "Extra heavy-duty damper for specialized industrial applications requiring maximum force control.",
+                specs: {
+                  "Force Range": "1000-3000N",
+                  "Stroke Length": "140-600mm",
+                  "Temperature": "-20°C to 85°C",
+                  "Material": "High-strength steel"
+                }
+              },
+              {
+                // 专业系列
+                id: 'PR-L202',
+                image: "/images/products/PR-L202.jpg",
+                name: "Professional Damper PR-L202",
+                description: "High-performance damper for specialized applications requiring precise motion control.",
+                specs: {
+                  "Force Range": "200-800N",
+                  "Stroke Length": "60-250mm",
+                  "Temperature": "-30°C to 90°C",
+                  "Material": "Premium alloy steel"
+                }
+              },
+              {
+                // 医疗系列（补充第二个医疗产品以凑齐6个）
+                id: 'JP-CA10',
+                image: "/images/products/JP-CA10.jpg",
+                name: "Compact Medical Damper JP-CA10",
+                description: "Compact and precise damper for smaller medical devices and equipment.",
+                specs: {
+                  "Force Range": "50-300N",
+                  "Stroke Length": "30-150mm",
+                  "Temperature": "-10°C to 60°C",
+                  "Material": "Medical-grade stainless steel"
+                }
+              }
+            ].map((product, index) => (
+              <div key={index} 
+                   className="bg-white rounded-lg shadow-lg overflow-hidden 
+                            transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                <div className="relative h-[250px]">
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-3">{product.name}</h3>
+                  <p className="text-gray-600 mb-4">{product.description}</p>
+                  <div className="space-y-2">
+                    {Object.entries(product.specs).map(([key, value]) => (
+                      <div key={key} className="flex justify-between">
+                        <span className="text-gray-500">{key}:</span>
+                        <span className="font-medium">{value}</span>
+                      </div>
+                    ))}
                   </div>
-                </Link>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* View More Products Section */}
-      <section className="py-16 bg-gradient-to-b from-white to-gray-50">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Explore Our Full Range</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-            Discover our complete collection of linear dampers, including specialized solutions for various industries and applications.
-          </p>
-          {/* 替换重复的链接标签 */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-12">
-                      <Link href="/products/categories?category=medical" className="p-6 bg-white rounded-lg shadow-md">
-                        <h3 className="text-xl font-bold mb-2">Medical Series</h3>
-                        <p className="text-gray-600 mb-4">Precision dampers for medical equipment and healthcare applications</p>
-                        <span className="text-primary">12+ Models →</span>
-                      </Link>
-                      <Link href="/products/categories?category=industrial" className="p-6 bg-white rounded-lg shadow-md">
-                        <h3 className="text-xl font-bold mb-2">Industrial Series</h3>
-                        <p className="text-gray-600 mb-4">Heavy-duty dampers for industrial machinery and equipment</p>
-                        <span className="text-primary">20+ Models →</span>
-                      </Link>
-                      <Link href="/products/categories?category=automotive" className="p-6 bg-white rounded-lg shadow-md">
-                        <h3 className="text-xl font-bold mb-2">Automotive Series</h3>
-                        <p className="text-gray-600 mb-4">Specialized dampers for automotive and transportation</p>
-                        <span className="text-primary">15+ Models →</span>
-                      </Link>
-                    </div>
-                    {/* View More Products Section 的结尾部分 */}
-                          <Link 
-                            href="/products/categories" 
-                            className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
-                          >
-                            View All Products
-                            <svg 
-                              className="w-5 h-5" 
-                              fill="none" 
-                              stroke="currentColor" 
-                              viewBox="0 0 24 24"
-                            >
-                              <path 
-                                strokeLinecap="round" 
-                                strokeLinejoin="round" 
-                                strokeWidth={2} 
-                                d="M17 8l4 4m0 0l-4 4m4-4H3"
-                              />
-                            </svg>
-                          </Link>
+      {/* Part 4: How it Works */}
+      <section className="py-20 bg-white">
+        <div className="max-w-[1200px] mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-6">How Does a Linear Damper Work?</h2>
+          <div className="text-left">
+            <p className="text-xl text-gray-600">
+              Linear dampers operate by converting kinetic energy into thermal energy through hydraulic 
+              resistance. When a force acts on the piston rod, it pushes the piston, compressing the 
+              hydraulic oil inside. This oil is then forced through specially designed orifices, 
+              creating resistance that slows down or cushions the movement.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
-          <div className="max-w-3xl mx-auto">
-            <div className="space-y-4">
-              {faqs.map((faq, index) => (
-                <div 
-                  key={index} 
-                  className="bg-white rounded-lg shadow-md overflow-hidden"
-                >
-                  <button
-                    className="w-full p-6 text-left flex justify-between items-center hover:bg-gray-50"
-                    onClick={() => setExpandedFAQ(expandedFAQ === index ? null : index)}
-                  >
-                    <h3 className="text-xl font-bold">{faq.question}</h3>
-                    <svg
-                      className={`w-6 h-6 transform transition-transform ${
-                        expandedFAQ === index ? 'rotate-180' : ''
-                      }`}
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
-                  </button>
-                  <div
-                    className={`transition-all duration-300 ease-in-out ${
-                      expandedFAQ === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                    } overflow-hidden`}
-                  >
-                    <p className="p-6 text-gray-600 border-t">{faq.answer}</p>
+      {/* Part 5: Consideration when buying */}
+      <section className="py-20 bg-white">
+        <div className="max-w-[1200px] mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-8">Consideration when buying</h2>
+          
+          {/* 概述部分 */}
+          <p className="text-xl text-gray-600 text-left max-w-[1200px] mx-auto">
+            A linear damper primarily works through hydraulic resistance to control motion. When an external force acts, 
+            it's transmitted via the piston rod to the piston inside a cylinder filled with hydraulic oil. The piston 
+            has small openings called orifices. As the piston moves, it compresses the hydraulic oil, forcing it to 
+            flow through these restricted orifices.
+          </p>
+
+          {/* 正文部分：左文右图 */}
+          <div className="grid grid-cols-2 gap-16 items-start mb-16">
+            {/* 左侧文字内容 */}
+            <div className="space-y-12">
+              {/* Piston and Piston Rod */}
+              <div>
+                <h3 className="text-2xl font-bold mb-4">Piston and Piston Rod</h3>
+                <p className="text-gray-600 text-base leading-relaxed">
+                  When an external force acts on a linear damper, this force will first be transmitted to the piston rod. 
+                  The piston rod is a crucial component connecting the external object and the inside of the damper. 
+                  Following this, the piston rod will push the piston connected to it to move inside the damper's cylinder, 
+                  and the piston is typically a specially designed part with orifices on it.
+                </p>
+              </div>
+
+              {/* Hydraulic Oil */}
+              <div>
+                <h3 className="text-2xl font-bold mb-4">Hydraulic Oil</h3>
+                <p className="text-gray-600 text-base leading-relaxed">
+                  Linear dampers control motion by using fluid resistance. When force is applied, a piston moves within 
+                  a cylinder filled with hydraulic oil. The oil is forced through small openings (orifices). This 
+                  restricted flow creates a resistance force that opposes the motion, providing the damping effect.
+                </p>
+                <p className="text-gray-600 text-base leading-relaxed mb-4">
+                  The viscosity of the hydraulic oil is important because it affects the level of resistance. Different 
+                  types of linear dampers, classified by overflow type (single or multi-hole) and thrust direction 
+                  (push-in, pull-out, two-way), all rely on this principle of hydraulic oil creating resistance.
+                </p>
+                <p className="text-gray-600 text-base leading-relaxed">
+                  In essence, hydraulic oil is the medium through which motion is resisted and energy is absorbed in a 
+                  linear damper. The quality and type of hydraulic oil used can significantly impact the damper's 
+                  performance and longevity.
+                </p>
+              </div>
+
+              {/* Orifices */}
+              <div>
+                <h3 className="text-2xl font-bold mb-4">Orifices</h3>
+                <p className="text-gray-600 text-base leading-relaxed">
+                 Orifices are crucial in linear dampers because they are the primary means of controlling the damping force. 
+                 They are small, precisely sized openings in the piston of the damper. As the piston moves, it forces 
+                 hydraulic oil to flow through these orifices.
+                </p>
+                <p className="text-gray-600 text-base leading-relaxed mb-4">
+                  The size and design of the orifices directly regulate the rate at which the hydraulic oil can flow. 
+                  Smaller orifices restrict the oil flow more, resulting in higher resistance and a greater damping force, 
+                  thus slowing down the motion more significantly. Conversely, larger orifices allow for easier oil flow, 
+                  leading to less resistance and a smaller damping force.
+                </p>
+                <p className="text-gray-600 text-base leading-relaxed">
+                  Therefore, orifices determine the damping coefficient of the linear damper, which is a critical 
+                  specification when selecting a damper for a particular application. Different orifice designs can 
+                  provide various damping characteristics to meet specific requirements.
+                </p>
+              </div>
+            </div>
+
+            {/* 右侧图片 */}
+            <div className="relative h-[600px] sticky top-8">
+              <Image
+                src="/images/dampers/damper-components.jpg"
+                alt="Damper Components"
+                fill
+                className="object-contain"
+              />
+            </div>
+          </div>
+
+          {/* 结语部分 - 修改样式 */}
+          <p className="text-xl text-gray-600 text-left max-w-[1200px]">
+            A linear damper primarily works through hydraulic resistance to control motion. When an external force acts, 
+            it's transmitted via the piston rod to the piston inside a cylinder filled with hydraulic oil. The piston has 
+            small openings called orifices. As the piston moves, it compresses the hydraulic oil, forcing it to flow through 
+            these restricted orifices.
+          </p>
+          <p className="text-xl text-gray-600 text-left max-w-[1200px]">
+          Understanding these core components and their interactions is crucial when selecting a linear damper 
+          for your specific application. Each component plays a vital role in the damper's performance and longevity.
+          </p>
+        </div>
+      </section>
+
+      {/* Part 5: Types of Linear Dampers */}
+      <section className="py-20 bg-white">
+        <div className="max-w-[1200px] mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-8">
+            Types of Linear Dampers Based on Orifice Design
+          </h2>
+          <p className="text-xl text-gray-600 text-center mb-16 max-w-4xl mx-auto">
+            Linear dampers can be categorized based on the design of their orifices, 
+            which directly influence their damping characteristics.
+          </p>
+
+          <div className="space-y-20">
+            {/* Single vs Multiple Orifices */}
+            <div>
+              <h3 className="text-3xl font-bold text-center mb-8">Single Orifice vs. Multiple Orifices</h3>
+              <div className="flex items-center justify-between">
+                {/* Single Orifice Card */}
+                <div className="w-[500px] bg-white rounded-lg shadow-lg overflow-hidden">
+                  <div className="relative h-[300px]">
+                    <Image
+                      src="/images/dampers/single-orifice.jpg"
+                      alt="Single Orifice"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h4 className="text-2xl font-bold mb-4 text-center">Single Orifice</h4>
+                    <p className="text-gray-600 text-center">
+                      Provides a consistent damping force, ideal for applications requiring uniform deceleration.
+                    </p>
                   </div>
                 </div>
-              ))}
+
+                {/* VS Text */}
+                <div className="text-7xl font-bold text-gray-800">
+                  VS
+                </div>
+
+                {/* Multiple Orifices Card */}
+                <div className="w-[500px] bg-white rounded-lg shadow-lg overflow-hidden">
+                  <div className="relative h-[300px]">
+                    <Image
+                      src="/images/dampers/multiple-orifices.jpg"
+                      alt="Multiple Orifices"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h4 className="text-2xl font-bold mb-4 text-center">Multiple Orifices</h4>
+                    <p className="text-gray-600 text-center">
+                      Allows for variable damping forces, suitable for more complex motion control needs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Direction of Force */}
+            <div>
+              <h3 className="text-3xl font-bold text-center mb-8">
+                Direction of Force: Push-in, Pull-out, and Two-way Dampers
+              </h3>
+              <div className="grid grid-cols-2 gap-16 items-center">
+                <div className="relative h-[300px]">
+                  <Image
+                    src="/images/dampers/force-direction.jpg"
+                    alt="Force Direction Types"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <div className="space-y-6">
+                  <p className="text-gray-600">
+                    The direction in which the damping force is applied can vary, making linear dampers 
+                    versatile for different applications.
+                  </p>
+                  {[
+                    {
+                      title: "Push-in Dampers",
+                      desc: "These dampers exert force when the piston is pushed into the cylinder, commonly used in closing mechanisms."
+                    },
+                    {
+                      title: "Pull-out Dampers",
+                      desc: "Here, the damping force is applied when the piston is pulled out of the cylinder, often found in opening mechanisms."
+                    },
+                    {
+                      title: "Two-way Dampers",
+                      desc: "These dampers provide resistance in both directions, making them suitable for applications requiring control in both opening and closing motions."
+                    }
+                  ].map((item, index) => (
+                    <div key={index}>
+                      <h4 className="text-xl font-bold mb-2">{item.title}</h4>
+                      <p className="text-gray-600">{item.desc}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Part 6: Selection Guide */}
+      <section className="py-20 bg-white">
+        <div className="max-w-[1200px] mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-16">
+            Determining the Right Linear Damper for Your Application
+          </h2>
+          
+          <div className="space-y-16">
+            {/* Operating Environment */}
+            <div>
+              <h3 className="text-3xl font-bold text-center mb-8">Consider the Operating Environment</h3>
+              {/* Temperature Range Table */}
+              <div className="max-w-5xl mx-auto mb-8">
+                <h4 className="text-xl font-bold mb-4">Typical Operating Temperature Ranges for Linear Dampers:</h4>
+                <div className="overflow-x-auto">
+                  <table className="w-full border-collapse">
+                    <thead>
+                      <tr className="bg-gray-100">
+                        <th className="border px-4 py-2">Model</th>
+                        {[10, 20, 30, 40, 50, 60, 70, 80, 85, 90, 100, 110, 120].map((temp) => (
+                          <th key={temp} className="border px-2 py-2 text-center">{temp}°C</th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {[
+                        {
+                          name: "PR-L202(Φ10mm)",
+                          temps: [false, true, true, true, true, true, true, true, true, true, true, true, true]
+                        },
+                        {
+                          name: "PR-L208(Φ10mm)",
+                          temps: [false, true, true, true, true, true, false, false, false, false, false, false, false]
+                        },
+                        {
+                          name: "PR-L223(Φ8mm)",
+                          temps: [false, true, true, true, true, true, false, false, false, false, false, false, false]
+                        },
+                        {
+                          name: "PR-L241(Φ12mm)",
+                          temps: [true, true, true, true, true, true, true, true, true, false, false, false, false]
+                        },
+                        {
+                          name: "JP-CA10(Φ10mm) - Dynamic",
+                          temps: [true, true, true, true, true, false, false, false, false, false, false, false, false]
+                        },
+                        {
+                          name: "JP-CA10(Φ10mm) - Static",
+                          temps: [false, true, true, true, true, true, true, true, false, false, false, false, false]
+                        },
+                        {
+                          name: "JP-CA1210(Φ12mm)",
+                          temps: [false, false, false, true, true, true, true, true, false, false, false, false, false]
+                        },
+                        {
+                          name: "JP-CU038(Φ10mm) - Dynamic",
+                          temps: [false, true, true, true, true, true, false, false, false, false, false, false, false]
+                        },
+                        {
+                          name: "JP-CU038(Φ10mm) - Static",
+                          temps: [false, true, true, true, true, true, true, true, false, false, false, false, false]
+                        },
+                        {
+                          name: "JP-801 Series",
+                          temps: [false, true, true, true, true, true, false, false, false, false, false, false, false]
+                        },
+                        {
+                          name: "JP-802 Series",
+                          temps: [false, true, true, true, true, true, false, false, false, false, false, false, false]
+                        },
+                        {
+                          name: "JP-803 Series",
+                          temps: [false, true, true, true, true, true, false, false, false, false, false, false, false]
+                        },
+                        {
+                          name: "JP-804 Series",
+                          temps: [false, true, true, true, true, true, false, false, false, false, false, false, false]
+                        }
+                      ].map((model, index) => (
+                        <tr key={index}>
+                          <td className="border px-4 py-2">{model.name}</td>
+                          {model.temps.map((isSupported, idx) => (
+                            <td key={idx} className="border px-2 py-2 text-center">
+                              <span className={isSupported ? "text-green-500" : "text-red-500"}>
+                                {isSupported ? "✔" : "✖"}
+                              </span>
+                            </td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div className="max-w-[1200px] mx-auto">
+                <p className="text-xl text-gray-600 leading-relaxed">
+                  Temperature range is a critical factor in selecting a linear damper. Most standard dampers 
+                  operate efficiently between -20°C to 60°C. However, specialized models like the PR-L202 
+                  can handle temperatures up to 120°C, while medical-grade dampers like JP-CA10 are optimized 
+                  for more moderate temperature ranges of 10℃-50℃ during operation.
+                </p>
+                <p className="text-xl text-gray-600 leading-relaxed mt-4">
+                  Consider not just the operating temperature but also storage conditions. Some models, 
+                  such as the JP-CU038, have different temperature tolerances for dynamic operation 
+                  (20℃-60℃) versus static storage (20°C - 80°C).
+                </p>
+              </div>
+            </div>
+
+            {/* Force and Stroke */}
+            <div>
+              <h3 className="text-3xl font-bold text-center mb-8">Evaluate the Required Force and Stroke</h3>
+              <div className="max-w-[1200px] mx-auto">
+                <p className="text-xl text-gray-600 leading-relaxed">
+                  The force range and stroke length are fundamental parameters that determine a damper's 
+                  performance. Force range indicates the resistance the damper can provide, typically 
+                  measured in Newtons (N). Different applications require different force ranges - from 
+                  light-duty applications needing 50-300N to heavy industrial uses requiring up to 3000N.
+                </p>
+                <p className="text-xl text-gray-600 leading-relaxed mt-4">
+                  Stroke length, measured in millimeters, determines the distance over which the damper 
+                  can effectively operate. This can range from compact 30mm strokes for small applications 
+                  to extended 600mm strokes for larger machinery.
+                </p>
+              </div>
+            </div>
+
+            {/* Material and Construction */}
+            <div>
+              <h3 className="text-3xl font-bold text-center mb-8">Material and Construction</h3>
+              <div className="max-w-[1200px] mx-auto">
+                <p className="text-xl text-gray-600 leading-relaxed">
+                  Material selection significantly impacts a damper's durability and application suitability. 
+                  Medical applications typically require medical-grade stainless steel for its corrosion 
+                  resistance and sterility. Industrial applications might use carbon steel or high-strength 
+                  steel for durability.
+                </p>
+                <p className="text-xl text-gray-600 leading-relaxed mt-4">
+                  The construction quality, including the head and shell materials (often POM), and the 
+                  piston rod material (typically stainless steel), determines the damper's reliability 
+                  in harsh environments and its overall service life.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       {/* Contact Section */}
       <section className="py-16">
         <div className="container mx-auto px-4 text-center">
@@ -263,12 +526,9 @@ export default function Products() {
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
             Our engineering team can help you select the right damper for your application and provide customized solutions.
           </p>
-          <Link 
-            href="/contact" 
-            className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors"
-          >
+          <button className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors">
             Contact Our Engineers
-          </Link>
+          </button>
         </div>
       </section>
     </div>
