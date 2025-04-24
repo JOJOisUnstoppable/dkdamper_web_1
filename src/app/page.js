@@ -5,26 +5,29 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Banner Section - Full Screen */}
-      <section className="h-screen relative flex items-center">
-        <Image
-          src="/images/hero-bg.jpg.png"
-          alt="DK Industrial"
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-black/40" />
-        <div className="container mx-auto px-4 relative">
-          <div className="max-w-3xl">
-            <h1 className="text-6xl font-bold text-white mb-8">
-              Who Are We?
-            </h1>
-            <p className="text-xl text-white mb-6">
-              At DK, we specialize in the development, design, and delivery of gas springs and dampers. With a strong presence across continents including the Americas, Asia, Europe, and Africa, we have established ourselves as a trusted partner in the industry. Our commitment to quality and custom solutions has enabled us to serve a diverse client base, from medical equipment manufacturers to commercial vehicle producers.
-            </p>
-            <p className="text-lg text-white/80">
-              Our expertise in creating tailored solutions ensures that each client's specific needs are met with precision and efficiency. Explore how we can assist in your next project.
-            </p>
+      <section className="relative flex items-center overflow-hidden h-[650px]">
+        {/* 背景视频 */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute w-full h-full object-cover object-[center_30%] scale-150"
+        >
+          <source src="/hero-video.mp4" type="video/mp4" />
+        </video>
+        {/* 渐变遮罩 - 上下渐变 */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
+        <div className="absolute inset-0 flex items-center">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl">
+              <h1 className="text-6xl font-bold text-white mb-8">
+                Who Are We?
+              </h1>
+              <p className="text-xl text-white mb-6">
+               With over a decade of experience in the linear damper industry, we have long been a trusted partner for domestic manufacturers and international traders in China, specializing in supplying a wide range of customized linear dampers. As we have accumulated extensive technical expertise over the years, we are now ready to step onto the global stage. We aim to deliver our value directly to customers worldwide, cutting out unnecessary middle links. Let our professionalism speak for itself. This is a conversation between engineers.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -33,31 +36,16 @@ export default function Home() {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-16">Our Product Series</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {[
               {
-                model: "JP-CA1210",
-                description: "High-performance gas spring, ideal for medical equipment",
+                model: "Mini Linear Damper",
+                description: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
                 image: "/images/products/JP-CA1210.jpg"
               },
               {
-                model: "PR-L202",
-                description: "Precision linear damper, perfect for industrial applications",
-                image: "/images/products/PR-L202.jpg"
-              },
-              {
-                model: "PR-L208",
-                description: "Heavy-duty gas spring, designed for commercial vehicles",
-                image: "/images/products/PR-L208.jpg"
-              },
-              {
-                model: "PR-L223",
-                description: "Multi-functional damper, suitable for various applications",
-                image: "/images/products/PR-L223.jpg"
-              },
-              {
-                model: "Other Models",
-                description: "Customized solutions to meet specific requirements",
+                model: "Gas Spring Damper & Damper",
+                description: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
                 image: "/images/products/custom-models.jpg"
               }
             ].map((product, index) => (
@@ -82,46 +70,6 @@ export default function Home() {
               </div>
             ))}
           </div>
-          {/* 添加产品系列链接 */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mt-16">
-            <Link href="/products/categories?category=medical" className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold mb-2">Medical Series</h3>
-              <p className="text-gray-600 mb-4">Precision dampers for medical equipment and healthcare applications</p>
-              <span className="text-primary">12+ Models →</span>
-            </Link>
-            <Link href="/products/categories?category=industrial" className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold mb-2">Industrial Series</h3>
-              <p className="text-gray-600 mb-4">Heavy-duty dampers for industrial machinery and equipment</p>
-              <span className="text-primary">20+ Models →</span>
-            </Link>
-            <Link href="/products/categories?category=automotive" className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold mb-2">Automotive Series</h3>
-              <p className="text-gray-600 mb-4">Specialized dampers for automotive and transportation</p>
-              <span className="text-primary">15+ Models →</span>
-            </Link>
-          </div>
-
-          <div className="text-center mt-12">
-            <Link 
-              href="/products/categories" 
-              className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
-            >
-              View All Products
-              <svg 
-                className="w-5 h-5" 
-                fill="none" 
-                stroke="currentColor" 
-                viewBox="0 0 24 24"
-              >
-                <path 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  strokeWidth={2} 
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
-            </Link>
-          </div>
         </div>
       </section>
 
@@ -134,55 +82,54 @@ export default function Home() {
           <p className="text-xl text-gray-700 text-center max-w-4xl mx-auto mb-24">
             Our custom linear dampers are designed to meet the unique requirements of various industries. From intricate medical devices to heavy-duty commercial vehicles, our products are built to perform.
           </p>
-          <div className="space-y-32">
+          {/* 使用网格布局展示所有卡片 */}
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-[1400px] mx-auto">
             {[
               {
                 step: "Step 1",
-                title: "Requirement Confirmation",
-                description: "We start by understanding your specific needs",
-                image: "/images/process-1.jpg",
-                isReverse: false
+                title: "Initial Contact",
+                description: "We begin with understanding your needs and requirements",
+                image: "/images/process-1.jpg"
               },
               {
                 step: "Step 2",
-                title: "Design",
-                description: "Our engineering team drafts a design that aligns with your requirements",
-                image: "/images/process-2.jpg",
-                isReverse: true
+                title: "Technical Analysis",
+                description: "Our engineers analyze your specifications in detail",
+                image: "/images/process-2.jpg"
               },
               {
                 step: "Step 3",
-                title: "Prototyping",
-                description: "We create a prototype for approval",
-                image: "/images/process-3.jpg",
-                isReverse: false
+                title: "Design Phase",
+                description: "Creating custom designs that match your requirements",
+                image: "/images/process-3.jpg"
               },
               {
                 step: "Step 4",
+                title: "Prototyping",
+                description: "Developing and testing initial prototypes",
+                image: "/images/process-4.jpg"
+              },
+              {
+                step: "Step 5",
                 title: "Mass Production",
-                description: "Once approved, we move to full-scale production",
-                image: "/images/process-4.jpg",
-                isReverse: true
+                description: "Scaling up for full production after approval",
+                image: "/images/process-4.jpg"
               }
             ].map((process, index) => (
               <div key={index} 
-                className={`flex flex-col md:flex-row items-center gap-12 ${
-                  process.isReverse ? 'md:flex-row-reverse' : ''
-                }`}
+                className="bg-white rounded-lg shadow-lg overflow-hidden"
               >
-                <div className="w-full md:w-1/2 relative">
-                  <div className="aspect-[4/3] relative">
-                    <Image
-                      src={process.image}
-                      alt={process.title}
-                      fill
-                      className="object-cover rounded-lg"
-                    />
-                  </div>
+                <div className="aspect-[4/3] relative">
+                  <Image
+                    src={process.image}
+                    alt={process.title}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-                <div className="w-full md:w-1/2">
-                  <div className="text-6xl font-bold text-gray-200 mb-4">{process.step}</div>
-                  <h3 className="text-2xl font-bold mb-4">{process.title}</h3>
+                <div className="p-6">
+                  <div className="text-4xl font-bold text-gray-200 mb-4">{process.step}</div>
+                  <h3 className="text-xl font-bold mb-4">{process.title}</h3>
                   <p className="text-gray-600">{process.description}</p>
                 </div>
               </div>
