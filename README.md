@@ -1,5 +1,5 @@
 # B2B 网站需求文档
-
+链接: https://pan.baidu.com/s/1wgTlaSQBGDs2lGOzQ4Ngjw?pwd=qyqz 提取码: qyqz
 ## 1. 网站页面需求
 ### 1.1 前台页面
 - 首页

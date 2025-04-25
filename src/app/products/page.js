@@ -44,94 +44,66 @@ export default function Products() {
         </div>
       </section>
 
-      {/* Part 3: Product Cards */}
-      <section className="py-20 bg-white">
+      {/* Part 3: Product List) */}
+      <section className="py-20 bg-gray-50">
         <div className="max-w-[1200px] mx-auto px-4">
-          <div className="grid grid-cols-3 gap-8">
+          <h2 className="text-4xl font-bold text-center mb-16">Our Product Series</h2>
+          <div className="space-y-8">
             {[
               {
-                // 医疗系列
-                id: 'JP-CA1210',
-                image: "/images/products/JP-CA1210.jpg",
-                name: "Medical Equipment Damper JP-CA1210",
-                description: "High-precision damper specifically designed for medical equipment applications, featuring smooth operation and precise control.",
+                id: 'Φ6mm',
+                model: "Mini Linear Damper Φ6mm",
+                description: "Mini linear hydraulic dampers with one-way damping, featuring automatic spring return and re-arm mechanism. Ideal for precision control in compact applications.",
+                image: "/images/products/LM-06.jpg",
                 specs: {
-                  "Force Range": "100-500N",
-                  "Stroke Length": "50-200mm",
+                  "Force Range": "0-100N",
+                  "Stroke Length": "10-50mm",
                   "Temperature": "-10°C to 60°C",
-                  "Material": "Medical-grade stainless steel"
+                  "Material": "Precision steel"
                 }
               },
               {
-                // 工业系列 JP-801
-                id: 'JP-801-108P',
-                image: "/images/products/JP-801-108P.jpg",
-                name: "Industrial Damper JP-801-108P",
-                description: "Heavy-duty industrial damper for large machinery and equipment, providing reliable motion control.",
+                id: 'Φ8mm',
+                model: "Linear Damper Φ8mm",
+                description: "Linear hydraulic dampers with one-way damping, automatic spring return and re-arm functionality. Perfect balance of size and performance.",
+                image: "/images/products/LM-08.jpg",
                 specs: {
-                  "Force Range": "500-2000N",
-                  "Stroke Length": "100-500mm",
+                  "Force Range": "0-350N",
+                  "Stroke Length": "10-100mm",
+                  "Temperature": "-10°C to 70°C",
+                  "Material": "High-grade steel"
+                }
+              },
+              {
+                id: 'Φ10mm',
+                model: "Linear Damper Φ10mm",
+                description: "Standard linear hydraulic dampers with one-way damping and spring return. Offers reliable performance for medium-duty applications.",
+                image: "/images/products/LM-10.jpg",
+                specs: {
+                  "Force Range": "0-870N",
+                  "Stroke Length": "20-150mm",
                   "Temperature": "-20°C to 80°C",
-                  "Material": "Industrial-grade steel"
+                  "Material": "Industrial steel"
                 }
               },
               {
-                // 工业系列 JP-802
-                id: 'JP-802-82P',
-                image: "/images/products/JP-802-82P.jpg",
-                name: "Precision Damper JP-802-82P",
-                description: "Medium-duty damper with precise control for manufacturing equipment.",
+                id: 'Φ12mm',
+                model: "Max Linear Damper Φ12mm",
+                description: "Heavy-duty linear hydraulic dampers with customizable stroke and damping direction. Features one-way damping with spring return, ideal for high-force applications.",
+                image: "/images/products/LM-12.jpg",
                 specs: {
-                  "Force Range": "300-1500N",
-                  "Stroke Length": "80-300mm",
-                  "Temperature": "-20°C to 70°C",
-                  "Material": "Carbon steel"
-                }
-              },
-              {
-                // 工业系列 JP-803
-                id: 'JP-803-140P',
-                image: "/images/products/JP-803-140P.jpg",
-                name: "Heavy Industrial Damper JP-803-140P",
-                description: "Extra heavy-duty damper for specialized industrial applications requiring maximum force control.",
-                specs: {
-                  "Force Range": "1000-3000N",
-                  "Stroke Length": "140-600mm",
+                  "Force Range": "0-2400N",
+                  "Stroke Length": "10-200mm",
                   "Temperature": "-20°C to 85°C",
-                  "Material": "High-strength steel"
-                }
-              },
-              {
-                // 专业系列
-                id: 'PR-L202',
-                image: "/images/products/PR-L202.jpg",
-                name: "Professional Damper PR-L202",
-                description: "High-performance damper for specialized applications requiring precise motion control.",
-                specs: {
-                  "Force Range": "200-800N",
-                  "Stroke Length": "60-250mm",
-                  "Temperature": "-30°C to 90°C",
-                  "Material": "Premium alloy steel"
-                }
-              },
-              {
-                // 医疗系列（补充第二个医疗产品以凑齐6个）
-                id: 'JP-CA10',
-                image: "/images/products/JP-CA10.jpg",
-                name: "Compact Medical Damper JP-CA10",
-                description: "Compact and precise damper for smaller medical devices and equipment.",
-                specs: {
-                  "Force Range": "50-300N",
-                  "Stroke Length": "30-150mm",
-                  "Temperature": "-10°C to 60°C",
-                  "Material": "Medical-grade stainless steel"
+                  "Material": "Heavy-duty steel"
                 }
               }
             ].map((product, index) => (
               <div key={index} 
-                   className="bg-white rounded-lg shadow-lg overflow-hidden 
-                            transition-all duration-300 hover:scale-105 hover:shadow-xl">
-                <div className="relative h-[250px]">
+                className="flex items-stretch gap-6 bg-white rounded-xl overflow-hidden hover:bg-gray-100 transition-colors shadow-lg hover:shadow-xl border border-gray-100"
+              >
+                {/* 产品图片 */}
+                <div className="w-64 relative border-r border-gray-100">
                   <Image
                     src={product.image}
                     alt={product.name}
@@ -139,16 +111,37 @@ export default function Products() {
                     className="object-cover"
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3">{product.name}</h3>
-                  <p className="text-gray-600 mb-4">{product.description}</p>
-                  <div className="space-y-2">
-                    {Object.entries(product.specs).map(([key, value]) => (
-                      <div key={key} className="flex justify-between">
-                        <span className="text-gray-500">{key}:</span>
-                        <span className="font-medium">{value}</span>
+                
+                {/* 产品信息区域 */}
+                <div className="flex-grow p-6 flex items-center gap-8">
+                  {/* 型号和规格 */}
+                  <div className="w-64 flex-shrink-0">
+                    <div className="text-3xl font-bold text-gray-800">{product.id}</div>
+                    <div className="mt-2 px-3 py-1 bg-blue-100 text-blue-800 rounded-full inline-block text-sm">
+                      {product.specs["Material"]}
+                    </div>
+                  </div>
+                  
+                  {/* 描述 */}
+                  <div className="flex-grow">
+                    <h3 className="font-bold text-xl mb-2">{product.name}</h3>
+                    <p className="text-gray-600">{product.description}</p>
+                  </div>
+                  
+                  {/* 力矩标尺 */}
+                  <div className="w-56 flex-shrink-0">
+                    <div className="mb-2 text-sm font-medium">Force Range</div>
+                    <div className="h-6 bg-gray-200 rounded-lg overflow-hidden relative">
+                      <div 
+                        className="h-full bg-gradient-to-r from-blue-500 to-blue-700"
+                        style={{
+                          width: `${(parseInt(product.specs["Force Range"].split("-")[1]) / 3000) * 100}%`
+                        }}
+                      />
+                      <div className="absolute inset-0 flex items-center justify-center text-sm font-medium">
+                        {product.specs["Force Range"]}
                       </div>
-                    ))}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -156,7 +149,6 @@ export default function Products() {
           </div>
         </div>
       </section>
-
       {/* Part 4: How it Works */}
       <section className="py-20 bg-white">
         <div className="max-w-[1200px] mx-auto px-4">
@@ -310,7 +302,7 @@ export default function Products() {
                 <div className="w-[500px] bg-white rounded-lg shadow-lg overflow-hidden">
                   <div className="relative h-[300px]">
                     <Image
-                      src="/images/dampers/multiple-orifices.jpg"
+                      src="/images/dampers/multiple-orifice.jpg"
                       alt="Multiple Orifices"
                       fill
                       className="object-cover"

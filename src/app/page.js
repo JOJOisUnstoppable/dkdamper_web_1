@@ -36,16 +36,16 @@ export default function Home() {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-16">Our Product Series</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-6xl mx-auto">
             {[
               {
                 model: "Mini Linear Damper",
-                description: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                description: "More compact design, ideal for space-limited applications. Available in standard diameters of 6mm, 8mm, 10mm, and 12mm, with customization options for diameter, length, and stroke.",
                 image: "/images/products/JP-CA1210.jpg"
               },
               {
                 model: "Gas Spring Damper & Damper",
-                description: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                description: "Combining the functions of a gas spring and a damper, these devices are designed for applications that require both support and controlled motion. ",
                 image: "/images/products/custom-models.jpg"
               }
             ].map((product, index) => (
@@ -175,6 +175,7 @@ export default function Home() {
       {/* Features Section - Full Screen */}
       <section className="h-screen flex items-center bg-gray-50">
         <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-16">Why Choose Us</h2>
           <div className="grid grid-cols-3 gap-12">
             {[
               {
