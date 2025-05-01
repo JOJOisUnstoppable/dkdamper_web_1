@@ -349,15 +349,15 @@ export default function Home() {
 
       {/* Technical Support Section - Full Screen */}
       <section className="h-screen relative flex items-center">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute w-full h-full object-cover"
-        >
-          <source src="/videos/Linear_Damper_manufacturing.mp4" type="video/mp4" />
-        </video>
+        <div className="absolute inset-0">
+          <Image
+            src="/images/home/technical_support_bg.png"
+            alt="Banner background"
+            fill
+            priority
+            className="absolute w-full h-full object-cover"
+          />
+        </div>
         <div className="absolute inset-0 bg-black/60" />
         <div className="container mx-auto px-4 relative text-center text-white">
           <div className="max-w-2xl mx-auto">
