@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Products() {
   return (
@@ -15,12 +16,14 @@ export default function Products() {
         </div>
       </section>
 
+
+
       {/* Part 2: What is and How it Works */}
       <section className="py-20 bg-white">
         <div className="max-w-[1200px] mx-auto px-4">
           <div className="max-w-[1200px] mx-auto space-y-16">
             <div>
-              <h2 className="text-3xl font-bold text-center mb-6">What is a Linear Damper</h2>
+              <h2 className="text-3xl font-bold text-center mb-6">What is Linear Damper</h2>
               <div className="text-left">
                 <p className="text-xl text-gray-600">
                   Linear dampers are essential components used to control motion by providing resistance 
@@ -47,14 +50,37 @@ export default function Products() {
       {/* Part 3: Product List) */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-[1200px] mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16">Our Product Series</h2>
+          <h2 className="text-4xl font-bold text-center mb-8">Our Product Series</h2>
+          
+          {/* 文字介绍 */}
+          <p className="text-xl text-gray-600 text-center mb-8 max-w-[1200px] mx-auto">
+            Linear dampers are devices designed to control the speed of mechanical systems and reduce vibration, ensuring smooth and safe operation. They serve as safety and functional elements for speed reduction and mass braking, and are not intended for impact, collision, or limit damping.
+          </p>
+          
+          <div className="flex justify-center mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[1200px]">
+              <div className="bg-blue-50 p-6 rounded-lg">
+                <h3 className="text-xl font-bold mb-3 text-blue-800">Mini Linear Dampers</h3>
+                <p className="text-gray-600">Compact and lightweight in structure, ideal for applications with limited space. Commonly used in small mechanical equipment and consumer electronics.</p>
+              </div>
+              <div className="bg-blue-50 p-6 rounded-lg">
+                <h3 className="text-xl font-bold mb-3 text-blue-800">Gas Spring Dampers</h3>
+                <p className="text-gray-600">Combining the functions of gas springs and dampers. Suitable for applications that require both support and motion control, such as car trunks or industrial machine doors.</p>
+              </div>
+            </div>
+          </div>
+          
+          <p className="text-xl text-gray-600 text-center mb-16 max-w-4xl mx-auto">
+            We offer a variety of linear dampers, from mini Φ6mm to heavy-duty Φ12mm, meeting the needs of different industries and application scenarios. Each product is meticulously designed and rigorously tested to ensure excellent performance and reliability.
+          </p>
+          
           <div className="space-y-8">
             {[
               {
                 id: 'Φ6mm',
                 model: "Mini Linear Damper Φ6mm",
                 description: "Mini linear hydraulic dampers with one-way damping, featuring automatic spring return and re-arm mechanism. Ideal for precision control in compact applications.",
-                image: "/images/products/LM-06.jpg",
+                image: "/images/products/Linear_Damper_products_Series_1.jpg",
                 specs: {
                   "Force Range": "0-100N",
                   "Stroke Length": "10-50mm",
@@ -66,7 +92,7 @@ export default function Products() {
                 id: 'Φ8mm',
                 model: "Linear Damper Φ8mm",
                 description: "Linear hydraulic dampers with one-way damping, automatic spring return and re-arm functionality. Perfect balance of size and performance.",
-                image: "/images/products/LM-08.jpg",
+                image: "/images/products/Linear_Damper_products_Series_2.jpg",
                 specs: {
                   "Force Range": "0-350N",
                   "Stroke Length": "10-100mm",
@@ -78,7 +104,7 @@ export default function Products() {
                 id: 'Φ10mm',
                 model: "Linear Damper Φ10mm",
                 description: "Standard linear hydraulic dampers with one-way damping and spring return. Offers reliable performance for medium-duty applications.",
-                image: "/images/products/LM-10.jpg",
+                image: "/images/products/Linear_Damper_products_Series_3.jpg",
                 specs: {
                   "Force Range": "0-870N",
                   "Stroke Length": "20-150mm",
@@ -90,7 +116,7 @@ export default function Products() {
                 id: 'Φ12mm',
                 model: "Max Linear Damper Φ12mm",
                 description: "Heavy-duty linear hydraulic dampers with customizable stroke and damping direction. Features one-way damping with spring return, ideal for high-force applications.",
-                image: "/images/products/LM-12.jpg",
+                image: "/images/products/Linear_Damper_products_Series_4.jpg",
                 specs: {
                   "Force Range": "0-2400N",
                   "Stroke Length": "10-200mm",
@@ -103,7 +129,7 @@ export default function Products() {
                 className="flex items-stretch gap-6 bg-white rounded-xl overflow-hidden hover:bg-gray-100 transition-colors shadow-lg hover:shadow-xl border border-gray-100"
               >
                 {/* 产品图片 */}
-                <div className="w-64 relative border-r border-gray-100">
+                <div className="w-80 relative">
                   <Image
                     src={product.image}
                     alt={product.name}
@@ -147,6 +173,24 @@ export default function Products() {
               </div>
             ))}
           </div>
+
+          {/* 查看所有产品按钮 */}
+          <div className="mt-16 flex justify-center gap-8">
+            <Link href="/products/categories" className="px-10 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors flex items-center text-lg font-medium shadow-md hover:shadow-lg">
+              <span>View All Products</span>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-3" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+              </svg>
+            </Link>
+            <Link href="/catalog" className="px-10 py-4 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-colors flex items-center text-lg font-medium shadow-md hover:shadow-lg">
+              <span>Downlown catelog</span>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-3" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
+              </svg>
+            </Link>
+          </div>
+
+
         </div>
       </section>
       {/* Part 4: How it Works */}
@@ -164,10 +208,36 @@ export default function Products() {
         </div>
       </section>
 
+
+
+
+      {/* 视频展示部分 */}
+      <section className="py-20 bg-white">
+        <div className="max-w-[1200px] mx-auto px-4">
+          
+          <div className="flex flex-col items-center">
+            <div className="w-full max-w-4xl bg-white rounded-xl shadow-xl overflow-hidden">
+              <div className="aspect-video relative">
+                <video
+                  src="/videos/How_damper_works.mp4"
+                  controls
+                  autoPlay
+                  loop
+                  muted
+                  poster="/images/products/video-poster.jpg"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
       {/* Part 5: Consideration when buying */}
       <section className="py-20 bg-white">
         <div className="max-w-[1200px] mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-8">Consideration when buying</h2>
+          <h2 className="text-4xl font-bold text-center mb-8">Consideration when buying linear damper</h2>
           
           {/* 概述部分 */}
           <p className="text-xl text-gray-600 text-left max-w-[1200px] mx-auto">
@@ -235,9 +305,9 @@ export default function Products() {
             </div>
 
             {/* 右侧图片 */}
-            <div className="relative h-[600px] sticky top-8">
+            <div className="relative h-[1200px] sticky top-8">
               <Image
-                src="/images/dampers/damper-components.jpg"
+                src="/images/products/Linear_damper_part.png"
                 alt="Damper Components"
                 fill
                 className="object-contain"
