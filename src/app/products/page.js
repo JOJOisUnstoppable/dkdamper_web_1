@@ -129,17 +129,17 @@ export default function Products() {
                 className="flex items-stretch gap-6 bg-white rounded-xl overflow-hidden hover:bg-gray-100 transition-colors shadow-lg hover:shadow-xl border border-gray-100"
               >
                 {/* 产品图片 */}
-                <div className="w-80 relative">
+                <div className="w-1/3 h-56 relative"> 
                   <Image
                     src={product.image}
-                    alt={product.name}
+                    alt={product.model}
                     fill
-                    className="object-cover"
+                    className="object-contain" /* Changed from object-cover to object-contain */
                   />
                 </div>
                 
                 {/* 产品信息区域 */}
-                <div className="flex-grow p-6 flex items-center gap-8">
+                <div className="flex-grow p-6 flex items-start gap-8"> {/* Changed items-center to items-start */}
                   {/* 型号和规格 */}
                   <div className="w-64 flex-shrink-0">
                     <div className="text-3xl font-bold text-gray-800">{product.id}</div>
@@ -150,7 +150,7 @@ export default function Products() {
                   
                   {/* 描述 */}
                   <div className="flex-grow">
-                    <h3 className="font-bold text-xl mb-2">{product.name}</h3>
+                    <h3 className="font-bold text-xl mb-2">{product.model}</h3> {/* Changed from product.name to product.model */}
                     <p className="text-gray-600">{product.description}</p>
                   </div>
                   
@@ -341,53 +341,6 @@ export default function Products() {
           </p>
 
           <div className="space-y-20">
-            {/* Single vs Multiple Orifices */}
-            <div>
-              <h3 className="text-3xl font-bold text-center mb-8">Single Orifice vs. Multiple Orifices</h3>
-              <div className="flex items-center justify-between">
-                {/* Single Orifice Card */}
-                <div className="w-[500px] bg-white rounded-lg shadow-lg overflow-hidden">
-                  <div className="relative h-[300px]">
-                    <Image
-                      src="/images/dampers/single-orifice.jpg"
-                      alt="Single Orifice"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h4 className="text-2xl font-bold mb-4 text-center">Single Orifice</h4>
-                    <p className="text-gray-600 text-center">
-                      Provides a consistent damping force, ideal for applications requiring uniform deceleration.
-                    </p>
-                  </div>
-                </div>
-
-                {/* VS Text */}
-                <div className="text-7xl font-bold text-gray-800">
-                  VS
-                </div>
-
-                {/* Multiple Orifices Card */}
-                <div className="w-[500px] bg-white rounded-lg shadow-lg overflow-hidden">
-                  <div className="relative h-[300px]">
-                    <Image
-                      src="/images/dampers/multiple-orifice.jpg"
-                      alt="Multiple Orifices"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h4 className="text-2xl font-bold mb-4 text-center">Multiple Orifices</h4>
-                    <p className="text-gray-600 text-center">
-                      Allows for variable damping forces, suitable for more complex motion control needs.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             {/* Direction of Force */}
             <div>
               <h3 className="text-3xl font-bold text-center mb-8">
