@@ -385,73 +385,107 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Form Section - Full Screen */}
-      <section className="h-screen flex items-center bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16">Contact Us</h2>
-          <div className="max-w-2xl mx-auto">
-            <form className="space-y-6">
-              <div className="grid grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    className="w-full px-4 py-2 border rounded-lg"
-                    required
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Company
-                  </label>
-                  <input
-                    type="text"
-                    className="w-full px-4 py-2 border rounded-lg"
-                    required
-                  />
-                </div>
-              </div>
-              <div className="grid grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    className="w-full px-4 py-2 border rounded-lg"
-                    required
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Phone
-                  </label>
-                  <input
-                    type="tel"
-                    className="w-full px-4 py-2 border rounded-lg"
-                    required
-                  />
+          {/* Contact Us Section */}
+          <section className="w-full bg-slate-100 py-24"> {/* Changed bg-white to bg-slate-100 */}
+        <div className="mx-auto px-4" style={{maxWidth: '1400px'}}>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            Contact Us
+          </h2>
+          <div className="flex flex-col md:flex-row gap-12">
+            {/* 联系信息 */}
+            <div className="md:w-1/3">
+              <div className="bg-white rounded-lg p-8 shadow-lg"> {/* Changed bg-gray-50 to bg-white */}
+                <h3 className="text-2xl font-bold text-indigo-700 mb-6">Get in Touch</h3> {/* Changed text-blue-700 to text-indigo-700 */}
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2">Address</h4>
+                    <p className="text-gray-600">123 Business Street, Ningbo, Zhejiang, China</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2">Email</h4>
+                    <a href="mailto:info@example.com" className="text-blue-600 hover:text-blue-800">
+                      info@example.com
+                    </a>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2">Phone</h4>
+                    <a href="tel:+86123456789" className="text-blue-600 hover:text-blue-800">
+                      +86 123 456 789
+                    </a>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2">Working Hours</h4>
+                    <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    <p className="text-gray-600">Saturday: 9:00 AM - 1:00 PM</p>
+                  </div>
                 </div>
               </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Message
-                </label>
-                <textarea
-                  rows="6"
-                  className="w-full px-4 py-2 border rounded-lg"
-                  required
-                ></textarea>
+            </div>
+
+            {/* 联系表单 */}
+            <div className="md:w-2/3">
+              <div className="bg-white rounded-lg p-8 shadow-lg"> {/* Changed bg-gray-50 to bg-white */}
+                <h3 className="text-2xl font-bold text-indigo-700 mb-6">Send Us a Message</h3> {/* Changed text-blue-700 to text-indigo-700 */}
+                <form className="space-y-6">
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
+                        Your Name
+                      </label>
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors"
+                        placeholder="John Doe"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
+                        Your Email
+                      </label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors"
+                        placeholder="john@example.com"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <label htmlFor="subject" className="block text-gray-700 font-medium mb-2">
+                      Subject
+                    </label>
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors"
+                      placeholder="How can we help you?"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="message" className="block text-gray-700 font-medium mb-2">
+                      Message
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="5"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors"
+                      placeholder="Write your message here..."
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition-colors" // Changed button colors
+                  >
+                    Send Message
+                  </button>
+                </form>
               </div>
-              <button
-                type="submit"
-                className="w-full bg-primary text-white py-3 rounded-lg hover:bg-primary/90 font-medium"
-              >
-                Send Message
-              </button>
-            </form>
+            </div>
           </div>
         </div>
       </section>

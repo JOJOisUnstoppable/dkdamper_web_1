@@ -34,6 +34,7 @@ export default function ProductCategories() {
 
   // 添加布局状态
   const [viewMode, setViewMode] = useState('grid') // 'grid' 或 'list'
+  const maxOverallForce = 1000; // 定义一个通用的最大参考力矩，您可以根据实际情况调整
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -82,6 +83,23 @@ export default function ProductCategories() {
             const product = getProductById(productId)
             if (!product) return null
 
+            // 解析力矩范围数据
+            let forceValue = 0;
+            let forceRangeText = "N/A";
+            const rawForceRange = product.specs?.["Force Range"] || product.specs?.forceRange?.value || product.specs?.dampingForce?.value;
+
+            if (rawForceRange && typeof rawForceRange === 'string') {
+              forceRangeText = rawForceRange;
+              const parts = rawForceRange.replace(/N$/, '').split('-'); // 移除末尾的 'N' 并分割
+              const maxForceStr = parts.length > 1 ? parts[1] : parts[0]; // 取范围的最大值或单个值
+              const parsedMaxForce = parseInt(maxForceStr, 10);
+              if (!isNaN(parsedMaxForce)) {
+                forceValue = parsedMaxForce;
+              }
+            }
+            
+            const forcePercentage = maxOverallForce > 0 ? (forceValue / maxOverallForce) * 100 : 0;
+
             return (
               <Link
                 key={productId}
@@ -122,18 +140,28 @@ export default function ProductCategories() {
                     </ul>
                   </div>
 
-                  {/* Key Features */}
-                  <div className="mb-5">
-                    <h5 className="font-semibold text-gray-900 mb-3 text-base">Key Features:</h5>
-                    <ul className="space-y-2">
-                      {product.features?.slice(0, 3).map((feature, i) => (
-                        <li key={i} className="flex items-center text-gray-600 text-base">
-                          <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                          {feature.content}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                  {/* Force Range Progress Bar - REPLACING Key Features */}
+                  {rawForceRange && forceRangeText !== "N/A" && ( // 只在有力矩数据时显示
+                    <div className="mb-5">
+                      <h5 className="font-semibold text-gray-900 mb-2 text-base">Force Range:</h5>
+                      <div className="w-1/4"> {/* New wrapper div for bar and text */}
+                        <div 
+                          className="h-6 bg-gray-200 rounded-lg overflow-hidden relative" // Removed w-1/4 from here
+                        >
+                          <div 
+                            className="h-full bg-gradient-to-r from-blue-500 to-blue-700" // 您可以调整颜色，例如使用 'bg-primary'
+                            style={{
+                              width: `${forcePercentage}%`
+                            }}
+                          />
+                          {/* Text is no longer here */}
+                        </div>
+                        <div className="text-xs font-medium text-black mt-1 text-center"> {/* Text below the bar */}
+                          {forceRangeText}
+                        </div>
+                      </div>
+                    </div>
+                  )}
 
                   {/* Advantage Tags */}
                   <div className="flex flex-wrap gap-2 mt-5">
