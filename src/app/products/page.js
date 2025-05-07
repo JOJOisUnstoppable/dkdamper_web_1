@@ -80,7 +80,7 @@ export default function Products() {
                 id: 'Φ6mm',
                 model: "Mini Linear Damper Φ6mm",
                 description: "Mini linear hydraulic dampers with one-way damping, featuring automatic spring return and re-arm mechanism. Ideal for precision control in compact applications.",
-                image: "/images/products/Linear_Damper_products_Series_1.jpg",
+                image: "/images/products/products_1.jpg",
                 specs: {
                   "Force Range": "0-100N",
                   "Stroke Length": "10-50mm",
@@ -92,7 +92,7 @@ export default function Products() {
                 id: 'Φ8mm',
                 model: "Linear Damper Φ8mm",
                 description: "Linear hydraulic dampers with one-way damping, automatic spring return and re-arm functionality. Perfect balance of size and performance.",
-                image: "/images/products/Linear_Damper_products_Series_2.jpg",
+                image: "/images/products/products_2.jpg",
                 specs: {
                   "Force Range": "0-350N",
                   "Stroke Length": "10-100mm",
@@ -104,7 +104,7 @@ export default function Products() {
                 id: 'Φ10mm',
                 model: "Linear Damper Φ10mm",
                 description: "Standard linear hydraulic dampers with one-way damping and spring return. Offers reliable performance for medium-duty applications.",
-                image: "/images/products/Linear_Damper_products_Series_3.jpg",
+                image: "/images/products/products_3.jpg",
                 specs: {
                   "Force Range": "0-870N",
                   "Stroke Length": "20-150mm",
@@ -116,7 +116,7 @@ export default function Products() {
                 id: 'Φ12mm',
                 model: "Max Linear Damper Φ12mm",
                 description: "Heavy-duty linear hydraulic dampers with customizable stroke and damping direction. Features one-way damping with spring return, ideal for high-force applications.",
-                image: "/images/products/Linear_Damper_products_Series_4.jpg",
+                image: "/images/products/products_4.jpg",
                 specs: {
                   "Force Range": "0-2400N",
                   "Stroke Length": "10-200mm",
