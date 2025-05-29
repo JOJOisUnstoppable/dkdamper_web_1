@@ -95,7 +95,7 @@ export default function Home() {
               {
                 step: "Step 1",
                 title: "Requirement Confirmation",
-                description: "Our engineers analyze your application needs, including load capacity (5-500N standard), stroke length, and environmental factors. We provide force-deflection curves and 3D models for approval.",
+                description: "Our engineers analyze your application needs, including load capacity (5-2400N standard), stroke length, and environmental factors. We provide force-deflection curves and 3D models for approval.",
                 image: "/images/home/step1.jpg"
               },
               {
@@ -306,56 +306,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section - Full Screen */}
-      <section className="h-screen flex items-center bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16">Customer Testimonials</h2>
-          <div className="grid grid-cols-3 gap-8 mb-12">
-            {[
-              {
-                name: "John Smith",
-                company: "Medical Systems Inc.",
-                content: "DK's gas springs have significantly improved the reliability of our medical equipment. Their technical support is outstanding.",
-                image: "/images/testimonial-1.jpg"
-              },
-              {
-                name: "Sarah Johnson",
-                company: "Vehicle Solutions Ltd.",
-                content: "The custom dampers from DK perfectly meet our specific requirements. Their attention to detail and quality is impressive.",
-                image: "/images/testimonial-2.jpg"
-              },
-              {
-                name: "Michael Chen",
-                company: "Global Manufacturing Co.",
-                content: "Working with DK has been a game-changer for our production line. Their products are consistently high-quality.",
-                image: "/images/testimonial-3.jpg"
-              }
-            ].map((testimonial, index) => (
-              <div key={index} className="bg-gray-50 p-6 rounded-lg">
-                <div className="flex items-center mb-4">
-                  <div className="relative w-12 h-12 mr-4">
-                    <Image
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      fill
-                      className="object-cover rounded-full"
-                    />
-                  </div>
-                  <div>
-                    <h4 className="font-bold">{testimonial.name}</h4>
-                    <p className="text-sm text-gray-600">{testimonial.company}</p>
-                  </div>
-                </div>
-                <p className="text-gray-700">{testimonial.content}</p>
-              </div>
-            ))}
-          </div>
-          <p className="text-center text-gray-600">
-            Join the ranks of satisfied clients like Genie and Stryker, who trust DK for their damper needs. Our customer feedback section features testimonials from prestigious partners.
-          </p>
-        </div>
-      </section>
-
       {/* Technical Support Section - Full Screen */}
       <section className="h-screen relative flex items-center">
         <div className="absolute inset-0">
@@ -399,18 +349,18 @@ export default function Home() {
                 <div className="space-y-6">
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-2">Address</h4>
-                    <p className="text-gray-600">123 Business Street, Ningbo, Zhejiang, China</p>
+                    <p className="text-gray-600">Business Street, Ningbo, Zhejiang, China</p>
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-2">Email</h4>
                     <a href="mailto:info@example.com" className="text-blue-600 hover:text-blue-800">
-                      info@example.com
+                      info@lineardamper.com
                     </a>
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-2">Phone</h4>
                     <a href="tel:+86123456789" className="text-blue-600 hover:text-blue-800">
-                      +86 123 456 789
+                      +86 233 421 663
                     </a>
                   </div>
                   <div>

@@ -6,7 +6,7 @@ import { categories } from '@/data/categories'
 import { getProductById } from '@/data/products'
 
 export default function ProductCategories() {
-  const [activeCategory, setActiveCategory] = useState('all')
+  const [activeCategory, setActiveCategory] = useState('Φ6mm') // 将默认分类改为 'Φ6mm'
   const [currentPage, setCurrentPage] = useState(1)
   const productsPerPage = 12 // 修改为12，确保每页显示4行3列
   
@@ -34,7 +34,7 @@ export default function ProductCategories() {
 
   // 添加布局状态
   const [viewMode, setViewMode] = useState('grid') // 'grid' 或 'list'
-  const maxOverallForce = 1000; // 定义一个通用的最大参考力矩，您可以根据实际情况调整
+  const maxOverallForce = 3000; // 定义一个通用的最大参考力矩，您可以根据实际情况调整
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -43,20 +43,7 @@ export default function ProductCategories() {
         <div className="container mx-auto px-4 pt-[100px] pb-8">
           <h1 className="text-5xl font-bold text-gray-900 mb-8">Our Products</h1>
           <div className="flex flex-wrap gap-4 mb-8">
-            <button
-              onClick={() => {
-                setActiveCategory('all')
-                setCurrentPage(1)
-              }}
-              className={`px-4 py-2 rounded-full ${
-                activeCategory === 'all'
-                  ? 'bg-primary text-white'
-                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-              }`}
-            >
-              All Products
-            </button>
-            {categories.slice(1).map((cat) => (
+            {categories.map((cat) => (
               <button
                 key={cat.id}
                 onClick={() => {
@@ -68,11 +55,11 @@ export default function ProductCategories() {
                     ? 'bg-primary text-white'
                     : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                   }`}
-                >
-                  {cat.name}
-                </button>
-              ))}
-            </div>
+              >
+                {cat.name}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
@@ -86,12 +73,12 @@ export default function ProductCategories() {
             // 解析力矩范围数据
             let forceValue = 0;
             let forceRangeText = "N/A";
-            const rawForceRange = product.specs?.["Force Range"] || product.specs?.forceRange?.value || product.specs?.dampingForce?.value;
+            const rawForceRange = product.specs?.specs?.["Force Range"] || product.specs?.specs?.forceRange?.value || product.specs?.specs?.dampingForce?.value;
 
             if (rawForceRange && typeof rawForceRange === 'string') {
               forceRangeText = rawForceRange;
-              const parts = rawForceRange.replace(/N$/, '').split('-'); // 移除末尾的 'N' 并分割
-              const maxForceStr = parts.length > 1 ? parts[1] : parts[0]; // 取范围的最大值或单个值
+              const parts = rawForceRange.replace(/N$/, '').split('-');
+              const maxForceStr = parts.length > 1 ? parts[1] : parts[0];
               const parsedMaxForce = parseInt(maxForceStr, 10);
               if (!isNaN(parsedMaxForce)) {
                 forceValue = parsedMaxForce;

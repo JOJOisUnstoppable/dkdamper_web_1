@@ -65,7 +65,7 @@ export default function IndustryPage() {
     {
       id: 'automotive',
       name: 'Automotive Industry',
-      icon: '/images/industry/industry_1.svg',
+      icon: '🚗',
       solutions: [
         {
           id: 'automotive-control',
@@ -77,15 +77,15 @@ export default function IndustryPage() {
         {
           id: 'automotive-damping',
           title: 'Automotive Damping Systems',
-          description: 'High-performance automotive suspension systems providing a smooth driving experience.',
-          features: ['Vibration Reduction', 'Improved Comfort', 'Extended Component Lifespan', 'Adaptable to Various Road Conditions'],
+          description: '高性能汽车减震系统，提供平稳驾驶体验',
+          features: ['减少振动', '提高舒适度', '延长部件寿命', '适应各种路况'],
           image: '/images/solutions/automotive-damping.jpg'
         },
         {
           id: 'automotive-door',
           title: 'Door Control Solutions',
-          description: 'Automotive door control systems ensuring smooth operation.',
-          features: ['Noise-Free Operation', 'Anti-Pinch Protection', 'Adjustable Force', 'Durable Design'],
+          description: '汽车门控制系统，确保平稳开关',
+          features: ['无噪音操作', '防夹保护', '可调节力度', '耐用设计'],
           image: '/images/solutions/door-control.jpg'
         }
       ]
@@ -93,7 +93,7 @@ export default function IndustryPage() {
     {
       id: 'commercial-vehicles',
       name: 'Commercial Vehicles',
-      icon: '/images/industry/industry_2.svg',
+      icon: '🚛',
       solutions: [
         {
           id: 'commercial-systems',
@@ -107,7 +107,7 @@ export default function IndustryPage() {
     {
       id: 'transportation',
       name: 'Aviation, Marine & Rail',
-      icon: '/images/industry/industry_3.svg',
+      icon: '✈️',
       solutions: [
         {
           id: 'transport-solutions',
@@ -121,7 +121,7 @@ export default function IndustryPage() {
     {
       id: 'energy-construction',
       name: 'Energy & Construction',
-      icon: '/images/industry/industry_4.svg',
+      icon: '⚡',
       solutions: [
         {
           id: 'industrial-damping',
@@ -135,7 +135,7 @@ export default function IndustryPage() {
     {
       id: 'automation',
       name: 'Machine & Automation',
-      icon: '/images/industry/industry_5.svg',
+      icon: '🤖',
       solutions: [
         {
           id: 'automation-control',
@@ -149,7 +149,7 @@ export default function IndustryPage() {
     {
       id: 'lifestyle',
       name: 'Health & Furniture',
-      icon: '/images/industry/industry_6.svg',
+      icon: '🏥',
       solutions: [
         {
           id: 'lifestyle-solutions',
@@ -240,7 +240,7 @@ export default function IndustryPage() {
                     }`}
                   >
                     <div className="flex justify-center mb-4">
-                      <img src={industry.icon} alt={industry.name} className="w-24 h-24 filter-white" />
+                      {industry.icon}
                     </div>
                     <p className="text-sm">{industry.name}</p>
                   </div>
@@ -452,3 +452,4 @@ export default function IndustryPage() {
     </div>
   )
 }
+

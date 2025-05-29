@@ -1,70 +1,61 @@
 export const categories = [
-  { id: 'all', name: 'All Products' },
-  { 
-    id: 'medical', 
-    name: 'Medical Equipment Series',
-    description: 'High-precision dampers for medical equipment applications',
-    products: ['JP-CA1210', 'JP-CA10', 'JP-CU038']
+  {
+    id: 'Φ6mm',
+    name: 'Φ6mm Series',
+    description: 'Φ6mm Mini Linear Damper', // 从 page.js 中的 model 字段获取
+    products: ['Φ6mm']
   },
-  { 
-    id: 'industrial', 
-    name: 'Industrial Series',
-    description: 'Professional dampers for industrial applications',
-    products: [
-      // JP-801 Series
-      'JP-801-108P', 'JP-801-82P', 'JP-801-82A', 
-      'JP-801-77A', 'JP-801-50A', 'JP-801-M01',
-      // JP-802 Series
-      'JP-802-69P', 'JP-802-82P', 'JP-802-60P',
-      'JP-802-82A', 'JP-802-49P', 'JP-802-49A',
-      'JP-802-88', 'JP-802-115',
-      // JP-803 Series
-      'JP-803-140P', 'JP-803-92P', 'JP-803-117P', 'JP-803-92A'
-    ]
+  {
+    id: 'Φ8mm',
+    name: 'Φ8mm Series',
+    description: 'Φ8mm Linear Damper', // 从 page.js 中的 model 字段获取
+    products: ['Φ8mm']
   },
-  { 
-    id: 'professional', 
-    name: 'Professional Series',
-    description: 'High-performance dampers for specialized applications',
-    products: ['PR-L202', 'PR-L208', 'PR-L223', 'PR-L241']
+  {
+    id: 'Φ10mm',
+    name: 'Φ10mm Series',
+    description: 'Φ10mm Linear Damper', // 从 page.js 中的 model 字段获取
+    products: ['Φ10mm']
+  },
+  {
+    id: 'Φ12mm',
+    name: 'Φ12mm Series',
+    description: 'Φ12mm Max Linear Damper', // 从 page.js 中的 model 字段获取
+    products: ['Φ12mm']
   }
-]
+];
 
 // 按系列分组的产品
 export const productSeries = {
-  'JP-801': {
-    name: 'JP-801 Series',
-    products: ['JP-801-108P', 'JP-801-82P', 'JP-801-82A', 'JP-801-77A', 'JP-801-50A', 'JP-801-M01']
+  'Φ6mm': {
+    name: 'Φ6mm Series',
+    products: ['Φ6mm']
   },
-  'JP-802': {
-    name: 'JP-802 Series',
-    products: ['JP-802-69P', 'JP-802-82P', 'JP-802-60P', 'JP-802-82A', 'JP-802-49P', 'JP-802-49A', 'JP-802-88', 'JP-802-115']
+  'Φ8mm': {
+    name: 'Φ8mm Series',
+    products: ['Φ8mm']
   },
-  'JP-803': {
-    name: 'JP-803 Series',
-    products: ['JP-803-140P', 'JP-803-92P', 'JP-803-117P', 'JP-803-92A']
+  'Φ10mm': {
+    name: 'Φ10mm Series',
+    products: ['Φ10mm']
   },
-  'Medical': {
-    name: 'Medical Series',
-    products: ['JP-CA1210', 'JP-CA10', 'JP-CU038']
-  },
-  'Professional': {
-    name: 'Professional Series',
-    products: ['PR-L202', 'PR-L208', 'PR-L223', 'PR-L241']
+  'Φ12mm': {
+    name: 'Φ12mm Series',
+    products: ['Φ12mm']
   }
-}
+};
 
 // 获取产品所属的系列
 export const getProductSeries = (productId) => {
   for (const [series, data] of Object.entries(productSeries)) {
     if (data.products.includes(productId)) {
-      return series
+      return series;
     }
   }
-  return null
-}
+  return null;
+};
 
 // 获取特定系列的所有产品
 export const getSeriesProducts = (seriesId) => {
-  return productSeries[seriesId]?.products || []
-}
+  return productSeries[seriesId]?.products || [];
+};

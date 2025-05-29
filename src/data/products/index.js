@@ -23,7 +23,12 @@ import { productData as JP_803_140P } from './JP-803-140P'
 import { productData as JP_803_92P } from './JP-803-92P'
 import { productData as JP_803_117P } from './JP-803-117P'
 import { productData as JP_803_92A } from './JP-803-92A'
+import { productData as Φ6mm } from './Φ6mm'
+import { productData as Φ8mm } from './Φ8mm'
+import { productData as Φ10mm } from './Φ10mm'
+import { productData as Φ12mm } from './Φ12mm'
 
+// 合并所有产品数据
 const productsData = {
   'JP-CA1210': JP_CA1210,
   'PR-L202': PR_L202,
@@ -49,12 +54,23 @@ const productsData = {
   'JP-803-140P': JP_803_140P,
   'JP-803-92P': JP_803_92P,
   'JP-803-117P': JP_803_117P,
-  'JP-803-92A': JP_803_92A
+  'JP-803-92A': JP_803_92A,
+  'Φ6mm': Φ6mm,
+  'Φ8mm': Φ8mm,
+  'Φ10mm': Φ10mm,
+  'Φ12mm': Φ12mm
 }
 
-export const getProductById = (id) => {
+// 根据产品ID获取产品数据
+export const getProductDataById = (id) => {
   console.log('Fetching product:', id)
   return productsData[id]
+}
+
+// 统一的产品获取函数
+export const getProductById = (id) => {
+  console.log('Fetching product:', id)
+  return productsData[id] || null
 }
 
 export const getAllProducts = () => Object.values(productsData)

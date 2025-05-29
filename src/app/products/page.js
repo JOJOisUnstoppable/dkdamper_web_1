@@ -73,8 +73,9 @@ export default function Products() {
           <p className="text-xl text-gray-600 text-center mb-16 max-w-4xl mx-auto">
             We offer a variety of linear dampers, from mini Φ6mm to heavy-duty Φ12mm, meeting the needs of different industries and application scenarios. Each product is meticulously designed and rigorously tested to ensure excellent performance and reliability.
           </p>
-          
-          <div className="space-y-8">
+          {/* 产品卡片 */}
+          {/*<div className="grid grid-cols-1 gap-y-6 gap-x-16">*/}{/* 将 space-y-8 改为 grid 布局 */}
+          <div className="space-y-8">{/* 将 space-y-8 改为 grid 布局 */}
             {[
               {
                 id: 'Φ6mm',
@@ -126,36 +127,33 @@ export default function Products() {
               }
             ].map((product, index) => (
               <div key={index} 
-                className="flex items-stretch gap-6 bg-white rounded-xl overflow-hidden hover:bg-gray-100 transition-colors shadow-lg hover:shadow-xl border border-gray-100"
+                className="bg-white rounded-xl overflow-hidden transition-all shadow-lg hover:shadow-xl border border-gray-100 hover:border-blue-400"
               >
                 {/* 产品图片 */}
-                <div className="w-1/3 h-56 relative"> 
+                <div className="h-48 relative text-left">
                   <Image
                     src={product.image}
                     alt={product.model}
                     fill
-                    className="object-contain" /* Changed from object-cover to object-contain */
+                    className="object-contain"
                   />
                 </div>
                 
                 {/* 产品信息区域 */}
-                <div className="flex-grow p-6 flex items-start gap-8"> {/* Changed items-center to items-start */}
-                  {/* 型号和规格 */}
-                  <div className="w-64 flex-shrink-0">
-                    <div className="text-3xl font-bold text-gray-800">{product.id}</div>
-                    <div className="mt-2 px-3 py-1 bg-blue-100 text-blue-800 rounded-full inline-block text-sm">
-                      {product.specs["Material"]}
-                    </div>
+                <div className="p-6 space-y-6">
+                  {/* 型号 */}
+                  <div>
+                    <div className="text-2xl font-bold text-gray-800">{product.id}</div>
+                    <h3 className="font-bold text-xl mt-2">{product.model}</h3>
                   </div>
                   
                   {/* 描述 */}
-                  <div className="flex-grow">
-                    <h3 className="font-bold text-xl mb-2">{product.model}</h3> {/* Changed from product.name to product.model */}
-                    <p className="text-gray-600">{product.description}</p>
+                  <div>
+                    <p className="text-gray-600 line-clamp-3">{product.description}</p>
                   </div>
                   
                   {/* 力矩标尺 */}
-                  <div className="w-56 flex-shrink-0">
+                  <div>
                     <div className="mb-2 text-sm font-medium">Force Range</div>
                     <div className="h-6 bg-gray-200 rounded-lg overflow-hidden relative">
                       <div 
@@ -169,6 +167,16 @@ export default function Products() {
                       </div>
                     </div>
                   </div>
+                  
+                  {/* 材料标签  */}
+                  <div className="flex justify-start gap-x-2">
+                    <div className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                      {product.specs["Material"]}
+                    </div>
+                    <div className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                      {"stainless steel"}
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
@@ -178,6 +186,12 @@ export default function Products() {
           <div className="mt-16 flex justify-center gap-8">
             <Link href="/products/categories" className="px-10 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors flex items-center text-lg font-medium shadow-md hover:shadow-lg">
               <span>View All Products</span>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-3" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+              </svg>
+            </Link>
+            <Link href="/customize" className="px-10 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors flex items-center text-lg font-medium shadow-md hover:shadow-lg">
+              <span>Customize</span>
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-3" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
               </svg>

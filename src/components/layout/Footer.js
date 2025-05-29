@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <h3 className="text-xl font-bold mb-4">Company Name</h3>
-            <p className="text-gray-400">Professional B2B Solutions Provider</p>
+            <p className="text-gray-400">DK Machinery Co.,ltd</p>
           </div>
 
           {/* Quick Links */}

@@ -13,9 +13,9 @@ export default function Header() {
             Company Name
           </Link>
           
-          <div className="hidden md:flex space-x-6">
+          <div className="hidden md:flex space-x-6 pr-[100px]">
             <Link href="/products" className="hover:text-secondary transition-colors">Products</Link>
-            <Link href="/industry" className="hover:text-secondary transition-colors">Industry Solutions</Link>
+            {/* <Link href="/industry" className="hover:text-secondary transition-colors">Industry Solutions</Link> */}
             <Link href="/blog" className="hover:text-secondary transition-colors">Blog</Link>
             <Link href="/about" className="hover:text-secondary transition-colors">About Us</Link>
             <Link href="/contact" className="hover:text-secondary transition-colors">Contact</Link>
@@ -25,7 +25,7 @@ export default function Header() {
             <div className="md:hidden py-4">
               <div className="flex flex-col space-y-4">
                 <Link href="/products" className="hover:text-secondary transition-colors">Products</Link>
-                <Link href="/industry" className="hover:text-secondary transition-colors">Industry Solutions</Link>
+                {/* <Link href="/industry" className="hover:text-secondary transition-colors">Industry Solutions</Link> */}
                 <Link href="/blog" className="hover:text-secondary transition-colors">Blog</Link>
                 <Link href="/about" className="hover:text-secondary transition-colors">About Us</Link>
                 <Link href="/contact" className="hover:text-secondary transition-colors">Contact</Link>
@@ -46,7 +46,7 @@ export default function Header() {
           <div className="md:hidden py-4">
             <div className="flex flex-col space-y-4">
                 <Link href="/products" className="hover:text-secondary transition-colors">Products</Link>
-                <Link href="/industry" className="hover:text-secondary transition-colors">Industry Solutions</Link>
+                {/* <Link href="/industry" className="hover:text-secondary transition-colors">Industry Solutions</Link> */}
                 <Link href="/blog" className="hover:text-secondary transition-colors">Blog</Link>
                 <Link href="/about" className="hover:text-secondary transition-colors">About Us</Link>
                 <Link href="/contact" className="hover:text-secondary transition-colors">Contact</Link>
