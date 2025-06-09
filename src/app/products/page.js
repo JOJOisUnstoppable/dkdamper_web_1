@@ -71,7 +71,7 @@ export default function Products() {
           </div>
           
           <p className="text-xl text-gray-600 text-center mb-16 max-w-4xl mx-auto">
-            We offer a variety of linear dampers, from mini Φ6mm to heavy-duty Φ12mm, meeting the needs of different industries and application scenarios. Each product is meticulously designed and rigorously tested to ensure excellent performance and reliability.
+            We offer a variety of linear dampers, from mini Φ6mm to Φ12mm, meeting the needs of different industries and application scenarios. Each product is meticulously designed and rigorously tested to ensure excellent performance and reliability.
           </p>
           {/* 产品卡片 */}
           {/*<div className="grid grid-cols-1 gap-y-6 gap-x-16">*/}{/* 将 space-y-8 改为 grid 布局 */}
@@ -427,55 +427,63 @@ export default function Products() {
                     <tbody>
                       {[
                         {
-                          name: "PR-L202(Φ10mm)",
+                          name: "D10A",
                           temps: [false, true, true, true, true, true, true, true, true, true, true, true, true]
                         },
                         {
-                          name: "PR-L208(Φ10mm)",
+                          name: "D10B",
                           temps: [false, true, true, true, true, true, false, false, false, false, false, false, false]
                         },
                         {
-                          name: "PR-L223(Φ8mm)",
+                          name: "D08A",
                           temps: [false, true, true, true, true, true, false, false, false, false, false, false, false]
                         },
                         {
-                          name: "PR-L241(Φ12mm)",
+                          name: "D12A",
                           temps: [true, true, true, true, true, true, true, true, true, false, false, false, false]
                         },
                         {
-                          name: "JP-CA10(Φ10mm) - Dynamic",
+                          name: "D10C - Dynamic",
                           temps: [true, true, true, true, true, false, false, false, false, false, false, false, false]
                         },
                         {
-                          name: "JP-CA10(Φ10mm) - Static",
+                          name: "D10C - Static",
                           temps: [false, true, true, true, true, true, true, true, false, false, false, false, false]
                         },
                         {
-                          name: "JP-CA1210(Φ12mm)",
+                          name: "D12B",
                           temps: [false, false, false, true, true, true, true, true, false, false, false, false, false]
                         },
                         {
-                          name: "JP-CU038(Φ10mm) - Dynamic",
+                          name: "D10D - Dynamic",
                           temps: [false, true, true, true, true, true, false, false, false, false, false, false, false]
                         },
                         {
-                          name: "JP-CU038(Φ10mm) - Static",
+                          name: "D10D - Static",
                           temps: [false, true, true, true, true, true, true, true, false, false, false, false, false]
                         },
                         {
-                          name: "JP-801 Series",
+                          name: "D10E",
                           temps: [false, true, true, true, true, true, false, false, false, false, false, false, false]
                         },
                         {
-                          name: "JP-802 Series",
+                          name: "D12C",
                           temps: [false, true, true, true, true, true, false, false, false, false, false, false, false]
                         },
                         {
-                          name: "JP-803 Series",
+                          name: "D12D",
                           temps: [false, true, true, true, true, true, false, false, false, false, false, false, false]
                         },
                         {
-                          name: "JP-804 Series",
+                          name: "D12E",
+                          temps: [false, true, true, true, true, true, false, false, false, false, false, false, false]
+                        },
+                        {
+                          name: "D10F",
+                          temps: [false, true, true, true, true, true, false, false, false, false, false, false, false]
+                        },
+                        {
+                          name: "D12F",
                           temps: [false, true, true, true, true, true, false, false, false, false, false, false, false]
                         }
                       ].map((model, index) => (
@@ -496,14 +504,14 @@ export default function Products() {
               </div>
               <div className="max-w-[1200px] mx-auto">
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Temperature range is a critical factor in selecting a linear damper. Most standard dampers 
-                  operate efficiently between -20°C to 60°C. However, specialized models like the PR-L202 
-                  can handle temperatures up to 120°C, while medical-grade dampers like JP-CA10 are optimized 
+                  Temperature range is a critical factor in selecting a linear damper. Most standard dampers
+                  operate efficiently between -20°C to 60°C. However, specialized models like the D10A
+                  can handle temperatures up to 120°C, while medical-grade dampers like D10C are optimized
                   for more moderate temperature ranges of 10℃-50℃ during operation.
                 </p>
                 <p className="text-xl text-gray-600 leading-relaxed mt-4">
-                  Consider not just the operating temperature but also storage conditions. Some models, 
-                  such as the JP-CU038, have different temperature tolerances for dynamic operation 
+                  Consider not just the operating temperature but also storage conditions. Some models,
+                  such as the D10D, have different temperature tolerances for dynamic operation
                   (20℃-60℃) versus static storage (20°C - 80°C).
                 </p>
               </div>

@@ -256,38 +256,4 @@ const tags = [
   'Enterprise Management', 'Industry Trends', 'Best Practices', 'Case Analysis'
 ]
 
-const posts = [
-  {
-    id: 1,
-    title: 'Key Steps for Enterprise Digital Transformation',
-    excerpt: 'Digital transformation is essential for enterprise development. This article will detail the key steps and considerations...',
-    category: 'tech',
-    tags: ['Digital Transformation', 'Tech Innovation', 'Best Practices'],
-    date: '2024-01-01',
-    author: 'John Doe'
-  },
-  {
-    id: 2,
-    title: 'B2B Development Trends in 2024',
-    excerpt: 'With continuous technological advancement, the B2B industry is undergoing profound changes. This article analyzes the main trends...',
-    category: 'industry',
-    date: '2024-01-02',
-    author: 'Jane Smith'
-  },
-  {
-    id: 3,
-    title: 'How to select suitable enterprise solutions',
-    excerpt: 'Face the numerous enterprise solutions, how to select the most suitable enterprise solutions? This article provides professional suggestions...',
-    category: 'solution',
-    date: '2024-01-03',
-    author: 'Jane Smith'
-  },
-  {
-    id: 4,
-    title: 'Case Analysis of Manufacture Enterprise Digital Transformation',
-    excerpt: 'Through specific case analysis, understanding the manufacture enterprise is how through digital transformation enhances production efficiency...',
-    category: 'case',
-    date: '2024-01-04',
-    author: 'Jane Smith'
-  }
-]
+const posts = []
