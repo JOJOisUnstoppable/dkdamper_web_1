@@ -1,10 +1,10 @@
 // Basic Information
 export const basicInfo = {
-  id: 'Φ8mm',
+  id: 'LD8mm',
   name: 'Linear Damper Φ8mm',
   category: 'Standard Linear Dampers',
-  categoryId: 'Φ8mm',
-  seriesId: 'Φ8mm',
+  categoryId: 'LD8mm',
+  seriesId: 'LD8mm',
   shortDescription: 'Linear hydraulic dampers with one-way damping',
   description: 'Linear hydraulic dampers with one-way damping, automatic spring return and re-arm functionality. Perfect balance of size and performance.',
   image: '/images/products/products_2.jpg'

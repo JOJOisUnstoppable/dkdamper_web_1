@@ -1,10 +1,10 @@
 // Basic Information
 export const basicInfo = {
-  id: 'Φ6mm',
+  id: 'LD6mm',
   name: 'Mini Linear Damper Φ6mm',
   category: 'Mini Linear Dampers',
-  categoryId: 'Φ6mm',
-  seriesId: 'Φ6mm',
+  categoryId: 'LD6mm',
+  seriesId: 'LD6mm',
   shortDescription: 'Mini linear hydraulic dampers with one-way damping',
   description: 'Mini linear hydraulic dampers with one-way damping, featuring automatic spring return and re-arm mechanism. Ideal for precision control in compact applications.',
   image: '/images/products/products_1.jpg'

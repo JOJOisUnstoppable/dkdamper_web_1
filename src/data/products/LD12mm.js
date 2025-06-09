@@ -1,10 +1,10 @@
 // Basic Information
 export const basicInfo = {
-  id: 'Φ12mm',
+  id: 'LD12mm',
   name: 'Max Linear Damper Φ12mm',
   category: 'Heavy-duty Linear Dampers',
-  categoryId: 'Φ12mm',
-  seriesId: 'Φ12mm',
+  categoryId: 'LD12mm',
+  seriesId: 'LD12mm',
   shortDescription: 'Heavy-duty linear hydraulic dampers with customizable features',
   description: 'Heavy-duty linear hydraulic dampers with customizable stroke and damping direction. Features one-way damping with spring return, ideal for high-force applications.',
   image: '/images/products/products_4.jpg'

@@ -1,10 +1,10 @@
 // Basic Information
 export const basicInfo = {
-  id: 'Φ10mm',
+  id: 'LD10mm',
   name: 'Linear Damper Φ10mm',
   category: 'Standard Linear Dampers',
-  categoryId: 'Φ10mm',
-  seriesId: 'Φ10mm',
+  categoryId: 'LD10mm',
+  seriesId: 'LD10mm',
   shortDescription: 'Standard linear hydraulic dampers with one-way damping',
   description: 'Standard linear hydraulic dampers with one-way damping and spring return. Offers reliable performance for medium-duty applications.',
   image: '/images/products/products_3.jpg'

@@ -23,10 +23,10 @@ import { productData as JP_803_140P } from './JP-803-140P'
 import { productData as JP_803_92P } from './JP-803-92P'
 import { productData as JP_803_117P } from './JP-803-117P'
 import { productData as JP_803_92A } from './JP-803-92A'
-import { productData as Φ6mm } from './Φ6mm'
-import { productData as Φ8mm } from './Φ8mm'
-import { productData as Φ10mm } from './Φ10mm'
-import { productData as Φ12mm } from './Φ12mm'
+import { productData as LD6mm } from './LD6mm'
+import { productData as LD8mm } from './LD8mm'
+import { productData as LD10mm } from './LD10mm'
+import { productData as LD12mm } from './LD12mm'
 
 // 合并所有产品数据
 const productsData = {
@@ -55,10 +55,10 @@ const productsData = {
   'JP-803-92P': JP_803_92P,
   'JP-803-117P': JP_803_117P,
   'JP-803-92A': JP_803_92A,
-  'Φ6mm': Φ6mm,
-  'Φ8mm': Φ8mm,
-  'Φ10mm': Φ10mm,
-  'Φ12mm': Φ12mm
+  'LD6mm': LD6mm,
+  'LD8mm': LD8mm,
+  'LD10mm': LD10mm,
+  'LD12mm': LD12mm
 }
 
 // 根据产品ID获取产品数据

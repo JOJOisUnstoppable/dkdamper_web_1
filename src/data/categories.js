@@ -1,47 +1,47 @@
 export const categories = [
   {
-    id: 'Φ6mm',
-    name: 'Φ6mm Series',
-    description: 'Φ6mm Mini Linear Damper', // 从 page.js 中的 model 字段获取
-    products: ['Φ6mm']
+    id: 'LD6mm',
+    name: 'LD6mm Series',
+    description: 'LD6mm Mini Linear Damper', // 从 page.js 中的 model 字段获取
+    products: ['LD6mm']
   },
   {
-    id: 'Φ8mm',
-    name: 'Φ8mm Series',
-    description: 'Φ8mm Linear Damper', // 从 page.js 中的 model 字段获取
-    products: ['Φ8mm']
+    id: 'LD8mm',
+    name: 'LD8mm Series',
+    description: 'LD8mm Linear Damper', // 从 page.js 中的 model 字段获取
+    products: ['LD8mm']
   },
   {
-    id: 'Φ10mm',
-    name: 'Φ10mm Series',
-    description: 'Φ10mm Linear Damper', // 从 page.js 中的 model 字段获取
-    products: ['Φ10mm']
+    id: 'LD10mm',
+    name: 'LD10mm Series',
+    description: 'LD10mm Linear Damper', // 从 page.js 中的 model 字段获取
+    products: ['LD10mm']
   },
   {
-    id: 'Φ12mm',
-    name: 'Φ12mm Series',
-    description: 'Φ12mm Max Linear Damper', // 从 page.js 中的 model 字段获取
-    products: ['Φ12mm']
+    id: 'LD12mm',
+    name: 'LD12mm Series',
+    description: 'LD12mm Max Linear Damper', // 从 page.js 中的 model 字段获取
+    products: ['LD12mm']
   }
 ];
 
 // 按系列分组的产品
 export const productSeries = {
-  'Φ6mm': {
-    name: 'Φ6mm Series',
-    products: ['Φ6mm']
+  'LD6mm': {
+    name: 'LD6mm Series',
+    products: ['LD6mm']
   },
-  'Φ8mm': {
-    name: 'Φ8mm Series',
-    products: ['Φ8mm']
+  'LD8mm': {
+    name: 'LD8mm Series',
+    products: ['LD8mm']
   },
-  'Φ10mm': {
-    name: 'Φ10mm Series',
-    products: ['Φ10mm']
+  'LD10mm': {
+    name: 'LD10mm Series',
+    products: ['LD10mm']
   },
-  'Φ12mm': {
-    name: 'Φ12mm Series',
-    products: ['Φ12mm']
+  'LD12mm': {
+    name: 'LD12mm Series',
+    products: ['LD12mm']
   }
 };
 
