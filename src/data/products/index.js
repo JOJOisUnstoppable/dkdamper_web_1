@@ -1,3 +1,4 @@
+/*
 import { productData as JP_CA1210 } from './JP-CA1210'
 import { productData as PR_L202 } from './PR-L202'
 import { productData as PR_L208 } from './PR-L208'
@@ -23,6 +24,7 @@ import { productData as JP_803_140P } from './JP-803-140P'
 import { productData as JP_803_92P } from './JP-803-92P'
 import { productData as JP_803_117P } from './JP-803-117P'
 import { productData as JP_803_92A } from './JP-803-92A'
+*/
 import { productData as LD6mm } from './LD6mm'
 import { productData as LD8mm } from './LD8mm'
 import { productData as LD10mm } from './LD10mm'
@@ -30,6 +32,7 @@ import { productData as LD12mm } from './LD12mm'
 
 // 合并所有产品数据
 const productsData = {
+  /* 
   'JP-CA1210': JP_CA1210,
   'PR-L202': PR_L202,
   'PR-L208': PR_L208,
@@ -55,6 +58,7 @@ const productsData = {
   'JP-803-92P': JP_803_92P,
   'JP-803-117P': JP_803_117P,
   'JP-803-92A': JP_803_92A,
+  */
   'LD6mm': LD6mm,
   'LD8mm': LD8mm,
   'LD10mm': LD10mm,
