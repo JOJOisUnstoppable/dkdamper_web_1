@@ -10,7 +10,7 @@ export default function Header() {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link href="/" className="text-2xl font-bold text-primary">
-            Company Name
+            Linear Damper
           </Link>
           
           <div className="hidden md:flex space-x-6 pr-[100px]">

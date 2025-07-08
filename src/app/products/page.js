@@ -1,9 +1,33 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import Head from 'next/head';
 
 export default function Products() {
   return (
     <div className="bg-white">
+      {/*添加meta标签*/}
+      <Head>
+        <title>Linear Dampers | High-Quality Hydraulic Motion Control Solutions</title>
+        <meta name="description" content="Discover our range of precision linear dampers for industrial and consumer applications. Control motion, reduce vibration, and ensure smooth operations with our hydraulic damping solutions." />
+        <meta name="keywords" content="linear damper, hydraulic damper, motion control, vibration reduction, industrial dampers, precision dampers, damping solutions" />
+        
+        {/* Open Graph / Facebook 
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://yourdomain.com/products/linear-dampers" />
+        <meta property="og:title" content="Premium Linear Dampers for Industrial & Consumer Applications" />
+        <meta property="og:description" content="Explore our range of Φ6mm to Φ12mm hydraulic linear dampers designed for precision motion control in various industries." />
+        <meta property="og:image" content="https://yourdomain.com/images/social-share.jpg" />
+        */}
+        {/* Twitter 
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://yourdomain.com/products/linear-dampers" />
+        <meta property="twitter:title" content="Linear Dampers: Precision Motion Control Solutions" />
+        <meta property="twitter:description" content="Discover our hydraulic linear dampers for smooth, controlled motion in industrial and consumer applications." />
+        <meta property="twitter:image" content="https://yourdomain.com/images/social-share-twitter.jpg" />
+        */}
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://www.lineardamper.com/products" />
+      </Head>
       {/* Part 1: Hero Section */}
       <section className="relative py-32 bg-white">
         {/* 添加渐变遮罩 */}

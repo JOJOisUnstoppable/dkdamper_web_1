@@ -2,6 +2,20 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { trackUserBehavior } from '@/utils/analytics'
+import { allPosts } from 'contentlayer/generated'
+
+const categories = [
+  { id: 'all', name: 'All' },
+  { id: 'tech', name: 'Technology Updates' },
+  { id: 'industry', name: 'Industry News' },
+  { id: 'solution', name: 'Solutions' },
+  { id: 'case', name: 'Case Studies' }
+]
+
+const tags = [
+  'B2B', 'Digital Transformation', 'Solutions', 'Tech Innovation', 
+  'Enterprise Management', 'Industry Trends', 'Best Practices', 'Case Analysis'
+]
 
 export default function BlogPage() {
   const [activeCategory, setActiveCategory] = useState('all')
@@ -10,9 +24,10 @@ export default function BlogPage() {
   const [currentPage, setCurrentPage] = useState(1)
   const postsPerPage = 6
 
-  const filteredPosts = posts.filter(post => {
+  // 修改这一行：将 posts 改为 allPosts
+  const filteredPosts = allPosts.filter(post => {
     const matchCategory = activeCategory === 'all' ? true : post.category === activeCategory
-    const matchTag = activeTag === 'all' ? true : post.tags.includes(activeTag)
+    const matchTag = activeTag === 'all' ? true : post.tags?.includes(activeTag)
     const matchSearch = searchTerm === '' ? true : 
       post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       post.excerpt.toLowerCase().includes(searchTerm.toLowerCase())
@@ -243,17 +258,3 @@ export default function BlogPage() {
   )
 }
 
-const categories = [
-  { id: 'all', name: 'All' },
-  { id: 'tech', name: 'Technology Updates' },
-  { id: 'industry', name: 'Industry News' },
-  { id: 'solution', name: 'Solutions' },
-  { id: 'case', name: 'Case Studies' }
-]
-
-const tags = [
-  'B2B', 'Digital Transformation', 'Solutions', 'Tech Innovation', 
-  'Enterprise Management', 'Industry Trends', 'Best Practices', 'Case Analysis'
-]
-
-const posts = []

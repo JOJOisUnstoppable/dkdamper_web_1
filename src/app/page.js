@@ -1,10 +1,33 @@
 'use client'
 import Image from 'next/image'
 import Link from 'next/link'
+import Head from 'next/head';
 
 export default function Home() {
   return (
     <div className="min-h-screen">
+      {/*meta*/}
+      <Head>
+          <title>Linear Damper Manufacturer | Precision Hydraulic Motion Control Solutions</title>
+          <meta name="description" content="Professional manufacturer of linear dampers with over 10 years of experience. Offering customized Φ6mm to Φ12mm hydraulic dampers for automotive, aerospace, and industrial applications. Request a quote today." />
+          <meta name="keywords" content="linear damper, hydraulic damper, gas spring damper, mini linear damper, custom damper, industrial damper, motion control" />
+          
+          {/* Open Graph 
+          <meta property="og:title" content="Premium Linear Dampers for Industrial & Consumer Applications" />
+          <meta property="og:description" content="Engineered linear dampers for precise motion control. Custom solutions available. Download catalog or get a free quote." />
+          <meta property="og:image" content="https://yourdomain.com/images/home/social-share-home.jpg" />
+          <meta property="og:url" content="https://yourdomain.com" />
+          <meta property="og:type" content="website" />
+          */}
+          {/* Twitter 
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Linear Dampers: Precision Motion Control Solutions" />
+          <meta name="twitter:description" content="Custom hydraulic dampers for smooth, controlled motion in industrial and consumer applications. ISO 9001 certified." />
+          <meta name="twitter:image" content="https://yourdomain.com/images/home/social-share-twitter.jpg" />
+          */}
+          {/* Canonical */}
+          <link rel="canonical" href="https://www.lineardamper.com" />
+        </Head>
       {/* Banner Section - Full Screen */}
       <section className="w-full bg-gradient-to-r from-blue-500 to-indigo-700 text-white pt-40 pb-20">
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
