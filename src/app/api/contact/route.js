@@ -1,30 +1,47 @@
-import nodemailer from 'nodemailer';
+import { Resend } from 'resend';
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request) {
   const body = await request.json();
   const { name, email, subject, message } = body;
 
-  // 创建一个 SMTP 传输对象
-  const transporter = nodemailer.createTransport({
-    service: 'gmail', // 可以根据需要更换为其他邮件服务提供商
-    auth: {
-      user: 'samlin1995huazhou@gmail.com', // 替换为你的邮箱地址
-      pass: 'samlin18219112207..a' // 替换为你的邮箱密码或应用专用密码
-    }
-  });
-
-  // 邮件选项
-  const mailOptions = {
-    from: 'your_email@gmail.com', // 替换为你的邮箱地址
-    to: 'recipient_email@example.com', // 替换为接收邮件的邮箱地址
-    subject: subject,
-    text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
-  };
+  // 验证必填字段
+  if (!name || !email || !subject || !message) {
+    return new Response(JSON.stringify({ message: 'All fields are required' }), {
+      status: 400,
+      headers: { 'Content-Type': 'application/json' }
+    });
+  }
 
   try {
-    // 发送邮件
-    await transporter.sendMail(mailOptions);
-    return new Response(JSON.stringify({ message: 'Email sent successfully' }), {
+    const { data, error } = await resend.emails.send({
+      from: process.env.FROM_EMAIL, // 必须是您验证的域名邮箱
+      to: process.env.RECIPIENT_EMAIL,
+      subject: `Contact Form: ${subject}`,
+      replyTo: email,
+      html: `
+        <h3>New Contact Form Submission</h3>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Subject:</strong> ${subject}</p>
+        <p><strong>Message:</strong></p>
+        <p>${message.replace(/\n/g, '<br>')}</p>
+      `
+    });
+
+    if (error) {
+      console.error('Resend error:', error);
+      return new Response(JSON.stringify({ message: 'Error sending email' }), {
+        status: 500,
+        headers: { 'Content-Type': 'application/json' }
+      });
+    }
+
+    return new Response(JSON.stringify({ 
+      message: 'Email sent successfully',
+      id: data.id 
+    }), {
       status: 200,
       headers: { 'Content-Type': 'application/json' }
     });
