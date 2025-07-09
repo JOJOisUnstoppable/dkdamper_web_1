@@ -1,6 +1,7 @@
 // ContactusSection.js
 'use client'
 import Image from 'next/image'
+import { useState } from 'react';
 
 const ContactusSection = ({
   contactUsTitle,
@@ -16,6 +17,57 @@ const ContactusSection = ({
   workingHoursDescSaturday,
   sendMessageTitle
 }) => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    setError('');
+    setSuccess('');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      const data = await response.json();
+      if (response.ok) {
+        setSuccess(data.message);
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        });
+      } else {
+        setError(data.message);
+      }
+    } catch (error) {
+      setError('An error occurred while sending the message');
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <>
       {/* Contact Us Section */}
@@ -59,7 +111,9 @@ const ContactusSection = ({
             <div className="md:w-2/3">
               <div className="bg-white rounded-lg p-8 shadow-lg">
                 <h3 className="text-2xl font-bold text-indigo-700 mb-6">{sendMessageTitle}</h3>
-                <form className="space-y-6">
+                {error && <p className="text-red-500 mb-4">{error}</p>}
+                {success && <p className="text-green-500 mb-4">{success}</p>}
+                <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
@@ -69,6 +123,8 @@ const ContactusSection = ({
                         type="text"
                         id="name"
                         name="name"
+                        value={formData.name}
+                        onChange={handleChange}
                         className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors"
                         placeholder="John Doe"
                       />
@@ -81,6 +137,8 @@ const ContactusSection = ({
                         type="email"
                         id="email"
                         name="email"
+                        value={formData.email}
+                        onChange={handleChange}
                         className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors"
                         placeholder="john@example.com"
                       />
@@ -94,6 +152,8 @@ const ContactusSection = ({
                       type="text"
                       id="subject"
                       name="subject"
+                      value={formData.subject}
+                      onChange={handleChange}
                       className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors"
                       placeholder="How can we help you?"
                     />
@@ -106,15 +166,18 @@ const ContactusSection = ({
                       id="message"
                       name="message"
                       rows="5"
+                      value={formData.message}
+                      onChange={handleChange}
                       className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors"
                       placeholder="Write your message here..."
                     ></textarea>
                   </div>
                   <button
                     type="submit"
+                    disabled={isLoading}
                     className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition-colors"
                   >
-                    Send Message
+                    {isLoading ? 'Sending...' : 'Send Message'}
                   </button>
                 </form>
               </div>
@@ -123,7 +186,7 @@ const ContactusSection = ({
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default ContactusSection
+export default ContactusSection;
