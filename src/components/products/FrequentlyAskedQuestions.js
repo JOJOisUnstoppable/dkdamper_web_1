@@ -7,7 +7,7 @@ const FrequentlyAskedQuestions = () => {
             <div className="space-y-6">
                 <div className="bg-white p-6 rounded-lg shadow-sm">
                     <div className="faq-question font-bold text-lg text-gray-700 mb-2">
-                        What's the difference between a linear damper and a piston damper?
+                        What&aposs the difference between a linear damper and a piston damper?
                     </div>
                     <div className="faq-answer text-gray-600">
                         Linear dampers and piston dampers are essentially the same device. Both use a piston moving within a cylinder filled with hydraulic oil to create damping force. The terms are often used interchangeably, with "linear damper" emphasizing the linear motion control aspect, while "piston damper" highlights the internal piston mechanism.
