@@ -10,12 +10,12 @@ export default function Header() {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link href="/" className="text-2xl font-bold text-primary">
-            Linear Damper
+            DK Machinery
           </Link>
           
           <div className="hidden md:flex space-x-6 pr-[100px]">
+            <Link href="/" className="hover:text-secondary transition-colors">Home</Link>
             <Link href="/products" className="hover:text-secondary transition-colors">Products</Link>
-            {/* <Link href="/industry" className="hover:text-secondary transition-colors">Industry Solutions</Link> */}
             <Link href="/blog" className="hover:text-secondary transition-colors">Blog</Link>
             <Link href="/about" className="hover:text-secondary transition-colors">About Us</Link>
             <Link href="/contact" className="hover:text-secondary transition-colors">Contact</Link>
@@ -24,8 +24,8 @@ export default function Header() {
           {isMenuOpen && (
             <div className="md:hidden py-4">
               <div className="flex flex-col space-y-4">
+                <Link href="/" className="hover:text-secondary transition-colors">Home</Link>
                 <Link href="/products" className="hover:text-secondary transition-colors">Products</Link>
-                {/* <Link href="/industry" className="hover:text-secondary transition-colors">Industry Solutions</Link> */}
                 <Link href="/blog" className="hover:text-secondary transition-colors">Blog</Link>
                 <Link href="/about" className="hover:text-secondary transition-colors">About Us</Link>
                 <Link href="/contact" className="hover:text-secondary transition-colors">Contact</Link>
@@ -45,8 +45,8 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden py-4">
             <div className="flex flex-col space-y-4">
+                <Link href="/" className="hover:text-secondary transition-colors">Home</Link>
                 <Link href="/products" className="hover:text-secondary transition-colors">Products</Link>
-                {/* <Link href="/industry" className="hover:text-secondary transition-colors">Industry Solutions</Link> */}
                 <Link href="/blog" className="hover:text-secondary transition-colors">Blog</Link>
                 <Link href="/about" className="hover:text-secondary transition-colors">About Us</Link>
                 <Link href="/contact" className="hover:text-secondary transition-colors">Contact</Link>
