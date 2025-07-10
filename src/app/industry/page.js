@@ -386,7 +386,7 @@ export default function IndustryPage() {
                 </p>
                 <p className="flex items-center">
                   <span className="mr-3">📧</span>
-                  <span>contact@example.com</span>
+                  <span>info@lineardamper.comm</span>
                 </p>
                 <p className="flex items-center">
                   <span className="mr-3">📍</span>
