@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Head from 'next/head';
 import HeroSection from '@/components/products/HeroSection';
 import WhatIsLinearDamper from '@/components/products/WhatIsLineardamper';
 import ProductSeries from '@/components/products/ProductSeries';
@@ -12,17 +11,19 @@ import FrequentlyAskedQuestions from '@/components/products/FrequentlyAskedQuest
 import ApplicationsAndIndustries from '@/components/products/ApplicationsAndIndustries';
 import NeedExpertGuidance from '@/components/products/NeedExpertGuidance';
 
+// 添加 metadata 导出
+export const metadata = {
+  title: 'Linear Dampers | High-Quality Hydraulic Motion Control Solutions',
+  description: 'Discover our range of precision linear dampers for industrial and consumer applications. Control motion, reduce vibration, and ensure smooth operations with our hydraulic damping solutions.',
+  keywords: 'linear damper, hydraulic damper, motion control, vibration reduction, industrial dampers, precision dampers, damping solutions',
+  alternates: {
+    canonical: 'https://www.lineardamper.com/products'
+  }
+}
+
 export default function Products() {
   return (
     <div className="bg-white">
-      {/*添加meta标签*/}
-      <Head>
-        <title>Linear Dampers | High-Quality Hydraulic Motion Control Solutions</title>
-        <meta name="description" content="Discover our range of precision linear dampers for industrial and consumer applications. Control motion, reduce vibration, and ensure smooth operations with our hydraulic damping solutions." />
-        <meta name="keywords" content="linear damper, hydraulic damper, motion control, vibration reduction, industrial dampers, precision dampers, damping solutions" />
-        {/* Canonical URL */}
-        <link rel="canonical" href="https://www.lineardamper.com/products" />
-      </Head>
      {/* 包裹页面主要内容 
       <div className="container mx-auto px-4">*/}
         <HeroSection />
