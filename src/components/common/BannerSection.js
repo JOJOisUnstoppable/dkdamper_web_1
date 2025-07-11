@@ -26,7 +26,7 @@ const BannerSection = ({
               Get a Quote
             </Link>
             <Link
-              href="/404"
+              href="/contact"
               /*href="/catalog"*/
               className="bg-transparent hover:bg-white/20 border-2 border-white py-3 px-8 rounded-lg text-center transition-colors"
             >

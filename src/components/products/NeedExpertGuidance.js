@@ -16,7 +16,7 @@ const NeedExpertGuidance = () => {
                     Contact Our Engineers
                 </a>
                 <a 
-                    href="/quote" 
+                    href="/contact" 
                     className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full transition duration-300"
                 >
                     Request Quote

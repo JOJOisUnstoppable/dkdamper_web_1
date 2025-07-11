@@ -10,7 +10,8 @@ const ProductShowcase = ({ title, products }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-6xl mx-auto">
           {products.map((product, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <Link href={`/products/${product.model}`}>
+              <Link href={`/products`}>
+              {/*<Link href={`/products/${product.model}`}>*/}
                 <div className="aspect-[4/3] relative">
                   <Image
                     src={product.image}

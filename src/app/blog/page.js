@@ -107,58 +107,6 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Blog Categories */}
-      <section className="py-8 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-wrap gap-4">
-            {categories.map(category => (
-              <button
-                key={category.id}
-                onClick={() => setActiveCategory(category.id)}
-                className={`px-4 py-2 rounded-lg transition-colors ${
-                  activeCategory === category.id
-                    ? 'bg-primary text-white'
-                    : 'bg-white hover:bg-gray-100'
-                }`}
-              >
-                {category.name}
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Tags Section */}
-      <section className="py-4 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-wrap gap-2">
-            <button
-              onClick={() => setActiveTag('all')}
-              className={`px-3 py-1 rounded-full text-sm ${
-                activeTag === 'all'
-                  ? 'bg-primary text-white'
-                  : 'bg-white hover:bg-gray-100'
-              }`}
-            >
-              All Tags
-            </button>
-            {tags.map(tag => (
-              <button
-                key={tag}
-                onClick={() => setActiveTag(tag)}
-                className={`px-3 py-1 rounded-full text-sm ${
-                  activeTag === tag
-                    ? 'bg-primary text-white'
-                    : 'bg-white hover:bg-gray-100'
-                }`}
-              >
-                {tag}
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Blog List */}
       <section className="py-12">
         <div className="container mx-auto px-4">
