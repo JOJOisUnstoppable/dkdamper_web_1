@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { trackUserBehavior } from '@/utils/analytics'
 import { allPosts } from 'contentlayer/generated'
+import Image from 'next/image' // 添加这一行
 
 const categories = [
   { id: 'all', name: 'All' },
@@ -129,7 +130,23 @@ export default function BlogPage() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {currentPosts.map((post) => (
                   <div key={post.id} className="bg-white rounded-lg shadow-md overflow-hidden">
-                    <div className="h-48 bg-gray-200"></div>
+                    {/* 显示文章的 featuredimage */}
+                    {post.image && (
+                      <div className="relative h-48 w-full">
+                        <Image
+                          src={post.image}
+                          alt={post.title}
+                          layout="fill"
+                          objectFit="cover"
+                          className="transition-transform duration-300 hover:scale-105"
+                        />
+                      </div>
+                    )} 
+                    {!post.image && (
+                      <div className="h-48 bg-gray-200 flex items-center justify-center text-gray-500">
+                        No Image
+                      </div>
+                    )}
                     <div className="p-6">
                       <div className="flex items-center gap-4 mb-4">
                         <span className="text-sm text-primary px-3 py-1 bg-primary/10 rounded-full">
