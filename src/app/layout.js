@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
+import 'katex/dist/katex.min.css' // 添加这行
 
 const inter = Inter({ subsets: ['latin'] })
 

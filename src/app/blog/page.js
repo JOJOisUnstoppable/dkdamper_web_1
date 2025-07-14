@@ -26,13 +26,16 @@ export default function BlogPage() {
   const postsPerPage = 6
 
   // 修改这一行：将 posts 改为 allPosts
+  // 修改过滤逻辑，只显示已发布的文章
   const filteredPosts = allPosts.filter(post => {
+    // 首先检查是否已发布（默认为 true）
+    const isPublished = post.published !== false
     const matchCategory = activeCategory === 'all' ? true : post.category === activeCategory
     const matchTag = activeTag === 'all' ? true : post.tags?.includes(activeTag)
     const matchSearch = searchTerm === '' ? true : 
       post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       post.excerpt.toLowerCase().includes(searchTerm.toLowerCase())
-    return matchCategory && matchTag && matchSearch
+    return isPublished && matchCategory && matchTag && matchSearch
   })
 
   const totalPages = Math.ceil(filteredPosts.length / postsPerPage)

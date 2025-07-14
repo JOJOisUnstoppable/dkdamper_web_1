@@ -5,17 +5,16 @@ const ApplicationsAndIndustries = () => {
         <section className="py-16 shadow-xl my-16 mx-40">
             <div className="container mx-auto px-4">
                 <h2 className="text-6xl font-bold text-gray-800 border-b-4 border-blue-500">Applications and Industries</h2>
-
-                <h3 className="text-2xl font-bold text-gray-700 mb-4">Industrial Applications</h3>
+                <h4 className="text-xl font-bold text-gray-700 my-2">Mini Linear Damper</h4>
                 <ul className="list-disc pl-6">
-                    <li><strong>Automation Equipment:</strong> Conveyor systems, robotic arms, assembly machines</li>
-                    <li><strong>Machine Tools:</strong> CNC machines, press brakes, cutting equipment</li>
-                    <li><strong>Transportation:</strong> Vehicle doors, hoods, tailgates, seat mechanisms</li>
-                    <li><strong>Furniture:</strong> Cabinet doors, drawers, fold - down mechanisms</li>
-                    <li><strong>Medical Equipment:</strong> Hospital beds, examination tables, equipment covers</li>
-                    <li><strong>Aerospace:</strong> Landing gear, control surfaces, access panels</li>
+                    <li>Insulin Pen Injection</li>
+                    <li>Oven Hinge</li>
+                    <li>Refrigerator door</li>
+                    <li>Furniture, like drawer, gate</li>
                 </ul>
-
+                <h4 className="text-xl font-bold text-gray-700 mb-2">Damper with both end fittings</h4>
+                    <li>Door closer</li>
+                    <li>Safety door</li>
                 <h3 className="text-2xl font-bold text-gray-700 mt-8 mb-4">Benefits in Each Application</h3>
                 <ul className="list-disc pl-6">
                     <li><strong>Noise Reduction:</strong> Eliminates slamming and impact noise</li>

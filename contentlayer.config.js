@@ -1,5 +1,7 @@
 import { defineDocumentType, makeSource } from 'contentlayer/source-files'
 import remarkGfm from 'remark-gfm'
+import remarkMath from 'remark-math' // 导入 remark-math
+import rehypeKatex from 'rehype-katex' // 导入 rehype-katex
 
 export const Product = defineDocumentType(() => ({
   name: 'Product',
@@ -38,10 +40,10 @@ export const Product = defineDocumentType(() => ({
   }
 }))
 
-// 新增 Post 文档类型
+// 新增 Post（blog） 文档类型
 export const Post = defineDocumentType(() => ({
   name: 'Post',
-  filePathPattern: 'posts/**/*.mdx', // 统一只处理.mdx文件
+  filePathPattern: 'posts/**/*.mdx',
   contentType: 'mdx',
   fields: {
     title: { type: 'string', required: true },
@@ -51,7 +53,8 @@ export const Post = defineDocumentType(() => ({
     category: { type: 'string', required: true },
     tags: { type: 'list', of: { type: 'string' }, required: false },
     excerpt: { type: 'string', required: true },
-    image: { type: 'string', required: false }, // 可选的封面图片
+    image: { type: 'string', required: false },
+    published: { type: 'boolean', required: false, default: true }, // 新增发布状态字段
   },
   computedFields: {
     url: {
@@ -65,6 +68,7 @@ export default makeSource({
   contentDirPath: 'content',
   documentTypes: [Product, Post],
   mdx: {
-    remarkPlugins: [remarkGfm],
+    remarkPlugins: [remarkGfm, remarkMath], // 添加 remarkMath
+    rehypePlugins: [rehypeKatex], // 添加 rehypeKatex
   },
 })

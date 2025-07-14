@@ -10,7 +10,10 @@ const WhatIsLinearDamper = () => {
         Linear dampers are essential components used to control motion by providing resistance through the compression of hydraulic oil and the flow through orifices. They are widely applied in various industries for buffering and decelerating movements, ensuring smooth and controlled operations.
       </p>
       <p className="mb-8">
-        Linear dampers, in simple terms, are a type of device used to control the speed of moving objects, allowing them to decelerate gradually and avoid sudden stops or impacts. You can see their applications in many places, such as cabinet doors that close slowly and gently, and car trunks that don't slam shut; these likely use linear dampers.
+       Linear dampers provide a smooth linear damping motion and are available with an integrated light switch on request. They dampen the closing or opening process in one direction, while providing a free run (no resistance) in the other.
+      </p>
+      <p className="mb-8">
+       Linear dampers,in simple tems. are a tvpe of device used to control the speed of moving obiects, alowing them to decelerate gradually and avoid sudden stops or impacts. You can see their applications in many places,such as Mini Linear Damper in trash can cabinet doors and oil/gas damper that allow car trunks close slowly and gently that don't slam shut.
       </p>
       <h3 className="text-xl font-bold text-[#34495e] mb-4">
         Why Choose Hydraulic Linear Dampers?

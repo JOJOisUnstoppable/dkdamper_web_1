@@ -99,11 +99,13 @@ export async function generateMetadata({ params }) {
   }
 }
 
-// 生成静态参数（可选，用于静态生成）
+// 生成静态参数（只为已发布的文章生成）
 export async function generateStaticParams() {
-  return allPosts.map((post) => ({
-    id: post._raw.flattenedPath.replace('posts/', '') || post.id,
-  }))
+  return allPosts
+    .filter(post => post.published !== false) // 只为已发布的文章生成静态路径
+    .map((post) => ({
+      id: post._raw.flattenedPath.replace('posts/', '') || post.id,
+    }))
 }
 
 export default function BlogDetail({ params }) {
@@ -113,7 +115,8 @@ export default function BlogDetail({ params }) {
     p.id === params.id
   )
   
-  if (!post) {
+  // 检查文章是否存在且已发布
+  if (!post || post.published === false) {
     notFound()
   }
 

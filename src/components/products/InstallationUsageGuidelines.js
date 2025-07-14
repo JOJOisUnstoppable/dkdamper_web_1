@@ -33,6 +33,12 @@ const InstallationUsageGuidelines = () => {
                     <li>Large gaps between pressing and returning time may affect durability</li>
                     <li>Confirm performance in actual machine before use</li>
                 </ul>
+
+                {/* 添加两张横向并排的图片 */}
+                <div className="flex justify-between">
+                    <img src="/images/products/install_1.png" alt="First Image" className="w-1/2 mr-4" />
+                    <img src="/images/products/install_2.png" alt="Second Image" className="w-1/2" />
+                </div>
             </div>
         </section>
     );

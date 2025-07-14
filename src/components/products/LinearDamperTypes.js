@@ -3,8 +3,8 @@ import React from 'react';
 const LinearDamperTypes = () => {
   return (
     <section className="bg-white p-12 rounded-lg shadow-md shadow-xl my-16 mx-40">
-      <h2 className="text-6xl font-bold text-[#2c3e50] border-b-4 border-[#3498db] pb-2 mb-8">
-        Linear Damper Types and Characteristics
+      <h2 className="text-5xl font-bold text-[#2c3e50] border-b-4 border-[#3498db] pb-2 mb-8">
+        Dampering Curve are various for applications
       </h2>
       <p>
         Linear dampers are divided into categories based on how the orifice area changes during operation, providing different absorption characteristics for various applications.
