@@ -104,9 +104,9 @@ export default function AboutPage() {
             whileInView="animate"
             viewport={{ once: true }}
           >
-            <h3 className="text-4xl font-bold text-gray-900 mb-4">About Linear Damper</h3>
+            <h3 className="text-4xl font-bold text-gray-900 mb-4">About DK Machinery</h3>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              With over 26 years of extensive experience in damper manufacturing, Linear Damper is dedicated to providing customers with high-quality linear damper products and solutions.
+              With over 26 years of extensive experience in damper manufacturing, DK Machinery is dedicated to providing customers with high-quality linear damper products and solutions.
               Adhering to a customer-first principle, we have established long-term, stable cooperative relationships with global clients through continuous technological innovation and strict quality control.
             </p>
           </motion.div>
@@ -611,13 +611,13 @@ export default function AboutPage() {
                 <Factory className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h4 className="text-xl font-bold">Linear Damper Dampers</h4>
+                <h4 className="text-xl font-bold">DK Machinery Linear Dampers</h4>
                 <p className="text-sm text-gray-400">Professional Linear Damper Manufacturer</p>
               </div>
             </div>
             <Separator className="my-6 bg-gray-700" />
             <p className="text-gray-400">
-              © 2024 Linear Damper Co., Ltd. All Rights Reserved. | 26 Years Manufacturing Experience | Quality Assurance | Integrity Service
+              © 2024 DK Machinery Co., Ltd. All Rights Reserved. | 26 Years Manufacturing Experience | Quality Assurance | Integrity Service
             </p>
           </div>
         </div>
