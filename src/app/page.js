@@ -9,6 +9,7 @@ import CaseStudiesSection from '@/components/common/CaseStudiesSection';
 import FeaturesSection from '@/components/common/FeaturesSection';
 import TechnicalSection from '@/components/common/TechnicalSection';
 import ContactusSection from '@/components/common/ContactusSection';
+import RelatedPosts from '@/components/blog/RelativePost';
 
 // 定义技术和行业列表
 const techList = [
@@ -206,6 +207,8 @@ export default function Home() {
         urgentReplacementTitle="Urgent Replacement Needs"
         urgentReplacementDesc="For urgent replacement parts, connect directly with our technical team via our emergency contact channel."
       />
+
+      <RelatedPosts title="Latest Blog Posts" />
 
       <ContactusSection
         contactUsTitle="Contact Us"
