@@ -117,7 +117,7 @@ export default function Home() {
       image: "/images/home/Mini_Linear_Damper_home_products.jpg"
     },
     {
-      model: "Gas Spring Damper & Damper",
+      model: "Pneumatic Damper",
       description: "Combining the functions of a gas spring and a damper, these devices are designed for applications that require both support and controlled motion. ",
       image: "/images/home/Gas_Spring_home_products.jpg"
     }
