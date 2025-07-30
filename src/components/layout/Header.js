@@ -1,7 +1,6 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'; // 导入 Image 组件
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -11,12 +10,7 @@ export default function Header() {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link href="/" className="text-2xl font-bold text-primary">
-            <Image
-              src="/favicon.ico" // 替换为您的 logo 图片路径
-              alt="DK Machinery Co., Ltd" // 替换为您的公司名称
-              width={150} // 根据您的 logo 实际宽度调整
-              height={40} // 根据您的 logo 实际高度调整
-            />
+            DK Machinery
           </Link>
           
           <div className="hidden md:flex space-x-6 pr-[100px]">
