@@ -165,7 +165,7 @@ export default function Home() {
       <BannerSection
         title="Linear Damper"
         description="With over a decade of experience in the linear damper industry, we have long been a trusted partner for domestic manufacturers and international traders in China, specializing in supplying a wide range of customized linear dampers. As we have accumulated extensive technical expertise over the years, we are now ready to step onto the global stage. We aim to deliver our value directly to customers worldwide, cutting out unnecessary middle links. Let our professionalism speak for itself. This is a conversation between engineers."
-        imageSrc="/images/home/home_banner.jpg"
+        imageSrc="/images/home/Mini_Linear_Damper_home_products.jpg"
         imageAlt="Linear Damper Product"
       />
 

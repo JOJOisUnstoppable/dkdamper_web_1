@@ -50,6 +50,10 @@ export const metadata = {
       'max-snippet': -1,
     },
   },
+  icons: {
+    icon: '/favicon.ico', // 基础图标
+    shortcut: '/favicon.ico', // 高分辨率图标（用于搜索结果）
+  },
 }
 
 export default function RootLayout({ children }) {

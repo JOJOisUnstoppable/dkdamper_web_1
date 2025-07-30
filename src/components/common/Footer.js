@@ -60,7 +60,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Company Name. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} DK Machinery Co.,ltd. All rights reserved.</p>
         </div>
       </div>
     </footer>
