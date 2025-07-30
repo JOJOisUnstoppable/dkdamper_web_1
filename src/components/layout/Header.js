@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -9,8 +10,13 @@ export default function Header() {
     <header className="fixed w-full bg-white shadow-md z-50 top-0 left-0"> {/* 添加 top-0 left-0 确保完全贴合顶部 */}
       <nav className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <Link href="/" className="text-2xl font-bold text-primary">
-            DK Machinery
+          <Link href="/" className="text-2xl font-bold text-primary ml-[100px]">
+            <Image 
+              src="/DK_Logo_withoutBG.png" 
+              alt="DK Machinery Co., Ltd"
+              width={80} 
+              height={80}
+            />
           </Link>
           
           <div className="hidden md:flex space-x-6 pr-[100px]">
