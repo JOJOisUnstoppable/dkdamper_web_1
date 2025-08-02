@@ -171,7 +171,7 @@ export default function Home() {
 
       {/* Products Showcase Section */}
       <ProductShowcase
-        title="Our Product Series"
+        title="Our Product Series" 
         products={products}
       />
       

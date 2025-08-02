@@ -3,6 +3,7 @@ import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import 'katex/dist/katex.min.css' // 添加这行
+import GoogleAnalytics from '@/components/analytics/GoogleAnalytics'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -60,6 +61,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="overflow-x-hidden">
       <body className={`${inter.className} overflow-x-hidden`}>
+        <GoogleAnalytics trackingId="G-0NDVSEHYGN" /> {/* google analytics 追踪代码*/}
         <Header />
         <main>
           {children}

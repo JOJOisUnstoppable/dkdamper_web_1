@@ -22,9 +22,9 @@ const ProductSeries = () => {
           <thead>
             <tr className="bg-[#3498db] text-white">
               <th className="py-4 px-4 text-left border border-[#2980b9]"></th>
-              <th className="py-4 px-4 text-center border border-[#2980b9]">Total Length/mm</th>
-              <th className="py-4 px-4 text-center border border-[#2980b9]">Diameter/mm</th>
-              <th className="py-4 px-4 text-center border border-[#2980b9]">Cylinder Length/mm</th>
+              <th className="py-4 px-4 text-center border border-[#2980b9]">Total Length/mm ①</th>
+              <th className="py-4 px-4 text-center border border-[#2980b9]">Diameter/mm②</th>
+              <th className="py-4 px-4 text-center border border-[#2980b9]">Cylinder Length/mm③</th>
               <th className="py-4 px-4 text-center border border-[#2980b9]">Used stroke/mm</th>
               <th className="py-4 px-4 text-center border border-[#2980b9]">With/without cap</th>
               <th className="py-4 px-4 text-center border border-[#2980b9]">With/without self-return spring</th>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'
 
 const WhatIsLinearDamper = () => {
   return (
@@ -15,6 +16,9 @@ const WhatIsLinearDamper = () => {
       <p className="mb-8">
        Linear dampers,in simple tems. are a tvpe of device used to control the speed of moving obiects, alowing them to decelerate gradually and avoid sudden stops or impacts. You can see their applications in many places,such as Mini Linear Damper in trash can cabinet doors and oil/gas damper that allow car trunks close slowly and gently that don't slam shut.
       </p>
+       {/* 横向排列的图片 */}
+
+       {/* Why part */}
       <h3 className="text-xl font-bold text-[#34495e] mb-4">
         Why Choose Hydraulic Linear Dampers?
       </h3>
