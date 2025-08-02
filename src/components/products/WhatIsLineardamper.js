@@ -8,7 +8,7 @@ const WhatIsLinearDamper = () => {
         What is a Linear Damper?
       </h2>
       <p className="mb-4">
-        Linear dampers are essential components used to control motion by providing resistance through the compression of hydraulic oil and the flow through orifices. They are widely applied in various industries for buffering and decelerating movements, ensuring smooth and controlled operations.
+        Linear dampers are crucial components for motion control, functioning to buffer and decelerate movements and ensure smooth and controllable operations. They generate resistance by compressing hydraulic oil and making it flow through throttle orifices, and are widely used in various industries.
       </p>
       <p className="mb-8">
        Linear dampers provide a smooth linear damping motion and are available with an integrated light switch on request. They dampen the closing or opening process in one direction, while providing a free run (no resistance) in the other.
