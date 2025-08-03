@@ -1,6 +1,32 @@
 import React from 'react';
+import LineChartWithShadows from '../common/LineChartWithShadows';
 
 const LinearDamperTypes = () => {
+
+  const demoData = {
+    title: 'Various Types Of Overflow',
+    xLabels: [0,1,2,3,4,5,6,7,8,9,10],
+    dataSets: [
+      {
+        label: 'single hole overflow',
+        data: [0, 24, 20, 16, 15, 14, 13, 12, 11, 10, 0],
+        borderColor: '#3b82f6' // 蓝色
+      },
+      {
+        label: 'Multi-hole overflowhole overflow',
+        data: [0, 12, 11.5, 11, 10.6, 10.2, 10.6, 11, 11.5, 12, 0],
+        borderColor: '#10b981' // 绿色
+      },
+      {
+        label: 'groove overflow',
+        data: [0, 10, 11, 12, 13, 14, 15, 16, 24, 29, 0],
+        borderColor: '#f59e0b' // 橙色
+      }
+    ],
+    yStepSize: 30,
+    height: 450
+  };
+
   return (
     <section className="bg-white p-12 rounded-lg shadow-md shadow-xl my-16 mx-40">
       <h2 className="text-5xl font-bold text-[#2c3e50] border-b-4 border-[#3498db] pb-2 mb-8">
@@ -39,6 +65,15 @@ const LinearDamperTypes = () => {
       <p>
         Single tube system where orifice groove on inside wall changes as stroke advances. Large orifice area at stroke beginning, becoming smaller as stroke advances. Orifice area changes continuously, resulting in less resistance fluctuation compared to multiple type, enabling optimal energy absorption.
       </p>
+      <div className="container mx-auto px-4 py-8 max-w-6xl">
+        <LineChartWithShadows
+          title={demoData.title}
+          xLabels={demoData.xLabels}
+          dataSets={demoData.dataSets}
+          yStepSize={demoData.yStepSize}
+          height={demoData.height}
+        />
+      </div>
     </section>
   );
 };
