@@ -2,8 +2,8 @@ import React from 'react';
 
 const ApplicationsAndIndustries = () => {
     return (
-        <section className="py-16 shadow-xl my-16 mx-40">
-            <div className="container mx-auto px-4">
+    <section className="bg-white p-12 rounded-lg shadow-md shadow-xl my-16 mx-40">
+            <div className="container px-4">
                 <h2 className="text-6xl font-bold text-gray-800 border-b-4 border-blue-500">Applications and Industries</h2>
                 <h4 className="text-xl font-bold text-gray-700 my-2">Mini Linear Damper</h4>
                 <ul className="list-disc pl-6">

@@ -3,7 +3,7 @@ import React from 'react';
 const TechnicalSpecifications = () => {
     return (
         <section className="py-16 shadow-xl my-16 mx-40">
-            <div className="container mx-auto px-4">
+            <div className="container px-8"> {/* 移除了 mx-auto 类 */}
                 <h2 className="text-6xl font-bold text-gray-800 border-b-4 border-blue-500 pb-2 mb-8">Technical Specifications</h2>
 
                 <div className="bg-gray-800 text-white p-6 rounded-lg mb-8">
