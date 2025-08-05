@@ -4,6 +4,8 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import 'katex/dist/katex.min.css' // 添加这行
 import GoogleAnalytics from '@/components/analytics/GoogleAnalytics'
+import SchemaTag from '@/components/common/SchemaTag';
+import { generateWebsiteSchema } from '@/lib/schemaHelpers';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -58,10 +60,27 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+
+  // 全局 Schema 数据
+  const websiteSchema = generateWebsiteSchema({
+    baseUrl: 'https://dkdamper.com',
+    siteName: 'DK Machinery - Linear Damper Solutions',
+    description: 'Professional linear damper manufacturer with 26 years of experience',
+    orgName: 'DK Machinery Co., Ltd',
+    logoPath: '/logo.png',
+    phone: '+86-XXX-XXXXXXX',
+    languages: ['English', 'Chinese', 'German', 'Dutch', 'French'],
+    socialLinks: [
+      'https://linkedin.com/company/dkmachinery',
+      'https://facebook.com/dkmachinery'
+    ]
+  });
+
   return (
     <html lang="en" className="overflow-x-hidden">
       <body className={`${inter.className} overflow-x-hidden`}>
         <GoogleAnalytics trackingId="G-0NDVSEHYGN" /> {/* google analytics 追踪代码*/}
+        <SchemaTag data={websiteSchema} />
         <Header />
         <main>
           {children}

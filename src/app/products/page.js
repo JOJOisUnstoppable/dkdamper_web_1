@@ -10,6 +10,9 @@ import InstallationUsageGuidelines from '@/components/products/InstallationUsage
 import FrequentlyAskedQuestions from '@/components/products/FrequentlyAskedQuestions';
 import ApplicationsAndIndustries from '@/components/products/ApplicationsAndIndustries';
 import NeedExpertGuidance from '@/components/products/NeedExpertGuidance';
+import SchemaTag from '@/components/common/SchemaTag';
+import { generateProductListSchema } from '@/lib/schemaHelpers';
+
 
 // 添加 metadata 导出
 export const metadata = {
@@ -22,10 +25,18 @@ export const metadata = {
 }
 
 export default function Products() {
+   const productListSchema = generateProductListSchema(
+    {
+      baseUrl: 'https://lineardamper.com', // 替换为实际域名
+      listName: 'DK Machinery Linear Damper Product List',
+      description: 'Comprehensive list of linear dampers for industrial and consumer applications'
+    }
+  );
   return (
     <div className="bg-white">
      {/* 包裹页面主要内容 
       <div className="container mx-auto px-4">*/}
+        <SchemaTag data={productListSchema} />
         <HeroSection />
         <WhatIsLinearDamper />
         <ProductSeries />

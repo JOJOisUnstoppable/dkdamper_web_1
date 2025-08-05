@@ -7,6 +7,11 @@ import { categories } from '@/data/categories'
 import Accordion from '@/components/common/Accordion'
 import BlogClientComponents from '@/components/blog/BlogClientComponents'
 
+// 导入 Schema 相关组件和函数（新增）
+import SchemaTag from '@/components/common/SchemaTag';
+import { generateBlogSchema } from '@/lib/schemaHelpers';
+import siteMetadata from '@/app/siteMetaData';
+
 // 添加一个生成ID的辅助函数
 const generateId = (text) => {
   return text
@@ -122,9 +127,16 @@ export default function BlogDetail({ params }) {
 
   const MDXContent = useMDXComponent(post.body.code)
 
+  // 生成博客文章的 Schema 数据（新增）
+  const blogSchema = generateBlogSchema(
+    post, 
+    siteMetadata.siteUrl // 使用全局配置的网站 URL
+  );
+
   return (
-    <div className="bg-gray-50 dark:bg-gray-900 min-h-screen py-20 font-sans">
+    <div className="bg-gray-50 dark:bg-gray-900 min-h-screen py-20 font-sans mt-20">
       <div className="container mx-auto px-6 max-w-7xl">
+        <SchemaTag data={blogSchema} />
         {/* 文章头部 */}
         <header className="mb-12 text-center">
           <h1 className="text-5xl font-extrabold text-gray-900 dark:text-white leading-tight mb-4">
