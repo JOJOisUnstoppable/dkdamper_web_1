@@ -1,0 +1,18 @@
+{
+  "common": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "contact": "Contact",
+    "blog": "Blog"
+  },
+  "navigation": {
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "buttons": {
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "getQuote": "Get Quote"
+  }
+}

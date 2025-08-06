@@ -1,0 +1,107 @@
+{
+  "home": {
+    "meta": {
+      "title": "Linear Damper Manufacturer | Precision Hydraulic Motion Control Solutions",
+      "description": "Professional manufacturer of linear dampers with over 10 years of experience. Offering customized Φ6mm to Φ12mm hydraulic dampers for automotive, aerospace, and industrial applications. Request a quote today.",
+      "keywords": "linear damper, hydraulic damper, gas spring damper, mini linear damper, custom damper, industrial damper, motion control"
+    },
+    "hero": {
+      "title": "Linear Damper",
+      "description": "With over a decade of experience in the linear damper industry, we have long been a trusted partner for domestic manufacturers and international traders in China, specializing in supplying a wide range of customized linear dampers. As we have accumulated extensive technical expertise over the years, we are now ready to step onto the global stage. We aim to deliver our value directly to customers worldwide, cutting out unnecessary middle links. Let our professionalism speak for itself. This is a conversation between engineers."
+    },
+    "productShowcase": {
+      "title": "Our Product Series",
+      "products": [
+        {
+          "model": "Mini Linear Damper",
+          "description": "More compact design, ideal for space-limited applications. Available in standard diameters of 6mm, 8mm, 10mm, and 12mm, with customization options for diameter, length, and stroke."
+        },
+        {
+          "model": "Pneumatic Damper",
+          "description": "Combining the functions of a gas spring and a damper, these devices are designed for applications that require both support and controlled motion. "
+        }
+      ]
+    },
+    "process": {
+      "title": "We engineer precision linear dampers through four key phases:",
+      "processes": [
+        {
+          "step": "Step 1",
+          "title": "Requirement Confirmation",
+          "description": "Our engineers analyze your application needs, including load capacity (5-2400N standard), stroke length, and environmental factors. We provide force-deflection curves and 3D models for approval."
+        },
+        {
+          "step": "Step 2",
+          "title": "Shaft Design & DFM",
+          "description": "Custom shafts are machined from case-hardened steel (HRC 45-50) with optional coatings. Our in-house tooling allows ±0.01mm tolerances for smooth operation."
+        },
+        {
+          "step": "Step 3",
+          "title": "Evalation Testing",
+          "description": "Prototype for functional test  We supply test reports and CAD files for your verification.T0~1 sample,  following test requirement from customer. Gas spring damper undergo at least 50,000+ cycle & mini linear damper 100,000 times endurance tests with force deviation under ±5%."
+        },
+        {
+          "step": "Step 4",
+          "title": "Mass Production",
+          "description": "  ISO-certified manufacturing delivers batches from 100pcs with PPAP documentation. Global   logistics ensure on-time delivery to 30+ countries."
+        }
+      ]
+    },
+    "caseStudies": {
+      "techTitle": "Technologies",
+      "techDescription": "With Linear damper from our company, you create smooth-running, safe and high-quality product experiences. Get to know our range of motion control solutions and discover the right solution specifically for your industry.",
+      "techList": [
+        { "title": "Electric motion control solutions" },
+        { "title": "Mechanical motion control solutions" },
+        { "title": "Innovations" }
+      ],
+      "industryTitle": "Industries & Applications",
+      "industryList": [
+        { "title": "Automotive industry" },
+        { "title": "Commercial vehicles" },
+        { "title": "Aerospace, Navy, Railways" },
+        { "title": "Energy and construction" },
+        { "title": "Mechanical engineering and automation" },
+        { "title": "Health, leisure and furniture" }
+      ]
+    },
+    "features": [
+      {
+        "title": "Transparent Trade Terms",
+        "description": "We offer flexible trade terms to suit your logistics needs. Choose from FOB, CFR, or DDP options based on your convenience. Our collaboration with freight forwarding companies ensures smooth and efficient delivery."
+      },
+      {
+        "title": "Quality You Can Trust",
+        "description": "Our commitment to quality is unwavering. We are proudly ISO 9001 certified, a testament to our manufacturing excellence."
+      },
+      {
+        "title": "Efficient Business and Engineering Response",
+        "description": "We prioritize your technical queries and urgent requirements. Our dedicated technical support team is just a click away for any immediate assistance."
+      }
+    ],
+    "technical": {
+      "technicalSupportTitle": "Technical Support",
+      "technicalConsultationTitle": "Technical Consultation",
+      "technicalConsultationDesc": "Access our technical consultation service for expert advice on your projects.",
+      "urgentReplacementTitle": "Urgent Replacement Needs",
+      "urgentReplacementDesc": "For urgent replacement parts, connect directly with our technical team via our emergency contact channel."
+    },
+    "relatedPosts": {
+      "title": "Latest Blog Posts"
+    },
+    "contactUs": {
+      "contactUsTitle": "Contact Us",
+      "getInTouchTitle": "Get in Touch",
+      "addressTitle": "Address",
+      "addressDesc": "Business Street, Ningbo, Zhejiang, China",
+      "emailTitle": "Email",
+      "emailDesc": "info@lineardamper.com",
+      "phoneTitle": "Phone",
+      "phoneDesc": "+86 233 421 663",
+      "workingHoursTitle": "Working Hours",
+      "workingHoursDescWeekday": "Monday - Friday: 9:00 AM - 6:00 PM",
+      "workingHoursDescSaturday": "Saturday: 9:00 AM - 1:00 PM",
+      "sendMessageTitle": "Send Us a Message"
+    }
+  }
+}

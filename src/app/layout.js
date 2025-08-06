@@ -1,11 +1,6 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
-import Header from '@/components/layout/Header'
-import Footer from '@/components/layout/Footer'
-import 'katex/dist/katex.min.css' // 添加这行
-import GoogleAnalytics from '@/components/analytics/GoogleAnalytics'
-import SchemaTag from '@/components/common/SchemaTag';
-import { generateWebsiteSchema } from '@/lib/schemaHelpers';
+import 'katex/dist/katex.min.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -54,38 +49,17 @@ export const metadata = {
     },
   },
   icons: {
-    icon: '/favicon.ico', // 基础图标
-    shortcut: '/favicon.ico', // 高分辨率图标（用于搜索结果）
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
   },
 }
 
+// 根布局只提供基础的 HTML 结构和全局样式
 export default function RootLayout({ children }) {
-
-  // 全局 Schema 数据
-  const websiteSchema = generateWebsiteSchema({
-    baseUrl: 'https://dkdamper.com',
-    siteName: 'DK Machinery - Linear Damper Solutions',
-    description: 'Professional linear damper manufacturer with 26 years of experience',
-    orgName: 'DK Machinery Co., Ltd',
-    logoPath: '/logo.png',
-    phone: '+86-XXX-XXXXXXX',
-    languages: ['English', 'Chinese', 'German', 'Dutch', 'French'],
-    socialLinks: [
-      'https://linkedin.com/company/dkmachinery',
-      'https://facebook.com/dkmachinery'
-    ]
-  });
-
   return (
-    <html lang="en" className="overflow-x-hidden">
+    <html className="overflow-x-hidden">
       <body className={`${inter.className} overflow-x-hidden`}>
-        <GoogleAnalytics trackingId="G-0NDVSEHYGN" /> {/* google analytics 追踪代码*/}
-        <SchemaTag data={websiteSchema} />
-        <Header />
-        <main>
-          {children}
-        </main>
-        <Footer />
+        {children}
       </body>
     </html>
   )
