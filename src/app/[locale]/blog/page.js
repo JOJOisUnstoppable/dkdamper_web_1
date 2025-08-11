@@ -1,9 +1,10 @@
 'use client'
 import { useState } from 'react'
+import { useParams } from 'next/navigation'
 import Link from 'next/link'
 import { trackUserBehavior } from '@/utils/analytics'
 import { allPosts } from 'contentlayer/generated'
-import Image from 'next/image' // 添加这一行
+import Image from 'next/image'
 
 const categories = [
   { id: 'all', name: 'All' },
@@ -13,29 +14,19 @@ const categories = [
   { id: 'case', name: 'Case Studies' }
 ]
 
-const tags = [
-  'B2B', 'Digital Transformation', 'Solutions', 'Tech Innovation', 
-  'Enterprise Management', 'Industry Trends', 'Best Practices', 'Case Analysis'
-]
+
 
 export default function BlogPage() {
-  const [activeCategory, setActiveCategory] = useState('all')
-  const [activeTag, setActiveTag] = useState('all')
-  const [searchTerm, setSearchTerm] = useState('')
+  const { locale } = useParams() // 改为获取 locale 参数
   const [currentPage, setCurrentPage] = useState(1)
   const postsPerPage = 6
 
-  // 修改这一行：将 posts 改为 allPosts
-  // 修改过滤逻辑，只显示已发布的文章
   const filteredPosts = allPosts.filter(post => {
     // 首先检查是否已发布（默认为 true）
     const isPublished = post.published !== false
-    const matchCategory = activeCategory === 'all' ? true : post.category === activeCategory
-    const matchTag = activeTag === 'all' ? true : post.tags?.includes(activeTag)
-    const matchSearch = searchTerm === '' ? true : 
-      post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      post.excerpt.toLowerCase().includes(searchTerm.toLowerCase())
-    return isPublished && matchCategory && matchTag && matchSearch
+    // 检查语言是否匹配
+    const matchLang = post.lang === locale // 使用 locale 进行匹配
+    return isPublished && matchLang
   })
 
   const totalPages = Math.ceil(filteredPosts.length / postsPerPage)
@@ -51,26 +42,6 @@ export default function BlogPage() {
     trackUserBehavior('page_change', { page })
   }
 
-  const handleCategoryChange = (category) => {
-    setActiveCategory(category)
-    setCurrentPage(1)
-    // 记录分类切换行为
-    trackUserBehavior('category_filter', { category })
-  }
-
-  const handleTagChange = (tag) => {
-    setActiveTag(tag)
-    setCurrentPage(1)
-    // 记录标签筛选行为
-    trackUserBehavior('tag_filter', { tag })
-  }
-
-  const handleSearch = (e) => {
-    e.preventDefault()
-    // 记录搜索行为
-    trackUserBehavior('search', { keyword: searchTerm })
-  }
-
   return (
     <div className="min-h-screen py-20">
       {/* Hero Section */}
@@ -78,36 +49,6 @@ export default function BlogPage() {
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold mb-4">Blog Articles</h1>
           <p className="text-xl mb-8">Sharing Industry Insights and Technical Updates</p>
-          {/* Search Bar */}
-          <div className="max-w-2xl mx-auto">
-            <form onSubmit={handleSearch} className="relative">
-              <input
-                type="text"
-                placeholder="Search articles..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full px-4 py-3 pr-12 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none"
-              />
-              <button 
-                type="submit"
-                className="absolute right-0 top-0 h-full px-4 text-gray-400 hover:text-gray-600"
-              >
-                <svg 
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path 
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                  />
-                </svg>
-              </button>
-            </form>
-          </div>
         </div>
       </section>
 
@@ -116,17 +57,6 @@ export default function BlogPage() {
         <div className="container mx-auto px-4">
           {filteredPosts.length === 0 ? (
             <div className="text-center py-12">
-              <h3 className="text-xl text-gray-600">No articles found</h3>
-              <button 
-                onClick={() => {
-                  setSearchTerm('')
-                  setActiveCategory('all')
-                  setCurrentPage(1)
-                }}
-                className="mt-4 text-primary hover:text-secondary"
-              >
-                Clear Filters
-              </button>
             </div>
           ) : (
             <>
@@ -139,12 +69,12 @@ export default function BlogPage() {
                         <Image
                           src={post.image}
                           alt={post.title}
-                          layout="fill"
-                          objectFit="cover"
+                          fill
+                          style={{ objectFit: 'cover' }}
                           className="transition-transform duration-300 hover:scale-105"
                         />
                       </div>
-                    )} 
+                    )}
                     {!post.image && (
                       <div className="h-48 bg-gray-200 flex items-center justify-center text-gray-500">
                         No Image
@@ -164,7 +94,7 @@ export default function BlogPage() {
                           <div className="w-8 h-8 bg-gray-200 rounded-full"></div>
                           <span className="text-sm text-gray-600">{post.author}</span>
                         </div>
-                        <Link 
+                        <Link
                           href={`/blog/${post.id}`}
                           className="text-primary hover:text-secondary transition-colors"
                         >
@@ -182,24 +112,22 @@ export default function BlogPage() {
                   <button
                     onClick={() => handlePageChange(currentPage - 1)}
                     disabled={currentPage === 1}
-                    className={`px-4 py-2 rounded-lg ${
-                      currentPage === 1
+                    className={`px-4 py-2 rounded-lg ${currentPage === 1
                         ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
                         : 'bg-white hover:bg-gray-100'
-                    }`}
+                      }`}
                   >
                     Previous
                   </button>
-                  
+
                   {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
                     <button
                       key={page}
                       onClick={() => handlePageChange(page)}
-                      className={`px-4 py-2 rounded-lg ${
-                        currentPage === page
+                      className={`px-4 py-2 rounded-lg ${currentPage === page
                           ? 'bg-primary text-white'
                           : 'bg-white hover:bg-gray-100'
-                      }`}
+                        }`}
                     >
                       {page}
                     </button>
@@ -208,11 +136,10 @@ export default function BlogPage() {
                   <button
                     onClick={() => handlePageChange(currentPage + 1)}
                     disabled={currentPage === totalPages}
-                    className={`px-4 py-2 rounded-lg ${
-                      currentPage === totalPages
+                    className={`px-4 py-2 rounded-lg ${currentPage === totalPages
                         ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
                         : 'bg-white hover:bg-gray-100'
-                    }`}
+                      }`}
                   >
                     Next
                   </button>

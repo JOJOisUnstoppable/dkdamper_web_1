@@ -1,0 +1,654 @@
+{
+  "home": {
+    "meta": {
+      "title": "Producent amortyzatorów liniowych | Precyzyjne hydrauliczne rozwiązania do sterowania ruchem",
+      "description": "Profesjonalny producent amortyzatorów liniowych z ponad 10-letnim doświadczeniem. Oferujemy dostosowane amortyzatory hydrauliczne od Φ6mm do Φ12mm do zastosowań automotive, lotniczych i przemysłowych. Zamów propozycję cenową już dziś.",
+      "keywords": "amortyzator liniowy, amortyzator hydrauliczny, amortyzator sprężynowy gazowy, mini amortyzator liniowy, amortyzator własny projekt, amortyzator przemysłowy, sterowanie ruchem"
+    },
+    "hero": {
+      "title": "Amortyzator liniowy",
+      "description": "Posiadając ponad dekadę doświadczenia w branży amortyzatorów liniowych, od dawna jesteśmy zaufanym partnerem dla producentów krajowych i handlarzy międzynarodowych w Chinach, specjalizując się w dostarczaniu szerokiej gamy dostosowanych amortyzatorów liniowych. Ponieważ przez lata gromadziliśmy obszerne wiedzy technicznej, jesteśmy teraz gotowi na wejście na scenę globalną. Naszym celem jest dostarczanie naszej wartości bezpośrednio klientom na całym świecie, eliminując niepotrzebne pośrednictwa. Niech nasza profesjonalność przemówi sama za siebie. To rozmowa między inżynierami.",
+      "button1": "Zamów propozycję cenową",
+      "button2": "Pobierz katalog"
+    },
+    "productShowcase": {
+      "title": "Nasza seria produktów",
+      "products": [
+        {
+          "model": "Mini amortyzator liniowy",
+          "description": "bardziej kompaktowy design, idealny do zastosowań z ograniczoną przestrzenią. Dostępny w standardowych średnicach 6mm, 8mm, 10mm i 12mm, z możliwością dostosowania średnicy, długości i Stroke."
+        },
+        {
+          "model": "Amortyzator pneumatyczny",
+          "description": "Połączając funkcje sprężyny gazowej i amortyzatora, urządzenia te są zaprojektowane do zastosowań, które wymagają zarówno wsparcia, jak i kontrolowanego ruchu."
+        }
+      ]
+    },
+    "process": {
+      "title": "Projektujemy precyzyjne amortyzatory liniowe w czterech kluczowych fazach:",
+      "processes": [
+        {
+          "step": "Krok 1",
+          "title": "Potwierdzenie wymagań",
+          "description": "Nasi inżynierowie analizują Twoje potrzeby dotyczące zastosowania, w tym pojemność obciążenia (standard 5-2400N), długość Stroke i czynniki środowiskowe. Dostarczamy krzywe siła-odkształcenie i modele 3D do zatwierdzenia."
+        },
+        {
+          "step": "Krok 2",
+          "title": "Projekt osi i DFM",
+          "description": "Dostosowane osie są obrabiane z stali hartowanej powłokowo (HRC 45-50) z opcjonalnymi powłokami. Nasze wewnętrzne narzędzia pozwalają na tolerancje ±0,01mm dla gładkiego działania."
+        },
+        {
+          "step": "Krok 3",
+          "title": "Testy oceny",
+          "description": "Prototyp do testu funkcjonalnego. Dostarczamy raporty testowe i pliki CAD do weryfikacji. Próbka T0~1, zgodnie z wymaganiami testowymi klienta. Amortyzatory sprężyn gazowych podlegają co najmniej 50 000+ cyklom, a mini amortyzatory liniowe 100 000 razy testom trwałości z odchyleniem siły poniżej ±5%."
+        },
+        {
+          "step": "Krok 4",
+          "title": "Produkcja seryjna",
+          "description": "Produkcja z certyfikatem ISO dostarcza partii od 100 sztuk z dokumentacją PPAP. Logistyka globalna zapewnia terminowe dostawy do ponad 30 krajów."
+        }
+      ]
+    },
+    "caseStudies": {
+      "techTitle": "Technologie",
+      "techDescription": "Dzięki amortyzatorom liniowym z naszej firmy tworzysz płynnie działające, bezpieczne i wysokiej jakości doświadczenia produktowe. Poznaj naszą gamę rozwiązań do sterowania ruchem i znajdź odpowiednie rozwiązanie specjalnie dla swojej branży.",
+      "techList": [
+        {
+          "title": "Elektroniczne rozwiązania do sterowania ruchem"
+        },
+        {
+          "title": "Mechatroniczne rozwiązania do sterowania ruchem"
+        },
+        {
+          "title": "Innowacje"
+        }
+      ],
+      "industryTitle": "Branże i zastosowania",
+      "industryList": [
+        {
+          "title": "Branża automotive"
+        },
+        {
+          "title": "Pojazdy komercyjne"
+        },
+        {
+          "title": "Lotnictwo, Marynarka Wojenna, Koleje"
+        },
+        {
+          "title": "Energia i budownictwo"
+        },
+        {
+          "title": "Inżynieria mechaniczna i automatyka"
+        },
+        {
+          "title": "Zdrowie, rekreacja i meble"
+        }
+      ]
+    },
+    "features": [
+      {
+        "title": "Przezroczyste warunki handlowe",
+        "description": "Oferujemy elastyczne warunki handlowe dostosowane do Twoich potrzeb logistycznych. Wybierz spośród opcji FOB, CFR lub DDP według własnych potrzeb. Nasza współpraca z firmami przewozowo-spedycyjnymi zapewnia płynną i wydajną dostawę."
+      },
+      {
+        "title": "Jakość, na którą możesz polegać",
+        "description": "Nasze zaangażowanie w jakość jest niezmienne. Jesteśmy z dumą certyfikowani ISO 9001, co jest dowodem naszej doskonałości w produkcji."
+      },
+      {
+        "title": "Szybka reakcja biznesowa i inżynierska",
+        "description": "Priorytetem są Twoje zapytania techniczne i wymagania pilne. Nasz specjalistyczny zespół wsparcia technicznego jest dostępny jednym kliknięciem w przypadku jakiejkolwiek natychmiastowej pomocy."
+      }
+    ],
+    "technical": {
+      "technicalSupportTitle": "Wsparcie techniczne",
+      "technicalConsultationTitle": "Konsultacja techniczna",
+      "technicalConsultationDesc": "Dostęp do naszego serwisu konsultacyjnego technicznego w celu uzyskania eksperckich porad dotyczących Twoich projektów.",
+      "urgentReplacementTitle": "Pilne potrzeby zamiany",
+      "urgentReplacementDesc": "W przypadku pilnych części zamiennych skontaktuj się bezpośrednio z naszym zespołem technicznym przez nasz kanał kontaktowy awaryjny."
+    },
+    "relatedPosts": {
+      "title": "Ostatnie wpisy na blogu"
+    },
+    "contactUs": {
+      "contactUsTitle": "Skontaktuj się z nami",
+      "getInTouchTitle": "Skontaktuj się",
+      "addressTitle": "Adres",
+      "addressDesc": "Business Street, Ningbo, Zhejiang, Chiny",
+      "emailTitle": "E-mail",
+      "emailDesc": "info@lineardamper.com",
+      "phoneTitle": "Telefon",
+      "phoneDesc": "+86 233 421 663",
+      "workingHoursTitle": "Godziny pracy",
+      "workingHoursDescWeekday": "Poniedziałek - Piątek: 9:00 - 18:00",
+      "workingHoursDescSaturday": "Sobota: 9:00 - 13:00",
+      "sendMessageTitle": "Wyślij nam wiadomość"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "26 lat profesjonalnego doświadczenia w produkcji",
+      "description": "Zaangażowani w dostarczanie wysokiej jakości produktów i rozwiązań z amortyzatorami liniowymi dla klientów na całym świecie",
+      "badges": [
+        "Certyfikat jakości ISO",
+        "Miesięczna pojemność: 100 tys. sztuk",
+        "46 partnerów dostawców"
+      ]
+    },
+    "aboutSection": {
+      "title": "O firmie DK Machinery",
+      "description": "Posiadając ponad 26 lat szerokiego doświadczenia w produkcji amortyzatorów, firma DK Machinery jest zdeterminowana do dostarczania klientom wysokiej jakości produktów i rozwiązań z amortyzatorami liniowymi. Przewagę ma zasada 'klient na pierwszym miejscu' – dzięki ciągłej innowacji technicznej i surowemu kontroli jakości nawiązaliśmy długotrwałe, stabilne relacje partnerskie z klientami na całym świecie.",
+      "features": [
+        {
+          "title": "Profesjonalne skupienie",
+          "description": "26 lat specjalizacji w produkcji amortyzatorów liniowych, gromadzenie bogatego doświadczenia branżowego i wiedzy technicznej"
+        },
+        {
+          "title": "Gwarancja jakości",
+          "description": "Surowy system kontroli jakości zapewniający doskonałość na każdym etapie – od surowców po produkty końcowe"
+        },
+        {
+          "title": "Sukces współpracy",
+          "description": "Rozwinięcie współpracy z 46 partnerami dostawców, utworzenie kompleksowego ekosystemu przemysłowego"
+        }
+      ]
+    },
+    "products": {
+      "title": "Centrum produktów",
+      "description": "Nasze amortyzatory liniowe charakteryzują się doskonałymi parametrami technicznymi i niezawodnym działaniem",
+      "productList": [
+        {
+          "name": "Standardowy amortyzator liniowy",
+          "description": "Przeznaczony do tradycyjnych zastosowań, takich jak szuflady i drzwi szafek"
+        },
+        {
+          "name": "Amortyzator liniowy heavy-duty",
+          "description": "Wysoka pojemność obciążeniowa, idealny do zastosowań w sprzęcie przemysłowym"
+        },
+        {
+          "name": "Amortyzator liniowy dostosowany",
+          "description": "Dostosowany do wymagań klienta dla specjalistycznych zastosowań"
+        }
+      ],
+      "technicalSpecifications": {
+        "title": "Specyfikacje techniczne",
+        "specs": [
+          {
+            "title": "Zakres ciągu",
+            "value": "300N - 2300N"
+          },
+          {
+            "title": "StandardoweStroke",
+            "value": "7-10mm"
+          },
+          {
+            "title": "Miesięczna pojemność",
+            "value": "100 tys. sztuk"
+          },
+          {
+            "title": "Kombinacje akcesoriów",
+            "value": "ponad 2000 typów"
+          }
+        ]
+      }
+    },
+    "productionTesting": {
+      "title": "Produkcja i testy",
+      "description": "Zaawansowane linie produkcyjne i surowe standardy testowania zapewniają jakość produktu",
+      "features": [
+        {
+          "title": "Automatyczna linia produkcyjna",
+          "description": "Zaawansowane automatyczne urządzenia produkcyjne zapewniają spójność produktu i maksymalizują wydajność. 23 surowe procesy, każdy z precyzyjnym obliczeniem czasu i kosztów."
+        },
+        {
+          "title": "Testy jakości",
+          "description": "Testy laboratoryjne osiągają miliony cykli, a produkty produkowane w serii gwarantowane są na 200 000 cykli. Standard testowania: 5-6 cykli/minuta, ukończenie weryfikacji 100 000 cykli w 7 dniach."
+        },
+        {
+          "title": "Usługi dostosowywania",
+          "description": "Obsługuje dostosowywanie niestandardowe z ponad 2000 kombinacjami akcesoriów, aby zaspokoić różnorodne potrzeby. W ekstremalnych warunkach, takich jak ultra niskie temperatury, materiały od -40°C zapewniają działanie produktu."
+        }
+      ]
+    },
+    "qualityAssurance": {
+      "title": "Gwarancja jakości",
+      "description": "Surowy system gwarancji jakości i przejrzysty analizę kosztów zapewniają korzyści dla klienta",
+      "processes": [
+        {
+          "title": "Proces testowania próbek",
+          "description": "Przed formalnymi zamówieniami wymagamy próbek od klienta w celu weryfikacji składu materiału, aby zapewnić zgodność produktu."
+        },
+        {
+          "title": "Przejrzysty analizę kosztów",
+          "description": "Oferujemy konkurencyjne ceny dla dużych klientów z przejrzystym rozbiciem kosztów materiałów. Użycie bezszwowych złotych rurek z jaśniejszym pokryciem powierzchniowym."
+        },
+        {
+          "title": "Trzyetapowa weryfikacja",
+          "description": "W przypadku jakichkolwiek wątpliwości dotyczących cen lub jakości: porównanie próbek, demontaż na miejscu i weryfikacja czasu i kosztów."
+        }
+      ],
+      "stats": [
+        {
+          "value": "26 lat",
+          "label": "Doświadczenie branżowe"
+        },
+        {
+          "value": "200 tys. cykli",
+          "label": "Gwarancja testowania"
+        },
+        {
+          "value": "23 kroki",
+          "label": "Surowe procesy"
+        },
+        {
+          "value": "46 partnerów",
+          "label": "Współpracownicy"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Skontaktuj się z nami",
+      "description": "Skontaktuj się z nami, aby dowiedzieć się więcej o naszych produktach lub omówić możliwości współpracy",
+      "contactInfo": [
+        {
+          "type": "Telefon",
+          "details": [
+            "400-123-4567",
+            "0755-12345678"
+          ]
+        },
+        {
+          "type": "E-mail",
+          "details": [
+            "info@lineardamper.com",
+            "sales@lineardamper.com"
+          ]
+        },
+        {
+          "type": "Adres",
+          "details": [
+            "Dzielnica Nanshan, Szenczen",
+            "Park Naukowo-Technologiczny, Guangdong, Chiny"
+          ]
+        }
+      ],
+      "buttonText": "Kontaktuj się teraz"
+    },
+    "footer": {
+      "companyName": "DK Machinery Amortyzatory Liniowe",
+      "companyTagline": "Profesjonalny producent amortyzatorów liniowych",
+      "copyright": "26 lat doświadczenia w produkcji | Gwarancja jakości | Usługa z integralnością"
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "hero": {
+      "title": "Skontaktuj się z nami",
+      "description": "Masz pytania lub potrzeb pomocy? Skontaktuj się z naszym zespołem.",
+      "contactInfo": {
+        "phone": "+1 (123) 456-7890",
+        "email": "info@lineardamper.com",
+        "address": "Business Street, Ningbo, Zhejiang, Chiny"
+      }
+    },
+    "contactSection": {
+      "contactUsTitle": "Skontaktuj się z nami",
+      "getInTouchTitle": "Skontaktuj się",
+      "addressTitle": "Adres",
+      "addressDesc": "Business Street, Ningbo, Zhejiang, Chiny",
+      "emailTitle": "E-mail",
+      "emailDesc": "info@lineardamper.com",
+      "phoneTitle": "Telefon",
+      "phoneDesc": "+86 233 421 663",
+      "workingHoursTitle": "Godziny pracy",
+      "workingHoursDescWeekday": "Poniedziałek - Piątek: 9:00 - 18:00",
+      "workingHoursDescSaturday": "Sobota: 9:00 - 13:00",
+      "sendMessageTitle": "Wyślij nam wiadomość"
+    }
+  },
+  "products": {
+    "meta": {
+      "title": "Amortyzatory liniowe | Wysokiej jakości hydrauliczne rozwiązania do sterowania ruchem",
+      "description": "Odkryj naszą gamę precyzyjnych amortyzatorów liniowych do zastosowań przemysłowych i konsumenckich. Steruj ruchem, redukuj wibracje i zapewnij płynne funkcjonowanie dzięki naszym hydraulickým rozwiązaniom tłumienia.",
+      "keywords": "amortyzator liniowy, amortyzator hydrauliczny, sterowanie ruchem, redukcja wibracji, amortyzatory przemysłowe, amortyzatory precyzyjne, rozwiązania tłumienia",
+      "canonical": "https://www.lineardamper.com/products"
+    },
+    "schema": {
+      "listName": "Lista produktów amortyzatorów liniowych DK Machinery",
+      "description": "Pełna lista amortyzatorów liniowych do zastosowań przemysłowych i konsumenckich",
+      "baseUrl": "https://lineardamper.com"
+    },
+    "HeroSecion": {
+      "title": "Profesjonalne amortyzatory liniowe i amortyzatory tłoczkowe",
+      "description": "Zaawansowane hydrauliczne rozwiązania tłumienia do przemysłowego sterowania ruchem. Od precyzyjnych mikroamortyzatorów po heavy-duty aplikacje przemysłowe, oferujemy kompleksową technologię tłumienia dla płynnego, kontrolowanego ruchu."
+    },
+    "whatIsLinearDamper": {
+      "section": {
+        "title": "Co to jest amortyzator liniowy?",
+        "description1": "Amortyzatory liniowe to kluczowe elementy sterowania ruchem, whose function is to buforować i spowalniać ruchy oraz zapewniać płynne i kontrolowane funkcjonowanie. Generują opór poprzez kompresję oleju hydraulicznego i迫使其 przepływać przez otwory przeregulowane, a zastosowania znajdują w różnych branżach.",
+        "description2": "Amortyzatory liniowe zapewniają płynny liniowy ruch tłumienia i mogą być wyposażone w zintegrowany przełącznik świetlny na żądanie. Tłumią proces zamykania lub otwierania w jednym kierunku, podczas gdy w drugim zapewniają swobodny ruch (bez oporu).",
+        "description3": "Prościej mówiąc, amortyzatory liniowe to urządzenia służące do kontrolowania prędkości ruchomych obiektów, umożliwiając im stopniowe spowolnienie i uniknięcie nagłych zatrzymań lub uderzeń. Ich zastosowania można zobaczyć w wielu miejscach, np. Mini Amortyzator Liniowy w drzwiach szafek na śmieci oraz amortyzatory olejowe/gazowe, które umożliwiają powolne i delikatne zamknięcie bagażników samochodowych bez uderzenia."
+      },
+      "whyChoose": {
+        "title": "Dlaczego wybrać hydrauliczne amortyzatory liniowe?",
+        "description": "Hydrauliczne amortyzatory liniowe oferują lepsze osiągi niż inne technologie tłumienia:"
+      },
+      "table": {
+        "headers": {
+          "dampingType": "Rodzaj tłumienia",
+          "energyAbsorption": "Absorpcja energii",
+          "reboundRisk": "Ryzyko odrzutu",
+          "performance": "Wydajność",
+          "applications": "Zastosowania"
+        },
+        "hydraulic": {
+          "type": "Hydrauliczne (Nasza technologia)",
+          "energyAbsorption": "Przekształca energię kinetyczną na energię cieplną",
+          "reboundRisk": "Minimalne - energia jest rozpraszana",
+          "performance": "Doskonała - cechy dostosowywalne",
+          "applications": "Aplikacje przemysłowe, precyzyjne"
+        },
+        "rubber": {
+          "type": "Gumowe",
+          "energyAbsorption": "Deformacja elastyczna magazynuje energię",
+          "reboundRisk": "Wysokie - magazynowana energia powoduje odrzut",
+          "performance": "Podstawowa - kontrola ograniczona",
+          "applications": "Proste, taniojsze aplikacje"
+        },
+        "spring": {
+          "type": "Sprężynowe",
+          "energyAbsorption": "Deformacja elastyczna magazynuje energię",
+          "reboundRisk": "Wysokie - magazynowana energia powoduje odrzut",
+          "performance": "Podstawowa - kontrola ograniczona",
+          "applications": "Proste systemy mechaniczne"
+        },
+        "pneumatic": {
+          "type": "Pneumatyczne",
+          "energyAbsorption": "Powietrze skompresowane przez otwór",
+          "reboundRisk": "Średnie - zależy od równowagi",
+          "performance": "Dobra - ale mniej precyzyjna",
+          "applications": "Aplikacje średniego obciążenia"
+        }
+      }
+    },
+    "productSeries": {
+      "meta": {
+        "title": "",
+        "description": "",
+        "keywords": ""
+      },
+      "section": {
+        "title": "Nasza seria produktów amortyzatorów liniowych",
+        "imageAlt": "Seria produktów"
+      },
+      "table": {
+        "headers": {
+          "empty": "",
+          "totalLength": "Całkowita długość/mm ①",
+          "diameter": "Średnica/mm②",
+          "cylinderLength": "Długość cylindra/mm③",
+          "usedStroke": "Użyty przebieg/mm",
+          "withWithoutCap": "Z/bez pokrywy",
+          "withWithoutSpring": "Z/bez sprężyny samo powrotu"
+        },
+        "exampleRow": {
+          "model": "Model przykładowy",
+          "totalLengthValue": "68",
+          "diameterValue": "10",
+          "cylinderLengthValue": "42",
+          "usedStrokeValue": "14",
+          "withWithoutCapValue": "Z",
+          "withWithoutSpringValue": "Bez"
+        }
+      },
+      "products": {
+        "phi6mm": {
+          "title": "Φ6mm",
+          "description": "Mikro hydrauliczne amortyzatory liniowe z jednokierunkowym tłumieniem, z automatycznym powrotem sprężynowym i mechanizmem ponownego uruchomienia. Idealne do precyzyjnego sterowania w kompaktowych aplikacjach.",
+          "forceRange": "Zakres siły: 0-100N",
+          "material1": "Stal precyzyjna",
+          "materialOr": "lub",
+          "material2": "Stal nierdzewna",
+          "applicationsTitle": "Zastosowania:",
+          "applications": "Instrumenty precyzyjne, małe drzwi szafek, pokrywy urządzeń elektronicznych"
+        },
+        "phi8mm": {
+          "title": "Φ8mm",
+          "description": "Hydrauliczne amortyzatory liniowe z jednokierunkowym tłumieniem, automatycznym powrotem sprężynowym i funkcją ponownego uruchomienia. Doskonała równowaga między rozmiarem a wydajnością.",
+          "forceRange": "Zakres siły: 0-350N",
+          "material1": "Stal wysokiej jakości",
+          "materialOr": "lub",
+          "material2": "Stal nierdzewna",
+          "applicationsTitle": "Zastosowania:",
+          "applications": "Średnie drzwi, elementy samochodowe, sprzęty meblowe"
+        },
+        "phi10mm": {
+          "title": "Φ10mm",
+          "description": "Standardowe hydrauliczne amortyzatory liniowe z jednokierunkowym tłumieniem i powrotem sprężynowym. Oferują zaufaną wydajność w aplikacjach średniego obciążenia.",
+          "forceRange": "Zakres siły: 0-870N",
+          "material1": "Stal przemysłowa",
+          "materialOr": "lub",
+          "material2": "Stal nierdzewna",
+          "applicationsTitle": "Zastosowania:",
+          "applications": "Maszyny przemysłowe, ciężkie meble, aplikacje samochodowe"
+        },
+        "phi12mm": {
+          "title": "Φ12mm",
+          "description": "Heavy-duty hydrauliczne amortyzatory liniowe z dostosowywalnym przebiegiem i kierunkiem tłumienia. Z jednokierunkowym tłumieniem i powrotem sprężynowym, idealne do aplikacji wysokiej siły.",
+          "forceRange": "Zakres siły: 0-2400N",
+          "material1": "Stal heavy-duty",
+          "materialOr": "lub",
+          "material2": "Stal nierdzewna",
+          "applicationsTitle": "Zastosowania:",
+          "applications": "Ciężkie urządzenia przemysłowe, duże maszyny, systemy wysokiego obciążenia"
+        }
+      }
+    },
+    "howLinearDamperWorks": {
+      "meta": {
+        "title": "",
+        "description": "",
+        "keywords": ""
+      },
+      "section": {
+        "title": "Jak działa amortyzator liniowy?",
+        "intro": "Amortyzatory liniowe działają poprzez przekształcenie energii kinetycznej na energię cieplną za pomocą oporu hydraulicznego. Kiedy siła działa na pręt tłoczka,推移它 tłumik, kompresując wewnętrzny olej hydrauliczny. Olej ten jest następnie迫使其 przepływać przez specjalnie zaprojektowane otwory, tworząc opór, który spowalnia lub buforuje ruch.",
+        "energyAbsorption": {
+          "title": "Zasady absorpcji energii",
+          "desc1": "Kiedy obiekt uderza w pręt tłoczka, ruch jest przekazywany olejowi w komorze ciśnieniowej przez pręt tłoczka. W rezultacie olej w komorze ciśnieniowej przepływa z otworów located in rurze wewnętrznej. To powoduje kompresję w komorze ciśnieniowej. Iloczyn tego ciśnienia hydraulicznego i powierzchni poddanej ciśnieniu tłoczka to opór, który działa na obiekt uderzający.",
+          "desc2": "Ciśnienie hydrauliczne generowane w komorze ciśnieniowej jest proporcjonalne do kwadratu prędkości obiektu uderzającego, o ile wielkość otworu, lepkość oleju itp. są stałe. Nazywa się to oporem kwadratowym prędkości."
+        },
+        "keyComponents": {
+          "title": "Podstawowe komponenty",
+          "pistonAndRod": {
+            "title": "Tłumik i pręt tłoczka",
+            "desc": "Kiedy zewnętrzna siła działa na amortyzator liniowy, najpierw jest ona przekazywana prętowi tłoczka. Pręt tłoczka to kluczowy element łączący obiekt zewnętrzny z wnętrzem amortyzatora. Następnie pręt tłoczka推移 connected to it tłumik, aby poruszał się w cylindrze amortyzatora, a tłumik jest zazwyczaj specjalnie zaprojektowaną częścią z otworami."
+          },
+          "hydraulicOil": {
+            "title": "Olej hydrauliczny",
+            "desc1": "Amortyzatory liniowe kontrolują ruch za pomocą oporu płynnego. Kiedy siła jest applied, tłumik porusza się w cylindrze wypełnionym olejem hydraulcznym. Olej jest迫使其 przepływać przez małe otwory (otwory przeregulowane). Ten ograniczony przepływ tworzy siłę oporu przeciwstawiającą się ruchowi, zapewniając efekt tłumienia.",
+            "desc2": "Lepkość oleju hydraulicznego jest ważna, ponieważ wpływa na poziom oporu. Różne typy amortyzatorów liniowych, klasyfikowane według typu przelewania (pojedyncze lub wielokrotne otwory) i kierunku ciągu (wciśnięcie, wyciągnięcie, dwukierunkowe), opierają się na tym principio, że olej hydrauliczny tworzy opór."
+          },
+          "orifices": {
+            "title": "Otwory przeregulowane",
+            "desc1": "Otwory przeregulowane są kluczowe w amortyzatorach liniowych, ponieważ są podstawowym sposobem kontrolowania siły tłumienia. Są to małe, precyzyjnie wymiarowane otwory w tłumiku amortyzatora. Gdy tłumik porusza się,迫使其 olej hydrauliczny przepływać przez te otwory.",
+            "desc2": "Wielkość i design otworów bezpośrednio regulują szybkość, z jaką olej hydrauliczny może przepływać. Mniejsze otwory bardziej ograniczają przepływ oleju, powodując większy opór i większą siłę tłumienia,从而 bardziej znacząco spowalniając ruch. Z kolei większe otwory umożliwiają łatwiejszy przepływ oleju, co prowadzi do mniejszego oporu i mniejszej siły tłumienia."
+          }
+        },
+        "images": {
+          "alt1": "Struktura amortyzatora liniowego 1",
+          "caption1": "Wyświetlanie komponentów",
+          "alt2": "Struktura amortyzatora liniowego 2",
+          "caption2": "Informacje o częściach"
+        }
+      }
+    },
+    "linearDamperTypes": {
+      "meta": {
+        "title": "",
+        "description": "",
+        "keywords": ""
+      },
+      "section": {
+        "mainTitle": "Krzywe tłumienia różnią się w zależności od aplikacji",
+        "intro": "Amortyzatory liniowe są dzielone na kategorie na podstawie tego, jak zmienia się pole otworu podczas pracy, zapewniając różne cechy absorpcyjne dla różnych aplikacji.",
+        "constantOrificeTypes": {
+          "title": "Typy z stałym otworem",
+          "singleOrificeType": {
+            "title": "Typ z pojedynczym otworem",
+            "description": "Ma trzy warianty strukturalne: struktura tłumika wykorzystująca przestrzeń między tłumikiem a rurą cylindra, struktura jednorzędowa z otworami w tłumiku oraz struktura jednookienna dwurzędowa (regulowana). Podczas całego przebiegu pole otworu pozostaje stałe. Opór wzrasta natychmiast po uderzeniu, następnie maleje w miarę postępowania przebiegu i zmniejszania się prędkości."
+          }
+        },
+        "strokeDependentOrificeTypes": {
+          "title": "Typy z otworem zależnym od przebiegu",
+          "multipleOrificeType": {
+            "title": "Typ z wieloma otworami",
+            "description": "Struktura podwójna składa się z rury zewnętrznej i wewnętrznej. Pole otworu w momencie uderzenia jest większe niż w typie pojedynczym, stopniowo maleje w miarę postępowania przebiegu, tłumiąc ogólny opór. Teoretycznie opór podczas przebiegu może być utrzymywany na stałym poziomie. Projekt otworu można modyfikować w zależności od warunków uderzenia."
+          },
+          "multipleVaryingOrificeType": {
+            "title": "Typ z wieloma zmiennymi otworami",
+            "description": "Ta sama struktura co typ z wieloma otworami, ale zapewnia cechy oporu odpowiednie do zamierzonego zastosowania, a nie stałą siłę tłumienia. Zaprojektowany do absorpcji energii kinetycznej w pierwszej połowie przebiegu i sterowania prędkością w drugiej połowie, osiągając idealną absorpcję energii."
+          },
+          "grooveOrificeType": {
+            "title": "Typ z otworem w rowku",
+            "description": "System jednorzędowy, w którym rowek z otworem na ścianie wewnętrznej zmienia się w miarę postępowania przebiegu. Duże pole otworu na początku przebiegu, malejące w miarę jego postępowania. Pole otworu zmienia się ciągły, co powoduje mniejsze fluktuacje oporu w porównaniu z typem wielokrotnym, umożliwiając optymalną absorpcję energii."
+          }
+        },
+        "chart": {
+          "title": "Różne typy przelewania",
+          "dataSets": {
+            "singleHoleOverflow": "Przelewanie przez pojedyncze otwór",
+            "multiHoleOverflow": "Przelewanie przez wiele otworów",
+            "grooveOverflow": "Przelewanie przez rowek"
+          }
+        }
+      }
+    },
+    "technicalSpecifications": {
+      "sectionTitle": "Specyfikacje techniczne",
+      "commonSpecifications": {
+        "title": "Specyfikacje wspólne",
+        "pistonRodRecoveryForce": "Siła odzyskiwania pręta tłoczka: Z sprężyną powrotu ≤5N (0,5 kgf), Bez sprężyny powrotu ≤1,5N (0,15 kgf)",
+        "mainUnitMaterial": "Materiał jednostki głównej: Konstrukcja z wysokiej jakości żywicy",
+        "operatingTemperatureRange": "Zakres temperatur pracy: 5~40°C (41~104°F)",
+        "mountingOptions": "Opcje montażu: Dostępne różne konfiguracje końców",
+        "strokeOptions": "Opcje przebiegu: Dostosowywalne długości przebiegów",
+        "dampingDirection": "Kierunek tłumienia: Opcje jednokierunkowe, dwukierunkowe"
+      },
+      "performanceCharacteristics": {
+        "title": "Cechy wydajnościowe",
+        "velocitySquaredResistance": "Opór kwadratowy prędkości: Ciśnienie hydrauliczne proporcjonalne do kwadratu prędkości uderzenia",
+        "energyConversion": "Przekształcenie energii: Energia kinetyczna przekształcana na energię cieplną i rozpraszana",
+        "customizableDamping": "Dostosowywalne tłumienie: Charakterystyki regulowane poprzez design otworu",
+        "parallelOperation": "Praca równoległa: Wiele jednostek może być używanych równolegle w celu zwiększenia pojemności"
+      }
+    },
+    "installationUsageGuidelines": {
+      "sectionTitle": "Instrukcje montażu i użytkowania",
+      "importantSafetyPrecautions": {
+        "title": "Ważne ostrożności bezpieczeństwa",
+        "precautions": [
+          "Zawsze używaj z zewnętrznym zatrzaskiem, aby zapobiec nadmiernej kompresji",
+          "Upewnij się, że zapewniono wystarczającą siłę montażu dla amortyzatora",
+          "Nie używaj w środowiskach próżniowych lub miejscach, gdzie może wystąpić kontakt z olejem",
+          "Unikaj stosowania obciążeń mimośrodowych na amortyzator",
+          "Obsługuj ostrożnie, aby zapobiec uszkodzeniom spowodowanym upadkami"
+        ]
+      },
+      "installationBestPractices": {
+        "title": "Najlepsze praktyki montażu",
+        "practices": [
+          "Montaż: Zabezpiecz oba końce odpowiednimi zamkami",
+          "Wyrownanie: Upewnij się odpowiedniego wyrównania osiowego, aby zapobiec zaciśnięciu",
+          "Limity przebiegu: Nigdy nie przekraczaj określonej długości przebiegu",
+          "Montaż równoległy: Dwa lub więcej amortyzatorów może być używanych równolegle w celu zwiększenia pojemności",
+          "Środowiskowe: Chroni przed ekstremalnymi temperaturami i zanieczyszczeniami"
+        ]
+      },
+      "operationalConsiderations": {
+        "title": "Zagadnienia operacyjne",
+        "considerations": [
+          "Nie wciskaj pręta tłoczka poza używany przebieg (powoduje niekompletny powrót)",
+          "Nie ciąć amortyzatora liniowego poza używany przebieg (powoduje uszkodzenie)",
+          "Duże przerwy między czasem wciskania a powrotu mogą wpływać na trwałość",
+          "Potwierdź wydajność w rzeczywistej maszynie przed użyciem"
+        ]
+      },
+      "images": {
+        "firstImageAlt": "Pierwsze zdjęcie",
+        "secondImageAlt": "Drugie zdjęcie"
+      }
+    },
+    "frequentlyAskedQuestions": {
+      "sectionTitle": "Często zadawane pytania",
+      "questionsAndAnswers": [
+        {
+          "question": "Jaka jest różnica między amortyzatorem liniowym a amortyzatorem tłoczkowym?",
+          "answer": "Amortyzatory liniowe i amortyzatory tłoczkowe to zasadniczo to samo urządzenie. Oba używają tłumika poruszającego się w cylindrze wypełnionym olejem hydraulcznym do tworzenia siły tłumienia. Terminy są często używane zamiennie, przy czym 'amortyzator liniowy' podkreśla aspekt liniowego sterowania ruchem, a 'amortyzator tłoczkowy' podkreśla wewnętrzny mechanizm tłoczka."
+        },
+        {
+          "question": "Jak wybrać odpowiedni zakres siły dla mojej aplikacji?",
+          "answer": "Zakres siły zależy od masy obiektu podlegającego tłumieniu i pożądanej szybkości hamowania. Dla lekkich aplikacji (poniżej 5kg) nasze amortyzatory Φ6mm lub Φ8mm są odpowiednie. Dla średnich obciążeń (5-20kg) rozważ amortyzatory Φ10mm. Dla heavy-duty aplikacji (powyżej 20kg) nasze maksymalne amortyzatory Φ12mm zapewniają siłę do 2400N."
+        },
+        {
+          "question": "Czy amortyzatory liniowe mogą być używane w obu kierunkach?",
+          "answer": "Nasze standardowe amortyzatory zapewniają jednokierunkowe tłumienie z powrotem sprężynowym. Działanie tłumienia występuje podczas kompresji, podczas gdy sprężyna zapewnia siłę powrotu. Dla aplikacji wymagających dwukierunkowego tłumienia oferujemy specjalne konfiguracje dwukierunkowego tłumienia."
+        },
+        {
+          "question": "Jakie utrzymanie wymagają amortyzatory liniowe?",
+          "answer": "Amortyzatory liniowe to zazwyczaj urządzenia bezobsługowe. Jednak regularne inspekcje pod kątem wycieków, odpowiedniego montażu i zapewnienia, że limity przebiegu nie są przekraczane, zwiększą ich żywotność. Unikaj ekspozycji na ekstremalne temperatury i zanieczyszczenia."
+        },
+        {
+          "question": "Jak długo trwają amortyzatory liniowe?",
+          "answer": "Żywotność zależy od warunków aplikacji, ale odpowiednio zamontowane i działające amortyzatory liniowe mogą funkcjonować przez miliony cykli. Czynniki wpływające na długotrwałość to temperatura pracy, częstotliwość przebiegu, warunki obciążenia i czynniki środowiskowe."
+        },
+        {
+          "question": "Czy można używać wielu amortyzatorów razem?",
+          "answer": "Tak, dwa lub więcej amortyzatorów liniowych może być używanych równolegle, aby zwiększyć całkowitą siłę tłumienia. Jest to szczególnie przydatne w heavy-duty aplikacjach lub gdy wymagana jest redundancja. Upewnij się odpowiedniego wyrównania i równomiernego rozkładu obciążenia podczas używania wielu jednostek."
+        }
+      ]
+    },
+    "applicationsAndIndustries": {
+      "sectionTitle": "Zastosowania i branże",
+      "miniLinearDamper": {
+        "title": "Mikro amortyzator liniowy",
+        "items": [
+          "Wstrzyknięcie penem insulinowym",
+          "Zawias piekarnika",
+          "Drzwi lodówki",
+          "Mebla, takie jak szuflada, brama"
+        ]
+      },
+      "damperWithBothEndFittings": {
+        "title": "Amortyzator z akcesoriami na obu końcach",
+        "items": [
+          "Zamykacz drzwi",
+          "Drzwi bezpieczeństwa"
+        ]
+      },
+      "benefitsInEachApplication": {
+        "title": "Korzyści w każdej aplikacji",
+        "items": [
+          "<strong>Redukcja hałasu:</strong> Usuwa huk uderzenia i hałas zderzenia",
+          "<strong>Bezpieczeństwo:</strong> Zapobiega ściskaniu palców i uszkodzeniom komponentów",
+          "<strong>Płynne funkcjonowanie:</strong> Zapewnia kontrolowany, przewidywalny ruch",
+          "<strong>Przedłużona żywotność:</strong> Redukuje zużycie zawiasów i sprzętów montażowych",
+          "<strong>Czujenie premium:</strong> Dodaje wyrafinowania do funkcjonowania produktu"
+        ]
+      }
+    },
+    "needExpertGuidance": {
+      "sectionTitle": "Potrzebujesz eksperckiej porady dotyczącej amortyzatorów liniowych?",
+      "description": "Nasz zespół inżynierów może pomóc Ci wybrać idealne rozwiązanie tłumienia dla Twojej specyficznej aplikacji. Otrzymaj profesjonalną konsultację i dostosowane rozwiązania.",
+      "contactEngineersBtn": "Skontaktuj się z naszymi inżynierami",
+      "requestQuoteBtn": "Zażądaj oferty"
+    }
+  },
+  "blog": {
+    "title": "Artykuły blogowe",
+    "description": "Dzielenie się wiedzą branżową i aktualizacjami technicznymi"
+  }
+}

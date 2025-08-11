@@ -1,18 +1,639 @@
 {
-  "common": {
-    "home": "Home",
-    "about": "About",
-    "products": "Products",
-    "contact": "Contact",
-    "blog": "Blog"
+  "home": {
+    "meta": {
+      "title": "Hersteller von Linear-Dämpfern | Präzise hydraulische Bewegungssteuerungslösungen",
+      "description": "Professioneller Hersteller von Linear-Dämpfern mit über 10 Jahren Erfahrung. Anpassbare hydraulische Dämpfer von Φ6mm bis Φ12mm für Automobil-, Luft- und Raumfahrt sowie industrielle Anwendungen. Fordern Sie heute ein Angebot an.",
+      "keywords": "Linear-Dämpfer, hydraulischer Dämpfer, Gasfeder-Dämpfer, Mini-Linear-Dämpfer, maßgefertigter Dämpfer, industrieller Dämpfer, Bewegungssteuerung"
+    },
+    "hero": {
+      "title": "Linear-Dämpfer",
+      "description": "Mit über einem Jahrzehnt Erfahrung in der Linear-Dämpfer-Industrie sind wir seit Langem ein vertrauenswürdiger Partner für heimische Hersteller und internationale Händler in China, spezialisiert auf die Lieferung einer breiten Palette kundenspezifischer Linear-Dämpfer. Da wir über die Jahre hinweg umfangreiche technische Expertise gesammelt haben, sind wir nun bereit, die globale Bühne zu betreten. Unser Ziel ist es, unseren Wert direkt an Kunden weltweit zu liefern, indem wir unnötige Zwischenhändler ausschalten. Lassen Sie unsere Professionalität für sich sprechen.",
+      "button1": "Angebot anfordern",
+      "button2": "Katalog herunterladen"
+    },
+    "productShowcase": {
+      "title": "Unsere Produktreihen",
+      "products": [
+        {
+          "model": "Mini-Linear-Dämpfer",
+          "description": "Kompakteres Design, ideal für platzbeschränkte Anwendungen. Verfügbar in Standarddurchmessern von 6mm, 8mm, 10mm und 12mm, mit Anpassungsmöglichkeiten für Durchmesser, Länge und Hub."
+        },
+        {
+          "model": "Pneumatischer Dämpfer",
+          "description": "Kombinieren die Funktionen einer Gasfeder und eines Dämpfers. Diese Geräte sind für Anwendungen konzipiert, die sowohl Unterstützung als auch gesteuerte Bewegung erfordern."
+        }
+      ]
+    },
+    "process": {
+      "title": "Wir entwickeln präzise Linear-Dämpfer in vier Schlüsselschritten:",
+      "processes": [
+        {
+          "step": "Schritt 1",
+          "title": "Bestätigung der Anforderungen",
+          "description": "Unsere Ingenieure analysieren Ihre Anwendungsanforderungen, einschließlich Tragfähigkeit (Standard 5-2400N), Hubhöhe und Umgebungsfaktoren. Wir stellen Kraft-Verformungskurven und 3D-Modelle zur Genehmigung bereit."
+        },
+        {
+          "step": "Schritt 2",
+          "title": "Schaftdesign & DFM",
+          "description": "Maßgefertigte Schäfte werden aus umhärtetem Stahl (HRC 45-50) mit optionalen Beschichtungen gefräst. Unsere interne Werkzeugherstellung ermöglicht Toleranzen von ±0,01mm für einen sanften Betrieb."
+        },
+        {
+          "step": "Schritt 3",
+          "title": "Evaluierungstests",
+          "description": "Prototyp zur Funktionalitätsprüfung. Wir liefern Testberichte und CAD-Dateien zur Verifizierung. T0~1-Proben entsprechend den Testanforderungen des Kunden. Gasfeder-Dämpfer unterliegen mindestens 50.000+ Zyklen-Tests und Mini-Linear-Dämpfer 100.000 Dauerfestigkeitstests mit einer Kraftabweichung von unter ±5%."
+        },
+        {
+          "step": "Schritt 4",
+          "title": "Serienproduktion",
+          "description": "ISO-zertifizierte Produktion liefert Chargen ab 100 Stück mit PPAP-Dokumentation. Globale Logistik gewährleistet pünktliche Lieferung in über 30 Länder."
+        }
+      ]
+    },
+    "caseStudies": {
+      "techTitle": "Technologien",
+      "techDescription": "Mit Linear-Dämpfern aus unserem Unternehmen schaffen Sie reibungslaufende, sichere und qualitativ hochwertige Produkt-Erlebnisse. Machen Sie sich mit unserer Palette an Bewegungssteuerungslösungen vertraut und finden Sie die passende Lösung speziell für Ihre Branche.",
+      "techList": [
+        {
+          "title": "Elektrische Bewegungssteuerungslösungen"
+        },
+        {
+          "title": "Mechanische Bewegungssteuerungslösungen"
+        },
+        {
+          "title": "Innovationen"
+        }
+      ],
+      "industryTitle": "Branchen & Anwendungen",
+      "industryList": [
+        {
+          "title": "Automobilindustrie"
+        },
+        {
+          "title": "Nutzfahrzeuge"
+        },
+        {
+          "title": "Luft- und Raumfahrt, Marine, Eisenbahnen"
+        },
+        {
+          "title": "Energie und Bauwesen"
+        },
+        {
+          "title": "Maschinenbau und Automatisierung"
+        },
+        {
+          "title": "Gesundheit, Freizeit und Möbel"
+        }
+      ]
+    },
+    "features": [
+      {
+        "title": "Transparente Handelsbedingungen",
+        "description": "Wir bieten flexible Handelsbedingungen, die Ihren Logistikbedürfnissen entsprechen. Wählen Sie zwischen FOB-, CFR- oder DDP-Optionen je nach Ihren Wünschen. Unsere Zusammenarbeit mit Speditionsunternehmen gewährleistet eine reibungslose und effiziente Lieferung."
+      },
+      {
+        "title": "Qualität, der Sie vertrauen können",
+        "description": "Unser Engagement für Qualität ist unerschütterlich. Wir sind stolz auf unsere ISO 9001-Zertifizierung, die unser Fertigungs-exzellenz bezeugt."
+      },
+      {
+        "title": "Effiziente Geschäfts- und Ingenieurantwort",
+        "description": "Wir priorisieren Ihre technischen Fragen und dringenden Anforderungen. Unser dediziertes technisches Support-Team ist nur einen Klick entfernt für sofortige Hilfe."
+      }
+    ],
+    "technical": {
+      "technicalSupportTitle": "Technischer Support",
+      "technicalConsultationTitle": "Technische Beratung",
+      "technicalConsultationDesc": "Nutzen Sie unseren technischen Beratungsdienst für fachliche Ratschläge zu Ihren Projekten.",
+      "urgentReplacementTitle": "Dringende Ersatzbedürfnisse",
+      "urgentReplacementDesc": "Für dringende Ersatzteile kontaktieren Sie direkt unser technisches Team über unseren Notfallkontaktkanal."
+    },
+    "relatedPosts": {
+      "title": "Neueste Blog-Beiträge"
+    },
+    "contactUs": {
+      "contactUsTitle": "Kontaktieren Sie uns",
+      "getInTouchTitle": "Kommen Sie mit uns in Kontakt",
+      "addressTitle": "Adresse",
+      "addressDesc": "Geschäftsstraße, Ningbo, Zhejiang, China",
+      "emailTitle": "E-Mail",
+      "emailDesc": "info@lineardamper.com",
+      "phoneTitle": "Telefon",
+      "phoneDesc": "+86 233 421 663",
+      "workingHoursTitle": "Arbeitszeiten",
+      "workingHoursDescWeekday": "Montag - Freitag: 9:00 Uhr - 18:00 Uhr",
+      "workingHoursDescSaturday": "Samstag: 9:00 Uhr - 13:00 Uhr",
+      "sendMessageTitle": "Senden Sie uns eine Nachricht"
+    }
   },
-  "navigation": {
-    "menu": "Menu",
-    "close": "Close"
+  "about": {
+    "hero": {
+      "title": "26 Jahre professionelle Fertigungserfahrung",
+      "description": "Engagiert darin, globalen Kunden hochwertige Linear-Dämpfer-Produkte und -Lösungen bereitzustellen",
+      "badges": [
+        "ISO-Qualitätszertifizierung",
+        "Monatskapazität: 100.000 Einheiten",
+        "46 Lieferantenpartner"
+      ]
+    },
+    "aboutSection": {
+      "title": "Über DK Machinery",
+      "description": "Mit über 26 Jahren umfassender Erfahrung in der Dämpferfertigung widmet sich DK Machinery der Bereitstellung hochwertiger Linear-Dämpfer-Produkte und -Lösungen für Kunden. Unter Beibehaltung eines kundenorientierten Prinzips haben wir durch kontinuierliche technologische Innovation und strenge Qualitätskontrolle langfristige, stabile Kooperationsbeziehungen mit globalen Kunden aufgebaut.",
+      "features": [
+        {
+          "title": "Professionelle Spezialisierung",
+          "description": "26 Jahre Spezialisierung auf die Herstellung von Linear-Dämpfern, mit reicher Branchenerfahrung und technischer Expertise gesammelt"
+        },
+        {
+          "title": "Qualitätsgewährleistung",
+          "description": "Strenges Qualitätskontrollsystem, das Exzellenz in jeder Phase von Rohstoffen bis zu Fertigprodukten gewährleistet"
+        },
+        {
+          "title": "Kooperativer Erfolg",
+          "description": "46 Lieferantenpartner kultiviert, ein umfassendes industrielles Ökosystem aufgebaut"
+        }
+      ]
+    },
+    "products": {
+      "title": "Produktzentrum",
+      "description": "Unsere Linear-Dämpfer-Produkte zeichnen sich durch ausgezeichnete technische Parameter und zuverlässige Leistung aus",
+      "productList": [
+        {
+          "name": "Standard Linear-Dämpfer",
+          "description": "Geeignet für konventionelle Anwendungen wie Schubladen und Schranktüren"
+        },
+        {
+          "name": "Heavy-Duty Linear-Dämpfer",
+          "description": "Hohe Belastbarkeit, ideal für Anwendungen in industriellen Geräten"
+        },
+        {
+          "name": "Maßgefertigter Linear-Dämpfer",
+          "description": "An Kundenanforderungen angepasst für spezialisierte Anwendungen"
+        }
+      ],
+      "technicalSpecifications": {
+        "title": "Technische Spezifikationen",
+        "specs": [
+          {
+            "title": "Schubbereich",
+            "value": "300N - 2300N"
+          },
+          {
+            "title": "Standardhub",
+            "value": "7-10mm"
+          },
+          {
+            "title": "Monatskapazität",
+            "value": "100.000 Einheiten"
+          },
+          {
+            "title": "Zubehörkombinationen",
+            "value": "2000+ Arten"
+          }
+        ]
+      }
+    },
+    "productionTesting": {
+      "title": "Fertigung & Prüfung",
+      "description": "Fortschrittliche Produktionslinien und strenge Prüfstandards gewährleisten die Produktqualität",
+      "features": [
+        {
+          "title": "Automatisierte Produktionslinie",
+          "description": "Fortschrittliche automatisierte Produktionseinrichtungen gewährleisten die Produktkonsistenz und maximieren die Effizienz. 23 strenge Prozesse, jeder mit genauer Zeit-Kosten-Berechnung."
+        },
+        {
+          "title": "Qualitätsprüfung",
+          "description": "Laborprüfungen erreichen Millionen von Zyklen, bei Serienprodukten wird eine Garantie von 200.000 Zyklen gegeben. Prüfstandard: 5-6 Zyklen/Minute, 100.000 Zyklen-Verifizierung in 7 Tagen abgeschlossen."
+        },
+        {
+          "title": "Maßanpassungsdienste",
+          "description": "Unterstützt nicht-standardisierte Anpassungen mit 2000+ Zubehörkombinationen, um vielfältige Anforderungen zu erfüllen. Für extreme Bedingungen wie ultrakalte Temperaturen sorgen Materialien für -40℃ für die Produktleistung."
+        }
+      ]
+    },
+    "qualityAssurance": {
+      "title": "Qualitätsgewährleistung",
+      "description": "Strenges Qualitätsgewährleistungssystem und transparente Kostenanalyse gewährleisten Kundenvorteile",
+      "processes": [
+        {
+          "title": "Probenprüfprozess",
+          "description": "Vor formellen Bestellungen benötigen wir Kundensproben zur Verifizierung der Materialzusammensetzung, um die Produktkonformität zu gewährleisten."
+        },
+        {
+          "title": "Transparente Kostenanalyse",
+          "description": "Wir bieten WettbewerbsPreise für große Kunden mit transparenten Materialkostenaufschlüssen. Verwendung von nahtlosen Goldröhren mit brighter Oberflächenverchromung."
+        },
+        {
+          "title": "Drei-Schritte-Verifizierung",
+          "description": "Bei Bedenken zu Preisen oder Qualität: Probenvergleich, vor Ort Demontage und Zeit-Kosten-Verifizierung."
+        }
+      ],
+      "stats": [
+        {
+          "value": "26 Jahre",
+          "label": "Branchenerfahrung"
+        },
+        {
+          "value": "200.000 Zyklen",
+          "label": "Prüfgarantie"
+        },
+        {
+          "value": "23 Schritte",
+          "label": "Strenge Prozesse"
+        },
+        {
+          "value": "46 Partner",
+          "label": "Kooperationspartner"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Kontaktieren Sie uns",
+      "description": "Kontaktieren Sie uns, um mehr über unsere Produkte zu erfahren oder Kooperationsmöglichkeiten zu besprechen",
+      "contactInfo": [
+        {
+          "type": "Telefon",
+          "details": [
+            "400-123-4567",
+            "0755-12345678"
+          ]
+        },
+        {
+          "type": "E-Mail",
+          "details": [
+            "info@lineardamper.com",
+            "sales@lineardamper.com"
+          ]
+        },
+        {
+          "type": "Adresse",
+          "details": [
+            "Nanshan-Distrikt, Shenzhen",
+            "Wissenschaftspark, Guangdong, China"
+          ]
+        }
+      ],
+      "buttonText": "Jetzt kontaktieren"
+    },
+    "footer": {
+      "companyName": "DK Machinery Linear-Dämpfer",
+      "companyTagline": "Professioneller Hersteller von Linear-Dämpfern",
+      "copyright": "26 Jahre Fertigungserfahrung | Qualitätsgewährleistung | Integritätsdienst"
+    }
   },
-  "buttons": {
-    "readMore": "Read More",
-    "learnMore": "Learn More",
-    "getQuote": "Get Quote"
+  "contact": {
+    "meta": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "hero": {
+      "title": "Kontaktieren Sie uns",
+      "description": "Haben Sie Fragen oder benötigen Sie Hilfe? Wenden Sie sich an unser Team.",
+      "contactInfo": {
+        "phone": "+1 (123) 456-7890",
+        "email": "info@lineardamper.com",
+        "address": "Geschäftsstraße, Ningbo, Zhejiang, China"
+      }
+    },
+    "contactSection": {
+      "contactUsTitle": "Kontaktieren Sie uns",
+      "getInTouchTitle": "Kommen Sie mit uns in Kontakt",
+      "addressTitle": "Adresse",
+      "addressDesc": "Geschäftsstraße, Ningbo, Zhejiang, China",
+      "emailTitle": "E-Mail",
+      "emailDesc": "info@lineardamper.com",
+      "phoneTitle": "Telefon",
+      "phoneDesc": "+86 233 421 663",
+      "workingHoursTitle": "Arbeitszeiten",
+      "workingHoursDescWeekday": "Montag - Freitag: 9:00 Uhr - 18:00 Uhr",
+      "workingHoursDescSaturday": "Samstag: 9:00 Uhr - 13:00 Uhr",
+      "sendMessageTitle": "Senden Sie uns eine Nachricht"
+    }
+  },
+  "products": {
+    "meta": {
+      "title": "Linear-Dämpfer | Hochwertige hydraulische Bewegungssteuerungslösungen",
+      "description": "Entdecken Sie unsere Palette an präzisen Linear-Dämpfern für industrielle und Verbraucheranwendungen. Steuern Sie Bewegungen, reduzieren Sie Vibrationen und gewährleisten Sie reibungslose Betriebsabläufe mit unseren hydraulischen Dämpfungslösungen.",
+      "keywords": "Linear-Dämpfer, hydraulischer Dämpfer, Bewegungssteuerung, Vibrationsreduzierung, industrielle Dämpfer, präzise Dämpfer, Dämpfungslösungen",
+      "canonical": "https://www.lineardamper.com/products"
+    },
+    "schema": {
+      "listName": "DK Machinery Linear-Dämpfer Produktliste",
+      "description": "Umfassende Liste von Linear-Dämpfern für industrielle und Verbraucheranwendungen",
+      "baseUrl": "https://lineardamper.com"
+    },
+    "HeroSecion": {
+      "title": "Professionelle Linear-Dämpfer & Kolbendämpfer",
+      "description": "Fortschrittliche hydraulische Dämpfungslösungen für industrielle Bewegungssteuerung. Von präzisen Miniaturdämpfern bis zu Schwerlast-Industrieanwendungen, bieten wir umfassende Dämpfungstechnologie für reibungslose, kontrollierte Bewegung."
+    },
+    "whatIsLinearDamper": {
+      "section": {
+        "title": "Was ist ein Linear-Dämpfer?",
+        "description1": "Linear-Dämpfer sind entscheidende Komponenten für die Bewegungssteuerung. Sie dienen dazu, Bewegungen abzufedern und abzubremsen sowie reibungslose und kontrollierbare Betriebsabläufe zu gewährleisten. Sie erzeugen Widerstand, indem sie Hydrauliköl komprimieren und es durch Drosselbohrungen strömen lassen, und werden in verschiedenen Branchen weit verbreitet eingesetzt.",
+        "description2": "Linear-Dämpfer bieten eine reibungslose lineare Dämpfungsbewegung und können auf Anfrage mit einem integrierten Lichtschalter ausgestattet werden. Sie dämpfen den Schließ- oder Öffnungsprozess in eine Richtung, während sie in der anderen Richtung einen freien Lauf (ohne Widerstand) ermöglichen.",
+        "description3": "Linear-Dämpfer sind im Grunde genommen eine Art Vorrichtung, die verwendet wird, um die Geschwindigkeit bewegter Objekte zu steuern, sodass sie allmählich verlangsamen und plötzliche Haltungen oder Einwirkungen vermeiden. Man kann ihre Anwendungen an vielen Orten sehen, wie z. B. Mini-Linear-Dämpfer in Mülltonnen-Schranktüren und Öl-/Gasdämpfer, die es ermöglichen, dass Autokofferraumdeckel langsam und sanft schließen und nicht zusammenschlagen."
+      },
+      "whyChoose": {
+        "title": "Warum hydraulische Linear-Dämpfer wählen?",
+        "description": "Hydraulische Linear-Dämpfer bieten im Vergleich zu anderen Dämpfungstechnologien eine überlegene Leistung:"
+      },
+      "table": {
+        "headers": {
+          "dampingType": "Dämpfungstyp",
+          "energyAbsorption": "Energieaufnahme",
+          "reboundRisk": "Rückprallrisiko",
+          "performance": "Leistung",
+          "applications": "Anwendungen"
+        },
+        "hydraulic": {
+          "type": "Hydraulisch (Unsere Technologie)",
+          "energyAbsorption": "Wandelt kinetische Energie in Wärmeenergie um",
+          "reboundRisk": "Minimal - Energie wird abgeführt",
+          "performance": "Ausgezeichnet - anpassbare Eigenschaften",
+          "applications": "Industrielle, präzise Anwendungen"
+        },
+        "rubber": {
+          "type": "Gummi",
+          "energyAbsorption": "Elastische Verformung speichert Energie",
+          "reboundRisk": "Hoch - gespeicherte Energie erzeugt Rückprall",
+          "performance": "Grundlegend - begrenzte Kontrolle",
+          "applications": "Einfache, kostengünstige Anwendungen"
+        },
+        "spring": {
+          "type": "Feder",
+          "energyAbsorption": "Elastische Verformung speichert Energie",
+          "reboundRisk": "Hoch - gespeicherte Energie erzeugt Rückprall",
+          "performance": "Grundlegend - begrenzte Kontrolle",
+          "applications": "Einfache mechanische Systeme"
+        },
+        "pneumatic": {
+          "type": "Pneumatisch",
+          "energyAbsorption": "Komprimierte Luft durch Öffnung",
+          "reboundRisk": "Mittel - abhängig von der Balance",
+          "performance": "Gut - aber weniger präzise",
+          "applications": "Mittelbelastungsanwendungen"
+        }
+      }
+    },
+    "productSeries": {
+      "section": {
+        "title": "Unsere Linear-Dämpfer-Produktreihen",
+        "imageAlt": "Produktreihe"
+      },
+      "table": {
+        "headers": {
+          "empty": "",
+          "totalLength": "Gesamte Länge/mm ①",
+          "diameter": "Durchmesser/mm②",
+          "cylinderLength": "Zylinderlänge/mm③",
+          "usedStroke": "Genutzter Hub/mm",
+          "withWithoutCap": "Mit/ohne Kappe",
+          "withWithoutSpring": "Mit/ohne selbstrückstellende Feder"
+        },
+        "exampleRow": {
+          "model": "Beispielmodell",
+          "totalLengthValue": "68",
+          "diameterValue": "10",
+          "cylinderLengthValue": "42",
+          "usedStrokeValue": "14",
+          "withWithoutCapValue": "Mit",
+          "withWithoutSpringValue": "Ohne"
+        }
+      },
+      "products": {
+        "phi6mm": {
+          "title": "Φ6mm",
+          "description": "Miniatur-lineare hydraulische Dämpfer mit einseitiger Dämpfung, ausgestattet mit automatischer Federrückstellung und Rücksetzmechanismus. Ideal für präzise Steuerung in kompakten Anwendungen.",
+          "forceRange": "Kraftbereich: 0-100N",
+          "material1": "Präzisionsstahl",
+          "materialOr": "Oder",
+          "material2": "Edelstahl",
+          "applicationsTitle": "Anwendungen:",
+          "applications": "Präzisionsinstrumente, kleine Schranktüren, Abdeckungen von elektronischen Geräten"
+        },
+        "phi8mm": {
+          "title": "Φ8mm",
+          "description": "Lineare hydraulische Dämpfer mit einseitiger Dämpfung, automatischer Federrückstellung und Rücksetzfunktion. Perfektes Gleichgewicht aus Größe und Leistung.",
+          "forceRange": "Kraftbereich: 0-350N",
+          "material1": "Hochwertiger Stahl",
+          "materialOr": "Oder",
+          "material2": "Edelstahl",
+          "applicationsTitle": "Anwendungen:",
+          "applications": "Mittlere Türen, Automobilkomponenten, Möbelbeschläge"
+        },
+        "phi10mm": {
+          "title": "Φ10mm",
+          "description": "Standard-lineare hydraulische Dämpfer mit einseitiger Dämpfung und Federrückstellung. Bieten zuverlässige Leistung für Mittelbelastungsanwendungen.",
+          "forceRange": "Kraftbereich: 0-870N",
+          "material1": "Industriestahl",
+          "materialOr": "Oder",
+          "material2": "Edelstahl",
+          "applicationsTitle": "Anwendungen:",
+          "applications": "Industriemaschinen, schwere Möbel, Automobilanwendungen"
+        },
+        "phi12mm": {
+          "title": "Φ12mm",
+          "description": "Schwerlast-lineare hydraulische Dämpfer mit anpassbarem Hub und Dämpfungsrichtung. Ausgestattet mit einseitiger Dämpfung und Federrückstellung, ideal für Hochkräftesanwendungen.",
+          "forceRange": "Kraftbereich: 0-2400N",
+          "material1": "Schwerlaststahl",
+          "materialOr": "Oder",
+          "material2": "Edelstahl",
+          "applicationsTitle": "Anwendungen:",
+          "applications": "Schwere Industriegeräte, große Maschinen, Hochlastsysteme"
+        }
+      }
+    },
+    "howLinearDamperWorks": {
+      "section": {
+        "title": "Wie funktioniert ein Linear-Dämpfer?",
+        "intro": "Linear-Dämpfer funktionieren, indem sie kinetische Energie durch hydraulischen Widerstand in thermische Energie umwandeln. Wenn eine Kraft auf die Kolbenstange wirkt, drückt sie den Kolben und komprimiert das Hydrauliköl im Inneren. Dieses Öl wird dann durch speziell设计te Drosselbohrungen gedrückt, wodurch ein Widerstand entsteht, der die Bewegung verlangsamt oder dämpft.",
+        "energyAbsorption": {
+          "title": "Prinzipien der Energieaufnahme",
+          "desc1": "Wenn ein Objekt auf die Kolbenstange trifft, wird die Bewegung durch die Kolbenstange auf das Öl in der Druckkammer übertragen. Dadurch strömt das Öl in der Druckkammer durch die Drosselbohrungen in der Innenröhre aus. Dies verursacht eine Kompression in der Druckkammer. Das Produkt dieses hydraulischen Drucks und der druckbeaufschlagten Fläche des Kolbens ist der Widerstand, der auf das stoßende Objekt wirkt.",
+          "desc2": "Der im Inneren der Druckkammer erzeugte hydraulische Druck ist proportional zum Quadrat der Geschwindigkeit des stoßenden Objekts, solange die Drosselbohrungsgröße, die Ölviskosität usw. konstant sind. Dies wird als geschwindigkeitsquadratischer Widerstand bezeichnet."
+        },
+        "keyComponents": {
+          "title": "Wichtige Komponenten",
+          "pistonAndRod": {
+            "title": "Kolben und Kolbenstange",
+            "desc": "Wenn eine äußere Kraft auf einen Linear-Dämpfer wirkt, wird diese Kraft zuerst auf die Kolbenstange übertragen. Die Kolbenstange ist eine entscheidende Komponente, die das äußere Objekt mit dem Inneren des Dämpfers verbindet. Anschließend drückt die Kolbenstange den mit ihr verbundenen Kolben, sich im Zylinder des Dämpfers zu bewegen, und der Kolben ist typischerweise ein speziell设计tes Teil mit Drosselbohrungen darauf."
+          },
+          "hydraulicOil": {
+            "title": "Hydrauliköl",
+            "desc1": "Linear-Dämpfer steuern Bewegungen durch die Verwendung von Flüssigkeitswiderstand. Wenn eine Kraft angewendet wird, bewegt sich ein Kolben in einem Zylinder, der mit Hydrauliköl gefüllt ist. Das Öl wird durch kleine Öffnungen (Drosselbohrungen) gedrückt. Dieser eingeschränkte Fluss erzeugt eine Widerstandskraft, die der Bewegung entgegengesetzt ist und den Dämpfungseffekt bereitstellt.",
+            "desc2": "Die Viskosität des Hydrauliköls ist wichtig, da sie das Maß des Widerstands beeinflusst. Verschiedene Arten von Linear-Dämpfern, die nach Überströmtyp (einzeln oder mehrfach gelocht) und Schubrichtung (Eindrücken, Herausziehen, zweiseitig) klassifiziert werden, stützen sich alle auf dieses Prinzip, dass Hydrauliköl Widerstand erzeugt."
+          },
+          "orifices": {
+            "title": "Drosselbohrungen",
+            "desc1": "Drosselbohrungen sind in Linear-Dämpfern entscheidend, da sie das primäre Mittel zur Steuerung der Dämpfungskraft sind. Sie sind kleine, präzise dimensionierte Öffnungen im Kolben des Dämpfers. Wenn sich der Kolben bewegt, zwingt er Hydrauliköl, durch diese Öffnungen zu strömen.",
+            "desc2": "Die Größe und das Design der Drosselbohrungen regeln direkt die Rate, mit der das Hydrauliköl strömen kann. Kleinere Drosselbohrungen behindern den Ölfluss stärker, was zu einem höheren Widerstand und einer größeren Dämpfungskraft führt und somit die Bewegung stärker verlangsamt. Umgekehrt ermöglichen größere Drosselbohrungen einen leichteren Ölfluss, was zu weniger Widerstand und einer kleineren Dämpfungskraft führt."
+          }
+        },
+        "images": {
+          "alt1": "Linear-Dämpfer-Struktur 1",
+          "caption1": "Komponentendarstellung",
+          "alt2": "Linear-Dämpfer-Struktur 2",
+          "caption2": "Teileinformation"
+        }
+      }
+    },
+    "linearDamperTypes": {
+      "section": {
+        "mainTitle": "Dämpfungskurven variieren je nach Anwendung",
+        "intro": "Linear-Dämpfer werden basierend darauf kategorisiert, wie sich die Drosselbohrungsfläche während des Betriebs ändert, und bieten verschiedene Aufnahmeeigenschaften für verschiedene Anwendungen.",
+        "constantOrificeTypes": {
+          "title": "Typen mit konstanter Drosselbohrung",
+          "singleOrificeType": {
+            "title": "Einzel-Drosselbohrungstyp",
+            "description": "Zeigt drei strukturelle Variationen: Pufferstruktur, die den Raum zwischen Kolben and Zylinderrohr nutzt, Einrohrstruktur mit Drosselbohrungen im Kolben und Zweirohr-Einzel-Drosselbohrungsstruktur (justierbar). Während des gesamten Hubs bleibt die Drosselbohrungsfläche konstant. Der Widerstand steigt unmittelbar nach dem Aufprall an, dann ab, wenn der Hub fortschreitet und die Geschwindigkeit abnimmt."
+          }
+        },
+        "strokeDependentOrificeTypes": {
+          "title": "Hubabhängige Drosselbohrungstypen",
+          "multipleOrificeType": {
+            "title": "Mehrfach-Drosselbohrungstyp",
+            "description": "Doppelte Struktur aus Außenrohr und Innenrohr. Die Drosselbohrungsfläche zum Zeitpunkt des Aufpralls ist im Vergleich zum Einzeltyp größer, nimmt allmählich ab, wenn der Hub fortschreitet, und unterdrückt den Gesamtwiderstand. Theoretisch kann der Widerstand während des Hubs konstant gehalten werden. Das Drosselbohrungsdesign kann entsprechend den Aufprallbedingungen geändert werden."
+          },
+          "multipleVaryingOrificeType": {
+            "title": "Mehrfach variierender Drosselbohrungstyp",
+            "description": "Gleiche Struktur wie der Mehrfach-Drosselbohrungstyp, bietet aber Widerstandseigenschaften, die für die beabsichtigte Verwendung geeignet sind, statt einer konstanten Dämpfungskraft. Entwickelt, um kinetische Energie in der ersten Hälfte des Hubs aufzunehmen und Geschwindigkeitssteuerung in der zweiten Hälfte durchzuführen, um eine ideale Energieaufnahme zu erzielen."
+          },
+          "grooveOrificeType": {
+            "title": "Nut-Drosselbohrungstyp",
+            "description": "Einrohrsystem, bei dem die Nut-Drosselbohrung an der Innenwand sich ändert, wenn der Hub fortschreitet. Große Drosselbohrungsfläche zu Beginn des Hubs, wird kleiner, wenn der Hub fortschreitet. Die Drosselbohrungsfläche ändert sich kontinuierlich, was zu weniger Widerstandsschwankungen im Vergleich zum Mehrfachtyp führt und eine optimale Energieaufnahme ermöglicht."
+          }
+        },
+        "chart": {
+          "title": "Verschiedene Arten von Überströmung",
+          "dataSets": {
+            "singleHoleOverflow": "Einzellochüberströmung",
+            "multiHoleOverflow": "Mehrlochüberströmung",
+            "grooveOverflow": "Nutüberströmung"
+          }
+        }
+      }
+    },
+    "technicalSpecifications": {
+      "sectionTitle": "Technische Spezifikationen",
+      "commonSpecifications": {
+        "title": "Allgemeine Spezifikationen",
+        "pistonRodRecoveryForce": "Rückstellkraft der Kolbenstange: Mit Rückstellfeder ≤5N (0,5 kgf), Ohne Rückstellfeder ≤1,5N (0,15 kgf)",
+        "mainUnitMaterial": "Hauptbauteilmaterial: Hochwertige Kunststoff-Konstruktion",
+        "operatingTemperatureRange": "Betriebstemperaturbereich: 5~40°C (41~104°F)",
+        "mountingOptions": "Montageoptionen: Verschiedene Endausführungen verfügbar",
+        "strokeOptions": "Huboptionen: Anpassbare Hublängen",
+        "dampingDirection": "Dämpfungsrichtung: Einseitig, zweiseitige Optionen verfügbar"
+      },
+      "performanceCharacteristics": {
+        "title": "Leistungseigenschaften",
+        "velocitySquaredResistance": "Geschwindigkeitsquadratischer Widerstand: Hydraulischer Druck proportional zum Quadrat der Stoßgeschwindigkeit",
+        "energyConversion": "Energieumwandlung: Kinetische Energie wird in Wärmeenergie umgewandelt und abgegeben",
+        "customizableDamping": "Anpassbare Dämpfung: Anpassbare Eigenschaften durch Drosselbohrungsdesign",
+        "parallelOperation": "Parallelbetrieb: Mehrere Einheiten können parallel für erhöhte Kapazität verwendet werden"
+      }
+    },
+    "installationUsageGuidelines": {
+      "sectionTitle": "Montage- und Bedienungsanleitungen",
+      "importantSafetyPrecautions": {
+        "title": "Wichtige Sicherheitsvorkehrungen",
+        "precautions": [
+          "Verwenden Sie immer einen externen Anschlag, um eine Überkompression zu verhindern",
+          "Stellen Sie sicher, dass eine ausreichende Montagefestigkeit für den Dämpfer gesichert ist",
+          "Verwenden Sie nicht in Vakuumumgebungen oder Orten, wo Ölkontakt auftreten könnte",
+          "Vermeiden Sie, exzentrische Lasten auf den Dämpfer anzuwenden",
+          "Handhaben Sie vorsichtig, um Beschädigungen durch Fallschläge zu vermeiden"
+        ]
+      },
+      "installationBestPractices": {
+        "title": "Beste Montagepraktiken",
+        "practices": [
+          "Montage: Sichern Sie beide Enden mit geeigneten Befestigungselementen",
+          "Ausrichtung: Stellen Sie eine richtige axiale Ausrichtung sicher, um ein Klemmen zu verhindern",
+          "Hubgrenzen: Überschreiten Sie niemals die angegebene Hublänge",
+          "Parallelmontage: Zwei oder mehr Dämpfer können parallel für erhöhte Kapazität verwendet werden",
+          "Umgebung: Schützen Sie vor extremen Temperaturen und Verschmutzung"
+        ]
+      },
+      "operationalConsiderations": {
+        "title": "Betriebsüberlegungen",
+        "considerations": [
+          "Drücken Sie die Kolbenstange nicht über den genutzten Hub hinaus (verursacht unvollständige Rückstellung)",
+          "Ziehen Sie den Linear-Dämpfer nicht über den genutzten Hub hinaus (verursacht Beschädigung)",
+          "Große Unterschiede zwischen Drück- und Rücklaufzeit können die Haltbarkeit beeinträchtigen",
+          "Bestätigen Sie die Leistung in der tatsächlichen Maschine vor dem Gebrauch"
+        ]
+      },
+      "images": {
+        "firstImageAlt": "Erstes Bild",
+        "secondImageAlt": "Zweites Bild"
+      }
+    },
+    "frequentlyAskedQuestions": {
+      "sectionTitle": "Häufig gestellte Fragen",
+      "questionsAndAnswers": [
+        {
+          "question": "Was ist der Unterschied zwischen einem Linear-Dämpfer und einem Kolbendämpfer?",
+          "answer": "Linear-Dämpfer und Kolbendämpfer sind im Wesentlichen die selbe Vorrichtung. Beide verwenden einen Kolben, der sich in einem mit Hydrauliköl gefüllten Zylinder bewegt, um Dämpfungskraft zu erzeugen. Die Begriffe werden oft austauschbar verwendet, wobei \"Linear-Dämpfer\" den linearen Bewegungskontrollaspekt betont, während \"Kolbendämpfer\" den internen Kolbenmechanismus hervorhebt."
+        },
+        {
+          "question": "Wie wähle ich den richtigen Kraftbereich für meine Anwendung?",
+          "answer": "Der Kraftbereich hängt von der Masse des zu dämpfenden Objekts und der gewünschten Verzögerungsrate ab. Für leichte Anwendungen (unter 5 kg) eignen sich unsere Φ6mm oder Φ8mm Dämpfer. Für mittlere Lasten (5 - 20 kg) sollten Sie Φ10mm-Dämpfer in Betracht ziehen. Für Schwerlastanwendungen (über 20 kg) bieten unsere Φ12mm-Max-Dämpfer bis zu 2400N Kraft."
+        },
+        {
+          "question": "Können Linear-Dämpfer in beiden Richtungen verwendet werden?",
+          "answer": "Unsere Standarddämpfer bieten einseitige Dämpfung mit Federrückstellung. Die Dämpfung erfolgt während der Kompression, während die Feder die Rückstellkraft liefert. Für Anwendungen, die bidirektionale Dämpfung erfordern, bieten wir spezielle zweizeitige Dämpfungs-Konfigurationen."
+        },
+        {
+          "question": "Welche Wartung erfordern Linear-Dämpfer?",
+          "answer": "Linear-Dämpfer sind im Allgemeinen wartungsfreie Geräte. Regelmäßige Inspektionen auf Lecks, richtige Montage und Sicherstellung, dass die Hubgrenzen nicht überschritten werden, maximieren jedoch die Lebensdauer. Vermeiden Sie eine Exposition gegenüber extremen Temperaturen und Verschmutzung."
+        },
+        {
+          "question": "Wie lange halten Linear-Dämpfer?",
+          "answer": "Die Lebensdauer hängt von den Anwendungsbedingungen ab, aber richtig montierte und betriebene Linear-Dämpfer können Millionen von Zyklen bieten. Faktoren, die die Langlebigkeit beeinflussen, sind Betriebstemperatur, Hubfrequenz, Lastbedingungen und Umweltfaktoren."
+        },
+        {
+          "question": "Können mehrere Dämpfer zusammen verwendet werden?",
+          "answer": "Ja, zwei oder mehr Linear-Dämpfer können parallel für eine erhöhte Gesamt-Dämpfungskraft verwendet werden. Dies ist besonders nützlich für Schwerlastanwendungen oder wenn Redundanz erforderlich ist. Stellen Sie bei Verwendung mehrerer Einheiten eine richtige Ausrichtung und gleichmäßige Lastverteilung sicher."
+        }
+      ]
+    },
+    "applicationsAndIndustries": {
+      "sectionTitle": "Anwendungen und Branchen",
+      "miniLinearDamper": {
+        "title": "Mini-Linear-Dämpfer",
+        "items": [
+          "Insulinspritzen",
+          "Ofen-Scharnieren",
+          "Kühlschranktüren",
+          "Möbel, wie Schubladen, Tore"
+        ]
+      },
+      "damperWithBothEndFittings": {
+        "title": "Dämpfer mit beidseitigen Anschlüssen",
+        "items": [
+          "Türschließer",
+          "Sicherheitstüren"
+        ]
+      },
+      "benefitsInEachApplication": {
+        "title": "Vorteile in jeder Anwendung",
+        "items": [
+          "<strong>Geräuschreduktion:</strong> Eliminieren von Schlagen und Stoßgeräuschen",
+          "<strong>Sicherheit:</strong> Verhindern von Fingerquetschungen und Bauteilbeschädigungen",
+          "<strong>Reibungsloser Betrieb:</strong> Bereitstellung kontrollierter, vorhersagbarer Bewegung",
+          "<strong>Langlebigkeit:</strong> Reduzieren von Verschleiß an Scharniere und Montagebeschlägen",
+          "<strong>Premium-Gefühl:</strong> Hinzufügen von Raffinesse zur Produktbedienung"
+        ]
+      }
+    },
+    "needExpertGuidance": {
+      "sectionTitle": "Benötigen Sie Expertenberatung zu Linear-Dämpfern?",
+      "description": "Unser Engineering-Team kann Ihnen helfen, die perfekte Dämpfungslösung für Ihre spezifische Anwendung auszuwählen. Erhalten Sie professionelle Beratung und maßgeschneiderte Lösungen.",
+      "contactEngineersBtn": "Kontaktieren Sie unsere Ingenieure",
+      "requestQuoteBtn": "Angebot anfordern"
+    }
+  },
+  "blog": {
+    "title": "Blog-Artikel",
+    "description": "Teilen von Branchenkenntnissen und technischen Aktualisierungen"
   }
 }

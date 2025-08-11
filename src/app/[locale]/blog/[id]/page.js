@@ -7,7 +7,7 @@ import { categories } from '@/data/categories'
 import Accordion from '@/components/common/Accordion'
 import BlogClientComponents from '@/components/blog/BlogClientComponents'
 
-// 导入 Schema 相关组件和函数（新增）
+// 导入 Schema 相关组件和函数
 import SchemaTag from '@/components/common/SchemaTag';
 import { generateBlogSchema } from '@/lib/schemaHelpers';
 import siteMetadata from '@/app/siteMetaData';
@@ -43,22 +43,31 @@ const mdxComponents = {
   ol: (props) => <ol className="list-decimal list-inside mb-6 pl-4 text-lg text-gray-700 dark:text-gray-300" {...props} />,
   li: (props) => <li className="mb-2" {...props} />,
   a: (props) => <a className="text-blue-600 dark:text-blue-400 hover:underline" {...props} />,
-  table: (props) => <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700 border border-gray-200 dark:border-gray-700 my-8" {...props} />,
+  table: (props) => (
+    <div className="overflow-x-auto my-8">
+      <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700 border border-gray-200 dark:border-gray-700" {...props} />
+    </div>
+  ),
   thead: (props) => <thead className="bg-gray-50 dark:bg-gray-800" {...props} />,
   tbody: (props) => <tbody className="bg-white dark:bg-gray-900 divide-y divide-gray-200 dark:divide-gray-700" {...props} />,
   tr: (props) => <tr className="hover:bg-gray-100 dark:hover:bg-gray-700" {...props} />,
-  th: (props) => <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider" {...props} />,
-  td: (props) => <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 dark:text-gray-400" {...props} />,
+  th: (props) => <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider break-words" {...props} />,
+  td: (props) => <td className="px-6 py-4 text-sm text-gray-600 dark:text-gray-400 break-words" {...props} />,
 }
 
 // 动态生成元数据
 export async function generateMetadata({ params }) {
-  const post = allPosts.find(p => 
-    p._raw.flattenedPath === params.id || 
-    p._raw.flattenedPath === `posts/${params.id}` ||
-    p.id === params.id
+  const { locale, id } = await params
+
+  // 根据locale和id查找对应语言的文章
+  const post = allPosts.find(p =>
+    p.lang === locale && (
+      p.id === id ||
+      p._raw.flattenedPath === `posts/${locale}/${id}` ||
+      p._raw.flattenedPath.endsWith(`/${id}`)
+    )
   )
-  
+
   if (!post) {
     return {
       title: 'Blog Post Not Found',
@@ -73,27 +82,8 @@ export async function generateMetadata({ params }) {
     title: post.title,
     description: post.excerpt || 'Read our latest insights on linear dampers and hydraulic motion control solutions.',
     keywords: post.tags ? post.tags.join(', ') : 'linear damper, hydraulic damper, motion control, blog',
-    // authors: [{ name: post.author || 'Linear Damper Team' }],
-    // openGraph: {
-    //   title: post.title,
-    //   description: post.excerpt,
-    //   type: 'article',
-    //   publishedTime: publishedTime,
-    //   authors: [post.author || 'Linear Damper Team'],
-    //   tags: post.tags,
-    //   url: `/blog/${params.id}`,
-    //   images: post.image ? [
-    //     {
-    //       url: post.image,
-    //       width: 1200,
-    //       height: 630,
-    //       alt: post.title,
-    //     }
-    //   ] : undefined,
-    // },
-
     alternates: {
-      canonical: `/blog/${params.id}`
+      canonical: `/${locale}/blog/${id}`
     },
     other: {
       'article:published_time': publishedTime,
@@ -104,22 +94,35 @@ export async function generateMetadata({ params }) {
   }
 }
 
-// 生成静态参数（只为已发布的文章生成）
+// 生成静态参数（为每个语言和文章ID组合生成）
 export async function generateStaticParams() {
-  return allPosts
-    .filter(post => post.published !== false) // 只为已发布的文章生成静态路径
-    .map((post) => ({
-      id: post._raw.flattenedPath.replace('posts/', '') || post.id,
-    }))
+  const params = []
+
+  // 为每个已发布的文章生成所有语言版本的参数
+  allPosts
+    .filter(post => post.published !== false)
+    .forEach((post) => {
+      params.push({
+        locale: post.lang,
+        id: post.id
+      })
+    })
+
+  return params
 }
 
 export default function BlogDetail({ params }) {
-  const post = allPosts.find(p => 
-    p._raw.flattenedPath === params.id || 
-    p._raw.flattenedPath === `posts/${params.id}` ||
-    p.id === params.id
+  const { locale, id } = params
+
+  // 根据locale和id查找对应语言的文章
+  const post = allPosts.find(p =>
+    p.lang === locale && (
+      p.id === id ||
+      p._raw.flattenedPath === `posts/${locale}/${id}` ||
+      p._raw.flattenedPath.endsWith(`/${id}`)
+    )
   )
-  
+
   // 检查文章是否存在且已发布
   if (!post || post.published === false) {
     notFound()
@@ -127,10 +130,10 @@ export default function BlogDetail({ params }) {
 
   const MDXContent = useMDXComponent(post.body.code)
 
-  // 生成博客文章的 Schema 数据（新增）
+  // 生成博客文章的 Schema 数据
   const blogSchema = generateBlogSchema(
-    post, 
-    siteMetadata.siteUrl // 使用全局配置的网站 URL
+    post,
+    siteMetadata.siteUrl
   );
 
   return (
@@ -144,14 +147,14 @@ export default function BlogDetail({ params }) {
           </h1>
           <div className="metadata text-md text-gray-500 dark:text-gray-400">
             <time dateTime={post.date}>
-              {new Date(post.date).toLocaleDateString('en-US', { 
-                year: 'numeric', 
-                month: 'long', 
-                day: 'numeric' 
+              {new Date(post.date).toLocaleDateString(locale === 'en' ? 'en-US' : locale, {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
               })}
-            </time> • 
-            <Link 
-              href={`/blog?category=${post.category}`} 
+            </time> •
+            <Link
+              href={`/${locale}/blog?category=${post.category}`}
               className="text-blue-600 dark:text-blue-400 hover:underline"
             >
               {categories.find(c => c.id === post.category)?.name || post.category}

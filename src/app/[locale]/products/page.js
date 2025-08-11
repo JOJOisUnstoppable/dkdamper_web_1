@@ -1,5 +1,3 @@
-import Image from 'next/image'
-import Link from 'next/link'
 import HeroSection from '@/components/products/HeroSection';
 import WhatIsLinearDamper from '@/components/products/WhatIsLineardamper';
 import ProductSeries from '@/components/products/ProductSeries';
@@ -12,41 +10,104 @@ import ApplicationsAndIndustries from '@/components/products/ApplicationsAndIndu
 import NeedExpertGuidance from '@/components/products/NeedExpertGuidance';
 import SchemaTag from '@/components/common/SchemaTag';
 import { generateProductListSchema } from '@/lib/schemaHelpers';
+import { getDictionary } from '@/lib/i18n/getDictionary';
 
-
-// 添加 metadata 导出
-export const metadata = {
-  title: 'Linear Dampers | High-Quality Hydraulic Motion Control Solutions',
-  description: 'Discover our range of precision linear dampers for industrial and consumer applications. Control motion, reduce vibration, and ensure smooth operations with our hydraulic damping solutions.',
-  keywords: 'linear damper, hydraulic damper, motion control, vibration reduction, industrial dampers, precision dampers, damping solutions',
-  alternates: {
-    canonical: 'https://www.lineardamper.com/products'
-  }
+// 动态生成 metadata
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const { locale } = resolvedParams;
+  const dict = await getDictionary(locale);
+  const products = dict.products;
+  
+  return {
+    title: products.meta.title,
+    description: products.meta.description,
+    keywords: products.meta.keywords,
+    alternates: {
+      canonical: products.meta.canonical
+    }
+  };
 }
 
-export default function Products() {
-   const productListSchema = generateProductListSchema(
-    {
-      baseUrl: 'https://lineardamper.com', // 替换为实际域名
-      listName: 'DK Machinery Linear Damper Product List',
-      description: 'Comprehensive list of linear dampers for industrial and consumer applications'
-    }
-  );
+export default async function Products({ params }) {
+  const resolvedParams = await params;
+  const { locale } = resolvedParams;
+  
+  // 获取字典数据
+  const dict = await getDictionary(locale);
+  const products = dict.products;
+  
+  // 生成 Schema 数据
+  const productListSchema = generateProductListSchema({
+    baseUrl: products.schema.baseUrl,
+    listName: products.schema.listName,
+    description: products.schema.description
+  });
+  
   return (
     <div className="bg-white">
-     {/* 包裹页面主要内容 
-      <div className="container mx-auto px-4">*/}
-        <SchemaTag data={productListSchema} />
-        <HeroSection />
-        <WhatIsLinearDamper />
-        <ProductSeries />
-        <HowLinearDamperWorks />
-        <LinearDamperTypes />
-        <TechnicalSpecifications />
-        <InstallationUsageGuidelines />
-        <FrequentlyAskedQuestions />
-        <ApplicationsAndIndustries />
-        <NeedExpertGuidance />
+      <SchemaTag data={productListSchema} />
+      
+      {/* 传递 HeroSection 数据 */}
+      <HeroSection 
+        title={products.HeroSecion.title}
+        description={products.HeroSecion.description}
+      />
+      
+      {/* 传递 WhatIsLinearDamper 数据 */}
+      <WhatIsLinearDamper 
+        section={products.whatIsLinearDamper.section}
+        whyChoose={products.whatIsLinearDamper.whyChoose}
+        table={products.whatIsLinearDamper.table}
+      />
+      
+      {/* 传递 ProductSeries 数据 */}
+      <ProductSeries 
+        section={products.productSeries.section}
+        table={products.productSeries.table}
+        products={products.productSeries.products}
+      />
+      
+      {/* 传递 HowLinearDamperWorks 数据 */}
+      <HowLinearDamperWorks 
+        section={products.howLinearDamperWorks.section}
+      />
+      
+      {/* 传递 LinearDamperTypes 数据 */}
+      <LinearDamperTypes 
+        section={products.linearDamperTypes.section}
+        types={products.linearDamperTypes.types}
+      />
+      
+      {/* 传递 TechnicalSpecifications 数据 */}
+      <TechnicalSpecifications 
+        section={products.technicalSpecifications}
+        specifications={products.technicalSpecifications}
+      />
+      
+      {/* 传递 InstallationUsageGuidelines 数据 */}
+      <InstallationUsageGuidelines 
+        section={products.installationUsageGuidelines}
+        guidelines={products.installationUsageGuidelines}
+      />
+      
+      {/* 传递 FrequentlyAskedQuestions 数据 */}
+      <FrequentlyAskedQuestions 
+        section={products.frequentlyAskedQuestions}
+        questions={products.frequentlyAskedQuestions}
+      />
+      
+      {/* 传递 ApplicationsAndIndustries 数据 */}
+      <ApplicationsAndIndustries 
+        section={products.applicationsAndIndustries}
+        applications={products.applicationsAndIndustries}
+        industries={products.applicationsAndIndustries}
+      />
+      
+      {/* 传递 NeedExpertGuidance 数据 */}
+      <NeedExpertGuidance 
+        section={products.needExpertGuidance}
+      />
     </div>
   )
 }

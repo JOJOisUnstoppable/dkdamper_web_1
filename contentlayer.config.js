@@ -57,9 +57,18 @@ export const Post = defineDocumentType(() => ({
     published: { type: 'boolean', required: false, default: true }, // 新增发布状态字段
   },
   computedFields: {
+    lang: {
+      type: 'string',
+      resolve: (post) => {
+        const pathParts = post._raw.sourceFilePath.split('/')
+        // 语言目录在 "posts" 之后，如 "posts/en/xxx.mdx" 中索引为 1 的是 "en"
+        const langIndex = pathParts.indexOf('posts') + 1
+        return pathParts[langIndex] || 'en' // 默认英文
+      },
+    },
     url: {
       type: 'string',
-      resolve: (post) => `/blog/${post._raw.flattenedPath.replace('posts/', '')}`,
+      resolve: (post) => `/${post.lang}/blog/${post.id}`,
     },
   },
 }))

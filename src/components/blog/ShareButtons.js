@@ -13,7 +13,7 @@ export default function ShareButtons({ title, url }) {
 
   return (
     <div className="flex items-center gap-4">
-      <span className="text-gray-600">分享到：</span>
+      <span className="text-gray-600">Share to:</span>
       <button
         onClick={() => handleShare('weibo')}
         className="text-gray-600 hover:text-red-500 transition-colors"

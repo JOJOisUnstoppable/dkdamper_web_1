@@ -6,7 +6,9 @@ const BannerSection = ({
   title,
   description,
   imageSrc,
-  imageAlt
+  imageAlt,
+  button1,
+  button2
 }) => {
   return (
     <section className="w-full bg-gradient-to-r from-blue-500 to-indigo-700 text-white pt-40 pb-20">
@@ -23,14 +25,14 @@ const BannerSection = ({
               href="/contact"
               className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-8 rounded-lg text-center transition-colors"
             >
-              Get a Quote
+              {button1}
             </Link>
             <Link
               href="/contact"
               /*href="/catalog"*/
               className="bg-transparent hover:bg-white/20 border-2 border-white py-3 px-8 rounded-lg text-center transition-colors"
             >
-              Download Catalog
+              {button2}
             </Link>
           </div>
         </div>

@@ -1,18 +1,654 @@
 {
-  "common": {
-    "home": "Home",
-    "about": "About",
-    "products": "Products",
-    "contact": "Contact",
-    "blog": "Blog"
+  "home": {
+    "meta": {
+      "title": "Fabricante de amortiguadores lineales | Soluciones precisas de control de movimiento hidráulico",
+      "description": "Fabricante profesional de amortiguadores lineales con más de 10 años de experiencia. Ofrecemos amortiguadores hidráulicos personalizados de Φ6mm a Φ12mm para aplicaciones automotrices, aeronáuticas e industriales. Solicite una cotización hoy mismo.",
+      "keywords": "amortiguador lineal, amortiguador hidráulico, amortiguador de resorte neumático, mini amortiguador lineal, amortiguador personalizado, amortiguador industrial, control de movimiento"
+    },
+    "hero": {
+      "title": "Amortiguador lineal",
+      "description": "Con más de una década de experiencia en la industria de los amortiguadores lineales, hemos sido durante mucho tiempo un socio de confianza para fabricantes nacionales y comerciantes internacionales en China, especializándonos en el suministro de una amplia gama de amortiguadores lineales personalizados. A medida que hemos acumulado una amplia experiencia técnica a lo largo de los años, ahora estamos listos para entrar en el escenario global. Nuestro objetivo es entregar nuestro valor directamente a clientes de todo el mundo, eliminando intermediarios innecesarios. Dejemos que nuestra profesionalidad hable por sí misma.",
+      "button1": "Solicitar cotización",
+      "button2": "Descargar catálogo"
+    },
+    "productShowcase": {
+      "title": "Nuestra serie de productos",
+      "products": [
+        {
+          "model": "Mini amortiguador lineal",
+          "description": "Diseño más compacto, ideal para aplicaciones con espacio limitado. Disponible en diámetros estándar de 6mm, 8mm, 10mm y 12mm, con opciones de personalización para diámetro, longitud y carrera."
+        },
+        {
+          "model": "Amortiguador neumático",
+          "description": "Combinan las funciones de un resorte neumático y un amortiguador, estos dispositivos están diseñados para aplicaciones que requieren tanto soporte como movimiento controlado."
+        }
+      ]
+    },
+    "process": {
+      "title": "Ingenierizamos amortiguadores lineales precisos a través de cuatro fases clave:",
+      "processes": [
+        {
+          "step": "Paso 1",
+          "title": "Confirmación de requisitos",
+          "description": "Nuestros ingenieros analizan sus necesidades de aplicación, incluyendo capacidad de carga (estándar 5-2400N), longitud de carrera y factores ambientales. Proporcionamos curvas de fuerza-deflexión y modelos 3D para aprobación."
+        },
+        {
+          "step": "Paso 2",
+          "title": "Diseño de eje y DFM",
+          "description": "Los ejes personalizados se mecanizan a partir de acero temple case (HRC 45-50) con recubrimientos opcionales. Nuestro equipamiento interno permite tolerancias de ±0.01mm para un funcionamiento fluido."
+        },
+        {
+          "step": "Paso 3",
+          "title": "Pruebas de evaluación",
+          "description": "Prototipo para prueba funcional. Sumistramos informes de prueba y archivos CAD para su verificación. Muestra T0~1, siguiendo los requisitos de prueba del cliente. Los amortiguadores de resorte neumático someten a al menos 50.000+ ciclos y los mini amortiguadores lineales a 100.000 pruebas de resistencia con desviación de fuerza inferior al ±5%."
+        },
+        {
+          "step": "Paso 4",
+          "title": "Producción en masa",
+          "description": "La fabricación certificada ISO entrega lotes desde 100 unidades con documentación PPAP. La logística global garantiza entregas puntuales a más de 30 países."
+        }
+      ]
+    },
+    "caseStudies": {
+      "techTitle": "Tecnologías",
+      "techDescription": "Con los amortiguadores lineales de nuestra empresa, crea experiencias de producto fluidas, seguras y de alta calidad. Conozca nuestra gama de soluciones de control de movimiento y descubra la solución adecuada específicamente para su industria.",
+      "techList": [
+        {
+          "title": "Soluciones de control de movimiento eléctrico"
+        },
+        {
+          "title": "Soluciones de control de movimiento mecánico"
+        },
+        {
+          "title": "Innovaciones"
+        }
+      ],
+      "industryTitle": "Industrias y aplicaciones",
+      "industryList": [
+        {
+          "title": "Industria automotriz"
+        },
+        {
+          "title": "Vehículos comerciales"
+        },
+        {
+          "title": "Aeronáutica, Marina, Ferrocarriles"
+        },
+        {
+          "title": "Energía y construcción"
+        },
+        {
+          "title": "Ingeniería mecánica y automatización"
+        },
+        {
+          "title": "Salud, ocio y muebles"
+        }
+      ]
+    },
+    "features": [
+      {
+        "title": "Condiciones comerciales transparentes",
+        "description": "Ofrecemos condiciones comerciales flexibles para adaptarse a sus necesidades logísticas. Elija entre opciones FOB, CFR o DDP según su conveniencia. Nuestra colaboración con empresas de mensajería garantiza entregas fluidas y eficientes."
+      },
+      {
+        "title": "Calidad en la que puede confiar",
+        "description": "Nuestro compromiso con la calidad es inquebrantable. Estamos orgullosos de contar con la certificación ISO 9001, testimonio de nuestra excelencia en fabricación."
+      },
+      {
+        "title": "Respuesta eficiente empresarial e ingenieril",
+        "description": "Priorizamos sus consultas técnicas y requisitos urgentes. Nuestro equipo dedicado de soporte técnico está a un clic para cualquier asistencia inmediata."
+      }
+    ],
+    "technical": {
+      "technicalSupportTitle": "Soporte técnico",
+      "technicalConsultationTitle": "Consulta técnica",
+      "technicalConsultationDesc": "Acceda a nuestro servicio de consulta técnica para obtener asesoramiento experto sobre sus proyectos.",
+      "urgentReplacementTitle": "Necesidades de repuesto urgentes",
+      "urgentReplacementDesc": "Para piezas de repuesto urgentes, conéctese directamente con nuestro equipo técnico a través de nuestro canal de contacto de emergencia."
+    },
+    "relatedPosts": {
+      "title": "Publicaciones más recientes del blog"
+    },
+    "contactUs": {
+      "contactUsTitle": "Contáctenos",
+      "getInTouchTitle": "Póngase en contacto",
+      "addressTitle": "Dirección",
+      "addressDesc": "Calle Comercial, Ningbo, Zhejiang, China",
+      "emailTitle": "Correo electrónico",
+      "emailDesc": "info@lineardamper.com",
+      "phoneTitle": "Teléfono",
+      "phoneDesc": "+86 233 421 663",
+      "workingHoursTitle": "Horario de trabajo",
+      "workingHoursDescWeekday": "Lunes - Viernes: 9:00 AM - 6:00 PM",
+      "workingHoursDescSaturday": "Sábado: 9:00 AM - 1:00 PM",
+      "sendMessageTitle": "Envíenos un mensaje"
+    }
   },
-  "navigation": {
-    "menu": "Menu",
-    "close": "Close"
+  "about": {
+    "hero": {
+      "title": "26 años de experiencia profesional en fabricación",
+      "description": "Comprometidos a proporcionar productos y soluciones de amortiguadores lineales de alta calidad para clientes globales",
+      "badges": [
+        "Certificación de calidad ISO",
+        "Capacidad mensual: 100 mil unidades",
+        "46 socios proveedores"
+      ]
+    },
+    "aboutSection": {
+      "title": "Acerca de DK Machinery",
+      "description": "Con más de 26 años de amplia experiencia en la fabricación de amortiguadores, DK Machinery se dedica a ofrecer a los clientes productos y soluciones de amortiguadores lineales de alta calidad. Adheridos al principio de priorizar al cliente, hemos establecido relaciones de colaboración largas y estables con clientes globales gracias a la innovación tecnológica continua y el control de calidad estricto.",
+      "features": [
+        {
+          "title": "Enfoque profesional",
+          "description": "26 años de especialización en la fabricación de amortiguadores lineales, acumulando una rica experiencia industrial y expertise técnico"
+        },
+        {
+          "title": "Garantía de calidad",
+          "description": "Sistema estricto de control de calidad que garantiza la excelencia en cada etapa, desde las materias primas hasta los productos terminados"
+        },
+        {
+          "title": "Éxito colaborativo",
+          "description": "Cultivamos 46 socios proveedores, estableciendo un ecosistema industrial integral"
+        }
+      ]
+    },
+    "products": {
+      "title": "Centro de productos",
+      "description": "Nuestros productos de amortiguadores lineales cuentan con excelentes parámetros técnicos y un rendimiento fiable",
+      "productList": [
+        {
+          "name": "Amortiguador lineal estándar",
+          "description": "Adecuado para aplicaciones convencionales como cajones y puertas de gabinetes"
+        },
+        {
+          "name": "Amortiguador lineal de alta resistencia",
+          "description": "Alta capacidad de carga, ideal para aplicaciones en equipos industriales"
+        },
+        {
+          "name": "Amortiguador lineal personalizado",
+          "description": "Adaptado a las necesidades del cliente para aplicaciones especializadas"
+        }
+      ],
+      "technicalSpecifications": {
+        "title": "Especificaciones técnicas",
+        "specs": [
+          {
+            "title": "Rango de empuje",
+            "value": "300N - 2300N"
+          },
+          {
+            "title": "Carrera estándar",
+            "value": "7-10mm"
+          },
+          {
+            "title": "Capacidad mensual",
+            "value": "100 mil unidades"
+          },
+          {
+            "title": "Combinaciones de accesorios",
+            "value": "más de 2000 tipos"
+          }
+        ]
+      }
+    },
+    "productionTesting": {
+      "title": "Producción y pruebas",
+      "description": "Líneas de producción avanzadas y estándares de prueba estrictos garantizan la calidad del producto",
+      "features": [
+        {
+          "title": "Línea de producción automatizada",
+          "description": "Equipos de producción automatizados avanzados garantizan la consistencia del producto y maximizan la eficiencia. 23 procesos estrictos, cada uno con un cálculo preciso de tiempo y costo."
+        },
+        {
+          "title": "Pruebas de calidad",
+          "description": "Las pruebas de laboratorio alcanzan millones de ciclos, y los productos de producción en masa tienen una garantía de 200.000 ciclos. Estándar de prueba: 5-6 ciclos por minuto, completando la verificación de 100.000 ciclos en 7 días."
+        },
+        {
+          "title": "Servicios de personalización",
+          "description": "Soporta personalizaciones no estándar con más de 2000 combinaciones de accesorios para satisfacer necesidades diversas. Para condiciones extremas como temperaturas ultra bajas, los materiales resistentes a -40℃ garantizan el rendimiento del producto."
+        }
+      ]
+    },
+    "qualityAssurance": {
+      "title": "Garantía de calidad",
+      "description": "Sistema estricto de garantía de calidad y análisis de costos透明确保 los beneficios del cliente",
+      "processes": [
+        {
+          "title": "Proceso de prueba de muestras",
+          "description": "Antes de los pedidos formales, requerimos muestras del cliente para la verificación de la composición de materiales y garantizar el cumplimiento del producto."
+        },
+        {
+          "title": "Análisis de costos透明",
+          "description": "Ofrecemos precios competitivos para clientes importantes con desgloses透明 de costos de materiales. Uso de tubos dorados sin soldadura con chapado de superficie más brillante."
+        },
+        {
+          "title": "Verificación en tres pasos",
+          "description": "Para cualquier inquietud sobre precios o calidad: comparación de muestras, desmontaje en sitio y verificación de tiempo y costo."
+        }
+      ],
+      "stats": [
+        {
+          "value": "26 años",
+          "label": "Experiencia industrial"
+        },
+        {
+          "value": "200 mil ciclos",
+          "label": "Garantía de pruebas"
+        },
+        {
+          "value": "23 pasos",
+          "label": "Procesos estrictos"
+        },
+        {
+          "value": "46 socios",
+          "label": "Colaboradores"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contáctenos",
+      "description": "Contáctenos para saber más sobre nuestros productos o discutir oportunidades de colaboración",
+      "contactInfo": [
+        {
+          "type": "Teléfono",
+          "details": [
+            "400-123-4567",
+            "0755-12345678"
+          ]
+        },
+        {
+          "type": "Correo electrónico",
+          "details": [
+            "info@lineardamper.com",
+            "sales@lineardamper.com"
+          ]
+        },
+        {
+          "type": "Dirección",
+          "details": [
+            "Distrito de Nanshan, Shenzhen",
+            "Parque Científico y Tecnológico, Guangdong, China"
+          ]
+        }
+      ],
+      "buttonText": "Contáctenos ahora"
+    },
+    "footer": {
+      "companyName": "DK Machinery Amortiguadores Lineales",
+      "companyTagline": "Fabricante profesional de amortiguadores lineales",
+      "copyright": "26 años de experiencia en fabricación | Garantía de calidad | Servicio con integridad"
+    }
   },
-  "buttons": {
-    "readMore": "Read More",
-    "learnMore": "Learn More",
-    "getQuote": "Get Quote"
+  "contact": {
+    "meta": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "hero": {
+      "title": "Contáctenos",
+      "description": "¿Tiene preguntas o necesita asistencia? Póngase en contacto con nuestro equipo.",
+      "contactInfo": {
+        "phone": "+1 (123) 456-7890",
+        "email": "info@lineardamper.com",
+        "address": "Calle Comercial, Ningbo, Zhejiang, China"
+      }
+    },
+    "contactSection": {
+      "contactUsTitle": "Contáctenos",
+      "getInTouchTitle": "Póngase en contacto",
+      "addressTitle": "Dirección",
+      "addressDesc": "Calle Comercial, Ningbo, Zhejiang, China",
+      "emailTitle": "Correo electrónico",
+      "emailDesc": "info@lineardamper.com",
+      "phoneTitle": "Teléfono",
+      "phoneDesc": "+86 233 421 663",
+      "workingHoursTitle": "Horario de trabajo",
+      "workingHoursDescWeekday": "Lunes - Viernes: 9:00 AM - 6:00 PM",
+      "workingHoursDescSaturday": "Sábado: 9:00 AM - 1:00 PM",
+      "sendMessageTitle": "Envíenos un mensaje"
+    }
+  },
+  "products": {
+    "meta": {
+      "title": "Amortiguadores lineales | Soluciones de control de movimiento hidráulico de alta calidad",
+      "description": "Descubra nuestra gama de amortiguadores lineales precisos para aplicaciones industriales y de consumo. Controla el movimiento, reduce las vibraciones y garantiza operaciones fluidas con nuestras soluciones de amortiguación hidráulica.",
+      "keywords": "amortiguador lineal, amortiguador hidráulico, control de movimiento, reducción de vibraciones, amortiguadores industriales, amortiguadores precisos, soluciones de amortiguación",
+      "canonical": "https://www.lineardamper.com/products"
+    },
+    "schema": {
+      "listName": "Lista de productos de amortiguadores lineales DK Machinery",
+      "description": "Lista completa de amortiguadores lineales para aplicaciones industriales y de consumo",
+      "baseUrl": "https://lineardamper.com"
+    },
+    "HeroSecion": {
+      "title": "Amortiguadores lineales profesionales y amortiguadores de pistón",
+      "description": "Soluciones avanzadas de amortiguación hidráulica para control de movimiento industrial. Desde amortiguadores miniatura precisos hasta aplicaciones industriales de alta resistencia, proporcionamos tecnología de amortiguación integral para un movimiento fluido y controlado."
+    },
+    "whatIsLinearDamper": {
+      "section": {
+        "title": "¿Qué es un amortiguador lineal?",
+        "description1": "Los amortiguadores lineales son componentes cruciales para el control de movimiento, funcionando para amortiguar y desacelerar movimientos y garantizar operaciones fluidas y controlables. Generan resistencia al comprimir aceite hidráulico y hacer que fluya a través de orificios de regulación, y se utilizan ampliamente en diversas industrias.",
+        "description2": "Los amortiguadores lineales proporcionan un movimiento de amortiguación lineal fluido y pueden disponer de un interruptor de luz integrado bajo petición. Amortiguan el proceso de cierre o apertura en una dirección, mientras que proporcionan un funcionamiento libre (sin resistencia) en la otra.",
+        "description3": "En términos simples, los amortiguadores lineales son un tipo de dispositivo utilizado para controlar la velocidad de objetos en movimiento, permitiéndoles desacelerar gradualmente y evitar paradas o impactos repentinos. Puede ver sus aplicaciones en muchos lugares, como el Mini Amortiguador Lineal en puertas de gabinetes de basureros y amortiguadores de aceite/gas que permiten que los maleteros de los coches se cierren lentamente y suavemente, sin golpear."
+      },
+      "whyChoose": {
+        "title": "¿Por qué elegir amortiguadores lineales hidráulicos?",
+        "description": "Los amortiguadores lineales hidráulicos ofrecen un rendimiento superior en comparación con otras tecnologías de amortiguación:"
+      },
+      "table": {
+        "headers": {
+          "dampingType": "Tipo de amortiguación",
+          "energyAbsorption": "Absorción de energía",
+          "reboundRisk": "Riesgo de rebote",
+          "performance": "Rendimiento",
+          "applications": "Aplicaciones"
+        },
+        "hydraulic": {
+          "type": "Hidráulico (Nuestra tecnología)",
+          "energyAbsorption": "Convierte energía cinética en energía térmica",
+          "reboundRisk": "Mínimo - energía disipada",
+          "performance": "Excelente - características personalizables",
+          "applications": "Aplicaciones industriales, precisas"
+        },
+        "rubber": {
+          "type": "Goma",
+          "energyAbsorption": "La deformación elástica almacena energía",
+          "reboundRisk": "Alto - la energía almacenada crea rebote",
+          "performance": "Básico - control limitado",
+          "applications": "Aplicaciones simples, de bajo costo"
+        },
+        "spring": {
+          "type": "Resorte",
+          "energyAbsorption": "La deformación elástica almacena energía",
+          "reboundRisk": "Alto - la energía almacenada crea rebote",
+          "performance": "Básico - control limitado",
+          "applications": "Sistemas mecánicos simples"
+        },
+        "pneumatic": {
+          "type": "Neumático",
+          "energyAbsorption": "Aire comprimido a través de orificio",
+          "reboundRisk": "Medio - depende del equilibrio",
+          "performance": "Bueno - pero menos preciso",
+          "applications": "Aplicaciones de servicio medio"
+        }
+      }
+    },
+    "productSeries": {
+      "meta": {
+        "title": "",
+        "description": "",
+        "keywords": ""
+      },
+      "section": {
+        "title": "Nuestra serie de productos de amortiguadores lineales",
+        "imageAlt": "Serie de productos"
+      },
+      "table": {
+        "headers": {
+          "empty": "",
+          "totalLength": "Longitud total/mm ①",
+          "diameter": "Diámetro/mm②",
+          "cylinderLength": "Longitud del cilindro/mm③",
+          "usedStroke": "Carrera utilizada/mm",
+          "withWithoutCap": "Con/sin tapa",
+          "withWithoutSpring": "Con/sin resorte de retorno automático"
+        },
+        "exampleRow": {
+          "model": "Modelo de ejemplo",
+          "totalLengthValue": "68",
+          "diameterValue": "10",
+          "cylinderLengthValue": "42",
+          "usedStrokeValue": "14",
+          "withWithoutCapValue": "Con",
+          "withWithoutSpringValue": "Sin"
+        }
+      },
+      "products": {
+        "phi6mm": {
+          "title": "Φ6mm",
+          "description": "Amortiguadores hidráulicos lineales miniatura con amortiguación unidireccional, con retorno automático de resorte y mecanismo de recarga. Ideales para control preciso en aplicaciones compactas.",
+          "forceRange": "Rango de fuerza: 0-100N",
+          "material1": "Acero de precisión",
+          "materialOr": "O",
+          "material2": "Acero inoxidable",
+          "applicationsTitle": "Aplicaciones:",
+          "applications": "Instrumentos de precisión, pequeñas puertas de gabinetes, cubiertas de dispositivos electrónicos"
+        },
+        "phi8mm": {
+          "title": "Φ8mm",
+          "description": "Amortiguadores hidráulicos lineales con amortiguación unidireccional, retorno automático de resorte y funcionalidad de recarga. Equilibrio perfecto entre tamaño y rendimiento.",
+          "forceRange": "Rango de fuerza: 0-350N",
+          "material1": "Acero de alta calidad",
+          "materialOr": "O",
+          "material2": "Acero inoxidable",
+          "applicationsTitle": "Aplicaciones:",
+          "applications": "Puertas de tamaño mediano, componentes automotrices, herrajes de mobiliario"
+        },
+        "phi10mm": {
+          "title": "Φ10mm",
+          "description": "Amortiguadores hidráulicos lineales estándar con amortiguación unidireccional y retorno de resorte. Ofrecen un rendimiento fiable para aplicaciones de servicio medio.",
+          "forceRange": "Rango de fuerza: 0-870N",
+          "material1": "Acero industrial",
+          "materialOr": "O",
+          "material2": "Acero inoxidable",
+          "applicationsTitle": "Aplicaciones:",
+          "applications": "Maquinaria industrial, mobiliario pesado, aplicaciones automotrices"
+        },
+        "phi12mm": {
+          "title": "Φ12mm",
+          "description": "Amortiguadores hidráulicos lineales de alta resistencia con carrera y dirección de amortiguación personalizables. Caracterizan por amortiguación unidireccional con retorno de resorte, ideales para aplicaciones de alta fuerza.",
+          "forceRange": "Rango de fuerza: 0-2400N",
+          "material1": "Acero de alta resistencia",
+          "materialOr": "O",
+          "material2": "Acero inoxidable",
+          "applicationsTitle": "Aplicaciones:",
+          "applications": "Equipos industriales pesados, maquinaria grande, sistemas de alta carga"
+        }
+      }
+    },
+    "howLinearDamperWorks": {
+      "meta": {
+        "title": "",
+        "description": "",
+        "keywords": ""
+      },
+      "section": {
+        "title": "¿Cómo funciona un amortiguador lineal?",
+        "intro": "Los amortiguadores lineales funcionan al convertir la energía cinética en energía térmica a través de la resistencia hidráulica. Cuando una fuerza actúa sobre la varilla del pistón, empuja el pistón, comprimiendo el aceite hidráulico interno. Este aceite se ve obligado a fluir a través de orificios especialmente diseñados, creando una resistencia que desacelera o amortigua el movimiento.",
+        "energyAbsorption": {
+          "title": "Principios de absorción de energía",
+          "desc1": "Cuando un objeto golpea la varilla del pistón, el movimiento se transmite al aceite en la cámara de presión a través de la varilla del pistón. Como resultado, el aceite dentro de la cámara de presión fluye fuera de los orificios ubicados en el tubo interno. Esto causa compresión en la cámara de presión. El producto de esta presión hidráulica y el área aplicada a presión del pistón es la resistencia, que actúa sobre el objeto en colisión.",
+          "desc2": "La presión hidráulica generada dentro de la cámara de presión es proporcional al cuadrado de la velocidad del objeto en colisión, siempre y cuando el tamaño del orificio, la viscosidad del aceite, etc., sean constantes. Esto se denomina resistencia cuadrática de velocidad."
+        },
+        "keyComponents": {
+          "title": "Componentes clave",
+          "pistonAndRod": {
+            "title": "Pistón y varilla del pistón",
+            "desc": "Cuando una fuerza externa actúa sobre un amortiguador lineal, esta fuerza primero se transmitirá a la varilla del pistón. La varilla del pistón es un componente crucial que conecta el objeto externo y el interior del amortiguador. A continuación, la varilla del pistón empujará el pistón conectado a ella para moverse dentro del cilindro del amortiguador, y el pistón es típicamente una pieza especialmente diseñada con orificios."
+          },
+          "hydraulicOil": {
+            "title": "Aceite hidráulico",
+            "desc1": "Los amortiguadores lineales controlan el movimiento mediante la resistencia fluida. Cuando se aplica una fuerza, un pistón se mueve dentro de un cilindro lleno de aceite hidráulico. El aceite se ve obligado a fluir a través de pequeños orificios. Este flujo restringido crea una fuerza de resistencia que se opone al movimiento, proporcionando el efecto de amortiguación.",
+            "desc2": "La viscosidad del aceite hidráulico es importante porque afecta el nivel de resistencia. Diferentes tipos de amortiguadores lineales, clasificados por tipo de desbordamiento (de un solo agujero o múltiple) y dirección de empuje (empuje, extracción, bidireccional), dependen de este principio de creación de resistencia por parte del aceite hidráulico."
+          },
+          "orifices": {
+            "title": "Orificios",
+            "desc1": "Los orificios son cruciales en los amortiguadores lineales porque son el medio principal para controlar la fuerza de amortiguación. Son pequeños orificios de tamaño preciso en el pistón del amortiguador. A medida que el pistón se mueve, obliga al aceite hidráulico a fluir a través de estos orificios.",
+            "desc2": "El tamaño y el diseño de los orificios regulan directamente la velocidad a la que puede fluir el aceite hidráulico. Los orificios más pequeños restringen más el flujo de aceite, lo que resulta en una mayor resistencia y una mayor fuerza de amortiguación,减缓ndo así el movimiento de forma más significativa. Por el contrario, los orificios más grandes permiten un flujo de aceite más fácil, lo que conduce a menos resistencia y una menor fuerza de amortiguación."
+          }
+        },
+        "images": {
+          "alt1": "Estructura de amortiguador lineal 1",
+          "caption1": "Visualización de componentes",
+          "alt2": "Estructura de amortiguador lineal 2",
+          "caption2": "Información de piezas"
+        }
+      }
+    },
+    "linearDamperTypes": {
+      "meta": {
+        "title": "",
+        "description": "",
+        "keywords": ""
+      },
+      "section": {
+        "mainTitle": "Las curvas de amortiguación son variadas según las aplicaciones",
+        "intro": "Los amortiguadores lineales se dividen en categorías según cómo cambia el área del orificio durante el funcionamiento, proporcionando diferentes características de absorción para diversas aplicaciones.",
+        "constantOrificeTypes": {
+          "title": "Tipos de orificio constante",
+          "singleOrificeType": {
+            "title": "Tipo de orificio único",
+            "description": "Presenta tres variaciones estructurales: estructura de amortiguador que utiliza el espacio entre el pistón y el tubo del cilindro, estructura de tubo único con orificios en el pistón y estructura de orificio único de doble tubo (ajustable). A lo largo de toda la carrera, el área del orificio permanece constante. La resistencia aumenta repentinamente inmediatamente después del impacto, luego disminuye a medida que avanza la carrera y la velocidad disminuye."
+          }
+        },
+        "strokeDependentOrificeTypes": {
+          "title": "Tipos de orificio dependientes de la carrera",
+          "multipleOrificeType": {
+            "title": "Tipo de orificio múltiple",
+            "description": "Estructura doble compuesta por tubo externo y tubo interno. El área del orificio en el momento del impacto es mayor en comparación con el tipo único, disminuyendo gradualmente a medida que avanza la carrera, suprimiendo la resistencia general. Teóricamente, la resistencia durante la carrera puede mantenerse constante. El diseño del orificio puede modificarse según las condiciones de impacto."
+          },
+          "multipleVaryingOrificeType": {
+            "title": "Tipo de orificio múltiple variable",
+            "description": "Misma estructura que el tipo de orificio múltiple pero proporciona características de resistencia adecuadas para el uso previsto en lugar de una fuerza de amortiguación constante. Diseñado para absorber energía cinética en la primera mitad de la carrera y realizar control de velocidad durante la segunda mitad, logrando una absorción de energía ideal."
+          },
+          "grooveOrificeType": {
+            "title": "Tipo de orificio de ranura",
+            "description": "Sistema de tubo único donde la ranura del orificio en la pared interior cambia a medida que avanza la carrera. Gran área de orificio al comienzo de la carrera, volviéndose más pequeña a medida que avanza la carrera. El área del orificio cambia continuamente, lo que resulta en menos fluctuación de resistencia en comparación con el tipo múltiple, permitiendo una absorción de energía óptima."
+          }
+        },
+        "chart": {
+          "title": "Tipos variados de desbordamiento",
+          "dataSets": {
+            "singleHoleOverflow": "Desbordamiento de un solo agujero",
+            "multiHoleOverflow": "Desbordamiento de múltiples agujeros",
+            "grooveOverflow": "Desbordamiento de ranura"
+          }
+        }
+      }
+    },
+    "technicalSpecifications": {
+      "sectionTitle": "Especificaciones técnicas",
+      "commonSpecifications": {
+        "title": "Especificaciones comunes",
+        "pistonRodRecoveryForce": "Fuerza de recuperación de la varilla del pistón: Con resorte de retorno ≤5N (0,5 kgf), Sin resorte de retorno ≤1,5N (0,15 kgf)",
+        "mainUnitMaterial": "Material de la unidad principal: Construcción de resina de alta calidad",
+        "operatingTemperatureRange": "Rango de temperatura de funcionamiento: 5~40°C (41~104°F)",
+        "mountingOptions": "Opciones de montaje: Varias configuraciones de extremo disponibles",
+        "strokeOptions": "Opciones de carrera: Longitudes de carrera personalizables",
+        "dampingDirection": "Dirección de amortiguación: Opciones unidireccionales, bidireccionales disponibles"
+      },
+      "performanceCharacteristics": {
+        "title": "Características de rendimiento",
+        "velocitySquaredResistance": "Resistencia cuadrática de velocidad: Presión hidráulica proporcional al cuadrado de la velocidad de colisión",
+        "energyConversion": "Conversión de energía: Energía cinética convertida en energía térmica y disipada",
+        "customizableDamping": "Amortiguación personalizable: Características ajustables mediante diseño de orificio",
+        "parallelOperation": "Operación en paralelo: Múltiples unidades pueden usarse en paralelo para aumentar la capacidad"
+      }
+    },
+    "installationUsageGuidelines": {
+      "sectionTitle": "Directrices de instalación y uso",
+      "importantSafetyPrecautions": {
+        "title": "Precauciones de seguridad importantes",
+        "precautions": [
+          "Siempre use con un tope externo para prevenir la sobrecompresión",
+          "Asegúrese de que se garantice una resistencia de montaje suficiente para el amortiguador",
+          "No use en entornos de vacío o donde pueda ocurrir contacto con aceite",
+          "Evite aplicar cargas excéntricas al amortiguador",
+          "Maneje con cuidado para prevenir daños por impactos por caída"
+        ]
+      },
+      "installationBestPractices": {
+        "title": "Mejores prácticas de instalación",
+        "practices": [
+          "Montaje: Asegure ambos extremos con sujetadores apropiados",
+          "Alineación: Asegure una correcta alineación axial para prevenir bloqueos",
+          "Límites de carrera: Nunca exceda la longitud de carrera especificada",
+          "Instalación en paralelo: Dos o más amortiguadores pueden usarse en paralelo para aumentar la capacidad",
+          "Ambiental: Proteja de temperaturas extremas y contaminación"
+        ]
+      },
+      "operationalConsiderations": {
+        "title": "Consideraciones operativas",
+        "considerations": [
+          "No presione la varilla del pistón más allá de la carrera utilizada (causa retorno incompleto)",
+          "No tire del amortiguador lineal más allá de la carrera utilizada (causa daños)",
+          "Grandes brechas entre el tiempo de presión y retorno pueden afectar la durabilidad",
+          "Confirme el rendimiento en la máquina real antes de usar"
+        ]
+      },
+      "images": {
+        "firstImageAlt": "Primera imagen",
+        "secondImageAlt": "Segunda imagen"
+      }
+    },
+    "frequentlyAskedQuestions": {
+      "sectionTitle": "Preguntas frecuentes",
+      "questionsAndAnswers": [
+        {
+          "question": "¿Cuál es la diferencia entre un amortiguador lineal y un amortiguador de pistón?",
+          "answer": "Los amortiguadores lineales y los amortiguadores de pistón son esencialmente el mismo dispositivo. Ambos usan un pistón que se mueve dentro de un cilindro lleno de aceite hidráulico para crear fuerza de amortiguación. Los términos se usan a menudo indistintamente, con \"amortiguador lineal\" enfatizando el aspecto de control de movimiento lineal, mientras que \"amortiguador de pistón\" resalta el mecanismo interno del pistón."
+        },
+        {
+          "question": "¿Cómo elijo el rango de fuerza correcto para mi aplicación?",
+          "answer": "El rango de fuerza depende de la masa del objeto que se amortigua y la tasa de desaceleración deseada. Para aplicaciones livianas (menos de 5kg), nuestros amortiguadores de Φ6mm o Φ8mm son adecuados. Para cargas medias (5 - 20kg), considere los amortiguadores de Φ10mm. Para aplicaciones de alta resistencia (más de 20kg), nuestros amortiguadores máximos de Φ12mm proporcionan hasta 2400N de fuerza."
+        },
+        {
+          "question": "¿Los amortiguadores lineales pueden usarse en ambas direcciones?",
+          "answer": "Nuestros amortiguadores estándar proporcionan amortiguación unidireccional con retorno de resorte. La acción de amortiguación ocurre durante la compresión, mientras que el resorte proporciona fuerza de retorno. Para aplicaciones que requieren amortiguación bidireccional, ofrecemos configuraciones especializadas de amortiguación bidireccional."
+        },
+        {
+          "question": "¿Qué mantenimiento requieren los amortiguadores lineales?",
+          "answer": "Los amortiguadores lineales son generalmente dispositivos sin mantenimiento. Sin embargo, la inspección regular para detectar fugas, el montaje adecuado y garantizar que los límites de carrera no se excedan maximizarán la vida útil. Evite la exposición a temperaturas extremas y la contaminación."
+        },
+        {
+          "question": "¿Cuánto duran los amortiguadores lineales?",
+          "answer": "La vida útil depende de las condiciones de aplicación, pero los amortiguadores lineales correctamente instalados y operados pueden proporcionar millones de ciclos. Los factores que afectan la longevidad incluyen temperatura de funcionamiento, frecuencia de carrera, condiciones de carga y factores ambientales."
+        },
+        {
+          "question": "¿Se pueden usar múltiples amortiguadores juntos?",
+          "answer": "Sí, dos o más amortiguadores lineales pueden usarse en paralelo para aumentar la fuerza total de amortiguación. Esto es particularmente útil para aplicaciones de alta resistencia o cuando se requiere redundancia. Asegúrese de una correcta alineación y distribución equitativa de la carga cuando use múltiples unidades."
+        }
+      ]
+    },
+    "applicationsAndIndustries": {
+      "sectionTitle": "Aplicaciones e industrias",
+      "miniLinearDamper": {
+        "title": "Mini amortiguador lineal",
+        "items": [
+          "Inyección con pluma de insulina",
+          "Bisagra de horno",
+          "Puerta de refrigerador",
+          "Mobiliario, como cajones, puertas"
+        ]
+      },
+      "damperWithBothEndFittings": {
+        "title": "Amortiguador con accesorios en ambos extremos",
+        "items": [
+          "Cerrador de puertas",
+          "Puerta de seguridad"
+        ]
+      },
+      "benefitsInEachApplication": {
+        "title": "Beneficios en cada aplicación",
+        "items": [
+          "<strong>Reducción de ruido:</strong> Elimina el estallido y el ruido de impacto",
+          "<strong>Seguridad:</strong> Previene pellizcos de dedos y daños en componentes",
+          "<strong>Funcionamiento fluido:</strong> Proporciona movimiento controlado y predecible",
+          "<strong>Vida prolongada:</strong> Reduce el desgaste en bisagras y herrajes de montaje",
+          "<strong>Sensación premium:</strong> Añade sofisticación al funcionamiento del producto"
+        ]
+      }
+    },
+    "needExpertGuidance": {
+      "sectionTitle": "¿Necesita orientación experta sobre amortiguadores lineales?",
+      "description": "Nuestro equipo de ingeniería puede ayudarle a seleccionar la solución de amortiguación perfecta para su aplicación específica. Obtenga consulta profesional y soluciones personalizadas.",
+      "contactEngineersBtn": "Contáctenos con nuestros ingenieros",
+      "requestQuoteBtn": "Solicitar cotización"
+    }
+  },
+  "blog": {
+    "title": "Artículos de blog",
+    "description": "Compartiendo conocimientos industriales y actualizaciones técnicas"
   }
 }

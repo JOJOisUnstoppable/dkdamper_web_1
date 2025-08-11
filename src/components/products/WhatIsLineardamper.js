@@ -1,111 +1,110 @@
 import React from 'react';
 import Image from 'next/image'
 
-const WhatIsLinearDamper = () => {
+const WhatIsLinearDamper = ({ section, whyChoose, table }) => {
   return (
     <section className="bg-white p-10 rounded-lg shadow-xl my-16 mx-40">
       <h2 className="text-6xl font-bold text-[#2c3e50] border-b-4 border-[#3498db] pb-2 mb-8">
-        What is a Linear Damper?
+        {section.title}
       </h2>
       <p className="mb-4">
-        Linear dampers are crucial components for motion control, functioning to buffer and decelerate movements and ensure smooth and controllable operations. They generate resistance by compressing hydraulic oil and making it flow through throttle orifices, and are widely used in various industries.
+        {section.description1}
       </p>
       <p className="mb-8">
-       Linear dampers provide a smooth linear damping motion and are available with an integrated light switch on request. They dampen the closing or opening process in one direction, while providing a free run (no resistance) in the other.
+        {section.description2}
       </p>
       <p className="mb-8">
-       Linear dampers,in simple tems. are a tvpe of device used to control the speed of moving obiects, alowing them to decelerate gradually and avoid sudden stops or impacts. You can see their applications in many places,such as Mini Linear Damper in trash can cabinet doors and oil/gas damper that allow car trunks close slowly and gently that don't slam shut.
+        {section.description3}
       </p>
-       {/* 横向排列的图片 */}
 
-       {/* Why part */}
+      {/* Why part */}
       <h3 className="text-xl font-bold text-[#34495e] mb-4">
-        Why Choose Hydraulic Linear Dampers?
+        {whyChoose.title}
       </h3>
       <p className="mb-8">
-        Hydraulic linear dampers offer superior performance compared to other damping technologies:
+        {whyChoose.description}
       </p>
       <table className="w-full border-collapse shadow-md rounded-lg overflow-hidden">
         <thead>
           <tr>
             <th className="bg-[#3498db] text-white font-bold p-4 text-left">
-              Damping Type
+              {table.headers.dampingType}
             </th>
             <th className="bg-[#3498db] text-white font-bold p-4 text-left">
-              Energy Absorption
+              {table.headers.energyAbsorption}
             </th>
             <th className="bg-[#3498db] text-white font-bold p-4 text-left">
-              Rebound Risk
+              {table.headers.reboundRisk}
             </th>
             <th className="bg-[#3498db] text-white font-bold p-4 text-left">
-              Performance
+              {table.headers.performance}
             </th>
             <th className="bg-[#3498db] text-white font-bold p-4 text-left">
-              Applications
+              {table.headers.applications}
             </th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td className="p-4 border-b">
-              <strong>Hydraulic (Our Technology)</strong>
+              <strong>{table.hydraulic.type}</strong>
             </td>
             <td className="p-4 border-b">
-              Converts kinetic energy to heat energy
+              {table.hydraulic.energyAbsorption}
             </td>
             <td className="p-4 border-b">
-              Minimal - energy dissipated
+              {table.hydraulic.reboundRisk}
             </td>
             <td className="p-4 border-b">
-              Excellent - customizable characteristics
+              {table.hydraulic.performance}
             </td>
             <td className="p-4 border-b">
-              Industrial, precision applications
-            </td>
-          </tr>
-          <tr>
-            <td className="p-4 border-b">Rubber</td>
-            <td className="p-4 border-b">
-              Elastic deformation stores energy
-            </td>
-            <td className="p-4 border-b">
-              High - stored energy creates rebound
-            </td>
-            <td className="p-4 border-b">
-              Basic - limited control
-            </td>
-            <td className="p-4 border-b">
-              Simple, low-cost applications
+              {table.hydraulic.applications}
             </td>
           </tr>
           <tr>
-            <td className="p-4 border-b">Spring</td>
+            <td className="p-4 border-b">{table.rubber.type}</td>
             <td className="p-4 border-b">
-              Elastic deformation stores energy
+              {table.rubber.energyAbsorption}
             </td>
             <td className="p-4 border-b">
-              High - stored energy creates rebound
+              {table.rubber.reboundRisk}
             </td>
             <td className="p-4 border-b">
-              Basic - limited control
+              {table.rubber.performance}
             </td>
             <td className="p-4 border-b">
-              Simple mechanical systems
+              {table.rubber.applications}
             </td>
           </tr>
           <tr>
-            <td className="p-4 border-b">Pneumatic</td>
+            <td className="p-4 border-b">{table.spring.type}</td>
             <td className="p-4 border-b">
-              Compressed air through orifice
+              {table.spring.energyAbsorption}
             </td>
             <td className="p-4 border-b">
-              Medium - depends on balance
+              {table.spring.reboundRisk}
             </td>
             <td className="p-4 border-b">
-              Good - but less precise
+              {table.spring.performance}
             </td>
             <td className="p-4 border-b">
-              Medium-duty applications
+              {table.spring.applications}
+            </td>
+          </tr>
+          <tr>
+            <td className="p-4 border-b">{table.pneumatic.type}</td>
+            <td className="p-4 border-b">
+              {table.pneumatic.energyAbsorption}
+            </td>
+            <td className="p-4 border-b">
+              {table.pneumatic.reboundRisk}
+            </td>
+            <td className="p-4 border-b">
+              {table.pneumatic.performance}
+            </td>
+            <td className="p-4 border-b">
+              {table.pneumatic.applications}
             </td>
           </tr>
         </tbody>

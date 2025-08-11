@@ -7,7 +7,9 @@
     },
     "hero": {
       "title": "Linear Damper",
-      "description": "With over a decade of experience in the linear damper industry, we have long been a trusted partner for domestic manufacturers and international traders in China, specializing in supplying a wide range of customized linear dampers. As we have accumulated extensive technical expertise over the years, we are now ready to step onto the global stage. We aim to deliver our value directly to customers worldwide, cutting out unnecessary middle links. Let our professionalism speak for itself. This is a conversation between engineers."
+      "description": "With over a decade of experience in the linear damper industry, we have long been a trusted partner for domestic manufacturers and international traders in China, specializing in supplying a wide range of customized linear dampers. As we have accumulated extensive technical expertise over the years, we are now ready to step onto the global stage. We aim to deliver our value directly to customers worldwide, cutting out unnecessary middle links. Let our professionalism speak for itself. This is a conversation between engineers.",
+      "button1": "Get a  Quote",
+      "button2": "Download Catalog"
     },
     "productShowcase": {
       "title": "Our Product Series",
@@ -51,18 +53,36 @@
       "techTitle": "Technologies",
       "techDescription": "With Linear damper from our company, you create smooth-running, safe and high-quality product experiences. Get to know our range of motion control solutions and discover the right solution specifically for your industry.",
       "techList": [
-        { "title": "Electric motion control solutions" },
-        { "title": "Mechanical motion control solutions" },
-        { "title": "Innovations" }
+        {
+          "title": "Electric motion control solutions"
+        },
+        {
+          "title": "Mechanical motion control solutions"
+        },
+        {
+          "title": "Innovations"
+        }
       ],
       "industryTitle": "Industries & Applications",
       "industryList": [
-        { "title": "Automotive industry" },
-        { "title": "Commercial vehicles" },
-        { "title": "Aerospace, Navy, Railways" },
-        { "title": "Energy and construction" },
-        { "title": "Mechanical engineering and automation" },
-        { "title": "Health, leisure and furniture" }
+        {
+          "title": "Automotive industry"
+        },
+        {
+          "title": "Commercial vehicles"
+        },
+        {
+          "title": "Aerospace, Navy, Railways"
+        },
+        {
+          "title": "Energy and construction"
+        },
+        {
+          "title": "Mechanical engineering and automation"
+        },
+        {
+          "title": "Health, leisure and furniture"
+        }
       ]
     },
     "features": [
@@ -103,5 +123,532 @@
       "workingHoursDescSaturday": "Saturday: 9:00 AM - 1:00 PM",
       "sendMessageTitle": "Send Us a Message"
     }
+  },
+  "about": {
+    "hero": {
+      "title": "26 Years of Professional Manufacturing Experience",
+      "description": "Committed to providing high-quality linear damper products and solutions for global customers",
+      "badges": [
+        "ISO Quality Certification",
+        "Monthly Capacity: 100K Units",
+        "46 Supplier Partners"
+      ]
+    },
+    "aboutSection": {
+      "title": "About DK Machinery",
+      "description": "With over 26 years of extensive experience in damper manufacturing, DK Machinery is dedicated to providing customers with high-quality linear damper products and solutions. Adhering to a customer-first principle, we have established long-term, stable cooperative relationships with global clients through continuous technological innovation and strict quality control.",
+      "features": [
+        {
+          "title": "Professional Focus",
+          "description": "26 years of specialization in linear damper manufacturing, accumulating rich industry experience and technical expertise"
+        },
+        {
+          "title": "Quality Assurance",
+          "description": "Strict quality control system ensuring excellence at every stage from raw materials to finished products"
+        },
+        {
+          "title": "Collaborative Success",
+          "description": "Cultivated 46 supplier partners, establishing a comprehensive industrial ecosystem"
+        }
+      ]
+    },
+    "products": {
+      "title": "Product Center",
+      "description": "Our linear damper products feature excellent technical parameters and reliable performance",
+      "productList": [
+        {
+          "name": "Standard Linear Damper",
+          "description": "Suitable for conventional applications like drawers and cabinet doors"
+        },
+        {
+          "name": "Heavy-Duty Linear Damper",
+          "description": "High load capacity, ideal for industrial equipment applications"
+        },
+        {
+          "name": "Custom Linear Damper",
+          "description": "Tailored to customer requirements for specialized applications"
+        }
+      ],
+      "technicalSpecifications": {
+        "title": "Technical Specifications",
+        "specs": [
+          {
+            "title": "Thrust Range",
+            "value": "300N - 2300N"
+          },
+          {
+            "title": "Stroke Standard",
+            "value": "7-10mm"
+          },
+          {
+            "title": "Monthly Capacity",
+            "value": "100K Units"
+          },
+          {
+            "title": "Accessory Combinations",
+            "value": "2000+ Types"
+          }
+        ]
+      }
+    },
+    "productionTesting": {
+      "title": "Production & Testing",
+      "description": "Advanced production lines and strict testing standards ensure product quality",
+      "features": [
+        {
+          "title": "Automated Production Line",
+          "description": "Advanced automated production equipment ensures product consistency and maximizes efficiency. 23 strict processes, each with precise time-cost calculation."
+        },
+        {
+          "title": "Quality Testing",
+          "description": "Lab testing reaches millions of cycles, with mass-produced products guaranteed for 200,000 cycles. Testing standard: 5-6 cycles/minute, completing 100,000 cycle verification in 7 days."
+        },
+        {
+          "title": "Customization Services",
+          "description": "Supports non-standard customization with 2000+ accessory combinations to meet diverse needs. For extreme conditions like ultra-low temperatures, -40℃ materials ensure product performance."
+        }
+      ]
+    },
+    "qualityAssurance": {
+      "title": "Quality Assurance",
+      "description": "Strict quality assurance system and transparent cost analysis ensure customer benefits",
+      "processes": [
+        {
+          "title": "Sample Testing Process",
+          "description": "Before formal orders, we require customer samples for material composition verification to ensure product compliance."
+        },
+        {
+          "title": "Transparent Cost Analysis",
+          "description": "We offer competitive prices for major clients with transparent material cost breakdowns. Using seamless golden tubes with brighter surface plating."
+        },
+        {
+          "title": "Three-Step Verification",
+          "description": "For any concerns about pricing or quality: sample comparison, on-site disassembly, and time-cost verification."
+        }
+      ],
+      "stats": [
+        {
+          "value": "26 Years",
+          "label": "Industry Experience"
+        },
+        {
+          "value": "200K Cycles",
+          "label": "Testing Guarantee"
+        },
+        {
+          "value": "23 Steps",
+          "label": "Strict Processes"
+        },
+        {
+          "value": "46 Partners",
+          "label": "Collaborators"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "Contact us to learn more about our products or discuss cooperation opportunities",
+      "contactInfo": [
+        {
+          "type": "Phone",
+          "details": [
+            "400-123-4567",
+            "0755-12345678"
+          ]
+        },
+        {
+          "type": "Email",
+          "details": [
+            "info@lineardamper.com",
+            "sales@lineardamper.com"
+          ]
+        },
+        {
+          "type": "Address",
+          "details": [
+            "Nanshan District, Shenzhen",
+            "Science Park, Guangdong, China"
+          ]
+        }
+      ],
+      "buttonText": "Contact Now"
+    },
+    "footer": {
+      "companyName": "DK Machinery Linear Dampers",
+      "companyTagline": "Professional Linear Damper Manufacturer",
+      "copyright": "26 Years Manufacturing Experience | Quality Assurance | Integrity Service"
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "",
+      "description": "",
+      "keywords": ""
+    },
+    "hero": {
+      "title": "Contact Us",
+      "description": "Have questions or need assistance? Reach out to our team.",
+      "contactInfo": {
+        "phone": "+1 (123) 456-7890",
+        "email": "info@lineardamper.com",
+        "address": "Business Street, Ningbo, Zhejiang, China"
+      }
+    },
+    "contactSection": {
+      "contactUsTitle": "Contact Us",
+      "getInTouchTitle": "Get in Touch",
+      "addressTitle": "Address",
+      "addressDesc": "Business Street, Ningbo, Zhejiang, China",
+      "emailTitle": "Email",
+      "emailDesc": "info@lineardamper.com",
+      "phoneTitle": "Phone",
+      "phoneDesc": "+86 233 421 663",
+      "workingHoursTitle": "Working Hours",
+      "workingHoursDescWeekday": "Monday - Friday: 9:00 AM - 6:00 PM",
+      "workingHoursDescSaturday": "Saturday: 9:00 AM - 1:00 PM",
+      "sendMessageTitle": "Send Us a Message"
+    }
+  },
+  "products": {
+    "meta": {
+      "title": "Linear Dampers | High-Quality Hydraulic Motion Control Solutions",
+      "description": "Discover our range of precision linear dampers for industrial and consumer applications. Control motion, reduce vibration, and ensure smooth operations with our hydraulic damping solutions.",
+      "keywords": "linear damper, hydraulic damper, motion control, vibration reduction, industrial dampers, precision dampers, damping solutions",
+      "canonical": "https://www.lineardamper.com/products"
+    },
+    "schema": {
+      "listName": "DK Machinery Linear Damper Product List",
+      "description": "Comprehensive list of linear dampers for industrial and consumer applications",
+      "baseUrl": "https://lineardamper.com"
+    },
+    "HeroSecion": {
+      "title": "Professional Linear Dampers & Piston Dampers",
+      "description": "Advanced hydraulic damping solutions for industrial motion control. From precision miniature dampers to heavy-duty industrial applications, we provide comprehensive damping technology for smooth, controlled movement."
+    },
+    "whatIsLinearDamper": {
+      "section": {
+        "title": "What is a Linear Damper?",
+        "description1": "Linear dampers are crucial components for motion control, functioning to buffer and decelerate movements and ensure smooth and controllable operations. They generate resistance by compressing hydraulic oil and making it flow through throttle orifices, and are widely used in various industries.",
+        "description2": "Linear dampers provide a smooth linear damping motion and are available with an integrated light switch on request. They dampen the closing or opening process in one direction, while providing a free run (no resistance) in the other.",
+        "description3": "Linear dampers, in simple terms, are a type of device used to control the speed of moving objects, allowing them to decelerate gradually and avoid sudden stops or impacts. You can see their applications in many places, such as Mini Linear Damper in trash can cabinet doors and oil/gas damper that allow car trunks close slowly and gently that don't slam shut."
+      },
+      "whyChoose": {
+        "title": "Why Choose Hydraulic Linear Dampers?",
+        "description": "Hydraulic linear dampers offer superior performance compared to other damping technologies:"
+      },
+      "table": {
+        "headers": {
+          "dampingType": "Damping Type",
+          "energyAbsorption": "Energy Absorption",
+          "reboundRisk": "Rebound Risk",
+          "performance": "Performance",
+          "applications": "Applications"
+        },
+        "hydraulic": {
+          "type": "Hydraulic (Our Technology)",
+          "energyAbsorption": "Converts kinetic energy to heat energy",
+          "reboundRisk": "Minimal - energy dissipated",
+          "performance": "Excellent - customizable characteristics",
+          "applications": "Industrial, precision applications"
+        },
+        "rubber": {
+          "type": "Rubber",
+          "energyAbsorption": "Elastic deformation stores energy",
+          "reboundRisk": "High - stored energy creates rebound",
+          "performance": "Basic - limited control",
+          "applications": "Simple, low-cost applications"
+        },
+        "spring": {
+          "type": "Spring",
+          "energyAbsorption": "Elastic deformation stores energy",
+          "reboundRisk": "High - stored energy creates rebound",
+          "performance": "Basic - limited control",
+          "applications": "Simple mechanical systems"
+        },
+        "pneumatic": {
+          "type": "Pneumatic",
+          "energyAbsorption": "Compressed air through orifice",
+          "reboundRisk": "Medium - depends on balance",
+          "performance": "Good - but less precise",
+          "applications": "Medium-duty applications"
+        }
+      }
+    },
+    "productSeries": {
+      "meta": {
+        "title": "",
+        "description": "",
+        "keywords": ""
+      },
+      "section": {
+        "title": "Our Linear Damper Product Series",
+        "imageAlt": "Product Series"
+      },
+      "table": {
+        "headers": {
+          "empty": "",
+          "totalLength": "Total Length/mm ①",
+          "diameter": "Diameter/mm②",
+          "cylinderLength": "Cylinder Length/mm③",
+          "usedStroke": "Used stroke/mm",
+          "withWithoutCap": "With/without cap",
+          "withWithoutSpring": "With/without self-return spring"
+        },
+        "exampleRow": {
+          "model": "Model for example",
+          "totalLengthValue": "68",
+          "diameterValue": "10",
+          "cylinderLengthValue": "42",
+          "usedStrokeValue": "14",
+          "withWithoutCapValue": "With",
+          "withWithoutSpringValue": "Without"
+        }
+      },
+      "products": {
+        "phi6mm": {
+          "title": "Φ6mm",
+          "description": "Mini linear hydraulic dampers with one-way damping, featuring automatic spring return and re-arm mechanism. Ideal for precision control in compact applications.",
+          "forceRange": "Force Range: 0-100N",
+          "material1": "Precision Steel",
+          "materialOr": "Or",
+          "material2": "Stainless Steel",
+          "applicationsTitle": "Applications:",
+          "applications": "Precision instruments, small cabinet doors, electronic device covers"
+        },
+        "phi8mm": {
+          "title": "Φ8mm",
+          "description": "Linear hydraulic dampers with one-way damping, automatic spring return and re-arm functionality. Perfect balance of size and performance.",
+          "forceRange": "Force Range: 0-350N",
+          "material1": "High-Grade Steel",
+          "materialOr": "Or",
+          "material2": "Stainless Steel",
+          "applicationsTitle": "Applications:",
+          "applications": "Medium-sized doors, automotive components, furniture hardware"
+        },
+        "phi10mm": {
+          "title": "Φ10mm",
+          "description": "Standard linear hydraulic dampers with one-way damping and spring return. Offers reliable performance for medium-duty applications.",
+          "forceRange": "Force Range: 0-870N",
+          "material1": "Industrial Steel",
+          "materialOr": "Or",
+          "material2": "Stainless Steel",
+          "applicationsTitle": "Applications:",
+          "applications": "Industrial machinery, heavy furniture, automotive applications"
+        },
+        "phi12mm": {
+          "title": "Φ12mm",
+          "description": "Heavy-duty linear hydraulic dampers with customizable stroke and damping direction. Features one-way damping with spring return, ideal for high-force applications.",
+          "forceRange": "Force Range: 0-2400N",
+          "material1": "Heavy-Duty Steel",
+          "materialOr": "Or",
+          "material2": "Stainless Steel",
+          "applicationsTitle": "Applications:",
+          "applications": "Heavy industrial equipment, large machinery, high-load systems"
+        }
+      }
+    },
+    "howLinearDamperWorks": {
+      "meta": {
+        "title": "",
+        "description": "",
+        "keywords": ""
+      },
+      "section": {
+        "title": "How Does a Linear Damper Work?",
+        "intro": "Linear dampers operate by converting kinetic energy into thermal energy through hydraulic resistance. When a force acts on the piston rod, it pushes the piston, compressing the hydraulic oil inside. This oil is then forced through specially designed orifices, creating resistance that slows down or cushions the movement.",
+        "energyAbsorption": {
+          "title": "Energy Absorption Principles",
+          "desc1": "When an object hits the piston rod, the motion is transferred to the oil in the pressure chamber through the piston rod. As a result, the oil inside the pressure chamber flows out of the orifices located in the inner tube. This causes compression in the pressure chamber. The product of this hydraulic pressure and the pressure-applied area of the piston is resistance, which acts on the colliding object.",
+          "desc2": "The hydraulic pressure generated inside the pressure chamber is proportional to the square velocity of the colliding object, as long as the orifice size, oil viscosity, etc. are constant. This is called velocity-squared resistance."
+        },
+        "keyComponents": {
+          "title": "Key Components",
+          "pistonAndRod": {
+            "title": "Piston and Piston Rod",
+            "desc": "When an external force acts on a linear damper, this force will first be transmitted to the piston rod. The piston rod is a crucial component connecting the external object and the inside of the damper. Following this, the piston rod will push the piston connected to it to move inside the damper's cylinder, and the piston is typically a specially designed part with orifices on it."
+          },
+          "hydraulicOil": {
+            "title": "Hydraulic Oil",
+            "desc1": "Linear dampers control motion by using fluid resistance. When force is applied, a piston moves within a cylinder filled with hydraulic oil. The oil is forced through small openings (orifices). This restricted flow creates a resistance force that opposes the motion, providing the damping effect.",
+            "desc2": "The viscosity of the hydraulic oil is important because it affects the level of resistance. Different types of linear dampers, classified by overflow type (single or multi-hole) and thrust direction (push-in, pull-out, two-way), all rely on this principle of hydraulic oil creating resistance."
+          },
+          "orifices": {
+            "title": "Orifices",
+            "desc1": "Orifices are crucial in linear dampers because they are the primary means of controlling the damping force. They are small, precisely sized openings in the piston of the damper. As the piston moves, it forces hydraulic oil to flow through these orifices.",
+            "desc2": "The size and design of the orifices directly regulate the rate at which the hydraulic oil can flow. Smaller orifices restrict the oil flow more, resulting in higher resistance and a greater damping force, thus slowing down the motion more significantly. Conversely, larger orifices allow for easier oil flow, leading to less resistance and a smaller damping force."
+          }
+        },
+        "images": {
+          "alt1": "Linear damper structure 1",
+          "caption1": "Component Display",
+          "alt2": "Linear damper structure 2",
+          "caption2": "Part Information"
+        }
+      }
+    },
+    "linearDamperTypes": {
+      "meta": {
+        "title": "",
+        "description": "",
+        "keywords": ""
+      },
+      "section": {
+        "mainTitle": "Dampering Curve are various for applications",
+        "intro": "Linear dampers are divided into categories based on how the orifice area changes during operation, providing different absorption characteristics for various applications.",
+        "constantOrificeTypes": {
+          "title": "Constant Orifice Types",
+          "singleOrificeType": {
+            "title": "Single-Orifice Type",
+            "description": "Features three structural variations: dashpot structure utilizing space between piston and cylinder tube, single tube structure with orifices in the piston, and double tube single orifice structure (adjustable). Throughout the entire stroke, the orifice area remains constant. Resistance spikes immediately after impact, then decreases as stroke advances and speed decreases."
+          }
+        },
+        "strokeDependentOrificeTypes": {
+          "title": "Stroke-Dependent Orifice Types",
+          "multipleOrificeType": {
+            "title": "Multiple-Orifice Type",
+            "description": "Double structure comprising outer tube and inner tube. The orifice area at impact moment is larger compared to single type, gradually decreasing as stroke advances, suppressing overall resistance. Theoretically, resistance during stroke can be maintained constant. Orifice design can be modified according to impact conditions."
+          },
+          "multipleVaryingOrificeType": {
+            "title": "Multiple Varying Orifice Type",
+            "description": "Same structure as multiple-orifice type but provides resistance characteristics suitable for intended use rather than constant damping force. Designed to absorb kinetic energy in first half of stroke and perform speed control during last half, achieving ideal energy absorption."
+          },
+          "grooveOrificeType": {
+            "title": "Groove-Orifice Type",
+            "description": "Single tube system where orifice groove on inside wall changes as stroke advances. Large orifice area at stroke beginning, becoming smaller as stroke advances. Orifice area changes continuously, resulting in less resistance fluctuation compared to multiple type, enabling optimal energy absorption."
+          }
+        },
+        "chart": {
+          "title": "Various Types Of Overflow",
+          "dataSets": {
+            "singleHoleOverflow": "single hole overflow",
+            "multiHoleOverflow": "Multi-hole overflowhole overflow",
+            "grooveOverflow": "groove overflow"
+          }
+        }
+      }
+    },
+    "technicalSpecifications": {
+      "sectionTitle": "Technical Specifications",
+      "commonSpecifications": {
+        "title": "Common Specifications",
+        "pistonRodRecoveryForce": "Piston Rod Recovery Force: With returning spring ≤5N (0.5 kgf), Without returning spring ≤1.5N (0.15 kgf)",
+        "mainUnitMaterial": "Main Unit Material: High-grade resin construction",
+        "operatingTemperatureRange": "Operating Temperature Range: 5~40°C (41~104°F)",
+        "mountingOptions": "Mounting Options: Various end configurations available",
+        "strokeOptions": "Stroke Options: Customizable stroke lengths",
+        "dampingDirection": "Damping Direction: One-way, two-way options available"
+      },
+      "performanceCharacteristics": {
+        "title": "Performance Characteristics",
+        "velocitySquaredResistance": "Velocity-Squared Resistance: Hydraulic pressure proportional to square of collision velocity",
+        "energyConversion": "Energy Conversion: Kinetic energy converted to heat energy and dissipated",
+        "customizableDamping": "Customizable Damping: Adjustable characteristics through orifice design",
+        "parallelOperation": "Parallel Operation: Multiple units can be used in parallel for increased capacity"
+      }
+    },
+    "installationUsageGuidelines": {
+      "sectionTitle": "Installation and Usage Guidelines",
+      "importantSafetyPrecautions": {
+        "title": "Important Safety Precautions",
+        "precautions": [
+          "Always use with an external stopper to prevent over-compression",
+          "Ensure sufficient mounting strength is secured for the damper",
+          "Do not use in vacuum environments or where oil contact may occur",
+          "Avoid applying eccentric loads to the damper",
+          "Handle with care to prevent damage from falling impacts"
+        ]
+      },
+      "installationBestPractices": {
+        "title": "Installation Best Practices",
+        "practices": [
+          "Mounting: Secure both ends with appropriate fasteners",
+          "Alignment: Ensure proper axial alignment to prevent binding",
+          "Stroke Limits: Never exceed the specified stroke length",
+          "Parallel Installation: Two or more dampers can be used in parallel for increased capacity",
+          "Environmental: Protect from extreme temperatures and contamination"
+        ]
+      },
+      "operationalConsiderations": {
+        "title": "Operational Considerations",
+        "considerations": [
+          "Do not press piston rod beyond used stroke (causes incomplete return)",
+          "Do not pull linear damper beyond used stroke (causes damage)",
+          "Large gaps between pressing and returning time may affect durability",
+          "Confirm performance in actual machine before use"
+        ]
+      },
+      "images": {
+        "firstImageAlt": "First Image",
+        "secondImageAlt": "Second Image"
+      }
+    },
+    "frequentlyAskedQuestions": {
+      "sectionTitle": "Frequently Asked Questions",
+      "questionsAndAnswers": [
+        {
+          "question": "What's the difference between a linear damper and a piston damper?",
+          "answer": "Linear dampers and piston dampers are essentially the same device. Both use a piston moving within a cylinder filled with hydraulic oil to create damping force. The terms are often used interchangeably, with \"linear damper\" emphasizing the linear motion control aspect, while \"piston damper\" highlights the internal piston mechanism."
+        },
+        {
+          "question": "How do I choose the right force range for my application?",
+          "answer": "The force range depends on the mass of the object being damped and the desired deceleration rate. For lightweight applications (under 5kg), our Φ6mm or Φ8mm dampers are suitable. For medium loads (5 - 20kg), consider Φ10mm dampers. For heavy - duty applications (over 20kg), our Φ12mm max dampers provide up to 2400N of force."
+        },
+        {
+          "question": "Can linear dampers be used in both directions?",
+          "answer": "Our standard dampers provide one - way damping with spring return. The damping action occurs during compression, while the spring provides return force. For applications requiring bidirectional damping, we offer specialized two - way damping configurations."
+        },
+        {
+          "question": "What maintenance do linear dampers require?",
+          "answer": "Linear dampers are generally maintenance - free devices. However, regular inspection for leaks, proper mounting, and ensuring the stroke limits are not exceeded will maximize service life. Avoid exposure to extreme temperatures and contamination."
+        },
+        {
+          "question": "How long do linear dampers last?",
+          "answer": "Service life depends on application conditions, but properly installed and operated linear dampers can provide millions of cycles. Factors affecting longevity include operating temperature, stroke frequency, load conditions, and environmental factors."
+        },
+        {
+          "question": "Can multiple dampers be used together?",
+          "answer": "Yes, two or more linear dampers can be used in parallel to increase the total damping force. This is particularly useful for heavy - duty applications or when redundancy is required. Ensure proper alignment and equal load distribution when using multiple units."
+        }
+      ]
+    },
+    "applicationsAndIndustries": {
+      "sectionTitle": "Applications and Industries",
+      "miniLinearDamper": {
+        "title": "Mini Linear Damper",
+        "items": [
+          "Insulin Pen Injection",
+          "Oven Hinge",
+          "Refrigerator door",
+          "Furniture, like drawer, gate"
+        ]
+      },
+      "damperWithBothEndFittings": {
+        "title": "Damper with both end fittings",
+        "items": [
+          "Door closer",
+          "Safety door"
+        ]
+      },
+      "benefitsInEachApplication": {
+        "title": "Benefits in Each Application",
+        "items": [
+          "<strong>Noise Reduction:</strong> Eliminates slamming and impact noise",
+          "<strong>Safety:</strong> Prevents finger pinching and component damage",
+          "<strong>Smooth Operation:</strong> Provides controlled, predictable motion",
+          "<strong>Extended Life:</strong> Reduces wear on hinges and mounting hardware",
+          "<strong>Premium Feel:</strong> Adds sophistication to product operation"
+        ]
+      }
+    },
+    "needExpertGuidance": {
+      "sectionTitle": "Need Expert Guidance on Linear Dampers?",
+      "description": "Our engineering team can help you select the perfect damping solution for your specific application. Get professional consultation and custom solutions.",
+      "contactEngineersBtn": "Contact Our Engineers",
+      "requestQuoteBtn": "Request Quote"
+    }
+  },
+  "blog":{
+    "title": "Blog Articles",
+    "description": "Sharing Industry Insights and Technical Updates"
   }
 }
