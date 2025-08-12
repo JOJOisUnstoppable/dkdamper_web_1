@@ -5,8 +5,8 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: '/sitemap.xml',
-        destination: '/api/sitemap',
+        source: '/:locale/sitemap.xml', // 多语言sitemap路径
+        destination: '/:locale/api/sitemap', // 匹配带locale的API路由
       },
     ];
   },
