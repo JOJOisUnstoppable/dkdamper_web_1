@@ -3,13 +3,14 @@ import Image from 'next/image'
 import { allPosts } from 'contentlayer/generated'
 
 // 获取最新的3篇已发布博客文章
-function getLatestPosts(currentPostId = null, limit = 3) {
+function getLatestPosts(currentPostId = null, limit = 3, locale = 'en') {
   return allPosts
     .filter(post => {
-      // 过滤已发布的文章，排除当前文章
+      // 过滤已发布的文章，排除当前文章，并根据语言过滤
       const isPublished = post.published !== false
       const isNotCurrent = currentPostId ? post.id !== currentPostId : true
-      return isPublished && isNotCurrent
+      const isCorrectLanguage = post.lang === locale
+      return isPublished && isNotCurrent && isCorrectLanguage
     })
     .sort((a, b) => new Date(b.date) - new Date(a.date)) // 按日期降序排列
     .slice(0, limit) // 取前3篇
@@ -18,9 +19,10 @@ function getLatestPosts(currentPostId = null, limit = 3) {
 export default function RelatedPosts({ 
   title = "Latest Articles", 
   currentPostId = null,
-  limit = 3 
+  limit = 3,
+  locale = 'en' // 添加 locale 参数
 }) {
-  const posts = getLatestPosts(currentPostId, limit)
+  const posts = getLatestPosts(currentPostId, limit, locale) // 传递 locale 参数
 
   if (posts.length === 0) {
     return null

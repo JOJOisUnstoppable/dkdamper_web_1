@@ -71,7 +71,7 @@ export async function generateMetadata({ params }) {
   const { locale } = resolvedParams;
   const dict = await getDictionary(locale);
   const home = dict.home;
-  
+
   return {
     title: home.meta.title,
     description: home.meta.description,
@@ -179,7 +179,7 @@ export default async function Home({ params }) {
     <div className="min-h-screen">
       {/* 添加Schema标签 */}
       <SchemaTag data={websiteSchema} />
-      
+
       {/* BannerSection 使用字典数据 */}
       <BannerSection
         title={home.hero.title}
@@ -228,8 +228,12 @@ export default async function Home({ params }) {
       />
 
       {/* Related Posts 使用字典数据 */}
-      <RelatedPosts title={home.relatedPosts.title} />
+      <RelatedPosts
+        title={home.relatedPosts.title}
+        locale={locale}
+      />
 
+  
       {/* Contact Section 使用字典数据 */}
       <ContactusSection
         contactUsTitle={home.contactUs.contactUsTitle}
