@@ -115,7 +115,7 @@
       "addressTitle": "Adres",
       "addressDesc": "Business Street, Ningbo, Zhejiang, Chiny",
       "emailTitle": "E-mail",
-      "emailDesc": "info@lineardamper.com",
+      "emailDesc": "lineardamper-info@dkmachineryinc.com",
       "phoneTitle": "Telefon",
       "phoneDesc": "+86 233 421 663",
       "workingHoursTitle": "Godziny pracy",
@@ -259,8 +259,8 @@
         {
           "type": "E-mail",
           "details": [
-            "info@lineardamper.com",
-            "sales@lineardamper.com"
+            "lineardamper-info@dkmachineryinc.com",
+            "lineardamper-sales@dkmachineryinc.com"
           ]
         },
         {
@@ -290,7 +290,7 @@
       "description": "Masz pytania lub potrzeb pomocy? Skontaktuj się z naszym zespołem.",
       "contactInfo": {
         "phone": "+86 760-2207",
-        "email": "info@lineardamper.com",
+        "email": "lineardamper-info@dkmachineryinc.com",
         "address": "Business Street, Ningbo, Zhejiang, Chiny"
       }
     },
@@ -300,7 +300,7 @@
       "addressTitle": "Adres",
       "addressDesc": "Business Street, Ningbo, Zhejiang, Chiny",
       "emailTitle": "E-mail",
-      "emailDesc": "info@lineardamper.com",
+      "emailDesc": "lineardamper-info@dkmachineryinc.com",
       "phoneTitle": "Telefon",
       "phoneDesc": "+86 233 421 663",
       "workingHoursTitle": "Godziny pracy",

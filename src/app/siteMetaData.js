@@ -9,7 +9,7 @@ const siteMetadata = {
     siteUrl: 'https://lineardamper.com', // your website URL
     siteLogo: '/logo.png',
     socialBanner: '/social-banner.png', // add social banner in the public folder
-    email: 'info@lineardamper.com', 
+    email: 'lineardamper-info@dkmachineryinc.com', 
     github: 'https://github.com/codebucks27',
     twitter: 'https://twitter.com/code_bucks',
     facebook: 'https://facebook.com',
