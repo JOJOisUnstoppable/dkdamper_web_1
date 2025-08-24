@@ -6,8 +6,11 @@
       "keywords": "amortyzator liniowy, amortyzator hydrauliczny, amortyzator sprężynowy gazowy, mini amortyzator liniowy, amortyzator własny projekt, amortyzator przemysłowy, sterowanie ruchem"
     },
     "hero": {
-      "title": "Amortyzator liniowy",
-      "description": "Posiadając ponad dekadę doświadczenia w branży amortyzatorów liniowych, od dawna jesteśmy zaufanym partnerem dla producentów krajowych i handlarzy międzynarodowych w Chinach, specjalizując się w dostarczaniu szerokiej gamy dostosowanych amortyzatorów liniowych. Ponieważ przez lata gromadziliśmy obszerne wiedzy technicznej, jesteśmy teraz gotowi na wejście na scenę globalną. Naszym celem jest dostarczanie naszej wartości bezpośrednio klientom na całym świecie, eliminując niepotrzebne pośrednictwa. Niech nasza profesjonalność przemówi sama za siebie. To rozmowa między inżynierami.",
+      "title": "Niestandardowe Rozwiązania To Nasza Specjalność",
+      "description1": "Ponad 10 Lat Doświadczenia w Hamownikach Liniowych | Zaufany Globalny Partner",
+      "description2": "Nie tylko dostarczamy części – projektujemy elementy ruchu liniowego starannie dostosowane do Twoich unikalnych wymagań.",
+      "description3": "Dzięki głębokim wiedzy technicznej jesteśmy gotowi dostarczać niestandardowe rozwiązania na całym świecie.",
+      "description4": "Inżynier do Inżyniera: Stworzymy Idealne Dopasowanie Dla Ciebie.",
       "button1": "Zamów propozycję cenową",
       "button2": "Pobierz katalog"
     },
@@ -328,9 +331,8 @@
     "whatIsLinearDamper": {
       "section": {
         "title": "Co to jest amortyzator liniowy?",
-        "description1": "Amortyzatory liniowe to kluczowe elementy sterowania ruchem, whose function is to buforować i spowalniać ruchy oraz zapewniać płynne i kontrolowane funkcjonowanie. Generują opór poprzez kompresję oleju hydraulicznego i迫使其 przepływać przez otwory przeregulowane, a zastosowania znajdują w różnych branżach.",
-        "description2": "Amortyzatory liniowe zapewniają płynny liniowy ruch tłumienia i mogą być wyposażone w zintegrowany przełącznik świetlny na żądanie. Tłumią proces zamykania lub otwierania w jednym kierunku, podczas gdy w drugim zapewniają swobodny ruch (bez oporu).",
-        "description3": "Prościej mówiąc, amortyzatory liniowe to urządzenia służące do kontrolowania prędkości ruchomych obiektów, umożliwiając im stopniowe spowolnienie i uniknięcie nagłych zatrzymań lub uderzeń. Ich zastosowania można zobaczyć w wielu miejscach, np. Mini Amortyzator Liniowy w drzwiach szafek na śmieci oraz amortyzatory olejowe/gazowe, które umożliwiają powolne i delikatne zamknięcie bagażników samochodowych bez uderzenia."
+        "description1": "Hamowniki liniowe, znane również jako miękkie absorbery, to urządzenia służące do sterowania prędkością ruchomych obiektów, umożliwiające im powolne spowolnienie oraz uniknięcie nagłych zatrzymań lub uderzeń.",
+        "description2": "Generują opór poprzez tłoczenie oleju hydraulicznego lub struktury olejowo-gazowej oraz umożliwiają mu przepływ przez jedno lub wiele otworów przepływowych. Są szeroko stosowane w różnych branżach, w tym w branży motoryzacyjnej i meblarskiej."
       },
       "whyChoose": {
         "title": "Dlaczego wybrać hydrauliczne amortyzatory liniowe?",

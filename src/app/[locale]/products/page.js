@@ -51,7 +51,8 @@ export default async function Products({ params }) {
       {/* 传递 HeroSection 数据 */}
       <HeroSection 
         title={products.HeroSecion.title}
-        description={products.HeroSecion.description}
+        description1={products.HeroSecion.description1}
+        description2={products.HeroSecion.description2}
       />
       
       {/* 传递 WhatIsLinearDamper 数据 */}

@@ -20,6 +20,20 @@ function getLocale(request: NextRequest): string {
 
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname
+  
+  // 特殊处理 sitemap.xml 请求
+  if (pathname === '/sitemap.xml') {
+    const locale = getLocale(request)
+    return NextResponse.rewrite(
+      new URL(`/${locale}/api/sitemap`, request.url)
+    )
+  }
+  
+  // 排除已经包含 sitemap.xml 的路径
+  if (pathname.includes('sitemap.xml')) {
+    return NextResponse.next()
+  }
+  
   const pathnameIsMissingLocale = locales.every(
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
   )
@@ -34,6 +48,6 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    '/((?!api|_next/static|_next/image|favicon.ico|.*\\.).*)',
+    '/((?!api|_next/static|_next/image|favicon.ico).*)',
   ],
 }

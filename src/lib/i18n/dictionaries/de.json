@@ -6,8 +6,11 @@
       "keywords": "Linear-Dämpfer, hydraulischer Dämpfer, Gasfeder-Dämpfer, Mini-Linear-Dämpfer, maßgefertigter Dämpfer, industrieller Dämpfer, Bewegungssteuerung"
     },
     "hero": {
-      "title": "Linear-Dämpfer",
-      "description": "Mit über einem Jahrzehnt Erfahrung in der Linear-Dämpfer-Industrie sind wir seit Langem ein vertrauenswürdiger Partner für heimische Hersteller und internationale Händler in China, spezialisiert auf die Lieferung einer breiten Palette kundenspezifischer Linear-Dämpfer. Da wir über die Jahre hinweg umfangreiche technische Expertise gesammelt haben, sind wir nun bereit, die globale Bühne zu betreten. Unser Ziel ist es, unseren Wert direkt an Kunden weltweit zu liefern, indem wir unnötige Zwischenhändler ausschalten. Lassen Sie unsere Professionalität für sich sprechen.",
+      "title": "Individuelle Lösungen sind unsere Spezialität",
+      "description1": "Über 10 Jahre Erfahrung im Bereich linearer Dämpfer | Vertrauenswürdiger globaler Partner",
+      "description2": "Wir liefern nicht nur Teile – wir entwickeln Linearbewegungsbauteile, die exakt auf Ihre individuellen Anforderungen abgestimmt sind.",
+      "description3": "Mit umfassender technischer Expertise stehen wir bereit, individuelle Lösungen weltweit zu liefern.",
+      "description4": "Ingenieur-zu-Ingenieur: Lassen Sie uns die perfekte Passform für Sie erstellen.",
       "button1": "Angebot anfordern",
       "button2": "Katalog herunterladen"
     },
@@ -328,9 +331,8 @@
     "whatIsLinearDamper": {
       "section": {
         "title": "Was ist ein Linear-Dämpfer?",
-        "description1": "Linear-Dämpfer sind entscheidende Komponenten für die Bewegungssteuerung. Sie dienen dazu, Bewegungen abzufedern und abzubremsen sowie reibungslose und kontrollierbare Betriebsabläufe zu gewährleisten. Sie erzeugen Widerstand, indem sie Hydrauliköl komprimieren und es durch Drosselbohrungen strömen lassen, und werden in verschiedenen Branchen weit verbreitet eingesetzt.",
-        "description2": "Linear-Dämpfer bieten eine reibungslose lineare Dämpfungsbewegung und können auf Anfrage mit einem integrierten Lichtschalter ausgestattet werden. Sie dämpfen den Schließ- oder Öffnungsprozess in eine Richtung, während sie in der anderen Richtung einen freien Lauf (ohne Widerstand) ermöglichen.",
-        "description3": "Linear-Dämpfer sind im Grunde genommen eine Art Vorrichtung, die verwendet wird, um die Geschwindigkeit bewegter Objekte zu steuern, sodass sie allmählich verlangsamen und plötzliche Haltungen oder Einwirkungen vermeiden. Man kann ihre Anwendungen an vielen Orten sehen, wie z. B. Mini-Linear-Dämpfer in Mülltonnen-Schranktüren und Öl-/Gasdämpfer, die es ermöglichen, dass Autokofferraumdeckel langsam und sanft schließen und nicht zusammenschlagen."
+        "description1": "Lineare Dämpfer, auch als Weichdämpfer bekannt, sind Geräte zur Steuerung der Geschwindigkeit bewegter Objekte. Sie ermöglichen diesen, langsam abzubremsen und verhindern plötzliche Stopps oder Stöße.",
+        "description2": "Sie erzeugen Widerstand, indem sie Hydrauliköl oder eine Öl-Gas-Struktur komprimieren und dieses/diese durch eine oder mehrere Drosselbohrungen strömen lassen. Sie werden in verschiedenen Branchen weit verbreitet eingesetzt, darunter der Automobil- und Möbelbranche."
       },
       "whyChoose": {
         "title": "Warum hydraulische Linear-Dämpfer wählen?",

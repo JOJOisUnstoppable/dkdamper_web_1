@@ -13,9 +13,6 @@ const WhatIsLinearDamper = ({ section, whyChoose, table }) => {
       <p className="mb-8">
         {section.description2}
       </p>
-      <p className="mb-8">
-        {section.description3}
-      </p>
 
       {/* Why part */}
       <h3 className="text-xl font-bold text-[#34495e] mb-4">

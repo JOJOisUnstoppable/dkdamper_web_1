@@ -126,7 +126,7 @@ const ContactusSection = ({
                         value={formData.name}
                         onChange={handleChange}
                         className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors"
-                        placeholder="John Doe"
+                        placeholder="DK Team"
                       />
                     </div>
                     <div>

@@ -4,21 +4,33 @@ import Link from 'next/link'
 // home banner hero
 const BannerSection = ({
   title,
-  description,
+  description1,
+  description2,
+  description3,
+  description4,
   imageSrc,
   imageAlt,
   button1,
   button2
 }) => {
   return (
-    <section className="w-full bg-gradient-to-r from-blue-500 to-indigo-700 text-white pt-40 pb-20">
+    <section className="w-full bg-[#1A365D] text-white pt-40 pb-20">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 mb-10 md:mb-0">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+          <p className="text-xl mb-4">
+            {description1}
+          </p>
+          <h1 className="text-4xl md:text-4xl font-bold mb-6">
             {title}
           </h1>
           <p className="text-xl mb-8">
-            {description}
+            {description2}
+          </p>
+          <p className="text-xl mb-8">
+            {description3}
+          </p>
+          <p className="text-xl mb-8">
+            {description4}
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link

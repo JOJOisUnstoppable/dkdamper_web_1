@@ -4,7 +4,7 @@ import LineChartWithShadows from '../common/LineChartWithShadows';
 const LinearDamperTypes = ({ section }) => {
   const demoData = {
     title: section.chart.title,
-    xLabels: [0,1,2,3,4,5,6,7,8,9,10],
+    xLabels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     dataSets: [
       {
         label: section.chart.dataSets.singleHoleOverflow,
@@ -34,36 +34,132 @@ const LinearDamperTypes = ({ section }) => {
       <p>
         {section.intro}
       </p>
-      <h3 className="text-xl font-bold text-[#34495e] mb-4 mt-8">
-        {section.constantOrificeTypes.title}
+      <h3 className="text-3xl font-bold text-[#34495e] mb-4 mt-8">
+        {section.DamperTypesDiff.MVOT.title}
       </h3>
-      <h4 className="text-lg font-bold text-[#2c3e50] mb-2">
-        {section.constantOrificeTypes.singleOrificeType.title}
+      <h4 className="text-xl font-bold text-[#34495e] mb-4 mt-8">
+        {section.DamperTypesDiff.MVOT.StructuralFeatures.title}
       </h4>
-      <p>
-        {section.constantOrificeTypes.singleOrificeType.description}
-      </p>
-      <h3 className="text-xl font-bold text-[#34495e] mb-4 mt-8">
-        {section.strokeDependentOrificeTypes.title}
+      <ul className="list-disc pl-6">
+        {section.DamperTypesDiff.MVOT.StructuralFeatures.list.map((feature, index) => (
+          <li key={index}>{feature}</li>
+        ))}
+      </ul>
+      <h4 className="text-xl font-bold text-[#34495e] mb-4 mt-8">
+        {section.DamperTypesDiff.MVOT.KeyHighlights.title}
+      </h4>
+      <ul className="list-disc pl-6">
+        {section.DamperTypesDiff.MVOT.KeyHighlights.list.map((feature, index) => {
+          const isSubItem = index === 2 || index === 3;
+          return (
+            <li key={index} className={isSubItem ? "ml-6 list-[circle]" : ""}>
+              {feature}
+            </li>
+          );
+        })}
+      </ul>
+      <h4 className="text-xl font-bold text-[#34495e] mb-4 mt-8">
+        {section.DamperTypesDiff.MVOT.DampingPerformanceCharacteristics.title}
+      </h4>
+      <ul className="list-disc pl-6">
+        {section.DamperTypesDiff.MVOT.DampingPerformanceCharacteristics.list.map((feature, index) => (
+          <li key={index}>{feature}</li>
+        ))}
+      </ul>
+
+      <h3 className="text-3xl font-bold text-[#34495e] mb-4 mt-8">
+        {section.DamperTypesDiff.SOT.title}
       </h3>
-      <h4 className="text-lg font-bold text-[#2c3e50] mb-2">
-        {section.strokeDependentOrificeTypes.multipleOrificeType.title}
+      <h4 className="text-xl font-bold text-[#34495e] mb-4 mt-8">
+        {section.DamperTypesDiff.SOT.StructuralFeatures.title}
+      </h4>
+      <ul className="list-disc pl-6">
+        {section.DamperTypesDiff.SOT.StructuralFeatures.list.map((feature, index) => {
+          const isSubItem = index === 1 || index === 2 || index === 3;
+          return (
+            <li key={index} className={isSubItem ? "ml-6 list-[circle]" : ""}>
+              {feature}
+            </li>
+          );
+        })}
+      </ul>
+
+
+      <h4 className="text-xl font-bold text-[#34495e] mb-4 mt-8">
+        {section.DamperTypesDiff.SOT.DPC.title}
+      </h4>
+      <ul className="list-disc pl-6">
+        {section.DamperTypesDiff.SOT.DPC.list.map((feature, index) => {
+          const isSubItem = index === 1 || index === 2;
+          return (
+            <li key={index} className={isSubItem ? "ml-6 list-[circle]" : ""}>
+              {feature}
+            </li>
+          );
+        })}
+      </ul>
+
+      <h3 className="text-3xl font-bold text-[#34495e] mb-4 mt-8">
+        {section.DamperTypesDiff.MOt.title}
+      </h3>
+      <h4 className="text-xl font-bold text-[#34495e] mb-4 mt-8">
+        {section.DamperTypesDiff.MOt.StructuralFeatures.title}
+      </h4>
+      <ul className="list-disc pl-6">
+        {section.DamperTypesDiff.MOt.StructuralFeatures.list.map((feature, index) => (
+          <li key={index}>{feature}</li>
+        ))}
+      </ul>
+      <h4 className="text-xl font-bold text-[#34495e] mb-4 mt-8">
+        {section.DamperTypesDiff.MOt.KeyAspects.title}
+      </h4>
+      <ul className="list-disc pl-6">
+        {section.DamperTypesDiff.MOt.KeyAspects.list.map((feature, index) => (
+          <li key={index}>{feature}</li>
+        ))}
+      </ul>
+      <h4 className="text-xl font-bold text-[#34495e] mb-4 mt-8">
+        {section.DamperTypesDiff.MOt.DPC.title}
+      </h4>
+      <ul className="list-disc pl-6">
+        {section.DamperTypesDiff.MOt.DPC.list.map((feature, index) => (
+          <li key={index}>{feature}</li>
+        ))}
+      </ul>
+
+
+      <h3 className="text-3xl font-bold text-[#34495e] mb-4 mt-8">
+        {section.DamperTypesDiff.GOT.title}
+      </h3>
+      <h4 className="text-xl font-bold text-[#34495e] mb-4 mt-8">
+        {section.DamperTypesDiff.GOT.StructuralFeatures.title}
       </h4>
       <p>
-        {section.strokeDependentOrificeTypes.multipleOrificeType.description}
+        {section.DamperTypesDiff.GOT.StructuralFeatures.desc}
       </p>
-      <h4 className="text-lg font-bold text-[#2c3e50] mb-2">
-        {section.strokeDependentOrificeTypes.multipleVaryingOrificeType.title}
+      <h4 className="text-xl font-bold text-[#34495e] mb-4 mt-8">
+        {section.DamperTypesDiff.GOT.KeyAspects.title}
       </h4>
-      <p>
-        {section.strokeDependentOrificeTypes.multipleVaryingOrificeType.description}
-      </p>
-      <h4 className="text-lg font-bold text-[#2c3e50] mb-2">
-        {section.strokeDependentOrificeTypes.grooveOrificeType.title}
+      <ul className="list-disc pl-6">
+        {section.DamperTypesDiff.GOT.KeyAspects.list.map((feature, index) => (
+          <li key={index}>{feature}</li>
+        ))}
+      </ul>
+      <h4 className="text-xl font-bold text-[#34495e] mb-4 mt-8">
+        {section.DamperTypesDiff.GOT.DPC.title}
       </h4>
-      <p>
-        {section.strokeDependentOrificeTypes.grooveOrificeType.description}
-      </p>
+      <ul className="list-disc pl-6">
+        {section.DamperTypesDiff.GOT.DPC.list.map((feature, index) => {
+          const isSubItem = index === 1 || index === 2 || index === 3;
+          return (
+            <li key={index} className={isSubItem ? "ml-6 list-[circle]" : ""}>
+              {feature}
+            </li>
+          );
+        })}
+      </ul>
+
+
       <div className="container mx-auto px-4 py-8 max-w-6xl">
         <LineChartWithShadows
           title={demoData.title}
@@ -74,6 +170,8 @@ const LinearDamperTypes = ({ section }) => {
         />
       </div>
     </section>
+
+
   );
 };
 

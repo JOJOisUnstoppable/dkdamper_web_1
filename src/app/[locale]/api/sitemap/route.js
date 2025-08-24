@@ -4,6 +4,9 @@ import { allPosts } from 'contentlayer/generated';
 export async function GET(request) {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://lineardamper.com';
   
+  // 支持的语言
+  const locales = ['en', 'pl', 'es', 'de'];
+  
   try {
     // 获取所有产品
     const products = await getAllProducts();
@@ -11,8 +14,8 @@ export async function GET(request) {
     // 获取所有已发布的博客文章
     const publishedPosts = allPosts.filter(post => post.published !== false);
     
-    // 定义所有URL
-    const urls = [
+    // 定义基础URL（不包含语言前缀）
+    const baseUrls = [
       // 主要页面
       { url: '/', lastmod: new Date().toISOString(), priority: 1.0, changefreq: 'daily' },
       { url: '/about', lastmod: new Date().toISOString(), priority: 0.8, changefreq: 'weekly' },
@@ -46,10 +49,26 @@ export async function GET(request) {
       }))
     ];
 
+    // 为每个基础URL生成所有语言版本
+    const urls = [];
+    baseUrls.forEach(baseUrlObj => {
+      locales.forEach(locale => {
+        urls.push({
+          ...baseUrlObj,
+          url: `/${locale}${baseUrlObj.url}`
+        });
+      });
+    });
+
     // 生成XML sitemap
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-${urls.map(url => `<url><loc>${baseUrl}${url.url}</loc><lastmod>${url.lastmod}</lastmod><changefreq>${url.changefreq}</changefreq><priority>${url.priority}</priority></url>`).join('\n')}
+${urls.map(url => `<url>
+<loc>${baseUrl}${url.url}</loc>
+<lastmod>${url.lastmod}</lastmod>
+<changefreq>${url.changefreq}</changefreq>
+<priority>${url.priority}</priority>
+</url>`).join('\n')}
 </urlset>`;
 
     return new Response(sitemap, {

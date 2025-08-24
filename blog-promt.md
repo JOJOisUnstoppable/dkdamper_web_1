@@ -90,7 +90,7 @@ trash-can页面模板开发提示词:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "name": "液压线性阻尼器技术解析",
-    "author": { "@type": "Person", "name": "John Doe" }
+    "author": { "@type": "Person", "name": "DK Team" }
     }
 
 5. 性能优化指令

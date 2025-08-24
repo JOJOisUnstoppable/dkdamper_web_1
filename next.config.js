@@ -2,14 +2,7 @@ const { withContentlayer } = require('next-contentlayer')
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  async rewrites() {
-    return [
-      {
-        source: '/:locale/sitemap.xml', // 多语言sitemap路径
-        destination: '/:locale/api/sitemap', // 匹配带locale的API路由
-      },
-    ];
-  },
+  // 移除 sitemap.xml 的 rewrite 规则，由 middleware 直接处理
   images: {
     domains: ['localhost'],
     unoptimized: true,

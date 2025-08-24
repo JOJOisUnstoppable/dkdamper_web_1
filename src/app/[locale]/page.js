@@ -183,7 +183,10 @@ export default async function Home({ params }) {
       {/* BannerSection 使用字典数据 */}
       <BannerSection
         title={home.hero.title}
-        description={home.hero.description}
+        description1={home.hero.description1}
+        description2={home.hero.description2}
+        description3={home.hero.description3}
+        description4={home.hero.description4}
         imageSrc="/images/home/Mini_Linear_Damper_home_products.jpg"
         imageAlt="Linear Damper Product"
         button1={home.hero.button1}

@@ -6,8 +6,11 @@
       "keywords": "linear damper, hydraulic damper, gas spring damper, mini linear damper, custom damper, industrial damper, motion control"
     },
     "hero": {
-      "title": "Linear Damper",
-      "description": "With over a decade of experience in the linear damper industry, we have long been a trusted partner for domestic manufacturers and international traders in China, specializing in supplying a wide range of customized linear dampers. As we have accumulated extensive technical expertise over the years, we are now ready to step onto the global stage. We aim to deliver our value directly to customers worldwide, cutting out unnecessary middle links. Let our professionalism speak for itself. This is a conversation between engineers.",
+      "title": "Custom Solutions Are Our Specialty",
+      "description1": "10+ Years in Linear Dampers | Trusted Global Partner",
+      "description2": "We don't just supply parts-we engineer linear motion components tailored precisely to your uniquere quirements.",
+      "description3": "With deep technical expertise, we're ready to deliver custom solutions worldwide.",
+      "description4": "Engineer-to-engineer: Let's build your perfect fit.",
       "button1": "Get a  Quote",
       "button2": "Download Catalog"
     },
@@ -323,14 +326,14 @@
     },
     "HeroSecion": {
       "title": "Professional Linear Dampers & Piston Dampers",
-      "description": "Advanced hydraulic damping solutions for industrial motion control. From precision miniature dampers to heavy-duty industrial applications, we provide comprehensive damping technology for smooth, controlled movement."
+      "description1": "Advanced hydraulic damping solutions for industrial motion control.",
+      "description2": "From precision miniature dampers to heavy-duty industrial applications, we provide comprehensive damping technology for smooth, controlled movement."
     },
     "whatIsLinearDamper": {
       "section": {
         "title": "What is a Linear Damper?",
-        "description1": "Linear dampers are crucial components for motion control, functioning to buffer and decelerate movements and ensure smooth and controllable operations. They generate resistance by compressing hydraulic oil and making it flow through throttle orifices, and are widely used in various industries.",
-        "description2": "Linear dampers provide a smooth linear damping motion and are available with an integrated light switch on request. They dampen the closing or opening process in one direction, while providing a free run (no resistance) in the other.",
-        "description3": "Linear dampers, in simple terms, are a type of device used to control the speed of moving objects, allowing them to decelerate gradually and avoid sudden stops or impacts. You can see their applications in many places, such as Mini Linear Damper in trash can cabinet doors and oil/gas damper that allow car trunks close slowly and gently that don't slam shut."
+        "description1": "Linear dampers, also known as soft absorbers, are devices used to control the speed of moving objects, allowing them to decelerate slowly and avoid sudden stops or shocks.",
+        "description2": "They generate resistance by compressing hydraulic oil or an oil-gas structure and allowing it to flow through one or multiple orifice. They are widely used in various industries, including automotive and furniture."
       },
       "whyChoose": {
         "title": "Why Choose Hydraulic Linear Dampers?",
@@ -487,34 +490,108 @@
       }
     },
     "linearDamperTypes": {
-      "meta": {
-        "title": "",
-        "description": "",
-        "keywords": ""
-      },
       "section": {
         "mainTitle": "Dampering Curve are various for applications",
         "intro": "Linear dampers are divided into categories based on how the orifice area changes during operation, providing different absorption characteristics for various applications.",
-        "constantOrificeTypes": {
-          "title": "Constant Orifice Types",
-          "singleOrificeType": {
-            "title": "Single-Orifice Type",
-            "description": "Features three structural variations: dashpot structure utilizing space between piston and cylinder tube, single tube structure with orifices in the piston, and double tube single orifice structure (adjustable). Throughout the entire stroke, the orifice area remains constant. Resistance spikes immediately after impact, then decreases as stroke advances and speed decreases."
-          }
-        },
-        "strokeDependentOrificeTypes": {
-          "title": "Stroke-Dependent Orifice Types",
-          "multipleOrificeType": {
-            "title": "Multiple-Orifice Type",
-            "description": "Double structure comprising outer tube and inner tube. The orifice area at impact moment is larger compared to single type, gradually decreasing as stroke advances, suppressing overall resistance. Theoretically, resistance during stroke can be maintained constant. Orifice design can be modified according to impact conditions."
-          },
-          "multipleVaryingOrificeType": {
+        "DamperTypesDiff": {
+          "MVOT": {
             "title": "Multiple Varying Orifice Type",
-            "description": "Same structure as multiple-orifice type but provides resistance characteristics suitable for intended use rather than constant damping force. Designed to absorb kinetic energy in first half of stroke and perform speed control during last half, achieving ideal energy absorption."
+            "StructuralFeatures": {
+              "title": "Structural Features",
+              "list": [
+                "Dual-tube design (outer + inner tube), same as Multiple Orifice Type",
+                "Damping force formula: Inner tube pressure (during piston movement) x piston area (consistent with Single-Orifice and Multiple Orifice types)."
+              ]
+            },
+            "KeyHighlights": {
+              "title": "Key Highlights",
+              "list": [
+                "Unlike fixed-force Multiple Orifice Type, this series offers custom damping characteristics for specific uses.",
+                "2-stage function:",
+                "1st half of stroke: Absorbs kinetic energy.",
+                "2nd half of stroke: Controls speed.",
+                "Matches air-cylinder thrust → optimal energy absorption in air-cylinder systems."
+              ]
+            },
+            "DampingPerformanceCharacteristics": {
+              "title": "Damping Performance Characteristics",
+              "list": [
+                "1st half: Prioritizes energy absorption to reduce initial impact.",
+                "2nd half: Switches to speed control → steady motion (no sudden stops).",
+                "Avoids under-damping (weak impact control) and over-damping (excessively slow movement) for air-cylinder compatibility."
+              ]
+            }
           },
-          "grooveOrificeType": {
-            "title": "Groove-Orifice Type",
-            "description": "Single tube system where orifice groove on inside wall changes as stroke advances. Large orifice area at stroke beginning, becoming smaller as stroke advances. Orifice area changes continuously, resulting in less resistance fluctuation compared to multiple type, enabling optimal energy absorption."
+          "SOT": {
+            "title": "Single Orifice Type",
+            "StructuralFeatures": {
+              "title": "Structural Features",
+              "list": [
+                "Three structural variations:",
+                "Dashpot: Uses piston-cylinder tube clearance for damping.",
+                "Single-orifice: Integrates precision orifices in the piston to regulate damping.",
+                "Double-tube single-orifice: Adjustable design for diverse applications.",
+                "Core advantage: Orifice area stays constant through the full stroke → stable damping output."
+              ]
+            },
+            "DPC": {
+              "title": "Damping Performance Characteristics",
+              "list": [
+                "Damping force scales with impact intensity and speed:",
+                "Greater impact/speed → stronger damping force.",
+                "As stroke progresses and speed decreases, force reduces proportionally → balanced motion control."
+              ]
+            }
+          },
+          "MOt": {
+            "title": "Multiple Orifice Type",
+            "StructuralFeatures": {
+              "title": "Structural Features",
+              "list": [
+                "Dual-tube construction (outer + inner tube).",
+                "Damping force formula: Inner tube pressure (during piston stroke) x piston area (same as Single-Orifice Type)."
+              ]
+            },
+            "KeyAspects": {
+              "title": "Key Aspects",
+              "list": [
+                "Initial orifice area is larger than Single-Orifice Type; area shrinks gradually with stroke to avoid excessive damping force.",
+                "Theoretically maintains constant damping force across the full stroke.",
+                "Custom orifice designs allow adjusting damping characteristics for different impact conditions."
+              ]
+            },
+            "DPC": {
+              "title": "Damping Performance Characteristics",
+              "list": [
+                "Damping force scales with impact intensity and speed:",
+                "Higher impact/speed → stronger damping force.",
+                "As stroke progresses and speed drops, force diminishes → stable motion control."
+              ]
+            }
+          },
+          "GOT": {
+            "title": "GrooveOrificeType",
+            "StructuralFeatures": {
+              "title": "Structural Features",
+              "desc": "Single-tube design with an “orifice groove” (inner-wall recess/channel). Groove shape/size changes with piston stroke (back-and-forth movement)."
+            },
+            "KeyAspects": {
+              "title": "Key Aspects",
+              "list": [
+                "Similar to Multiple Orifice Type: Large initial orifice area; area shrinks gradually to prevent excessive damping force.",
+                "Different from Multiple Orifice Type: Orifice area adjusts smoothly (no “steps”) → no sudden force jumps during piston movement.",
+                "Smooth adjustment enables optimal energy absorption for specific uses (e.g., machine/movement needs)."
+              ]
+            },
+            "DPC": {
+              "title": "Damping Performance Characteristics",
+              "list": [
+                "Damping force (resistance) depends on orifice size and piston speed:",
+                "Piston start (large orifice): Controlled resistance handles initial impact (e.g., part collisions) without jamming.",
+                "Stroke progression (smaller orifice): Resistance eases gradually → matches slower speed for stable motion (no jolts/pauses).",
+                "vs. Multiple Orifice Type: Less force fluctuation → smoother energy absorption, fewer motion changes, and more reliable performance."
+              ]
+            }
           }
         },
         "chart": {
@@ -647,7 +724,7 @@
       "requestQuoteBtn": "Request Quote"
     }
   },
-  "blog":{
+  "blog": {
     "title": "Blog Articles",
     "description": "Sharing Industry Insights and Technical Updates"
   }
