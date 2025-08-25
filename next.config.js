@@ -7,6 +7,8 @@ const nextConfig = {
     domains: ['localhost'],
     unoptimized: true,
   },
+  // 确保静态资源使用正确的路径
+  assetPrefix: process.env.NODE_ENV === 'production' ? 'https://lineardamper.com' : '',
 }
 
 module.exports = withContentlayer(nextConfig)
