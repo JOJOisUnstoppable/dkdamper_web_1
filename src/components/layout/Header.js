@@ -14,8 +14,8 @@ export default function Header() {
             <Image 
               src="/DK_Logo_withoutBG.png" 
               alt="DK Machinery Co., Ltd"
-              width={80} 
-              height={80}
+              width={60} 
+              height={60}
             />
           </Link>
           
