@@ -1,12 +1,11 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
-// 需要先安装依赖: npm install @formatjs/intl-localematcher
-import { match as matchLocale } from '@formatjs/intl-localematcher'
-// 需要先安装依赖: npm install negotiator @types/negotiator
-import Negotiator from 'negotiator'
 
-const locales = ['en', 'pl', 'es', 'de']
-const defaultLocale = 'en'
+// 使用正确的配置文件
+import { locales, defaultLocale } from '@/lib/i18n/config'
+
+import { match as matchLocale } from '@formatjs/intl-localematcher'
+import Negotiator from 'negotiator'
 
 function getLocale(request: NextRequest): string {
   const negotiatorHeaders: Record<string, string> = {}
@@ -21,17 +20,23 @@ function getLocale(request: NextRequest): string {
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname
   
-  // 特殊处理 sitemap.xml 请求
+  // 特殊处理 sitemap.xml 请求 - 直接重写到现有的 API 路由
   if (pathname === '/sitemap.xml') {
-    const locale = getLocale(request)
     return NextResponse.rewrite(
-      new URL(`/${locale}/api/sitemap`, request.url)
+      new URL('/api/sitemap', request.url)
     )
   }
   
-  // 排除已经包含 sitemap.xml 的路径
-  if (pathname.includes('sitemap.xml')) {
-    return NextResponse.next()
+  // 排除静态资源和 API 路由
+  if (pathname.startsWith('/_next') ||
+      pathname.startsWith('/api') ||
+      pathname.startsWith('/static') ||
+      pathname.includes('.') ||
+      pathname.startsWith('/images/') ||
+      pathname.startsWith('/videos/') ||
+      pathname === '/robots.txt' ||
+      pathname === '/favicon.ico') {
+    return
   }
   
   const pathnameIsMissingLocale = locales.every(
@@ -48,6 +53,6 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    '/((?!api|_next/static|_next/image|favicon.ico|images|robots.txt|DK_Logo_withoutBG.png).*)',
+    '/((?!api|_next/static|_next/image|favicon.ico|images|videos|robots.txt).*)',
   ],
 }
