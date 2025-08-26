@@ -489,14 +489,9 @@
       }
     },
     "linearDamperTypes": {
-      "meta": {
-        "title": "",
-        "description": "",
-        "keywords": ""
-      },
       "section": {
-        "mainTitle": "Las curvas de amortiguación son variadas según las aplicaciones",
-        "intro": "Los amortiguadores lineales se dividen en categorías según cómo cambia el área del orificio durante el funcionamiento, proporcionando diferentes características de absorción para diversas aplicaciones.",
+        "mainTitle": "¿Cómo diseñar el rendimiento de amortiguamiento?",
+        "intro": "Cuando un objeto impacta contra la varilla del pistón, el movimiento se transfiere al aceite de la cámara de presión, lo que hace que el aceite fluya hacia afuera a través del orificio del tubo interno y comprima la cámara de presión. La presión hidráulica resultante, multiplicada por el área de presión del pistón, genera una resistencia que ralentiza el objeto en colisión. Esta resistencia es proporcional al cuadrado de la velocidad del objeto, un fenómeno conocido como resistencia al cuadrado de la velocidad. A continuación, se explica cómo diseñar una curva de amortiguamiento modificando el diseño del orificio.",
         "constantOrificeTypes": {
           "title": "Tipos de orificio constante",
           "singleOrificeType": {
@@ -524,6 +519,7 @@
           "dataSets": {
             "singleHoleOverflow": "Desbordamiento de un solo agujero",
             "multiHoleOverflow": "Desbordamiento de múltiples agujeros",
+            "MultipleVaryingOrificeType": "Tipo de orificio múltiple variable",
             "grooveOverflow": "Desbordamiento de ranura"
           }
         }
@@ -538,7 +534,7 @@
         "operatingTemperatureRange": "Rango de temperatura de funcionamiento: 5~40°C (41~104°F)",
         "mountingOptions": "Opciones de montaje: Varias configuraciones de extremo disponibles",
         "strokeOptions": "Opciones de carrera: Longitudes de carrera personalizables",
-        "dampingDirection": "Dirección de amortiguación: Opciones unidireccionales, bidireccionales disponibles"
+        "dampingDirection": "Dirección de amortiguamiento: Unidireccional (no autorretornable), opciones bidireccionales disponibles"
       },
       "performanceCharacteristics": {
         "title": "Características de rendimiento",

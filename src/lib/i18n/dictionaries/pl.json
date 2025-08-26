@@ -489,14 +489,9 @@
       }
     },
     "linearDamperTypes": {
-      "meta": {
-        "title": "",
-        "description": "",
-        "keywords": ""
-      },
       "section": {
-        "mainTitle": "Krzywe tłumienia różnią się w zależności od aplikacji",
-        "intro": "Amortyzatory liniowe są dzielone na kategorie na podstawie tego, jak zmienia się pole otworu podczas pracy, zapewniając różne cechy absorpcyjne dla różnych aplikacji.",
+        "mainTitle": "Jak zaprojektować wydajność tłumienia?",
+        "intro": "Gdy obiekt uderza w trzon tłoka, ruch jest przenoszony na olej w komorze ciśnieniowej, co spowoduje, że olej wypływa przez otwór w rurce wewnętrznej, a komora ciśnieniowa ulegaściskaniu. Powstałe ciśnienie hydrauliczne, pomnożone przez powierzchnię ciśnieniową tłoka, tworzy opór, który spowalnia uderzający obiekt. Ten opór jest proporcjonalny do kwadratu prędkości obiektu – zjawisko znane jako opór kwadratowy prędkości. Poniżej wyjaśniono, jak zaprojektować krzywą tłumienia poprzez modyfikację projektu otworu.",
         "constantOrificeTypes": {
           "title": "Typy z stałym otworem",
           "singleOrificeType": {
@@ -524,6 +519,7 @@
           "dataSets": {
             "singleHoleOverflow": "Przelewanie przez pojedyncze otwór",
             "multiHoleOverflow": "Przelewanie przez wiele otworów",
+            "MultipleVaryingOrificeType": "Rodzaj wielokrotnego otworu zmiennego",
             "grooveOverflow": "Przelewanie przez rowek"
           }
         }
@@ -538,7 +534,7 @@
         "operatingTemperatureRange": "Zakres temperatur pracy: 5~40°C (41~104°F)",
         "mountingOptions": "Opcje montażu: Dostępne różne konfiguracje końców",
         "strokeOptions": "Opcje przebiegu: Dostosowywalne długości przebiegów",
-        "dampingDirection": "Kierunek tłumienia: Opcje jednokierunkowe, dwukierunkowe"
+        "dampingDirection": "Kierunek tłumienia: Jednokierunkowy (nie samo powracający), dostępne opcje dwukierunkowe"
       },
       "performanceCharacteristics": {
         "title": "Cechy wydajnościowe",

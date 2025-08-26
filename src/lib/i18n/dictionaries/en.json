@@ -491,8 +491,8 @@
     },
     "linearDamperTypes": {
       "section": {
-        "mainTitle": "Dampering Curve are various for applications",
-        "intro": "Linear dampers are divided into categories based on how the orifice area changes during operation, providing different absorption characteristics for various applications.",
+        "mainTitle": "How To Design Damping Performance?",
+        "intro": "When an object strikes the piston rod, the motion is transferred to the oil in the pressure chamber, causing the oil to flow out through the orifice in the inner tube and compressing the pressure chamber. The resulting hydraulic pressure, multiplied by the piston's pressure area, creates resistance that slows down the colliding object. This resistance is proportional to the square of the object's velocity, known as velocity squared resistance. The following explains how to design a damping curve by altering the orifice design.",
         "DamperTypesDiff": {
           "MVOT": {
             "title": "Multiple Varying Orifice Type",
@@ -599,6 +599,7 @@
           "dataSets": {
             "singleHoleOverflow": "single hole overflow",
             "multiHoleOverflow": "Multi-hole overflowhole overflow",
+            "MultipleVaryingOrificeType": "Multiple Varying Orifice Type",
             "grooveOverflow": "groove overflow"
           }
         }
@@ -613,7 +614,7 @@
         "operatingTemperatureRange": "Operating Temperature Range: 5~40°C (41~104°F)",
         "mountingOptions": "Mounting Options: Various end configurations available",
         "strokeOptions": "Stroke Options: Customizable stroke lengths",
-        "dampingDirection": "Damping Direction: One-way, two-way options available"
+        "dampingDirection": "Damping Direction: One-way (Non self-return), two-way options available"
       },
       "performanceCharacteristics": {
         "title": "Performance Characteristics",

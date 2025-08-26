@@ -126,7 +126,7 @@ const LineChartWithShadows = ({
                   family: 'Inter, sans-serif'
                 },
                 callback: function(value) {
-                  if (value === 30) {
+                  if (value === 30 || value === 15) {
                     return 'damping force';
                   }
                   return value;

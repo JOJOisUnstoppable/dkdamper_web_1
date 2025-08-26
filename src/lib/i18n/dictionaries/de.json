@@ -480,8 +480,8 @@
     },
     "linearDamperTypes": {
       "section": {
-        "mainTitle": "Dämpfungskurven variieren je nach Anwendung",
-        "intro": "Linear-Dämpfer werden basierend darauf kategorisiert, wie sich die Drosselbohrungsfläche während des Betriebs ändert, und bieten verschiedene Aufnahmeeigenschaften für verschiedene Anwendungen.",
+        "mainTitle": "Wie man die Dämpfungsleistung entwirft?",
+        "intro": "Wenn ein Objekt den Kolbenstange trifft, wird die Bewegung auf das Öl in der Druckkammer übertragen. Dadurch fließt das Öl durch die Öffnung im Innenrohr aus und die Druckkammer wird komprimiert. Der entstehende hydraulische Druck, multipliziert mit der Druckfläche des Kolbens, erzeugt einen Widerstand, der das kollidierende Objekt verlangsamt. Dieser Widerstand ist proportional zum Quadrat der Geschwindigkeit des Objekts – ein Effekt, der als Geschwindigkeitsquadratwiderstand bekannt ist. Im Folgenden wird erläutert, wie eine Dämpfungskurve durch Veränderung der Öffnungsgestaltung entwickelt werden kann.",
         "constantOrificeTypes": {
           "title": "Typen mit konstanter Drosselbohrung",
           "singleOrificeType": {
@@ -509,6 +509,7 @@
           "dataSets": {
             "singleHoleOverflow": "Einzellochüberströmung",
             "multiHoleOverflow": "Mehrlochüberströmung",
+            "MultipleVaryingOrificeType": "Mehrfache veränderliche Öffnungstyp",
             "grooveOverflow": "Nutüberströmung"
           }
         }
@@ -523,7 +524,7 @@
         "operatingTemperatureRange": "Betriebstemperaturbereich: 5~40°C (41~104°F)",
         "mountingOptions": "Montageoptionen: Verschiedene Endausführungen verfügbar",
         "strokeOptions": "Huboptionen: Anpassbare Hublängen",
-        "dampingDirection": "Dämpfungsrichtung: Einseitig, zweiseitige Optionen verfügbar"
+        "dampingDirection": "Dämpfungsrichtung: Einweg (nicht selbstrückstellend), Zweigweg-Optionen verfügbar"
       },
       "performanceCharacteristics": {
         "title": "Leistungseigenschaften",
